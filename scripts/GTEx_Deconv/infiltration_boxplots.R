@@ -6,12 +6,14 @@
 library(data.table)
 library(ggplot2)
 
-df.ciber.abs <- fread('~/Documents/Research/GTEx/Infiltration/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table=F)
-df.ciber.rel <- fread('~/Documents/Research/GTEx/Infiltration/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table=F,stringsAsFactors = F)
-df.xcell <- fread('~/Documents/Research/GTEx/Infiltration/xCell_TPM_TBT_mod.txt',data.table=F,stringsAsFactors = F)
+# df.ciber.abs <- fread('~/Documents/Research/GTEx/Infiltration/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table=F)
+# df.ciber.rel <- fread('~/Documents/Research/GTEx/Infiltration/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table=F,stringsAsFactors = F)
+# df.xcell <- fread('~/Documents/Research/GTEx/Infiltration/xCell_TPM_TBT_mod.txt',data.table=F,stringsAsFactors = F)
+df.xcell <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_profiles/XCell.all_tissues.txt',data.table=F,stringsAsFactors = F)
+df.ciber.rel <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+df.ciber.abs <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
 
 # initialize:
-dataf <- data.frame(ID=unique(df.ciber.abs$ID))
 s <- data.frame(table(df.ciber.rel$SMTSD))
 
 df.ciber.abs <- subset(df.ciber.abs,SMTSD %in% s[,1])
