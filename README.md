@@ -12,7 +12,7 @@ GenerateSyntheticMixture-ALL.sh
 Directory: ./scripts/GTEx_Deconv/
 
 #### CIBERSORT: 
-running_cibersort.R
+running_cibersort.R \
 cibersort_out.R
 
 #### xCell: 
