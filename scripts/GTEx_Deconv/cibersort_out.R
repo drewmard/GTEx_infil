@@ -1,14 +1,11 @@
 # Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
 
+# Script for pre-processing of cibersort output
+
 library(data.table)
 
-# command-line determine absolute or relative
-# args = commandArgs(trailingOnly=TRUE)
-# absolute=args[1]
-
 for (absolute in c('F','T')) {
-  # absolute <- 'F'
-  
+
   # covariate data:
   workdir <- '/athena/elementolab/scratch/anm2868/GTEx/COVAR/'
   df.cov <- fread(paste0(workdir,'GTEx_v7_Annotations_SubjectPhenotypesDS.txt'),data.table = F,stringsAsFactors = F)

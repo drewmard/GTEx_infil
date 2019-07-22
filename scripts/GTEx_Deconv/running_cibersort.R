@@ -1,5 +1,7 @@
 # Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
 
+# script for running CIBERSORT on GTEx
+
 # load ggplot R libraries
 library('e1071')
 library('parallel')
