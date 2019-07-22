@@ -25,15 +25,16 @@ cibersort_out.R
 
 #### xCell: 
 xCell_generation.R
+xCell_process.R
 
 #### Heatmaps of immune content (Supp Fig. 1):
 heatmaps.R
 
 #### Pairwise correlations of infiltration phenotypes (Supp Fig. 2):
-< insert script here >
+corr_heatmaps.R
 
 #### Case examples of differences between deconvolution algorithms (Supp Fig. 3):
-< insert script here >
+xcell_cibersort_CaseExample.R
 
 #### Hierarchical clustering (Fig 1b, Supp Fig 4-5):
 < insert script here >
