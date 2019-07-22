@@ -40,7 +40,7 @@ xcell_cibersort_CaseExample.R
 < insert script here >
 
 #### Boxplots of immune content (Fig 1c, Supp Fig 6-9):
-< insert script here >
+infiltration_boxplots.R
 
 #### t-SNE of immune content (Supp Fig 10):
 < insert script here >
