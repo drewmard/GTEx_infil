@@ -1,3 +1,5 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+
 library(data.table)
 
 # command-line determine absolute or relative
