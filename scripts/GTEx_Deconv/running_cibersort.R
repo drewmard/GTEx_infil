@@ -35,16 +35,19 @@ rownames(results) <- NULL
 
 # Save output
 if (absolute=='abs') {
-  fwrite(results,file='/athena/elementolab/scratch/anm2868/GTEx/CIBERSORT_out/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.DECONV_ONLY.txt',quote=F,row.names=F,sep='\t',col.names = T)
+  dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles')
+  fwrite(results,file='/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.DECONV_ONLY.txt',quote=F,row.names=F,sep='\t',col.names = T)
+  
+  # create relative CIBERSORT proportions from absolute scores
+  results.rel <- results
+  for (i in 1:nrow(results)) {
+    results.rel[i,2:23] <- results.rel[i,2:23]/results.rel[i,"Absolute score (sig.score)"]
+  }
+  fwrite(results.rel,file='/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.DECONV_ONLY.txt',quote=F,row.names=F,sep='\t',col.names = T)
+  
 } else if (absolute=='rel') {
-  fwrite(results,file='/athena/elementolab/scratch/anm2868/GTEx/CIBERSORT_out/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.DECONV_ONLY.txt',quote=F,row.names=F,sep='\t',col.names = T)
+  fwrite(results,file='/athena/elementolab/scratch/anm2868/GTEx/CIBERSORT_out/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.DECONV_ONLY.txt',quote=F,row.names=F,sep='\t',col.names = T)
 }
-
-# if (absolute=='abs') {
-#   fwrite(results,file=paste0("/athena/elementolab/scratch/anm2868/GTEx/CIBERSORT_out/GTEx_v7_genexpr_",i,".CIBERSORT.ABS-T.QN-F.perm-1000.txt"),quote=F,row.names=F,sep='\t')
-# } else {
-#   fwrite(results,file=paste0("/athena/elementolab/scratch/anm2868/GTEx/CIBERSORT_out/GTEx_v7_genexpr_",i,".CIBERSORT.ABS-F.QN-F.perm-1000.txt"),quote=F,row.names=F,sep='\t')
-# }
 
 
 
