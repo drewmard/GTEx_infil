@@ -6,7 +6,7 @@ library('parallel')
 library('preprocessCore') 
 library('data.table') 
 
-# directories
+# directories: requires path to CIBERSORT R script. need to request from https://cibersort.stanford.edu
 CIBERSORT_script <- '/home/anm2868/scripts/CIBERSORT.R'
 sig.matrix.file<-"/home/anm2868/etc/LM22.txt"
 mixture.file <- '/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct'
