@@ -7,6 +7,11 @@ Directory: ./scripts/SynMix_Sims/
 #### In silico simulation of synthetic mixes:
 GenerateSyntheticMixture-ALL.sh
 
+#### Deconvolution of TPMs from in silico mixes
+cibersort_simulations.R \
+xcell_sim_gen.R \
+xcell_ciber_simComp.R \
+
 
 ## Evaluating infiltration across human tissues by using deconvolution
 Directory: ./scripts/GTEx_Deconv/
@@ -17,5 +22,6 @@ cibersort_out.R
 
 #### xCell: 
 xCell_generation.R
+
 
 
