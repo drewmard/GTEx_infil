@@ -27,7 +27,7 @@ cibersort_out.R
 xCell_generation.R
 
 #### Heatmaps of immune content (Supp Fig. 1):
-< insert script here >
+heatmaps.R
 
 #### Pairwise correlations of infiltration phenotypes (Supp Fig. 2):
 < insert script here >
@@ -47,7 +47,7 @@ xCell_generation.R
 
 
 ## Evaluating infiltration across human tissues by using deconvolution
-Directory: ./scripts/GTEx_Deconv/
+Directory: ./scripts/<insert directory>/
 
 
 
