@@ -6,7 +6,8 @@
 library(data.table)
 
 # covariate data
-df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
+df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SubjectPhenotypesDS.txt',data.table = F,stringsAsFactors = F)
+# df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
 # unique GTEx tissues
 tis.uniq = unique(df.attr$SMTSD)
 
@@ -18,8 +19,8 @@ for (tis in tis.uniq) {
     df.xcell$SMTSD <- tis
     first <- FALSE
   } else {
-    df.xcell <- fread(paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/xcell_sub_out/XCell_',tis,'.txt'),data.table=F)
-    df.xcell$SMTSD <- tis
+    df.tmp <- fread(paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/xcell_sub_out/XCell_',tis,'.txt'),data.table=F)
+    df.tmp$SMTSD <- tis
     df.xcell <- rbind(df.xcell,df.tmp)
   }
 }
@@ -30,7 +31,7 @@ IID <- sapply(strsplit(df.xcell$SAMP,"-"),paste.s)
 df.xcell$IID <- IID
 df.xcell <- merge(df.xcell,df.attr,by.x='IID',by.y='SUBJID')
 
-# make sure this is right...
+# merge related cell types into broader lineages
 df.xcell$CD4Sum <- (apply(df.xcell[,7:11],1,sum))
 df.xcell$MacrophageSum <- (apply(df.xcell[,33:35],1,sum))
 df.xcell$CD8Sum <- (apply(df.xcell[,12:15],1,sum))
