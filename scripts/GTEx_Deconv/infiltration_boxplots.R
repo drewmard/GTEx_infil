@@ -1,3 +1,8 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+
+# script for sorted boxplots of GTEx data (Supp fig 2)
+
+
 library(data.table)
 library(ggplot2)
 

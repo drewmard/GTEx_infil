@@ -45,12 +45,49 @@ infiltration_boxplots.R
 #### t-SNE of immune content (Supp Fig 10):
 < insert script here >
 
+#### Filtering of infiltration phenotypes (212 to 73):
+< insert script here >
+
+#### Infiltration signatures in bulk gene expression values
+< insert script here >
 
 
-## Evaluating infiltration across human tissues by using deconvolution
-Directory: ./scripts/<insert directory>/
+
+## Identification and characterization of extreme infiltrating immune cell patterns
+Directory: ./scripts/HotCold_Cluster/
+
+#### Algorithm:
+< munna's script here >
+
+#### Widespread vs tissue-specific extreme inflammation patterns
+< insert script here >
 
 
+
+## Association of age and sex with immune infiltration
+Directory: ./scripts/AgeSex/
+
+#### Analysis:
+< insert script here >
+
+#### Figure 2a and 2b:
+< insert script here >
+
+
+
+## Association of genetic variants with infiltrating immune cells
+Directory: ./scripts/GeneticAnalysis/
+
+#### Analysis:
+< insert script here >
+
+
+
+## Downstream analysis of genetic results
+Directory: ./scripts/GeneticAnalysis_2/
+
+#### Analysis:
+< insert script here >
 
 
 

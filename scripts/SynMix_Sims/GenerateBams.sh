@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Written by Manik Uppal (2018-2019). Contact: mdu2002@med.cornell.edu
+
 #***Do we need to be concerned with library size?
 
 

@@ -1,3 +1,5 @@
+# Written by Manik Uppal (2018-2019). Contact: mdu2002@med.cornell.edu
+
 #CD4
 ERR431571=/athena/elementolab/scratch/anm2868/GTEx/gtexInfilSim/data/ERR431571_1.fastq..Aligned.sortedByCoord.out.bam
 ERR431574=/athena/elementolab/scratch/anm2868/GTEx/gtexInfilSim/data/ERR431574_1.fastq..Aligned.sortedByCoord.out.bam
