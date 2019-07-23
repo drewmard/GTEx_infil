@@ -56,6 +56,7 @@ filter.R
 ## Identification and characterization of extreme infiltrating immune cell patterns
 Directory: ./scripts/HotCold_Cluster/
 
+
 #### Algorithm:
 < munna's script here >
 
@@ -75,11 +76,24 @@ AgeSex_Analysis.R
 ## Association of genetic variants with infiltrating immune cells
 Directory: ./scripts/GeneticAnalysis/
 
+
 #### Generate PCs:
 ./GTEx_Genetic_PCA/tissue_subset_wrapper.sh \
 (which runs ./GTEx_Genetic_PCA/PCA_calc.sh)
 
 #### Prepare data for external GWAS software:
+GWAS_preprocess.R
+
+#### Run GWAS
+< create custom script that runs in Plink >
+
+#### Correct p-values using empirical brown's method
+< insert script here >
+
+#### QQ plots and manhattan plots
+< insert script here >
+
+#### Gene expression plots
 < insert script here >
 
 
@@ -87,9 +101,18 @@ Directory: ./scripts/GeneticAnalysis/
 ## Downstream analysis of genetic results
 Directory: ./scripts/GeneticAnalysis_2/
 
-#### Analysis:
+
+#### eQTL/ieQTL overlap (Method 1):
 < insert script here >
 
+#### eQTL/ieQTL overlap (Method 2):
+< insert script here >
+
+#### GeneMania:
+< insert script here >
+
+#### Pleiotropic effects:
+< insert script here >
 
 
 

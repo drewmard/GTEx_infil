@@ -89,5 +89,6 @@ fwrite(tissue_x_celltype,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/ou
 # the missing phenotype
 fam <- fam[,-(3:6)]
 colnames(fam)[1:2] <- c('FID','IID')
+fam[is.na(fam)] <- -9
 fwrite(fam,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.fam',sep = '\t',col.names = T,row.names = F,quote=F)
 
