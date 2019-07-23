@@ -67,11 +67,8 @@ Directory: ./scripts/HotCold_Cluster/
 ## Association of age and sex with immune infiltration
 Directory: ./scripts/AgeSex/
 
-#### Statistical analysis, Table 1a,b, and Fig 2a:
+#### Statistical analysis, Table 1a,b, and Fig 2a,b:
 AgeSex_Analysis.R
-
-#### Figure 2a and 2b:
-< insert script here >
 
 
 
