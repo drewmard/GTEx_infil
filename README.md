@@ -75,7 +75,11 @@ AgeSex_Analysis.R
 ## Association of genetic variants with infiltrating immune cells
 Directory: ./scripts/GeneticAnalysis/
 
-#### Analysis:
+#### Generate PCs:
+./GTEx_Genetic_PCA/tissue_subset_wrapper.sh \
+(which runs ./GTEx_Genetic_PCA/PCA_calc.sh)
+
+#### Prepare data for external GWAS software:
 < insert script here >
 
 
