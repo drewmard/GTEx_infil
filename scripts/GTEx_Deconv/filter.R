@@ -18,7 +18,9 @@ df.rel <- subset(df.rel,ID %in% genetic_data_fam[,2])
 
 tis.uniq <- data.frame(table(df.rel$SMTSD))
 df.results <- data.frame(tissue=c(),cell=c())
-for (i in 1:length(tis.uniq)) {
+cellTypes.df <- data.frame(ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum'),
+                        xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum'),stringsAsFactors = F)
+for (i in 1:nrow(tis.uniq)) {
   TISSUE <- tis.uniq[i,1]
   df.sub <- subset(df.rel,SMTSD==TISSUE)
   
@@ -27,29 +29,30 @@ for (i in 1:length(tis.uniq)) {
   infil <- (nrow(ciberSigSig)/nrow(df.sub))
   
   # cond 2: is this cell type represented in the sample?
-  cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum','T cells regulatory (Tregs)')
-  Mc <- as.matrix(ciberSigSig[, cellTypes])
-  rownames(Mc) <- ciberSigSig$ID
-  cellTypeFreq <- apply(Mc, 2, mean)
-  High.Rel <- cellTypes[as.numeric(which(cellTypeFreq > 0.05))]
+  cellTypes <- cellTypes.df$ciber
+  cellTypes2 <- as.matrix(ciberSigSig[, cellTypes])
+  rownames(cellTypes2) <- ciberSigSig$ID
+  cellTypeFreq <- apply(cellTypes2, 2, mean)
+  condition2 <- cellTypes[as.numeric(which(cellTypeFreq > 0.05))]
   
   # cond 3: are there enough samples total?
   N <- tis.uniq[i,2]
   
   if (infil > 0.5 & N >= 70) {
-    for (cell in High.Rel) {
+    for (cell in condition2) {
       
       # cond 4: do xcell and cibersort "somewhat" agree?
       df.abs.sub <- subset(df.abs,SMTSD==TISSUE)
       df.xcell.sub <- subset(df.xcell,SMTSD==TISSUE)
-      
-      df.abs.sub[,cell]
-      
-      df.results <- rbind(df.results,data.frame(tissue=TISSUE,cell=cell))
+      cor.res <- cor.test(df.abs.sub[,cell],df.xcell.sub[,cellTypes.df$xcell[cellTypes.df$ciber==cell]])
+      condition4 <- !(cor.res$estimate < 0 & cor.res$p.value < 0.05)
+      if (condition4) {
+        # save infiltration phenotype
+        df.results <- rbind(df.results,data.frame(tissue=TISSUE,cell=cell))
+      }
     }
   }
-  
 }
 df.results$tissue <- as.character(df.results$tissue)
 df.results$cell <- as.character(df.results$cell)
-fwrite(df.results,'/Volumes/SeagateBackupPlusDrive/Elemento/infiltration_phenotypes.txt',sep='\t',quote=F)
+fwrite(df.results,'/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_phenotypes.txt',sep='\t',quote=F,row.names = F,col.names = T)

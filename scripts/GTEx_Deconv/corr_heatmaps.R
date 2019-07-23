@@ -55,6 +55,7 @@ cor.mat.cb_rel <- cor.mat
 
 #########################
 
+dataf <- data.frame(ID=unique(df.ciber.abs$ID))
 for (i in 1:length(s[,1])) {
   tis <- s[i,1]
   df.sub <- subset(df.ciber.abs,SMTSD %in% tis)[,c('ID','T cells CD8','CD4_Tcells','MacrophageSum','Neutrophils')]
@@ -93,6 +94,7 @@ cor.mat.cb_abs <- cor.mat
 
 ########################################
 
+dataf <- data.frame(ID=unique(df.ciber.abs$ID))
 for (i in 1:length(s[,1])) {
   tis <- s[i,1]
   df.sub <- subset(df.xcell,SMTSD %in% tis)[,c('ID','CD8Sum','CD4Sum','MacrophageSum','Neutrophils')]
