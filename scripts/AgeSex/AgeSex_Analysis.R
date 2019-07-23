@@ -4,23 +4,25 @@
 
 library('data.table')
 library('stringr')
-df.rel <- fread('/athena/elementolab/scratch/anm2868/GTEx/infil_output/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/infil_output/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-df.xcell <- fread('/athena/elementolab/scratch/anm2868/GTEx/infil_output/xCell_TPM_TBT_mod.txt',data.table = F,stringsAsFactors = F)
 
-df.results <- fread('/athena/elementolab/scratch/anm2868/GTEx/df.torun.txt',data.table=F,stringsAsFactors = F)
-df.results <- unique(df.results[,c(1,3)])
-colnames(df.results) <- c('tissue','cell')
+# load infiltration profiles
+df.rel <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+df.xcell <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/XCell.all_tissues.txt',data.table = F,stringsAsFactors = F)
+
+# load infiltration phenotypes
+infiltration_phenotypes <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
+
+# load covariate data
 df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
 
 # Run MLR for age & sex
-df.coef <- as.data.frame(matrix(NA,nrow(df.results),14))
+df.coef <- as.data.frame(matrix(NA,nrow(infiltration_phenotypes),14))
 for (j in 1:3) {
   for (i in 1:nrow(df.results)) {
     # Subset
-    tis.space <- df.results[i,1]
-    tis <- str_replace_all(tis.space,'_',' ')
-    cell <- df.results[i,2]
+    tis <- infiltration_phenotypes[i,1]
+    cell <- infiltration_phenotypes[i,2]
     
     # Run cibersort rel
     if (j == 1) {
@@ -104,7 +106,7 @@ for (j in 1:3) {
       df.attr.sub$ID <- sapply(strsplit(df.attr.sub$SAMPID,"-"),paste.s)
       df.attr.sub <- df.attr.sub[,-1]
       
-      df.sub <- merge(df.sub,df.attr.sub,by.x='ID',by.y='ID')
+      df.sub <- merge(df.sub,df.attr.sub,by.x='IID',by.y='ID')
       
       # Assign NAs a value so that model does not discard data
       df.sub$DTHHRDY[is.na(df.sub$DTHHRDY)] <- 5
@@ -155,9 +157,8 @@ df.coef$age.coef_direc <- NA; df.coef$sex.coef_direc <- NA
 
 for (i in 1:nrow(df.coef)) {
   
-  tis.space <- df.results$tissue[i]
-  tis <- str_replace_all(tis.space,'_',' ')
-  
+  tis <- infiltration_phenotypes$tissue[i]
+
   # Cibersort rel
   df.sub <- subset(df.rel,SMTSD==tis)
   pheno <- matrix(NA,3,nrow(df.sub))
@@ -206,7 +207,7 @@ df.coef$pheno[df.coef$pheno=='CD4Sum'] <- 'CD4+ T cells'
 df.coef$pheno[df.coef$pheno=='CD8Sum'] <- 'CD8+ T cells'
 df.coef$pheno[df.coef$pheno=='MacrophageSum'] <- 'Macrophages'
 
-df.coef[c(20:22,29:31)]
+# Save significant associations: 
 
 df.coef.age <- subset(df.coef,p_age_brown.fdr < 0.1)
 df.coef.age <- df.coef.age[,c('tis','pheno','age.coef_direc','p_age_brown','p_age_brown.fdr')]
@@ -215,7 +216,7 @@ df.coef.age$p_age_brown.fdr <- formatC(df.coef.age$p_age_brown.fdr, format = "e"
 colnames(df.coef.age) <- c('Tissue','Cell Type','Effect Direction','P-value','Adj P-value')
 library('stargazer')
 stargazer(df.coef.age,type='html',summary=F,rownames = F,column.sep.width = "15pt",
-          out="/athena/elementolab/scratch/anm2868/GTEx/Age_Assoc_Table.doc")
+          out="/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/Age_Assoc_Table.doc")
 
 df.coef.sex <- subset(df.coef,p_sex_brown.fdr < 0.1)
 df.coef.sex <- df.coef.sex[,c('tis','pheno','sex.coef_direc','p_sex_brown','p_sex_brown.fdr')]
@@ -224,17 +225,29 @@ df.coef.sex$p_sex_brown.fdr <- formatC(df.coef.sex$p_sex_brown.fdr, format = "e"
 colnames(df.coef.sex) <- c('Tissue','Cell Type','Effect Direction','P-value','Adj P-value')
 library('stargazer')
 stargazer(df.coef.sex,type='html',summary=F,rownames = F,column.sep.width = "15pt",
-          out="/athena/elementolab/scratch/anm2868/GTEx/Sex_Assoc_Table.doc")
+          out="/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/Sex_Assoc_Table.doc")
 
 
-# Breast vs Cd8 t cell infiltration
-df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/infil_output/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+# Breast vs Cd8 t cell infiltration plot
+library(ggplot2)
+df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
 df.sub <- subset(df.abs,SMTSD=='Breast - Mammary Tissue')
 g <- ggplot(df.sub,aes(x=as.factor(SEX),y=`T cells CD8`,fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
   geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
-  labs(x='Sex',y='CD8+ T cells (%)') + scale_x_discrete(labels=c('Male','Female'))
-png('/Volumes/SeagateBackupPlusDrive/Elemento/CD8_Sex_Breast.png')
+  labs(x='Sex',y='CD8+ T cells score (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
+png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD8_Sex_Breast.png')
 print(g)
 dev.off()
 
+
+# Artery vs Cd4 t cell infiltration plot
+library(ggplot2)
+df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+df.sub <- subset(df.abs,SMTSD=='Artery - Tibial')
+g <- ggplot(df.sub,aes(x=as.factor(SEX),y=CD4_Tcells,fill=as.factor(AGE))) + geom_boxplot(outlier.shape=NA) +
+  geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
+  labs(x='Age',y='CD4+ T cells score (CIBERSORT - Absolute)') 
+png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD4_Age_ArteryTibial.png')
+print(g)
+dev.off()
 

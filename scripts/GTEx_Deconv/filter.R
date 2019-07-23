@@ -55,4 +55,4 @@ for (i in 1:nrow(tis.uniq)) {
 }
 df.results$tissue <- as.character(df.results$tissue)
 df.results$cell <- as.character(df.results$cell)
-fwrite(df.results,'/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_phenotypes.txt',sep='\t',quote=F,row.names = F,col.names = T)
+fwrite(df.results,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',sep='\t',quote=F,row.names = F,col.names = T)
