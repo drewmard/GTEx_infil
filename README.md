@@ -89,7 +89,7 @@ GWAS_preprocess.R
 GWAS.sh
 
 #### Correct p-values using empirical brown's method
-< insert script here >
+Empirical_Brown_pval.R
 
 #### QQ plots and manhattan plots
 < insert script here >
