@@ -89,7 +89,7 @@ GWAS_preprocess.R
 GWAS_local.sh \
 (or GWAS.sh in parallel cloud computing environment)
 
-#### Correct p-values using empirical brown's method
+#### Combine related p-values using Empirical Brown's method
 Empirical_Brown_pval_wrapper.sh \
 (runs Empirical_Brown_pval.R in parallel cloud computing environment)
 
