@@ -58,7 +58,8 @@ empiricalBrownsMethod2 <- function(p_values, extra_info, data_matrix, covar_matr
   return(EmpiricalBrownsMethod:::combinePValues(covar_matrix, p_values, extra_info))
 }
 
-cov.matrix <- EmpiricalBrownsMethod:::calculateCovariances(df.pheno)
+df.pheno2 <- df.pheno[-which(apply(df.pheno,1,function(x) sum(is.na(x))!=0)),]
+cov.matrix <- EmpiricalBrownsMethod:::calculateCovariances(df.pheno2)
 
 print('Running sped up pre-calculated covariance matrix method...')
 p <- unlist(lapply(df.t,function(x) {return(
