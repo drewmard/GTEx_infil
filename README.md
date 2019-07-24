@@ -86,10 +86,12 @@ Directory: ./scripts/GeneticAnalysis/
 GWAS_preprocess.R
 
 #### Run GWAS
-GWAS.sh
+GWAS_local.sh \
+(or GWAS.sh in parallel cloud computing environment)
 
 #### Correct p-values using empirical brown's method
-Empirical_Brown_pval.R
+Empirical_Brown_pval_wrapper.sh \
+(runs Empirical_Brown_pval.R in parallel cloud computing environment)
 
 #### QQ plots and manhattan plots
 < insert script here >
