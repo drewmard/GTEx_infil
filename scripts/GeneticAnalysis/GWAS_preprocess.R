@@ -25,7 +25,6 @@ tissue_file_name <- function(x.tis) {paste0('/athena/elementolab/scratch/anm2868
 colnames(df.xcell)[colnames(df.xcell)=='SAMP'] <- 'Input Sample'
 colnames(df.xcell)[colnames(df.xcell)=='IID'] <- 'ID'
 cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum')
-tissue_x_celltype$col_name <- NA
 
 # cycle through infiltration phenotypes:
 for (i in 1:nrow(tissue_x_celltype)) {
@@ -78,17 +77,15 @@ for (i in 1:nrow(tissue_x_celltype)) {
     # Save to fam file
     pheno <- data.frame(ID=df.sub.pca$ID,PHENO=resid.rint,stringsAsFactors = F)
     col_name <- paste0('pheno',i,'.',k)
-    colnames(pheno)[2] <- col_name; tissue_x_celltype$col_name[i] <- col_name
+    colnames(pheno)[2] <- col_name;
     fam <- merge(fam,pheno,by.x='V1',by.y='ID',all.x=TRUE)
 
   }
 }
-dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis')
-fwrite(tissue_x_celltype,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/infiltration_phenotypes_pheno.txt',sep = '\t',col.names = T,row.names = F,quote=F)
-
 # the missing phenotype
 fam <- fam[,-(3:6)]
 colnames(fam)[1:2] <- c('FID','IID')
 fam[is.na(fam)] <- -9
-fwrite(fam,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.fam',sep = '\t',col.names = T,row.names = F,quote=F)
+dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis')
+fwrite(fam,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt',sep = '\t',col.names = T,row.names = F,quote=F)
 

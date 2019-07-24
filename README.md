@@ -86,7 +86,7 @@ Directory: ./scripts/GeneticAnalysis/
 GWAS_preprocess.R
 
 #### Run GWAS
-< create custom script that runs in Plink >
+GWAS.sh
 
 #### Correct p-values using empirical brown's method
 < insert script here >
