@@ -1,3 +1,8 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+
+# Script for combining related p-values using empirical brown's method
+
+
 # Packages
 library(data.table)
 library(EmpiricalBrownsMethod)
@@ -24,7 +29,7 @@ ind <- which(cellTypes %in% cell)
 cell2 <- c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum')[ind]
 
 # cibersort rel
-print('cibersort rel')
+print('CIBERSORT (relative)')
 df1 <- fread(paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.1.qassoc'),data.table=F,stringsAsFactors = F)
 df1 <- df1[,c('CHR','SNP','BP','NMISS','BETA','P')] 
 colnames(df1)[(ncol(df1)-1):ncol(df1)] <- c('beta_cibersort_rel','p_lrt_cibersort_rel')
@@ -58,20 +63,32 @@ empiricalBrownsMethod2 <- function(p_values, extra_info, data_matrix, covar_matr
   return(EmpiricalBrownsMethod:::combinePValues(covar_matrix, p_values, extra_info))
 }
 
+# Calculate p-values using all 3 methods:
 df.pheno2 <- as.data.frame(t(df.pheno[-which(apply(df.pheno,1,function(x) sum(is.na(x))!=0)),]))
 cov.matrix <- EmpiricalBrownsMethod:::calculateCovariances(df.pheno2)
-
 print('Running sped up pre-calculated covariance matrix method...')
 p <- unlist(lapply(df.t,function(x) {return(
   empiricalBrownsMethod2(data_matrix = df.pheno,p_values = x,extra_info = F,covar_matrix = cov.matrix))}))
-
-# merge EBM p values in
+# merge EBM p values
 df.all$Pval_Brown <- p
+
+# Calculate p-values using only absolute methods:
+df.pheno2 <- as.data.frame(t(df.pheno[-which(apply(df.pheno,1,function(x) sum(is.na(x))!=0)),])[-1,])
+cov.matrix <- EmpiricalBrownsMethod:::calculateCovariances(df.pheno2)
+print('Running sped up pre-calculated covariance matrix method...')
+p <- unlist(lapply(df.t[-1,],function(x) {return(
+  empiricalBrownsMethod2(data_matrix = df.pheno,p_values = x,extra_info = F,covar_matrix = cov.matrix))}))
+# merge EBM absolute p values
+df.all$Pval_Brown_Abs <- p
 
 print('Writing...')  
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.txt')
 fwrite(df.all,f,sep='\t',row.names = F,col.names = T,quote = F)
 
+print('Subsetting significant associations...')  
+df.sub <- subset(df.all,Pval_Brown < 1e-5 | Pval_Brown_Abs < 1e-5 | p_lrt_cibersort_rel < 1e-5 | p_lrt_cibersort_abs < 1e-5 | p_lrt_xCell < 1e-5 )
+f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.sig.txt')
+fwrite(df.sub,f,sep='\t',row.names = F,col.names = T,quote = F)
 
 
 

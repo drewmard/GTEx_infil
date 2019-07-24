@@ -93,6 +93,9 @@ GWAS_local.sh \
 Empirical_Brown_pval_wrapper.sh \
 (runs Empirical_Brown_pval.R in parallel cloud computing environment)
 
+#### Identify significant results \
+< insert script here>
+
 #### QQ plots and manhattan plots
 < insert script here >
 
