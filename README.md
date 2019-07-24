@@ -89,12 +89,12 @@ GWAS_preprocess.R
 GWAS_local.sh \
 (or GWAS.sh in parallel cloud computing environment)
 
-#### Combine related p-values using Empirical Brown's method
+#### Combine related p-values using Empirical Brown's method, and identify significant results
 Empirical_Brown_pval_wrapper.sh \
 (runs Empirical_Brown_pval.R in parallel cloud computing environment)
 
-#### Identify significant results \
-< insert script here>
+#### Significant results analysis
+
 
 #### QQ plots and manhattan plots
 < insert script here >
