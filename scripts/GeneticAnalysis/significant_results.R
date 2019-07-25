@@ -30,6 +30,8 @@ for (i in 1:211) {
       f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig2.txt')
       fwrite(df.sub2.save,f,col.names = T,row.names = F,sep='\t',quote = F)
     }
+  } else {
+    print(paste0('missing: ',i))
   }
   
 }
