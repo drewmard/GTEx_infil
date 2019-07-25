@@ -14,7 +14,7 @@ for (i in 1:211) {
     df$tissue <- infil_pheno$tissue[i]
     df$cell <- infil_pheno$cell[i]
     df.sub <- subset(df,Pval_Brown < 5e-8)
-    df.sub2 <- subset(df.sub,Pval_Brown < 5e-8 | Pval_Brown_Abs < 5e-8 | p_lrt_cibersort_rel < 5e-8 | p_lrt_cibersort_abs < 5e-8 | p_lrt_xCell < 5e-8 )
+    df.sub2 <- subset(df,Pval_Brown < 5e-8 | Pval_Brown_Abs < 5e-8 | p_lrt_cibersort_rel < 5e-8 | p_lrt_cibersort_abs < 5e-8 | p_lrt_xCell < 5e-8 )
     
     if (i == 1) {
       df.sub.save <- df.sub
