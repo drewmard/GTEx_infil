@@ -24,7 +24,16 @@ tissue_file_name <- function(x.tis) {paste0('/athena/elementolab/scratch/anm2868
 # initialize
 colnames(df.xcell)[colnames(df.xcell)=='SAMP'] <- 'Input Sample'
 colnames(df.xcell)[colnames(df.xcell)=='IID'] <- 'ID'
-cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum')
+cellTypes.df <- data.frame( 
+  ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
+          'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
+          'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
+          'Bcellsum','NK cells','DendriticSum','Mast cells','TcellSum',
+          'Th_Sum','Tregs','Tgd cells',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  stringsAsFactors = F)
 
 # cycle through infiltration phenotypes:
 for (i in 1:nrow(tissue_x_celltype)) {
@@ -45,8 +54,7 @@ for (i in 1:nrow(tissue_x_celltype)) {
       df <- df.abs
     } else if (k==3) {
       df <- df.xcell
-      ind <- which(cellTypes %in% cell)
-      cell <- c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum')[ind]
+      cell <- cellTypes.df$xcell[cellTypes.df$ciber==cell]
     }
     
     # Merging data frames

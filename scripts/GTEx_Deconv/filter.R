@@ -18,8 +18,18 @@ df.rel <- subset(df.rel,ID %in% genetic_data_fam[,2])
 
 tis.uniq <- data.frame(table(df.rel$SMTSD))
 df.results <- data.frame(tissue=c(),cell=c())
-cellTypes.df <- data.frame(ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum'),
-                        xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum'),stringsAsFactors = F)
+cellTypes.df <- data.frame( 
+  ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
+                 'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
+                 'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
+                 'Monocytes','Eosinophils','Lymph_Sum'),
+  xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
+                   'Bcellsum','NK cells','DendriticSum','Mast cells','TcellSum',
+                   'Th_Sum','Tregs','Tgd cells',
+                   'Monocytes','Eosinophils','Lymph_Sum'),
+  stringsAsFactors = F)
+# cellTypes.df <- data.frame(ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum'),
+#                         xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum'),stringsAsFactors = F)
 for (i in 1:nrow(tis.uniq)) {
   TISSUE <- tis.uniq[i,1]
   df.sub <- subset(df.rel,SMTSD==TISSUE)
@@ -46,7 +56,7 @@ for (i in 1:nrow(tis.uniq)) {
       df.xcell.sub <- subset(df.xcell,SMTSD==TISSUE)
       cor.res <- cor.test(df.abs.sub[,cell],df.xcell.sub[,cellTypes.df$xcell[cellTypes.df$ciber==cell]])
       condition4 <- !(cor.res$estimate < 0 & cor.res$p.value < 0.05)
-      if (condition4) {
+      if (condition4 & !is.na(condition4)) {
         # save infiltration phenotype
         df.results <- rbind(df.results,data.frame(tissue=TISSUE,cell=cell))
       }

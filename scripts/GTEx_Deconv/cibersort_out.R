@@ -26,6 +26,23 @@ for (absolute in c('F','T')) {
   df.ciber.2[,s] <- apply(df.ciber.2[,grepl('CD4',colnames(df.ciber.2))],1,sum)
   s <- 'MacrophageSum'
   df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Macrophage',colnames(df.ciber.2))],1,sum)
+  s <- 'Bcellsum'
+  df.ciber.2[,s] <- apply(df.ciber.2[,c(grep('B cells',colnames(df.ciber.2)),grep('Plasma cells',colnames(df.ciber.2)))],1,sum)
+  s <- 'NK_Sum'
+  df.ciber.2[,s] <- apply(df.ciber.2[,grepl('NK cells',colnames(df.ciber.2))],1,sum)
+  s <- 'DendriticSum'
+  df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Dendritic',colnames(df.ciber.2))],1,sum)
+  s <- 'MastSum'
+  df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Mast cells',colnames(df.ciber.2))],1,sum)
+  s <- 'TcellSum'
+  df.ciber.2[,s] <- apply(df.ciber.2[,grepl('T cells',colnames(df.ciber.2))],1,sum)
+  s <- 'Lymph_Sum'
+  df.ciber.2[,s] <- apply(df.ciber.2[,c('NK_Sum','TcellSum','Bcellsum')],1,sum)
+  
+  # cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
+  #                'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
+  #                'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
+  #                'Monocytes','Eosinophils')
   
   # save
   f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-',absolute,'.QN-F.perm-1000.txt')
