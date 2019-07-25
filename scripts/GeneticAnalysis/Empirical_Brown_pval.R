@@ -24,9 +24,9 @@ tis <- infil_pheno$tissue[i]
 cell <- infil_pheno$cell[i]
 df.pheno <- df.pheno[,paste0('pheno',i,'.',1:3)]
 df.pheno[df.pheno==-9] <- NA
-cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum')
-ind <- which(cellTypes %in% cell)
-cell2 <- c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum')[ind]
+# cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum')
+# ind <- which(cellTypes %in% cell)
+# cell2 <- c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum')[ind]
 
 # cibersort rel
 print('CIBERSORT (relative)')
