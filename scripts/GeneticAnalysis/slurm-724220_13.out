@@ -1,0 +1,18 @@
+PLINK v1.90b4 64-bit (20 Mar 2017)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2017 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno.log.
+Options in effect:
+  --all-pheno
+  --allow-no-sex
+  --assoc
+  --bfile /athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name
+  --chr 13
+  --maf 0.05
+  --out /athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno
+  --pheno /athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt
+
+128725 MB RAM detected; reserving 64362 MB for main workspace.
+Allocated 202 MB successfully, after larger attempt(s) failed.
+
+Error: Out of memory.  The --memory flag may be helpful.
+Failed allocation size: 360536000
