@@ -87,7 +87,8 @@ GWAS_preprocess.R
 
 #### Run GWAS
 GWAS_local.sh \
-(or GWAS.sh in parallel cloud computing environment)
+(or GWAS.sh in parallel cloud computing environment, followed up by Merge_Chr_GWAS.R)
+
 
 #### Combine related p-values using Empirical Brown's method, and identify significant results
 Empirical_Brown_pval_wrapper.sh \

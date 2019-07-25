@@ -94,6 +94,6 @@ for (i in 1:nrow(tissue_x_celltype)) {
 fam <- fam[,-(3:6)]
 colnames(fam)[1:2] <- c('FID','IID')
 fam[is.na(fam)] <- -9
-dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis')
+dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis',showWarnings = F)
 fwrite(fam,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt',sep = '\t',col.names = T,row.names = F,quote=F)
 
