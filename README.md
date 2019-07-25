@@ -87,22 +87,24 @@ GWAS_preprocess.R
 
 #### Run GWAS
 GWAS_local.sh \
-(or GWAS.sh in parallel cloud computing environment, followed up by Merge_Chr_GWAS.R)
-
+(or GWAS.sh in parallel cloud computing environment, followed up by running Merge_Chr_GWAS_wrapper.sh)
 
 #### Combine related p-values using Empirical Brown's method, and identify significant results
 Empirical_Brown_pval_wrapper.sh \
 (runs Empirical_Brown_pval.R in parallel cloud computing environment)
 
 #### Significant results analysis
+significant_results.R
 
+#### QQ plots
+qqplots.R
 
-#### QQ plots and manhattan plots
-< insert script here >
+#### Genotype - phenotype plots
+extract_SNP.sh (extract SNP) \
+genotypebyphenotype_plots.R (create plots)
 
-#### Gene expression plots
-< insert script here >
-
+#### Gene expression - phenotype plots
+expressionbyphenotype_plots.R
 
 
 ## Downstream analysis of genetic results
