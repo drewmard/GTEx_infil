@@ -107,6 +107,7 @@ genotypebyphenotype_plots.R (create plots)
 expressionbyphenotype_plots.R
 
 
+
 ## Downstream analysis of genetic results
 Directory: ./scripts/GeneticAnalysis_2/
 

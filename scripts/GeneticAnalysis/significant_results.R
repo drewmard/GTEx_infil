@@ -41,9 +41,12 @@ fwrite(df.sub.save,f,col.names = T,row.names = F,sep='\t',quote = F)
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig2.txt')
 fwrite(df.sub2.save,f,col.names = T,row.names = F,sep='\t',quote = F)
 
-# f <- '/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig.txt'
-# df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
-# df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:5,]
-# unique(paste(df.sub.save$tissue,df.sub.save$cell,sep = '-'))
-# df.min <- aggregate(df.sub.save$Pval_Brown,by=list(tissue=df.sub.save$tissue,cell=df.sub.save$cell),min)
-# merge(df.min,df.sub.save[,c('tissue','cell','SNP','Pval_Brown')],by.x=c('tissue','cell','x'),by.y=c('tissue','cell','Pval_Brown'))
+#########
+# analyze in R
+library(data.table)
+f <- '/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig2.txt'
+df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
+df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:5,]
+unique(paste(df.sub.save$tissue,df.sub.save$cell,sep = '-'))
+df.min <- aggregate(df.sub.save$Pval_Brown,by=list(tissue=df.sub.save$tissue,cell=df.sub.save$cell),min)
+merge(df.min,df.sub.save[,c('tissue','cell','SNP','Pval_Brown')],by.x=c('tissue','cell','x'),by.y=c('tissue','cell','Pval_Brown'))
