@@ -116,7 +116,7 @@ Directory: ./scripts/GeneticAnalysis_2/
 < insert script here >
 
 #### eQTL/ieQTL overlap (Method 2):
-< insert script here >
+eQTL_enrichment_method2.R
 
 #### GeneMania:
 < insert script here >

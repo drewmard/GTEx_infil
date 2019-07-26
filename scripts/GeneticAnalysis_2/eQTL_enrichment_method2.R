@@ -1,86 +1,132 @@
 library(data.table)
 library(stringr)
 
-# LD european population patterns - TAKES A WHILE TO READ IN.
-LD <- fread('/athena/elementolab/scratch/anm2868/GTEx/LD_EUR.tsv',data.table=F,stringsAsFactor=F,sep='\t',header=F)
-# frq <- fread('/athena/elementolab/scratch/anm2868/GTEx/plink.frq',data.table = F,stringsAsFactors = F)
+# Arguments
+args = commandArgs(trailingOnly=TRUE)
+z <- as.numeric(args[1]) # what pheno to start at?
 
-# need to switch directory
+# init:
+nperm=100
+tis.old <- ''
+num.to.run <- 221
+param.df <- matrix(NA,num.to.run,7)
+
+# LD european population patterns - TAKES A WHILE TO READ IN.
+print('Reading European LD mapping...')
+LD <- fread('/athena/elementolab/scratch/anm2868/GTEx/LD_EUR.tsv',data.table=F,stringsAsFactor=F,sep='\t',header=F)
+
+print('Reading in allele frequencies...')
+frq <- fread('/athena/elementolab/scratch/anm2868/GTEx/plink.frq',data.table = F,stringsAsFactors = F)
+
+# gtex-rsid mapping file
+print('Reading in number of SNPs in LD...')
 gtex_to_rsid <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_rsid_matched.txt',data.table=F,stringsAsFactors=F,header=F)
 
-# number of snps in LD
+# number of snps in LD (takes a while)
+print('Counting number of SNPs in LD...')
 LD$LD_SNP_ct <- str_count(LD[,2],';')+1
-# LD.old <- LD
 
-# rs to gtex names
-# head(LD,1)
-# head(gtex_to_rsid,1)
+# MERGE: rs to gtex names (takes moderate time)
+print('Linking rs to gtex SNP ids...')
 LD <- merge(LD,gtex_to_rsid,by.x='V1',by.y='V2')
 
 # add in freq 
 colnames(LD) <- c('rsid','LD_snps','LD_SNP_ct','gtex_snpid')
-LD <- merge(LD,frq,by.x='gtex_snpid',by.y='SNP') # switch by.x
+print('Merge allele frequencies with LD data...')
+LD2 <- merge(LD,frq[,c('SNP','MAF')],by.x='gtex_snpid',by.y='SNP')
 
-# eQTL <- fread(paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_Analysis_v7_eQTL/',TISSUE.eqtl,'.v7.signif_variant_gene_pairs.txt'),data.table = F)
-
-# match rs id to gtex
-# sig_eQTL <- fread('/athena/elementolab/scratch/anm2868/GTEx/Brown_P_val_2/Subset_Pval.eQTL.1.csv',data.table=F,stringsAsFactors = F)
-sig_eQTL <- fread('/athena/elementolab/scratch/anm2868/GTEx/Brown_P_val_2/020619_Subset_Pval.eQTL.1.csv',data.table=F,stringsAsFactors = F)
-df.to.run = unique(sig_eQTL[,c('tissue','cell','pheno_num')]); rownames(df.to.run) <- 1:nrow(df.to.run)
-nperm = 10
-pval.vec <- rep(NA,nrow(df.to.run))
-for (i in 1:nrow(df.to.run)) {
-  print(i)
+# cycle through phenotypes
+for (i in z:(z+num.to.run-1)) {
+  
   ind_lst <- list()
-  tis <- df.to.run$tissue[i]; cel <- df.to.run$cell[i]; phenoNum <- df.to.run$pheno_num[i];
-  df.tmp = subset(sig_eQTL,tissue==tis & cell==cel & pheno_num==phenoNum)
-  df.tmp = merge(df.tmp,LD,by.x='rs',by.y='gtex_snpid')
-  df.tmp <- df.tmp[,-which(colnames(df.tmp)=='LD_snps')]
-  for (j in 1:nrow(df.tmp)) {
-    ind <- which(LD$LD_SNP_ct == (df.tmp$LD_SNP_ct[j]) &
-                     LD$MAF > (df.tmp$MAF[j]-0.01) &
-                     LD$MAF < (df.tmp$MAF[j]+0.01))
-    if (length(ind) <= 1) {
-      ind <- which(LD$LD_SNP_ct > (df.tmp$LD_SNP_ct[j]-5) &
-                    LD$LD_SNP_ct < (df.tmp$LD_SNP_ct[j]+5) &
-                    LD$MAF > (df.tmp$MAF[j]-0.01) &
-                    LD$MAF < (df.tmp$MAF[j]+0.01))
+  
+  # What tissue/cell type?
+  infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
+  tis <- infil_pheno$tissue[i]
+  cell <- infil_pheno$cell[i]
+  
+  if (tis != tis.old) {
+    print('Read in cis-eqtl data for that tissue...')
+    tis.nospace <- str_replace_all(tis,' ','_')
+    TISSUE.eqtl <- paste(strsplit((paste(strsplit(tis.nospace,'_-_|\\(|\\)')[[1]],collapse = '_')),'__')[[1]],collapse='_')
+    eQTL <- fread(paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_Analysis_v7_eQTL/',TISSUE.eqtl,'.v7.signif_variant_gene_pairs.txt'),data.table = F,stringsAsFactors = F)
+  }
+  
+  print(paste0('Reading suggested significant GWAS results for ',i,'...'))
+  f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.sig.txt')
+  if (file.exists(f)) {
+    df <- fread(f,data.table = F,stringsAsFactors = F)
+    df.sub <- subset(df, Pval_Brown < 1e-5)
+    
+    # merge GWAS to LD results
+    df.mg <- merge(df.sub,LD2,by.x='SNP',by.y='gtex_snpid')
+    df.mg <- df.mg[,-which(colnames(df.mg)=='LD_snps')] # remove lengthy column
+    
+    # match snps based on LD and MAF
+    ld_diff <- 0
+    ind <- c()
+    for (j in 1:nrow(df.mg)) {
+      while (length(ind) <= 1) {
+        ind <- which(LD2$LD_SNP_ct >= (df.mg$LD_SNP_ct[j] - ld_diff) &
+                       LD2$LD_SNP_ct <= (df.mg$LD_SNP_ct[j] + ld_diff) &
+                       LD2$MAF > (df.mg$MAF[j]-0.01) &
+                       LD2$MAF < (df.mg$MAF[j]+0.01))
+        ld_diff <- ld_diff + 1
+      }
+      ind <- ind[ind!=match(df.mg$SNP[j],LD2$gtex_snpid)] # remove identified gwas snp
+      ind_lst[[j]] <- sample(ind,nperm,replace=TRUE)
     }
-    ind <- ind[ind!=match(df.tmp$rs[j],LD$gtex_snpid)]
-    ind_lst[[j]] <- sample(ind,nperm,replace=TRUE)
+    
+    # perform permutation
+    SNP_sampling = do.call(cbind,ind_lst)
+    p.vec <- rep(NA,nperm)
+    eQTL_obs_ct <- sum(df.sub$SNP %in% eQTL$variant_id)
+    for (j in 1:nperm) {
+      perm_snp = LD2$gtex_snpid[SNP_sampling[j,]]
+      n = sum(perm_snp %in% eQTL$variant_id)
+      N <- nrow(df.mg)
+      p.vec[j] = n/N
+    }
+    
+    # binomial test & save
+    p <- binom.test(eQTL_obs_ct,N,mean(p.vec),alternative = "greater")$p.value
+    
+    # save
+    param.df[(i %% num.to.run),] <- c(tis,cell,i,eQTL_obs_ct,N,mean(p.vec),p)
+    tis.old <- tis
+  } else {
+    print(paste0('No significant results: ', i))
   }
-  SNP_sampling = do.call(cbind,ind_lst)
-  TISSUE.eqtl <- paste(strsplit((paste(strsplit(df.to.run$tissue[i],'_-_|\\(|\\)')[[1]],collapse = '_')),'__')[[1]],collapse='_')
-  eQTL <- fread(paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_Analysis_v7_eQTL/',TISSUE.eqtl,'.v7.signif_variant_gene_pairs.txt'),data.table = F)
-  # pval.perm.vec <- rep(NA,nperm)
-  p.vec <- rep(NA,nperm)
-  for (j in 1:nperm) {
-    perm_snp = LD$gtex_snpid[SNP_sampling[j,]]
-    n = sum(perm_snp %in% eQTL$variant_id)
-    N <- nrow(df.tmp)
-    p.vec[j] = n/N
-    # pval.perm.vec[j] <- binom.test(sum(df.tmp$eQTL),N,p.vec[j])$p.value
-  }
-  pval.vec[i] <- binom.test(sum(df.tmp$eQTL),N,mean(p.vec))$p.value
-  # pval
-  # summary(pval.vec)
 }
 
+colnames(param.df) <- c('tissue','cell','i','eQTL_obs_ct','N','mean.p','p')
 
-df.to.run$pval <- pval.vec
-fwrite(df.to.run,'/athena/elementolab/scratch/anm2868/GTEx/Brown_P_val_2/020819_eQTL_enrichment.matched.csv',quote=F,row.names = F,col.names = T,sep='\t')
+param.df2 <- data.frame(param.df)
+param.df2$p <- (as.numeric(as.character(param.df2$p)))
+param.df2$eQTL_obs_ct <- (as.numeric(as.character(param.df2$eQTL_obs_ct)))
+param.df2$N <- (as.numeric(as.character(param.df2$N)))
+param.df2$mean.p <- (as.numeric(as.character(param.df2$mean.p)))
 
+# two sided test
+param.df2$p2 <- NA
+for (i in 1:nrow(param.df2)) {
+  if (!is.na(param.df2$p[i])) {
+    p <- binom.test(param.df2$eQTL_obs_ct[i],param.df2$N[i],param.df2$mean.p[i],alternative = "two.sided")$p.value
+    param.df2$p2[i] <- p
+  }
+}
 
+dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2')
+f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.txt')
+fwrite(param.df2,f,quote=F,row.names = F,col.names = T,sep='\t',na='NA')
 
-# eQTL_enrichment = fread('/athena/elementolab/scratch/anm2868/GTEx/Brown_P_val_2/eQTL_enrichment.1.csv',data.table = F,stringsAsFactors = F)
-# head(eQTL_enrichment)
-# 
-# df.mg <- merge(df.to.run,eQTL_enrichment,by.y=c('Tissue','PhenoNum'),by.x=c('tissue','pheno_num'))
-# df.mg$p.value[is.na(df.mg$pval)] <- NA
-# wilcox.test(-log10(subset(df.mg,eQTL.enriched==0)$p.value),-log10(subset(df.mg,eQTL.enriched==1)$p.value))
-# t.test(-log10(subset(df.mg,eQTL.enriched==0)$p.value),-log10(subset(df.mg,eQTL.enriched==1)$p.value))
-# 
-# wilcox.test(-log10(subset(df.mg,eQTL.enriched==0)$pval),-log10(subset(df.mg,eQTL.enriched==1)$pval))
-# t.test(-log10(subset(df.mg,eQTL.enriched==0)$pval),-log10(subset(df.mg,eQTL.enriched==1)$pval))
-# 
-# fwrite(df.mg,'/athena/elementolab/scratch/anm2868/GTEx/Brown_P_val_2/012619_eQTL_enrichment.1.csv',quote=F,row.names = F,col.names = T,sep='\t')
+param.df2[order(as.numeric(as.character(param.df2$p))),][1:50,]
+param.df2[order(as.numeric(as.character(param.df2$p2))),][1:50,]
+
+# joint across all phenotypes
+binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')
+
+# eqtl enriched 2 sided pvalues better than eqtl depleted
+param.df2$eQTL.enriched <- as.numeric(param.df2$eQTL_obs_ct/param.df2$N > param.df2$mean.p)
+wilcox.test(-log10(subset(param.df2,eQTL.enriched==1)$p2),-log10(subset(param.df2,eQTL.enriched==0)$p2),alternative = 'greater')
+
