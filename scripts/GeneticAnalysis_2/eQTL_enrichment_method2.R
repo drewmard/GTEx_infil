@@ -125,6 +125,12 @@ param.df2[order(as.numeric(as.character(param.df2$p2))),][1:50,]
 
 # joint across all phenotypes
 binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')
+binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')$p.value
+
+joint_ts_test <- function(x) {binom.test(sum(x$eQTL_obs_ct,na.rm = T),sum(x$N,na.rm = T),sum(x$N*x$mean.p,na.rm = T)/sum(x$N,na.rm=T),'greater')$p.value}
+do.call(rbind,lapply(split(param.df2,with(param.df2,tissue),drop=T),joint_ts_test))
+
+aggregate(head(param.df2,10),by=list(head(param.df2,10)$tissue),function(x) {print(x)})
 
 # eqtl enriched 2 sided pvalues better than eqtl depleted
 param.df2$eQTL.enriched <- as.numeric(param.df2$eQTL_obs_ct/param.df2$N > param.df2$mean.p)

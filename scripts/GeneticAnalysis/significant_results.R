@@ -6,7 +6,7 @@ library(data.table)
 infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
 save_every_iteration <- TRUE
 
-for (i in 1:211) {
+for (i in 1:221) {
   print(i)
   f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.sig.txt')
   if (file.exists(f)) {
