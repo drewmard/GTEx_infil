@@ -3,7 +3,7 @@
 #SBATCH -n 1
 #SBATCH --tasks-per-node=4
 #SBATCH --mem=4G
-#SBATCH --array=16-21:1
+#SBATCH --array=16-22:1
 
 # Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
 # Script to run GWAS for identifying iQTLs
@@ -12,7 +12,8 @@ source activate HLMM
 
 i=$SLURM_ARRAY_TASK_ID
 geno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name
-pheno=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt
+# pheno=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt
+pheno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name.tmp.txt
 outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS
 
 mkdir -p $outdir
