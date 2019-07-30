@@ -46,7 +46,34 @@ fwrite(df.sub2.save,f,col.names = T,row.names = F,sep='\t',quote = F)
 library(data.table)
 f <- '/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig2.txt'
 df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
-df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:5,]
-unique(paste(df.sub.save$tissue,df.sub.save$cell,sep = '-'))
+# df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:5,]
+x <- df.sub.save
+paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
+x <- subset(df.sub.save,Pval_Brown < 5e-8)
+paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
+x <- subset(df.sub.save,Pval_Brown_Abs < 5e-8)
+paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
+x <- subset(df.sub.save,p_lrt_cibersort_rel < 5e-8)
+paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
+x <- subset(df.sub.save,p_lrt_cibersort_abs < 5e-8)
+paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
+x <- subset(df.sub.save,p_lrt_xCell < 5e-8)
+paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
+
+df.sub.save$Pval_Brown_sig <- as.numeric(df.sub.save$Pval_Brown < 5e-8)
+df.sub.save$Pval_Brown_Abs_sig <- as.numeric(df.sub.save$Pval_Brown_Abs < 5e-8)
+df.sub.save$p_lrt_cibersort_rel_sig <- as.numeric(df.sub.save$p_lrt_cibersort_rel < 5e-8)
+df.sub.save$p_lrt_cibersort_abs_sig <- as.numeric(df.sub.save$p_lrt_cibersort_abs < 5e-8)
+df.sub.save$p_lrt_cibersort_xCell_sig <- as.numeric(df.sub.save$p_lrt_xCell < 5e-8)
+x <- as.data.frame(table(df.sub.save[,15:19]))
+x[x$Freq>0,]
+
+x <- subset(df.sub.save,Pval_Brown < 5e-8)
+sort(table(x$SNP),decreasing = T)[1:5]
+subset(df.sub.save,SNP=='2_34523233_T_C_b37')
+
+df.sub.save[order(df.sub.save$Pval_Brown),][1:10,]
+
+
 df.min <- aggregate(df.sub.save$Pval_Brown,by=list(tissue=df.sub.save$tissue,cell=df.sub.save$cell),min)
 merge(df.min,df.sub.save[,c('tissue','cell','SNP','Pval_Brown')],by.x=c('tissue','cell','x'),by.y=c('tissue','cell','Pval_Brown'))

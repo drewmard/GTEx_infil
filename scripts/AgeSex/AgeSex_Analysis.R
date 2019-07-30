@@ -16,10 +16,23 @@ infiltration_phenotypes <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_
 # load covariate data
 df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
 
+# cell types data
+cellTypes.df <- data.frame( 
+  ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
+          'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
+          'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
+          'Bcellsum','NK cells','DendriticSum','Mast cells','TcellSum',
+          'Th_Sum','Tregs','Tgd cells',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  stringsAsFactors = F)
+
+
 # Run MLR for age & sex
 df.coef <- as.data.frame(matrix(NA,nrow(infiltration_phenotypes),14))
 for (j in 1:3) {
-  for (i in 1:nrow(df.results)) {
+  for (i in 1:nrow(infiltration_phenotypes)) {
     # Subset
     tis <- infiltration_phenotypes[i,1]
     cell <- infiltration_phenotypes[i,2]
@@ -95,11 +108,8 @@ for (j in 1:3) {
     if (j == 3) {
       df.sub <- subset(df.xcell,SMTSD==tis)
 
-      cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum','T cells regulatory (Tregs)')
-      ind <- which(cellTypes %in% cell)
-      # cell <- c('CD8+ T-cells','CD4+ T-cells','Neutrophils','Macrophages','Tregs')[ind]
-      cell <- c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum')[ind]
-      
+      cell.xcell <- cellTypes.df$xcell[cellTypes.df$ciber==cell]
+
       df.attr.sub <- subset(df.attr,SMTSD==tis)
       df.attr.sub <- df.attr.sub[,c('SAMPID','SMATSSCR','SMCENTER')]
       paste.s <- function(x) {return(paste(x[1:2],collapse='-'))}
@@ -114,16 +124,16 @@ for (j in 1:3) {
       
       # run multiple linear regression
       if (tis %in% c('Ovary','Uterus','Vagina','Testis','Prostate')) {
-        sum.tab <- summary(lm(df.sub[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.numeric(SMATSSCR) + as.factor(SMCENTER),data=df.sub))$coef
+        sum.tab <- summary(lm(df.sub[,cell.xcell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.numeric(SMATSSCR) + as.factor(SMCENTER),data=df.sub))$coef
         df.coef[i,11:12] <- as.numeric(sum.tab["as.numeric(as.factor(AGE))",c(1,4)])
         df.coef[i,1:2] <- c(tis,cell)
       } else if (tis %in% c('Whole Blood')) {
-        sum.tab <- summary(lm(df.sub[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.factor(SMCENTER),data=df.sub))$coef
+        sum.tab <- summary(lm(df.sub[,cell.xcell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.factor(SMCENTER),data=df.sub))$coef
         df.coef[i,11:12] <- as.numeric(sum.tab["as.numeric(as.factor(AGE))",c(1,4)])
         df.coef[i,13:14] <- as.numeric(sum.tab["as.factor(SEX)2",c(1,4)])
         df.coef[i,1:2] <- c(tis,cell)
       } else {
-        sum.tab <- summary(lm(df.sub[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.numeric(SMATSSCR) + as.factor(SMCENTER),data=df.sub))$coef
+        sum.tab <- summary(lm(df.sub[,cell.xcell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.numeric(SMATSSCR) + as.factor(SMCENTER),data=df.sub))$coef
         df.coef[i,11:12] <- as.numeric(sum.tab["as.numeric(as.factor(AGE))",c(1,4)])
         df.coef[i,13:14] <- as.numeric(sum.tab["as.factor(SEX)2",c(1,4)])
         df.coef[i,1:2] <- c(tis,cell)
@@ -158,11 +168,11 @@ df.coef$age.coef_direc <- NA; df.coef$sex.coef_direc <- NA
 for (i in 1:nrow(df.coef)) {
   
   tis <- infiltration_phenotypes$tissue[i]
-
+  cell <- infiltration_phenotypes$cell[i]
+  
   # Cibersort rel
   df.sub <- subset(df.rel,SMTSD==tis)
   pheno <- matrix(NA,3,nrow(df.sub))
-  cell <- df.results$cell[i]
   pheno[1,] <- df.sub[,cell]
   
   # Cibersort abs
@@ -171,9 +181,8 @@ for (i in 1:nrow(df.coef)) {
   
   # xCell
   df.sub <- subset(df.xcell,SMTSD==tis)
-  ind <- which(cellTypes %in% cell)
-  cell <- c('CD8+ T-cells','CD4+ T-cells','Neutrophils','Macrophages','Tregs')[ind]
-  pheno[3,] <- df.sub[,cell]
+  cell.xcell <- cellTypes.df$xcell[cellTypes.df$ciber==cell]
+  pheno[3,] <- df.sub[,cell.xcell]
   
   cov.matrix <- EmpiricalBrownsMethod:::calculateCovariances(pheno)
   
@@ -199,13 +208,17 @@ for (i in 1:nrow(df.coef)) {
   
 }
 
+#################################################################
 # Use FDR to correct
 
 df.coef$p_age_brown.fdr <- p.adjust(df.coef$p_age_brown,method='fdr')
 df.coef$p_sex_brown.fdr <- p.adjust(df.coef$p_sex_brown,method='fdr')
-df.coef$pheno[df.coef$pheno=='CD4Sum'] <- 'CD4+ T cells'
-df.coef$pheno[df.coef$pheno=='CD8Sum'] <- 'CD8+ T cells'
-df.coef$pheno[df.coef$pheno=='MacrophageSum'] <- 'Macrophages'
+# df.coef$pheno[df.coef$pheno=='CD4Sum'] <- 'CD4+ T cells'
+# df.coef$pheno[df.coef$pheno=='CD8Sum'] <- 'CD8+ T cells'
+# df.coef$pheno[df.coef$pheno=='MacrophageSum'] <- 'Macrophages'
+
+df.coef[order(df.coef$p_age_brown.fdr),][1:5,]
+df.coef[order(df.coef$p_sex_brown.fdr),][1:20,]
 
 # Save significant associations: 
 

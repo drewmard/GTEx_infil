@@ -3,26 +3,52 @@
 # script to draw genotype by phenotype plots
 
 
+
 library(data.table)
 library(stringr)
 library(ggplot2)
-# cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum')
-df.to.run <- fread('/Volumes/SeagateBackupPlusDrive/Elemento/df.torun.txt',data.table = F,stringsAsFactors = F)
 
-# df.pheno <- fread('/Volumes/SeagateBackupPlusDrive/Elemento/CIBERSORT_out/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-tis.nospace <- 'Skin_-_Sun_Exposed_(Lower_leg)'
-GENE <- 'STAM2'
-CELL <- 'CD4_Tcells'
-tis <- str_replace_all(tis.nospace,'_',' ')
+# df.geno <- fread('/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct',data.table = F,stringsAsFactors = F)
 
-f <- paste0('/Volumes/SeagateBackupPlusDrive/Elemento/GTEx_geno/subset_plink/gtex_all.filter.name.',tis.nospace,'.fam')
-df.pheno <- fread(f,data.table = F,stringsAsFactors = F)
-# df.geno <- fread(paste0('/Volumes/SeagateBackupPlusDrive/Elemento/GTEx_GeneExpr_SplitByTissue/GTEx_v7_',tis.nospace,'_genexpr.txt'),data.table=F,stringsAsFactors = F)
-df.geno <- fread('/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct',data.table = F,stringsAsFactors = F)
-df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
+tis <- 'Whole Blood'
 
-df.infil <- fread('/Volumes/SeagateBackupPlusDrive/Elemento/CIBERSORT_out/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-df.infil <- subset(df.infil,SMTSD==tis)
+# tis <- 'Colon - Sigmoid'
+# GENE <- 'C22orf43'
+# CELL <- 'Lymph_Sum'
+
+# tis <- 'Heart - Atrial Appendage'
+GENE <- 'UST'
+CELL <- 'Monocytes'
+
+tis <- 'Thyroid'
+GENE <- 'COMMD3' # 'DNAJC1'
+CELL <- 'T cells follicular helper'
+
+# df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
+df.infil <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+
+# infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
+# df.pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt',data.table = F,stringsAsFactors = F)
+
+EXPR.df <- df.geno[which(df.geno$Description==GENE),-c(1:2)]
+EXPR.df <- as.data.frame(t(EXPR.df))
+colnames(EXPR.df) <- 'GE'
+EXPR.df$SAMP <- rownames(EXPR.df); rownames(EXPR.df) <- NULL
+df.infil.sub <- subset(df.infil,SMTSD == tis)
+dataf <- merge(df.infil.sub,EXPR.df,by.x='Input Sample',by.y='SAMP')
+
+cor.test(dataf[,CELL],dataf$GE,use='p')
+
+
+
+
+
+
+
+# phenoNum <- rownames(subset(infil_pheno,tissue==tis & cell==CELL))
+# dataf <- df.pheno[,c("IID",paste0('pheno',phenoNum,'.2'))]
+
+
 
 df.tmp <- data.frame(EXPR=as.numeric(df.geno[which(df.geno$GENE==GENE),-1]),CELL=df.infil[,CELL],ID=df.infil$ID)
 cor.test(df.tmp[,1],df.tmp[,2])

@@ -2,14 +2,16 @@ library(data.table)
 library(stringr)
 
 # Arguments
-args = commandArgs(trailingOnly=TRUE)
-z <- as.numeric(args[1]) # what pheno to start at?
+# args = commandArgs(trailingOnly=TRUE)
+# z <- as.numeric(args[1]) # what pheno to start at?
+z <- 1
 
 # init:
 nperm=100
 tis.old <- ''
 num.to.run <- 221
 param.df <- matrix(NA,num.to.run,7)
+abs <- FALSE
 
 # LD european population patterns - TAKES A WHILE TO READ IN.
 print('Reading European LD mapping...')
@@ -57,6 +59,9 @@ for (i in z:(z+num.to.run-1)) {
   if (file.exists(f)) {
     df <- fread(f,data.table = F,stringsAsFactors = F)
     df.sub <- subset(df, Pval_Brown < 1e-5)
+    if (abs) {
+      df.sub <- subset(df, Pval_Brown_Abs < 1e-5)
+    }
     
     # merge GWAS to LD results
     df.mg <- merge(df.sub,LD2,by.x='SNP',by.y='gtex_snpid')
@@ -118,19 +123,19 @@ for (i in 1:nrow(param.df2)) {
 
 dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2')
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.txt')
+if (abs) {
+  f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.Abs.txt')
+}
 fwrite(param.df2,f,quote=F,row.names = F,col.names = T,sep='\t',na='NA')
 
 param.df2[order(as.numeric(as.character(param.df2$p))),][1:50,]
 param.df2[order(as.numeric(as.character(param.df2$p2))),][1:50,]
 
 # joint across all phenotypes
-binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')
 binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')$p.value
-
+binom.test(round(mean(param.df2$eQTL_obs_ct,na.rm = T)),round(mean(param.df2$N,na.rm = T)),mean(param.df2$mean.p,na.rm = T),'greater')$p.value
 joint_ts_test <- function(x) {binom.test(sum(x$eQTL_obs_ct,na.rm = T),sum(x$N,na.rm = T),sum(x$N*x$mean.p,na.rm = T)/sum(x$N,na.rm=T),'greater')$p.value}
 do.call(rbind,lapply(split(param.df2,with(param.df2,tissue),drop=T),joint_ts_test))
-
-aggregate(head(param.df2,10),by=list(head(param.df2,10)$tissue),function(x) {print(x)})
 
 # eqtl enriched 2 sided pvalues better than eqtl depleted
 param.df2$eQTL.enriched <- as.numeric(param.df2$eQTL_obs_ct/param.df2$N > param.df2$mean.p)
