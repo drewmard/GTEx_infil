@@ -66,6 +66,7 @@ df.sub.save$p_lrt_cibersort_rel_sig <- as.numeric(df.sub.save$p_lrt_cibersort_re
 df.sub.save$p_lrt_cibersort_abs_sig <- as.numeric(df.sub.save$p_lrt_cibersort_abs < 5e-8)
 df.sub.save$p_lrt_cibersort_xCell_sig <- as.numeric(df.sub.save$p_lrt_xCell < 5e-8)
 x <- as.data.frame(table(df.sub.save[,15:19]))
+x <- as.data.frame(table(df.sub.save[,c(15,16,18,19)]))
 x[x$Freq>0,]
 
 x <- subset(df.sub.save,Pval_Brown < 5e-8)
