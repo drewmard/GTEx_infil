@@ -31,11 +31,6 @@ df.abs$CD4.CD8[i] <- rntransform(df.abs$CD4.CD8[i])
 i <- which(df.xcell$SMTSD=='Whole Blood')
 df.xcell$CD4.CD8[i] <- rntransform(df.xcell$CD4.CD8[i])
 
-# x <- subset(df.rel,SMTSD=='Whole Blood')
-# head(x[,c('CD4_Tcells','T cells CD8','CD4.CD8')],20)
-# head(x[order(x$CD4.CD8,decreasing = T),c('CD4_Tcells','T cells CD8','CD4.CD8')],50)
-
-
 # load covariate data
 df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
 
