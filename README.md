@@ -46,7 +46,7 @@ infiltration_boxplots.R
 #### t-SNE of immune content (Supp Fig 10):
 < insert script here >
 
-#### Filtering of infiltration phenotypes (212 to 73):
+#### Filtering of infiltration phenotypes (212):
 filter.R
 
 #### Infiltration signatures in bulk gene expression values

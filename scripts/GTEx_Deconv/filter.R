@@ -20,11 +20,11 @@ tis.uniq <- data.frame(table(df.rel$SMTSD))
 df.results <- data.frame(tissue=c(),cell=c())
 cellTypes.df <- data.frame( 
   ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
-                 'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
+                 'Bcellsum','NK_Sum','DendriticSum','MastSum','Myeloid_Sum',
                  'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
                  'Monocytes','Eosinophils','Lymph_Sum'),
   xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
-                   'Bcellsum','NK cells','DendriticSum','Mast cells','TcellSum',
+                   'Bcellsum','NK cells','DendriticSum','Mast cells','Myeloid_Sum',
                    'Th_Sum','Tregs','Tgd cells',
                    'Monocytes','Eosinophils','Lymph_Sum'),
   stringsAsFactors = F)
@@ -65,4 +65,7 @@ for (i in 1:nrow(tis.uniq)) {
 }
 df.results$tissue <- as.character(df.results$tissue)
 df.results$cell <- as.character(df.results$cell)
+df.results <- rbind(df.results,data.frame(tissue=unique(subset(df.results,cell %in% c('CD4_Tcells','T cells CD8'))$tissue),cell='CD4.CD8'))
+df.results <- rbind(df.results,data.frame(tissue=unique(subset(df.results,cell %in% c('Myeloid_Sum','Lymph_Sum'))$tissue),cell='Myeloid.Lymph'))
 fwrite(df.results,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',sep='\t',quote=F,row.names = F,col.names = T)
+

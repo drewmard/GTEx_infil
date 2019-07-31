@@ -11,54 +11,21 @@ df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infi
 df.xcell <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/XCell.all_tissues.txt',data.table = F,stringsAsFactors = F)
 
 # load infiltration phenotypes
-# infiltration_phenotypes <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
-
-infiltration_phenotypes <- data.frame(tissue='Whole Blood',cell=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
-                                                                    'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
-                                                                    'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
-                                                                    'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8'),stringsAsFactors = F)
-df.rel$CD4.CD8 <- (df.rel[,'CD4_Tcells']+1e-10)/(df.rel[,'T cells CD8']+1e-10)
-df.abs$CD4.CD8 <- (df.abs[,'CD4_Tcells']+1e-10)/(df.abs[,'T cells CD8']+1e-10)
-df.xcell$CD4.CD8 <- (df.xcell[,'CD4Sum']+1e-10)/(df.xcell[,'CD8Sum']+1e-10)
-df.rel$CD4.CD8[which(df.rel[,'CD4_Tcells']==0 | df.rel[,'T cells CD8']==0)] <- NA
-df.abs$CD4.CD8[which(df.rel[,'CD4_Tcells']==0 | df.abs[,'T cells CD8']==0)] <- NA
-df.xcell$CD4.CD8[which(df.xcell[,'CD4Sum']==0 | df.xcell[,'CD8Sum']==0)] <- NA
-source('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/bin/rntransform.R')
-i <- which(df.rel$SMTSD=='Whole Blood')
-df.rel$CD4.CD8[i] <- rntransform(df.rel$CD4.CD8[i])
-i <- which(df.abs$SMTSD=='Whole Blood')
-df.abs$CD4.CD8[i] <- rntransform(df.abs$CD4.CD8[i])
-i <- which(df.xcell$SMTSD=='Whole Blood')
-df.xcell$CD4.CD8[i] <- rntransform(df.xcell$CD4.CD8[i])
-
-# x <- subset(df.rel,SMTSD=='Whole Blood')
-# head(x[,c('CD4_Tcells','T cells CD8','CD4.CD8')],20)
-# head(x[order(x$CD4.CD8,decreasing = T),c('CD4_Tcells','T cells CD8','CD4.CD8')],50)
-
+infiltration_phenotypes <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
 
 # load covariate data
 df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
 
 # cell types data
-# cellTypes.df <- data.frame( 
-#   ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
-#           'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
-#           'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
-#           'Monocytes','Eosinophils','Lymph_Sum'),
-#   xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
-#           'Bcellsum','NK cells','DendriticSum','Mast cells','TcellSum',
-#           'Th_Sum','Tregs','Tgd cells',
-#           'Monocytes','Eosinophils','Lymph_Sum'),
-#   stringsAsFactors = F)
 cellTypes.df <- data.frame( 
   ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
-          'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
+          'Bcellsum','NK_Sum','DendriticSum','MastSum','Myeloid_Sum',
           'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
-          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8'),
+          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
   xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
-          'Bcellsum','NK cells','DendriticSum','Mast cells','TcellSum',
+          'Bcellsum','NK cells','DendriticSum','Mast cells','Myeloid_Sum',
           'Th_Sum','Tregs','Tgd cells',
-          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8'),
+          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
   stringsAsFactors = F)
 
 
@@ -215,7 +182,7 @@ for (i in 1:nrow(df.coef)) {
   cell.xcell <- cellTypes.df$xcell[cellTypes.df$ciber==cell]
   pheno[3,] <- df.sub[,cell.xcell]
   
-  if (cell=='CD4.CD8') {
+  if (cell %in% c('CD4.CD8')) {
     z <- which(apply(pheno,2,function(x) sum(is.na(x))==0))
     pheno <- pheno[,z]
   }
@@ -252,6 +219,8 @@ df.coef$p_sex_brown.fdr <- p.adjust(df.coef$p_sex_brown,method='fdr')
 # df.coef$pheno[df.coef$pheno=='CD4Sum'] <- 'CD4+ T cells'
 # df.coef$pheno[df.coef$pheno=='CD8Sum'] <- 'CD8+ T cells'
 # df.coef$pheno[df.coef$pheno=='MacrophageSum'] <- 'Macrophages'
+
+fwrite(df.coef,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.txt',sep = '\t',quote=F,row.names = F,col.names = T,na='NA')
 
 df.coef[order(df.coef$p_age_brown.fdr),][1:5,]
 df.coef[order(df.coef$p_sex_brown.fdr),][1:5,]

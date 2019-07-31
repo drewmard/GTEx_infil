@@ -73,7 +73,9 @@ x <- subset(df.sub.save,Pval_Brown < 5e-8)
 sort(table(x$SNP),decreasing = T)[1:5]
 subset(df.sub.save,SNP=='2_34523233_T_C_b37')
 
+x <- subset(df.sub.save,Pval_Brown < 5e-8)
 df.sub.save[order(df.sub.save$Pval_Brown),][1:10,]
+sort('T')
 
 
 df.min <- aggregate(df.sub.save$Pval_Brown,by=list(tissue=df.sub.save$tissue,cell=df.sub.save$cell),min)

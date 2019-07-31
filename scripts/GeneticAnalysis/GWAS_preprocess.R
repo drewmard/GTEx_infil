@@ -26,13 +26,13 @@ colnames(df.xcell)[colnames(df.xcell)=='SAMP'] <- 'Input Sample'
 colnames(df.xcell)[colnames(df.xcell)=='IID'] <- 'ID'
 cellTypes.df <- data.frame( 
   ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
-          'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
+          'Bcellsum','NK_Sum','DendriticSum','MastSum','Myeloid_Sum',
           'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
-          'Monocytes','Eosinophils','Lymph_Sum'),
+          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
   xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
-          'Bcellsum','NK cells','DendriticSum','Mast cells','TcellSum',
+          'Bcellsum','NK cells','DendriticSum','Mast cells','Myeloid_Sum',
           'Th_Sum','Tregs','Tgd cells',
-          'Monocytes','Eosinophils','Lymph_Sum'),
+          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
   stringsAsFactors = F)
 
 # cycle through infiltration phenotypes:
@@ -70,17 +70,17 @@ for (i in 1:nrow(tissue_x_celltype)) {
     
     # Run multiple regression to regress out covariates
     if (tis %in% c('Ovary','Uterus','Vagina','Testis','Prostate')) {
-      mod <- lm(df.sub.pca[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.numeric(SMATSSCR) + as.factor(SMCENTER) + PC1 + PC2 + PC3,data=df.sub.pca)
+      mod <- lm(df.sub.pca[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.numeric(SMATSSCR) + as.factor(SMCENTER) + PC1 + PC2 + PC3,data=df.sub.pca,na.action=na.exclude)
     } else if (tis %in% c('Whole Blood')) {
-      mod <- lm(df.sub.pca[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.factor(SMCENTER) + PC1 + PC2 + PC3,data=df.sub.pca)
+      mod <- lm(df.sub.pca[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.factor(SMCENTER) + PC1 + PC2 + PC3,data=df.sub.pca,na.action=na.exclude)
     } else {
-      mod <- lm(df.sub.pca[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.numeric(SMATSSCR) + as.factor(SMCENTER) + PC1 + PC2 + PC3,data=df.sub.pca)
+      mod <- lm(df.sub.pca[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.numeric(SMATSSCR) + as.factor(SMCENTER) + PC1 + PC2 + PC3,data=df.sub.pca,na.action=na.exclude)
         # mod <- lm(df.sub.pca[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.factor(SEX) + as.numeric(SMATSSCR) + PC1 + PC2 + PC3,data=df.sub.pca)
     }
     
     # Saving residuals
-    resid <- mod$residuals
-    resid.rint <- rntransform(mod$residuals) # RINT residuals
+    resid <- residuals(mod)
+    resid.rint <- rntransform(resid) # RINT residuals
 
     # Save to fam file
     pheno <- data.frame(ID=df.sub.pca$ID,PHENO=resid.rint,stringsAsFactors = F)

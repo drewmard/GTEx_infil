@@ -34,15 +34,32 @@ for (absolute in c('F','T')) {
   df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Dendritic',colnames(df.ciber.2))],1,sum)
   s <- 'MastSum'
   df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Mast cells',colnames(df.ciber.2))],1,sum)
-  s <- 'TcellSum'
-  df.ciber.2[,s] <- apply(df.ciber.2[,grepl('T cells',colnames(df.ciber.2))],1,sum)
+  # s <- 'TcellSum'
+  # df.ciber.2[,s] <- apply(df.ciber.2[,grepl('T cells',colnames(df.ciber.2))],1,sum)
+  s <- 'Myeloid_Sum'
+  df.ciber.2[,s] <- apply(df.ciber.2[,c('MacrophageSum','Neutrophils','DendriticSum','MastSum','Monocytes','Eosinophils')],1,sum)
+  #
   s <- 'Lymph_Sum'
-  df.ciber.2[,s] <- apply(df.ciber.2[,c('NK_Sum','TcellSum','Bcellsum')],1,sum)
-  
-  # cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
-  #                'Bcellsum','NK_Sum','DendriticSum','MastSum','TcellSum',
-  #                'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
-  #                'Monocytes','Eosinophils')
+  TcellSum <- colnames(df.ciber.2)[grepl('T cells',colnames(df.ciber.2))]
+  df.ciber.2[,s] <- apply(df.ciber.2[,c('NK_Sum',TcellSum,'Bcellsum')],1,sum)
+  #
+  s <- 'CD4.CD8'
+  df.ciber.2[,'CD4.CD8'] <- (df.ciber.2[,'CD4_Tcells']+1e-10)/(df.ciber.2[,'T cells CD8']+1e-10)
+  df.ciber.2$CD4.CD8[which(df.ciber.2[,'CD4_Tcells']==0 | df.ciber.2[,'T cells CD8']==0)] <- NA
+  source('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/bin/rntransform.R')
+  for (tis in unique(df.ciber.2$SMTSD)) {
+    i <- which(df.ciber.2$SMTSD==tis)
+    df.ciber.2$CD4.CD8[i] <- rntransform(df.ciber.2$CD4.CD8[i]) + 10 # +10 such that it passes filter thresholds
+  }
+  #
+  s <- 'Myeloid.Lymph'
+  df.ciber.2[,'Myeloid.Lymph'] <- (df.ciber.2[,'Myeloid_Sum']+1e-10)/(df.ciber.2[,'Lymph_Sum']+1e-10)
+  df.ciber.2$Myeloid.Lymph[which(df.ciber.2[,'Myeloid_Sum']==0 | df.ciber.2[,'Lymph_Sum']==0)] <- NA
+  source('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/bin/rntransform.R')
+  for (tis in unique(df.ciber.2$SMTSD)) {
+    i <- which(df.ciber.2$SMTSD==tis)
+    df.ciber.2$Myeloid.Lymph[i] <- rntransform(df.ciber.2$Myeloid.Lymph[i]) + 10 # +10 such that it passes filter thresholds
+  }
   
   # save
   f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-',absolute,'.QN-F.perm-1000.txt')
