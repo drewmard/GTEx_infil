@@ -96,6 +96,10 @@ Empirical_Brown_pval_wrapper.sh \
 #### Significant results analysis
 significant_results.R
 
+#### Clumping results
+Clumping.sh
+Clumped_Merge.R
+
 #### QQ plots
 qqplots.R
 

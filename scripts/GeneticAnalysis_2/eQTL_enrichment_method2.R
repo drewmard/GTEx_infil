@@ -9,7 +9,7 @@ z <- 1
 # init:
 nperm=100
 tis.old <- ''
-num.to.run <- 221
+num.to.run <- 223
 param.df <- matrix(NA,num.to.run,7)
 abs <- FALSE
 
@@ -128,7 +128,7 @@ if (abs) {
 }
 fwrite(param.df2,f,quote=F,row.names = F,col.names = T,sep='\t',na='NA')
 
-param.df2[order(as.numeric(as.character(param.df2$p))),][1:50,]
+param.df2[order(as.numeric(as.character(param.df2$p))),][1:5,]
 param.df2[order(as.numeric(as.character(param.df2$p2))),][1:50,]
 
 # joint across all phenotypes
