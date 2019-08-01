@@ -4,7 +4,7 @@ library(stringr)
 tis.old <- ''
 eQTL2.save <- NA
 FIRST <- TRUE
-abs <- TRUE
+abs <- FALSE
 
 for (i in 1:221) {
   

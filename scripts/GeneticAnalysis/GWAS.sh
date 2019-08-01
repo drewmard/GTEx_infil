@@ -13,7 +13,6 @@ source activate HLMM
 i=$SLURM_ARRAY_TASK_ID
 geno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name
 pheno=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt
-# pheno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name.tmp.txt
 outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS
 
 mkdir -p $outdir
