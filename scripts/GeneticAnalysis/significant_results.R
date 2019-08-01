@@ -4,9 +4,9 @@
 
 library(data.table)
 infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
-save_every_iteration <- TRUE
+save_every_iteration <- FALSE # TRUE
 
-for (i in 1:221) {
+for (i in 1:nrow(infil_pheno)) {
   print(i)
   f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.sig.txt')
   if (file.exists(f)) {
@@ -73,8 +73,8 @@ x <- subset(df.sub.save,Pval_Brown < 5e-8)
 sort(table(x$SNP),decreasing = T)[1:5]
 subset(df.sub.save,SNP=='2_34523233_T_C_b37')
 
-x <- subset(df.sub.save,Pval_Brown < 5e-8)
-df.sub.save[order(df.sub.save$Pval_Brown),][1:10,]
+x <- subset(df.sub.save,Pval_Brown < 5e-8 & !(cell %in% c('CD4.CD8','Myeloid.Lymph')))
+x[order(x$Pval_Brown),][1:10,]
 sort('T')
 
 
