@@ -1,9 +1,9 @@
 #!/bin/bash -l
 #SBATCH -J GTEx
 #SBATCH -n 1
-#SBATCH --tasks-per-node=4
-#SBATCH --mem=4G
-#SBATCH --array=1-4:1
+#SBATCH --tasks-per-node=1
+#SBATCH --mem=32G
+#SBATCH --array=14-17:1
 
 # Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
 # Script to run GWAS for identifying iQTLs
