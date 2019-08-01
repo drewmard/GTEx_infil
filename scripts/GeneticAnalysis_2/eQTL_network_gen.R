@@ -6,7 +6,7 @@ eQTL2.save <- NA
 FIRST <- TRUE
 abs <- FALSE
 
-for (i in 1:221) {
+for (i in 1:223) {
   
   ind_lst <- list()
   

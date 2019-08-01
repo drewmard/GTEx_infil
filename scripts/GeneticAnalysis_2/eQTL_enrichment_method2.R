@@ -2,43 +2,45 @@ library(data.table)
 library(stringr)
 
 # Arguments
-# args = commandArgs(trailingOnly=TRUE)
-# z <- as.numeric(args[1]) # what pheno to start at?
 z <- 1
 
 # init:
 nperm=100
 tis.old <- ''
-num.to.run <- 223
+z <- 1; num.to.run <- 223
 param.df <- matrix(NA,num.to.run,7)
 abs <- FALSE
+read_data <- FALSE
+clumped <- TRUE
 
-# LD european population patterns - TAKES A WHILE TO READ IN.
-print('Reading European LD mapping...')
-LD <- fread('/athena/elementolab/scratch/anm2868/GTEx/LD_EUR.tsv',data.table=F,stringsAsFactor=F,sep='\t',header=F)
-
-print('Reading in allele frequencies...')
-frq <- fread('/athena/elementolab/scratch/anm2868/GTEx/plink.frq',data.table = F,stringsAsFactors = F)
-
-# gtex-rsid mapping file
-print('Reading in number of SNPs in LD...')
-gtex_to_rsid <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_rsid_matched.txt',data.table=F,stringsAsFactors=F,header=F)
-
-# number of snps in LD (takes a while)
-print('Counting number of SNPs in LD...')
-LD$LD_SNP_ct <- str_count(LD[,2],';')+1
-
-# MERGE: rs to gtex names (takes moderate time)
-print('Linking rs to gtex SNP ids...')
-LD <- merge(LD,gtex_to_rsid,by.x='V1',by.y='V2')
-
-# add in freq 
-colnames(LD) <- c('rsid','LD_snps','LD_SNP_ct','gtex_snpid')
-print('Merge allele frequencies with LD data...')
-LD2 <- merge(LD,frq[,c('SNP','MAF')],by.x='gtex_snpid',by.y='SNP')
+if (read_data) {
+  # LD european population patterns - TAKES A WHILE TO READ IN.
+  print('Reading European LD mapping...')
+  LD <- fread('/athena/elementolab/scratch/anm2868/GTEx/LD_EUR.tsv',data.table=F,stringsAsFactor=F,sep='\t',header=F)
+  
+  print('Reading in allele frequencies...')
+  frq <- fread('/athena/elementolab/scratch/anm2868/GTEx/plink.frq',data.table = F,stringsAsFactors = F)
+  
+  # gtex-rsid mapping file
+  print('Reading in number of SNPs in LD...')
+  gtex_to_rsid <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_rsid_matched.txt',data.table=F,stringsAsFactors=F,header=F)
+  
+  # number of snps in LD (takes a while)
+  print('Counting number of SNPs in LD...')
+  LD$LD_SNP_ct <- str_count(LD[,2],';')+1
+  
+  # MERGE: rs to gtex names (takes moderate time)
+  print('Linking rs to gtex SNP ids...')
+  LD <- merge(LD,gtex_to_rsid,by.x='V1',by.y='V2')
+  
+  # add in freq 
+  colnames(LD) <- c('rsid','LD_snps','LD_SNP_ct','gtex_snpid')
+  print('Merge allele frequencies with LD data...')
+  LD2 <- merge(LD,frq[,c('SNP','MAF')],by.x='gtex_snpid',by.y='SNP')
+}
 
 # cycle through phenotypes
-for (i in z:(z+num.to.run-1)) {
+for (i in z:num.to.run) {
   
   ind_lst <- list()
   
@@ -56,11 +58,17 @@ for (i in z:(z+num.to.run-1)) {
   
   print(paste0('Reading suggested significant GWAS results for ',i,'...'))
   f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.sig.txt')
+  if (clumped) {
+    f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.CLUMPED_','1e-5','.txt.clumped')
+  }
   if (file.exists(f)) {
-    df <- fread(f,data.table = F,stringsAsFactors = F)
-    df.sub <- subset(df, Pval_Brown < 1e-5)
-    if (abs) {
-      df.sub <- subset(df, Pval_Brown_Abs < 1e-5)
+    if (clumped) {df.sub <- fread(f,data.table = F,stringsAsFactors = F)}
+    else {
+      df <- fread(f,data.table = F,stringsAsFactors = F)
+      df.sub <- subset(df, Pval_Brown < 1e-5)
+      if (abs) {
+        df.sub <- subset(df, Pval_Brown_Abs < 1e-5)
+      }
     }
     
     # merge GWAS to LD results
@@ -125,11 +133,13 @@ dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAn
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.txt')
 if (abs) {
   f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.Abs.txt')
+} else if (clumped) {
+  f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.Clump.txt')
 }
 fwrite(param.df2,f,quote=F,row.names = F,col.names = T,sep='\t',na='NA')
 
 param.df2[order(as.numeric(as.character(param.df2$p))),][1:5,]
-param.df2[order(as.numeric(as.character(param.df2$p2))),][1:50,]
+param.df2[order(as.numeric(as.character(param.df2$p2))),][1:5,]
 
 # joint across all phenotypes
 binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')$p.value
