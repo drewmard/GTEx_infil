@@ -99,7 +99,7 @@ Empirical_Brown_pval_wrapper.sh \
 significant_results.R
 
 #### Clumping results
-Clumping.sh
+Clumping.sh \
 Clumped_Merge.R
 
 #### QQ plots
