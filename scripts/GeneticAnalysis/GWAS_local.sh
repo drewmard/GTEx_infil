@@ -7,7 +7,7 @@ source activate HLMM
 
 # i=$1
 
-for i in {15..17}
+for i in {1..22}
 do
 
 geno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name
