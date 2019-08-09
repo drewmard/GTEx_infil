@@ -1,17 +1,19 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+
+# script to test iQTL/eQTL overlap
+
 library(data.table)
 library(stringr)
 
 # Arguments
 z <- 1
 
-# init:
+# initialize:
 nperm=100
 tis.old <- ''
 z <- 1; num.to.run <- 223
 param.df <- matrix(NA,num.to.run,7)
-abs <- FALSE
-read_data <- FALSE
-clumped <- TRUE
+read_data <- TRUE
 
 if (read_data) {
   # LD european population patterns - TAKES A WHILE TO READ IN.
@@ -58,18 +60,10 @@ for (i in z:num.to.run) {
   
   print(paste0('Reading suggested significant GWAS results for ',i,'...'))
   f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.sig.txt')
-  if (clumped) {
-    f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.CLUMPED_','1e-5','.txt.clumped')
-  }
   if (file.exists(f)) {
-    if (clumped) {df.sub <- fread(f,data.table = F,stringsAsFactors = F)}
-    else {
-      df <- fread(f,data.table = F,stringsAsFactors = F)
-      df.sub <- subset(df, Pval_Brown < 1e-5)
-      if (abs) {
-        df.sub <- subset(df, Pval_Brown_Abs < 1e-5)
-      }
-    }
+
+    df <- fread(f,data.table = F,stringsAsFactors = F)
+    df.sub <- subset(df, Pval_Brown < 1e-5)
     
     # merge GWAS to LD results
     df.mg <- merge(df.sub,LD2,by.x='SNP',by.y='gtex_snpid')
@@ -131,11 +125,6 @@ for (i in 1:nrow(param.df2)) {
 
 dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2')
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.txt')
-if (abs) {
-  f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.Abs.txt')
-} else if (clumped) {
-  f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.Clump.txt')
-}
 fwrite(param.df2,f,quote=F,row.names = F,col.names = T,sep='\t',na='NA')
 
 param.df2[order(as.numeric(as.character(param.df2$p))),][1:5,]

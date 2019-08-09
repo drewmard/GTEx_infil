@@ -1,6 +1,6 @@
 # Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
 
-# script to extract significant results
+# script to merge clumped results
 
 library(data.table)
 infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
@@ -36,9 +36,9 @@ for (thres in c('1e-5','5e-8')) {
   fwrite(df.save,f,col.names = T,row.names = F,sep='\t',quote = F)
 }
 
-# pleiotropic effects
-df <- fread(f,data.table = F,stringsAsFactors = F)
-sort(table(paste(df$tissue,df$cell)))
+# phenotypes w/ multiple SNP effects
+# df <- fread(f,data.table = F,stringsAsFactors = F)
+# sort(table(paste(df$tissue,df$cell)))
 # subset(df,tissue=='Lung' & cell=='CD4_Tcells')
 
 

@@ -38,19 +38,19 @@ corr_heatmaps.R
 xcell_cibersort_CaseExample.R
 
 #### Hierarchical clustering (Fig 1b, Supp Fig 4-5):
-< insert script here >
+< insert script here > (munna)
 
 #### Boxplots of immune content (Fig 1c, Supp Fig 6-9):
 infiltration_boxplots.R
 
 #### t-SNE of immune content (Supp Fig 10):
-< insert script here >
+< insert script here > (do we want this?)
 
 #### Filtering of infiltration phenotypes (212):
 filter.R
 
 #### Infiltration signatures in bulk gene expression values
-< insert script here >
+< insert script here > (more rigorous analysis?)
 
 
 
@@ -79,6 +79,8 @@ Directory: ./scripts/GeneticAnalysis/
 
 
 #### Generate PCs:
+./GTEx_Genetic_PCA/PCA_calc_all.sh \
+(for each tissue separately): \
 ./GTEx_Genetic_PCA/tissue_subset_wrapper.sh \
 (which runs ./GTEx_Genetic_PCA/PCA_calc.sh)
 
@@ -86,8 +88,8 @@ Directory: ./scripts/GeneticAnalysis/
 GWAS_preprocess.R
 
 #### Run GWAS
-GWAS_local.sh \
-(or GWAS.sh in parallel cloud computing environment, followed up by running Merge_Chr_GWAS_wrapper.sh)
+GWAS_local.sh (or GWAS.sh in parallel cloud computing environment) \
+Merge_Chr_GWAS_wrapper.sh (to merge different chromsomes together)
 
 #### Combine related p-values using Empirical Brown's method, and identify significant results
 Empirical_Brown_pval_wrapper.sh \
@@ -123,7 +125,7 @@ Directory: ./scripts/GeneticAnalysis_2/
 eQTL_enrichment_method2.R
 
 #### GeneMania:
-< insert script here >
+eQTL_network_gen.R (use eQTL_network_gen.R for *ieGene.txt output for input into GeneMania)
 
 #### Pleiotropic effects:
 < insert script here >

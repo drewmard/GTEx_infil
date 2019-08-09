@@ -5,6 +5,11 @@
 library('data.table')
 library('stringr')
 
+# init:
+pre_menopause <- FALSE
+post_menopause <- FALSE
+abs_only <- TRUE
+
 # load infiltration profiles
 df.rel <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
 df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
@@ -50,6 +55,12 @@ for (j in 1:3) {
       df.sub$DTHHRDY[is.na(df.sub$DTHHRDY)] <- 5
       df.sub$SMATSSCR[is.na(df.sub$SMATSSCR)] <- 4
 
+      if (pre_menopause) {
+        df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) <= 3)
+      } else if (post_menopause) {
+        df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) > 3)
+      }
+      
       # run multiple linear regression
       if (tis %in% c('Ovary','Uterus','Vagina','Testis','Prostate')) {
         sum.tab <- summary(lm(df.sub[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.numeric(SMATSSCR) + as.factor(SMCENTER),data=df.sub))$coef
@@ -84,6 +95,12 @@ for (j in 1:3) {
       df.sub$DTHHRDY[is.na(df.sub$DTHHRDY)] <- 5
       df.sub$SMATSSCR[is.na(df.sub$SMATSSCR)] <- 4
 
+      if (pre_menopause) {
+        df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) <= 3)
+      } else if (post_menopause) {
+        df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) > 3)
+      }
+      
       # run multiple linear regression
       if (tis %in% c('Ovary','Uterus','Vagina','Testis','Prostate')) {
         sum.tab <- summary(lm(df.sub[,cell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.numeric(SMATSSCR) + as.factor(SMCENTER),data=df.sub))$coef
@@ -120,6 +137,12 @@ for (j in 1:3) {
       df.sub$DTHHRDY[is.na(df.sub$DTHHRDY)] <- 5
       df.sub$SMATSSCR[is.na(df.sub$SMATSSCR)] <- 4
       
+      if (pre_menopause) {
+        df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) <= 3)
+      } else if (post_menopause) {
+        df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) > 3)
+      }
+      
       # run multiple linear regression
       if (tis %in% c('Ovary','Uterus','Vagina','Testis','Prostate')) {
         sum.tab <- summary(lm(df.sub[,cell.xcell]~as.numeric(as.factor(AGE)) + as.factor(DTHHRDY) + as.numeric(SMATSSCR) + as.factor(SMCENTER),data=df.sub))$coef
@@ -154,6 +177,7 @@ library(EmpiricalBrownsMethod)
 
 # Slightly modified version of empiricalBrowsMethod that allows a pre-calculated covariance matrix
 # Much more efficient if you have to run empiricalBrownsMethod multiple times with the same data_matrix
+# https://github.com/IlyaLab/CombiningDependentPvaluesUsingEBM/issues/1
 empiricalBrownsMethod2 <- function(p_values, extra_info, data_matrix, covar_matrix) {
   if (missing(covar_matrix)) covar_matrix = EmpiricalBrownsMethod:::calculateCovariances(data_matrix)
   return(EmpiricalBrownsMethod:::combinePValues(covar_matrix, p_values, extra_info))
@@ -170,15 +194,30 @@ for (i in 1:nrow(df.coef)) {
   
   # Cibersort rel
   df.sub <- subset(df.rel,SMTSD==tis)
+  if (pre_menopause) {
+    df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) <= 3)
+  } else if (post_menopause) {
+    df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) > 3)
+  }
   pheno <- matrix(NA,3,nrow(df.sub))
   pheno[1,] <- df.sub[,cell]
   
   # Cibersort abs
   df.sub <- subset(df.abs,SMTSD==tis)
+  if (pre_menopause) {
+    df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) <= 3)
+  } else if (post_menopause) {
+    df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) > 3)
+  }
   pheno[2,] <- df.sub[,cell]
   
   # xCell
   df.sub <- subset(df.xcell,SMTSD==tis)
+  if (pre_menopause) {
+    df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) <= 3)
+  } else if (post_menopause) {
+    df.sub <- subset(df.sub,as.numeric(as.factor(AGE)) > 3)
+  }
   cell.xcell <- cellTypes.df$xcell[cellTypes.df$ciber==cell]
   pheno[3,] <- df.sub[,cell.xcell]
   
@@ -195,7 +234,11 @@ for (i in 1:nrow(df.coef)) {
   beta_col <- c('beta_age_cib.rel','beta_age_cib.abs','beta_age_xcell')[ind.min_p]
   beta <- df.coef[i,beta_col]
   beta_direc = NA; if (beta > 0) {beta_direc <- '+'} else {beta_direc <- '-'}
-  df.coef$p_age_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno,p_values = age.p_values,extra_info = F,covar_matrix = cov.matrix)
+  if (abs_only) {
+    df.coef$p_age_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno[-1,],p_values = age.p_values[,-1],extra_info = F,covar_matrix = cov.matrix[,-1])
+  } else {
+    df.coef$p_age_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno,p_values = age.p_values,extra_info = F,covar_matrix = cov.matrix)
+  }
   df.coef$age.coef_direc[i] <- beta_direc
   
   sex.p_values <- df.coef[i,c('p_sex_cib.rel','p_sex_cib.abs','p_sex_xcell')]
@@ -206,7 +249,11 @@ for (i in 1:nrow(df.coef)) {
     beta <- df.coef[i,beta_col]
     if (beta > 0) {beta_direc <- '+'} else {beta_direc <- '-'} 
   }
-  df.coef$p_sex_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno,p_values = sex.p_values,extra_info = F,covar_matrix = cov.matrix)
+  if (abs_only) {
+    df.coef$p_sex_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno[-1,],p_values = sex.p_values[,-1],extra_info = F,covar_matrix = cov.matrix[,-1])
+  } else {
+    df.coef$p_sex_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno,p_values = sex.p_values,extra_info = F,covar_matrix = cov.matrix)
+  }
   df.coef$sex.coef_direc[i] <- beta_direc
   
 }
@@ -214,17 +261,59 @@ for (i in 1:nrow(df.coef)) {
 #################################################################
 # Use FDR to correct
 
-df.coef$p_age_brown.fdr <- p.adjust(df.coef$p_age_brown,method='fdr')
-df.coef$p_sex_brown.fdr <- p.adjust(df.coef$p_sex_brown,method='fdr')
+df.coef$p_age_brown.fdr <- NA
+df.coef$p_sex_brown.fdr <- NA
+df.coef$p_age_brown.fdr[1:223][-c(58:62)] <- p.adjust(df.coef$p_age_brown[1:223][-c(58:62)],method='fdr')
+df.coef$p_sex_brown.fdr[1:223][-c(58:62)] <- p.adjust(df.coef$p_sex_brown[1:223][-c(58:62)],method='fdr')
 # df.coef$pheno[df.coef$pheno=='CD4Sum'] <- 'CD4+ T cells'
 # df.coef$pheno[df.coef$pheno=='CD8Sum'] <- 'CD8+ T cells'
 # df.coef$pheno[df.coef$pheno=='MacrophageSum'] <- 'Macrophages'
 
-fwrite(df.coef,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.txt',sep = '\t',quote=F,row.names = F,col.names = T,na='NA')
+if (pre_menopause) {
+  print(1)
+  fwrite(df.coef,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.pre.txt',sep = '\t',quote=F,row.names = F,col.names = T,na='NA')
+} else if (post_menopause) {
+  print(2)
+  fwrite(df.coef,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.post.txt',sep = '\t',quote=F,row.names = F,col.names = T,na='NA')
+} else if (abs_only) {
+  print(3)
+  fwrite(df.coef,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.abs.txt',sep = '\t',quote=F,row.names = F,col.names = T,na='NA')
+} else {
+  print(4)
+  fwrite(df.coef,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.txt',sep = '\t',quote=F,row.names = F,col.names = T,na='NA')
+}
 
-df.coef[order(df.coef$p_age_brown.fdr),][1:5,]
-df.coef[order(df.coef$p_sex_brown.fdr),][1:5,]
+df.coef <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.txt',data.table = F,stringsAsFactors = F)
+df.coef <- subset(df.coef,tis!="Cells - EBV-transformed lymphocytes")
+df.coef$p_age_xcell.fdr <- p.adjust(df.coef$p_age_xcell,method='fdr')
+df.coef$p_sex_xcell.fdr <- p.adjust(df.coef$p_sex_xcell,method='fdr')
+df.coef$p_age_cib.abs.fdr <- p.adjust(df.coef$p_age_cib.abs,method='fdr')
+df.coef$p_sex_cib.abs.fdr <- p.adjust(df.coef$p_sex_cib.abs,method='fdr')
+df.coef$p_age_cib.rel.fdr <- p.adjust(df.coef$p_age_cib.rel,method='fdr')
+df.coef$p_sex_cib.rel.fdr <- p.adjust(df.coef$p_sex_cib.rel,method='fdr')
+print(paste0('Age hits: ', nrow(subset(df.coef,p_age_brown.fdr < 0.1))))
+print(paste0('Sex hits: ', nrow(subset(df.coef,p_sex_brown.fdr < 0.1))))
+print(paste0('Total hits: ', nrow(subset(df.coef,p_age_brown.fdr < 0.1 | p_sex_brown.fdr < 0.1))))
+print(paste0('Total hits: ', nrow(subset(df.coef,p_age_xcell.fdr < 0.1 | p_sex_xcell.fdr < 0.1))))
+print(paste0('Total hits: ', nrow(subset(df.coef,p_age_cib.abs.fdr < 0.1 | p_sex_cib.abs.fdr < 0.1))))
+print(paste0('Total hits: ', nrow(subset(df.coef,p_age_cib.rel.fdr < 0.1 | p_sex_cib.rel.fdr < 0.1))))
+
+
+
+nrow(x <- subset(df.coef,p_age_brown.fdr < 0.1 | p_sex_brown.fdr < 0.1))
+length(unique(x$tis))
+length(unique(df.coef$tis))
+unique(df.coef$tis)[which(!(unique(df.coef$tis) %in% unique(x$tis)))]
+df.coef[order(df.coef$p_age_brown.fdr),][1:10,]
+df.coef[order(df.coef$p_sex_brown.fdr),][1:20,]
 subset(df.coef,tis=='Whole Blood')
+subset(df.coef,tis=='Thyroid')
+subset(df.coef,tis=='Breast - Mammary Tissue')
+subset(df.coef,tis %in% c('Nerve - Tibial','Artery - Tibial'))
+subset(df.coef,tis %in% c('Nerve - Tibial','Artery - Tibial'))
+subset(df.coef,tis %in% c('Artery - Aorta','Artery - Coronary'))
+
+
 # Save significant associations: 
 
 df.coef.age <- subset(df.coef,p_age_brown.fdr < 0.1)
@@ -248,14 +337,36 @@ stargazer(df.coef.sex,type='html',summary=F,rownames = F,column.sep.width = "15p
 
 # Breast vs Cd8 t cell infiltration plot
 library(ggplot2)
-df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+workdir <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/'
+df.abs <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt'),data.table = F,stringsAsFactors = F)
 df.sub <- subset(df.abs,SMTSD=='Breast - Mammary Tissue')
-g <- ggplot(df.sub,aes(x=as.factor(SEX),y=`T cells CD8`,fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
+g <- ggplot(df.sub,aes(x=as.factor(SEX),y=Lymph_Sum,fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
   geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
-  labs(x='Sex',y='CD8+ T cells score (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
-png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD8_Sex_Breast.png')
+  labs(x='Sex',y='Lymphocytes (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
+# png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD8_Sex_Breast.png')
 print(g)
-dev.off()
+# dev.off()
+
+library(ggplot2)
+workdir <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/'
+df.abs <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt'),data.table = F,stringsAsFactors = F)
+df.sub <- subset(df.abs,SMTSD=='Thyroid')
+g <- ggplot(df.sub,aes(x=as.factor(SEX),y=Lymph_Sum,fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
+  geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
+  labs(x='Sex',y='Lymphocytes (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
+# png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD8_Sex_Breast.png')
+print(g)
+# dev.off()
+
+# library(ggplot2)
+# df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
+# df.sub <- subset(df.abs,SMTSD=='Breast - Mammary Tissue')
+# g <- ggplot(df.sub,aes(x=as.factor(SEX),y=`T cells CD8`,fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
+#   geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
+#   labs(x='Sex',y='CD8+ T cells score (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
+# png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD8_Sex_Breast.png')
+# print(g)
+# dev.off()
 
 
 # Artery vs Cd4 t cell infiltration plot

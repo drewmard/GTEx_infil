@@ -1,3 +1,7 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+
+# script to pull all ieGenes from ieQTLs and output for a GeneMania network
+
 library(data.table)
 library(stringr)
 

@@ -65,9 +65,11 @@ df.sub.save$Pval_Brown_Abs_sig <- as.numeric(df.sub.save$Pval_Brown_Abs < 5e-8)
 df.sub.save$p_lrt_cibersort_rel_sig <- as.numeric(df.sub.save$p_lrt_cibersort_rel < 5e-8)
 df.sub.save$p_lrt_cibersort_abs_sig <- as.numeric(df.sub.save$p_lrt_cibersort_abs < 5e-8)
 df.sub.save$p_lrt_cibersort_xCell_sig <- as.numeric(df.sub.save$p_lrt_xCell < 5e-8)
-x <- as.data.frame(table(df.sub.save[,15:19]))
-x <- as.data.frame(table(df.sub.save[,c(15,16,18,19)]))
+x <- aggregate(df.sub.save[,15:19],by=list(df.sub.save$tissue,df.sub.save$cell),max)
+x <- as.data.frame(table(x[,-(1:2)]))
 x[x$Freq>0,]
+# x <- as.data.frame(table(df.sub.save[,15:19]))
+# x <- as.data.frame(table(df.sub.save[,c(15,16,18,19)]))
 
 x <- subset(df.sub.save,Pval_Brown < 5e-8)
 sort(table(x$SNP),decreasing = T)[1:5]

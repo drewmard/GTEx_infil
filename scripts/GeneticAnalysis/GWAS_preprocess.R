@@ -35,15 +35,19 @@ cellTypes.df <- data.frame(
           'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
   stringsAsFactors = F)
 
+f <- '/athena/elementolab/scratch/anm2868/GTEx/GENO_PCA/gtex_all.filter.name.eigenvec'
+pca <- fread(f,data.table=F,stringsAsFactors = F)
+pca <- pca[,-1]; colnames(pca) <- c('ID',paste0('PC',1:min(10,ncol(pca)-1)))
+
 # cycle through infiltration phenotypes:
 for (i in 1:nrow(tissue_x_celltype)) {
   tis <- tissue_x_celltype[i,1]
   cell <- tissue_x_celltype[i,2]
   
   # Read in tissue-specific PCA matrix: use first 10 PCs
-  f.tis <- str_replace_all(tissue_file_name(tis),' ','_')
-  pca <- fread(f.tis,data.table=F)
-  pca <- pca[,-1]; colnames(pca) <- c('ID',paste0('PC',1:min(10,ncol(pca)-1)))
+  # f.tis <- str_replace_all(tissue_file_name(tis),' ','_')
+  # pca <- fread(f.tis,data.table=F,stringsAsFactors = F)
+  # pca <- pca[,-1]; colnames(pca) <- c('ID',paste0('PC',1:min(10,ncol(pca)-1)))
   
   for (k in 1:3) {
     
