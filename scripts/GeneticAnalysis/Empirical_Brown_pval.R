@@ -13,7 +13,8 @@ args = commandArgs(trailingOnly=TRUE)
 i <- as.numeric(args[1]) # what pheno to look at?
 
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.sig.txt')
-if (!file.exists(f)) {
+# if (!file.exists(f)) {
+if (1==1) {
   
   # Read in infiltration data
   infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
