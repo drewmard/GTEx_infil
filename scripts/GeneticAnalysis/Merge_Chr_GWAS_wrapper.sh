@@ -2,7 +2,7 @@
 #SBATCH -J ChrMg
 #SBATCH -n 1
 #SBATCH --mem=8G
-#SBATCH --array=124-223:1
+#SBATCH --array=1-189:1
 
 spack load -r r@3.5.0
 i=$SLURM_ARRAY_TASK_ID
