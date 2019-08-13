@@ -4,7 +4,9 @@ geno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name
 outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS
 COLUMN=Pval_Brown
 
-for i in {1..223};
+source activate GTEx
+
+for i in {1..189};
 do
 results=$outdir/GTEx.pheno$i.ALL_EBM.sig.txt
 outFile=$outdir/GTEx.pheno$i.ALL_EBM.CLUMPED_1e-5.txt

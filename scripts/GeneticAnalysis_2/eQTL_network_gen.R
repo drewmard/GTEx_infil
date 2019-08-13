@@ -10,12 +10,18 @@ eQTL2.save <- NA
 FIRST <- TRUE
 abs <- FALSE
 
-for (i in 1:223) {
+infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes2.txt',data.table=F,stringsAsFactors = F)
+infil_pheno <- subset(infil_pheno,!(cell %in% c('CD4.CD8','Myeloid.Lymph')))
+
+# infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
+# infil_pheno <- infil_pheno[1:223,]
+# infil_pheno <- subset(infil_pheno,!((tissue=='Heart - Atrial Appendage' & cell=='NK_Sum') | (tissue=='Colon - Transverse' & cell=='NK_Sum') | (tissue=='Cells - EBV-transformed lymphocytes')))
+
+for (i in 1:nrow(infil_pheno)) {
   
   ind_lst <- list()
   
   # What tissue/cell type?
-  infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
   tis <- infil_pheno$tissue[i]
   cell <- infil_pheno$cell[i]
   

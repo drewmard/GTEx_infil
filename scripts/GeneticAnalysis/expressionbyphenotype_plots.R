@@ -8,21 +8,25 @@ library(data.table)
 library(stringr)
 library(ggplot2)
 
-# df.geno <- fread('/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct',data.table = F,stringsAsFactors = F)
+df.geno <- fread('/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct',data.table = F,stringsAsFactors = F)
 
 tis <- 'Whole Blood'
 
-# tis <- 'Colon - Sigmoid'
-# GENE <- 'C22orf43'
-# CELL <- 'Lymph_Sum'
+tis <- 'Colon - Sigmoid'
+GENE <- 'C22orf43'
+CELL <- 'Lymph_Sum'
 
 # tis <- 'Heart - Atrial Appendage'
-GENE <- 'UST'
-CELL <- 'Monocytes'
+# GENE <- 'UST'
+# CELL <- 'Monocytes'
 
-tis <- 'Thyroid'
-GENE <- 'COMMD3' # 'DNAJC1'
-CELL <- 'T cells follicular helper'
+# tis <- 'Thyroid'
+# GENE <- 'DNAJC1'
+# CELL <- 'T cells follicular helper'
+
+tis <- 'Esophagus - Muscularis'
+GENE <- 'CCDC40' # 'DNAJC1'
+CELL <- 'MastSum'
 
 # df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F,stringsAsFactors = F)
 df.infil <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)

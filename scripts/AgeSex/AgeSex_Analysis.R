@@ -8,7 +8,7 @@ library('stringr')
 # init:
 pre_menopause <- FALSE
 post_menopause <- FALSE
-abs_only <- TRUE
+abs_only <- FALSE
 
 # load infiltration profiles
 df.rel <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
@@ -263,8 +263,8 @@ for (i in 1:nrow(df.coef)) {
 
 df.coef$p_age_brown.fdr <- NA
 df.coef$p_sex_brown.fdr <- NA
-df.coef$p_age_brown.fdr[1:223][-c(58:62)] <- p.adjust(df.coef$p_age_brown[1:223][-c(58:62)],method='fdr')
-df.coef$p_sex_brown.fdr[1:223][-c(58:62)] <- p.adjust(df.coef$p_sex_brown[1:223][-c(58:62)],method='fdr')
+df.coef$p_age_brown.fdr <- p.adjust(df.coef$p_age_brown,method='fdr')
+df.coef$p_sex_brown.fdr <- p.adjust(df.coef$p_sex_brown,method='fdr')
 # df.coef$pheno[df.coef$pheno=='CD4Sum'] <- 'CD4+ T cells'
 # df.coef$pheno[df.coef$pheno=='CD8Sum'] <- 'CD8+ T cells'
 # df.coef$pheno[df.coef$pheno=='MacrophageSum'] <- 'Macrophages'
@@ -283,8 +283,13 @@ if (pre_menopause) {
   fwrite(df.coef,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.txt',sep = '\t',quote=F,row.names = F,col.names = T,na='NA')
 }
 
+library(data.table)
 df.coef <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/AgeSex_results.txt',data.table = F,stringsAsFactors = F)
-df.coef <- subset(df.coef,tis!="Cells - EBV-transformed lymphocytes")
+# df.coef <- subset(df.coef,tis!="Cells - EBV-transformed lymphocytes")
+df.coef$phenotype <- paste(df.coef$tis,df.coef$pheno,sep = '-')
+# df.results <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes2.txt',data.table = F,stringsAsFactors = F)
+# df.coef <- subset(df.coef,(phenotype %in% df.results$phenotype) & (!(pheno %in% c('CD4.CD8','Myeloid.Lymph'))))
+
 df.coef$p_age_xcell.fdr <- p.adjust(df.coef$p_age_xcell,method='fdr')
 df.coef$p_sex_xcell.fdr <- p.adjust(df.coef$p_sex_xcell,method='fdr')
 df.coef$p_age_cib.abs.fdr <- p.adjust(df.coef$p_age_cib.abs,method='fdr')
@@ -293,19 +298,17 @@ df.coef$p_age_cib.rel.fdr <- p.adjust(df.coef$p_age_cib.rel,method='fdr')
 df.coef$p_sex_cib.rel.fdr <- p.adjust(df.coef$p_sex_cib.rel,method='fdr')
 print(paste0('Age hits: ', nrow(subset(df.coef,p_age_brown.fdr < 0.1))))
 print(paste0('Sex hits: ', nrow(subset(df.coef,p_sex_brown.fdr < 0.1))))
-print(paste0('Total hits: ', nrow(subset(df.coef,p_age_brown.fdr < 0.1 | p_sex_brown.fdr < 0.1))))
-print(paste0('Total hits: ', nrow(subset(df.coef,p_age_xcell.fdr < 0.1 | p_sex_xcell.fdr < 0.1))))
-print(paste0('Total hits: ', nrow(subset(df.coef,p_age_cib.abs.fdr < 0.1 | p_sex_cib.abs.fdr < 0.1))))
-print(paste0('Total hits: ', nrow(subset(df.coef,p_age_cib.rel.fdr < 0.1 | p_sex_cib.rel.fdr < 0.1))))
-
-
-
-nrow(x <- subset(df.coef,p_age_brown.fdr < 0.1 | p_sex_brown.fdr < 0.1))
-length(unique(x$tis))
-length(unique(df.coef$tis))
+print(paste0('Total EBM hits: ', nrow(x <- subset(df.coef,p_age_brown.fdr < 0.1 | p_sex_brown.fdr < 0.1))))
+print(paste0('Total xCell hits: ', nrow(subset(df.coef,p_age_xcell.fdr < 0.1 | p_sex_xcell.fdr < 0.1))))
+print(paste0('Total CIB-Abs hits: ', nrow(subset(df.coef,p_age_cib.abs.fdr < 0.1 | p_sex_cib.abs.fdr < 0.1))))
+print(paste0('Total CIB-Rel hits: ', nrow(subset(df.coef,p_age_cib.rel.fdr < 0.1 | p_sex_cib.rel.fdr < 0.1))))
+# print(paste0('Total sig phenotypes: ',nrow(x <- subset(df.coef,p_age_brown.fdr < 0.1 | p_sex_brown.fdr < 0.1))))
+print(paste0(length(unique(x$tis)),'/',length(unique(df.coef$tis)),' tissues have > 1 significant phenotype.'))
+print('Tissues w/ no significant phenotype:')
 unique(df.coef$tis)[which(!(unique(df.coef$tis) %in% unique(x$tis)))]
 df.coef[order(df.coef$p_age_brown.fdr),][1:10,]
-df.coef[order(df.coef$p_sex_brown.fdr),][1:20,]
+df.coef[order(df.coef$p_sex_brown.fdr),][1:10,]
+
 subset(df.coef,tis=='Whole Blood')
 subset(df.coef,tis=='Thyroid')
 subset(df.coef,tis=='Breast - Mammary Tissue')
