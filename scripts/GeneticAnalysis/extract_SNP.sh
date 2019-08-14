@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -J snp
 
-#source activate GTEx
+source activate GTEx
 indir=/athena/elementolab/scratch/anm2868/GTEx
 outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/Genotype_Subset
 prefix=gtex_all.filter.name
