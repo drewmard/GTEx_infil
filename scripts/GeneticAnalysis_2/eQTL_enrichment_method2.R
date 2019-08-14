@@ -131,38 +131,14 @@ fwrite(param.df2,f,quote=F,row.names = F,col.names = T,sep='\t',na='NA')
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/eQTL_enrich2_',z,'.txt')
 param.df2 <- fread(f,stringsAsFactors = F,data.table = F)
 param.df2$phenotype <- paste(param.df2$tissue,param.df2$cell,sep = '-')
-# df.results <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes2.txt',data.table = F,stringsAsFactors = F)
-# param.df2 <- subset(param.df2,phenotype %in% df.results$phenotype)
-# param.df2 <- subset(param.df2,!((tissue=='Heart - Atrial Appendage' & cell=='NK_Sum') | (tissue=='Colon - Transverse' & cell=='NK_Sum') | (tissue=='Cells - EBV-transformed lymphocytes')))
 # joint across all phenotypes
 # param.df2 <- subset(param.df2,eQTL_obs_ct>0)
 sum(p.adjust(param.df2$p,'fdr')<0.1)
 sum(p.adjust(param.df2$p,'fdr')<0.1)/nrow(param.df2)
 x <- sum(param.df2$eQTL_obs_ct,na.rm = T); n <- sum(param.df2$N,na.rm = T); p <- sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T)
-x;n;p;n*p;binom.test(x,n,p,'greater')$p.value
+x;n;n*p;x/n;p;binom.test(x,n,p,'greater')$p.value
 binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')$p.value
 binom.test(round(mean(param.df2$eQTL_obs_ct,na.rm = T)),round(mean(param.df2$N,na.rm = T)),mean(param.df2$mean.p,na.rm = T),'greater')$p.value
-
-
-# f <- '/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig.txt'
-# df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
-# df.sub.save <- aggregate(df.sub.save$Pval_Brown,by=list(tissue=df.sub.save$tissue,cell=df.sub.save$cell),min)
-# param.df2 <- merge(param.df2,df.sub.save,by=c('tissue','cell'))
-# param.df2 <- subset(param.df2,eQTL_obs_ct>0)
-# binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')$p.value
-# binom.test(round(mean(param.df2$eQTL_obs_ct,na.rm = T)),round(mean(param.df2$N,na.rm = T)),mean(param.df2$mean.p,na.rm = T),'greater')$p.value
-
-# param.df2[order(as.numeric(as.character(param.df2$p))),][1:6,]
-# param.df2[order(as.numeric(as.character(param.df2$p2))),][1:10,]
-# param.df2[order(as.numeric(as.factor(param.df2$cell))),]
-param.df2[order(as.numeric((param.df2$N)),decreasing = T),][1:10,]
-
-# cor.test(param.df2$N,-log10(param.df2$p))
-
-# joint across all phenotypes
-binom.test(round(mean(param.df2$eQTL_obs_ct,na.rm = T)),round(mean(param.df2$N,na.rm = T)),mean(param.df2$mean.p,na.rm = T),'greater')$p.value
-joint_ts_test <- function(x) {binom.test(sum(x$eQTL_obs_ct,na.rm = T),sum(x$N,na.rm = T),sum(x$N*x$mean.p,na.rm = T)/sum(x$N,na.rm=T),'greater')$p.value}
-do.call(rbind,lapply(split(param.df2,with(param.df2,tissue),drop=T),joint_ts_test))
 
 # eqtl enriched 2 sided pvalues better than eqtl depleted
 param.df2$eQTL.enriched <- as.numeric(param.df2$eQTL_obs_ct/param.df2$N > param.df2$mean.p)

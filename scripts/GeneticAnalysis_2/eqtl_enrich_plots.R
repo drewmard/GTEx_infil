@@ -8,6 +8,8 @@ df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_
 # df$cell[df$cell=='CD4_Tcells'] <- 'CD4+ T cells'
 # df$tissue2 <- gsub('_',' ',df$tissue)
 df$Analysis <- paste0(gsub('_',' ',df$tissue),': ',df$cell)
+df[order(df$p,decreasing = T),]
+df$eqtl.enriched <- as.numeric(df$eQTL_obs_ct/df$N > df$mean.p)
 g.matched <- ggplot(df,aes(x=reorder(Analysis,-p),y=-log10(p))) + 
   geom_point() +
   geom_hline(yintercept=-log10(0.05/nrow(df)),col='red',lty='dashed') +
@@ -17,10 +19,26 @@ g.matched <- ggplot(df,aes(x=reorder(Analysis,-p),y=-log10(p))) +
   # ggtitle(expression(Observed ~ ~-log[10](italic(p)))) +
   # scale_color_discrete(labels=c('Fewer eQTLs than expected','Greater eQTLs than expected'),) +
   theme_bw() + theme(panel.grid = element_blank(),
-                     axis.text.x = element_text(angle=80,hjust=1,size=rel(0.8)),
+                     axis.text.x = element_text(angle=60,hjust=1,size=rel(0.6)),
                      legend.title = element_blank(),legend.background = element_blank(),
                      legend.key = element_blank(),plot.title=element_text(hjust=0.5)) +
   theme(legend.position = c(0.1,0.85)); g.matched
+
+
+g.matched <- ggplot(df,aes(x=reorder(Analysis,-p2),y=-log10(p2),col=as.factor(eqtl.enriched))) + 
+  geom_point() +
+  geom_hline(yintercept=-log10(0.05/nrow(df)),col='red',lty='dashed') +
+  scale_color_manual(values = c('skyblue1','brown2'),labels=c('Fewer eQTLs than expected','Greater eQTLs than expected')) +
+  labs(x='Tissue and Immune Cell Type',y=expression(~-log[10](italic(p)))) +
+  ggtitle(bquote('Enrichment of tissue-specific eQTLs in top GWAS hits ( p < '~10^-5~')')) +
+  # ggtitle(expression(Observed ~ ~-log[10](italic(p)))) +
+  # scale_color_discrete(labels=c('Fewer eQTLs than expected','Greater eQTLs than expected'),) +
+  theme_bw() + theme(panel.grid = element_blank(),
+                     axis.text.x = element_text(angle=60,hjust=1,size=rel(0.6)),
+                     legend.title = element_blank(),legend.background = element_blank(),
+                     legend.key = element_blank(),plot.title=element_text(hjust=0.5)) +
+  theme(legend.position = c(0.1,0.85)); g.matched
+
 
 mean(df$p < 0.05/nrow(df),na.rm=T)
 

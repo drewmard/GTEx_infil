@@ -51,21 +51,6 @@ df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
 df.sub.save$phenotype <- paste(df.sub.save$tissue,df.sub.save$cell,sep = '-')
 df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:20,]
 
-f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/GWAS_eQTL-only.txt')
-df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
-df.sub.save$phenotype <- paste(df.sub.save$tissue,df.sub.save$cell,sep = '-')
-df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:20,]
-
-# subset(df.sub.save,phenotype=='Colon - Sigmoid-Lymph_Sum')
-
-# df.results <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes2.txt',data.table = F,stringsAsFactors = F)
-# df.sub.save <- subset(df.sub.save,phenotype %in% df.results$phenotype)
-
-# df.sub.save <- subset(df.sub.save,!((tissue=='Heart - Atrial Appendage' & cell=='NK_Sum') | (tissue=='Colon - Transverse' & cell=='NK_Sum') | (tissue=='Cells - EBV-transformed lymphocytes')))
-df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:20,]
-df.sub.save[order(df.sub.save$Pval_Brown_Abs,decreasing = F),][1:20,]
-
-
 x <- df.sub.save
 paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
 x <- subset(df.sub.save,Pval_Brown < 5e-8)
@@ -79,22 +64,9 @@ paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length
 x <- subset(df.sub.save,p_lrt_xCell < 5e-8)
 paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')
 
-df.sub.save$Pval_Brown_sig <- as.numeric(df.sub.save$Pval_Brown < 5e-8)
-df.sub.save$Pval_Brown_Abs_sig <- as.numeric(df.sub.save$Pval_Brown_Abs < 5e-8)
-df.sub.save$p_lrt_cibersort_rel_sig <- as.numeric(df.sub.save$p_lrt_cibersort_rel < 5e-8)
-df.sub.save$p_lrt_cibersort_abs_sig <- as.numeric(df.sub.save$p_lrt_cibersort_abs < 5e-8)
-df.sub.save$p_lrt_cibersort_xCell_sig <- as.numeric(df.sub.save$p_lrt_xCell < 5e-8)
-# x <- aggregate(df.sub.save[,15:19],by=list(df.sub.save$tissue,df.sub.save$cell),max)
-# x <- as.data.frame(table(x[,-(1:2)]))
-# x[x$Freq>0,]
+# note: output from eQTL_network_gen.R
+f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis2/GWAS_eQTL-only.txt')
+df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
+df.sub.save$phenotype <- paste(df.sub.save$tissue,df.sub.save$cell,sep = '-')
+df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:20,]
 
-# x <- subset(df.sub.save,Pval_Brown < 5e-8)
-# sort(table(x$SNP),decreasing = T)[1:5]
-subset(df.sub.save,SNP=='22_23961126_C_T_b37')
-
-# x <- subset(df.sub.save,Pval_Brown < 5e-8 & !(cell %in% c('CD4.CD8','Myeloid.Lymph')))
-# x[order(x$Pval_Brown),][1:10,]
-# sort('T')
-
-# df.min <- aggregate(df.sub.save$Pval_Brown,by=list(tissue=df.sub.save$tissue,cell=df.sub.save$cell),min)
-# merge(df.min,df.sub.save[,c('tissue','cell','SNP','Pval_Brown')],by.x=c('tissue','cell','x'),by.y=c('tissue','cell','Pval_Brown'))

@@ -16,7 +16,7 @@ if (cluster_run) {
   infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
   i1 <- which(paste(infil_pheno$tissue,infil_pheno$cell)%in% paste(x$tissue[1],x$cell[1]))
   i2 <- which(paste(infil_pheno$tissue,infil_pheno$cell)%in% paste(x$tissue[2],x$cell[2]))
-  i3 <- which(paste(infil_pheno$tissue,infil_pheno$cell)%in% paste(x$tissue[3],x$cell[3]))
+  i3 <- which(paste(infil_pheno$tissue,infil_pheno$cell)%in% paste('Esophagus - Muscularis','MastSum'))
   f <- '/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt'
   df.pheno <- fread(f,data.table = F,stringsAsFactors = F)
   fwrite(df.pheno[,c('IID',paste0('pheno',c(i1,i2,i3),'.2'))],
@@ -26,14 +26,14 @@ if (cluster_run) {
 
 # initialize:
 id <- list(); 
-id[[1]] <- 69
-id[[2]] <- 111
-id[[3]] <- 198
+id[[1]] <- 166
+id[[2]] <- 56
+id[[3]] <- 81
 
 # 2: plot qqplots for top 3 hits
 df.qq <- list(); g.qq <- list()
 df.qq.full <- list();
-ggplot_title <- list('Lymphocytes in sigmoid colon samples','Monocytes in heart (atrial appendage) samples','Tfh cells in thyroid samples')
+# ggplot_title <- list('Lymphocytes in sigmoid colon samples','Monocytes in heart (atrial appendage) samples','Tfh cells in thyroid samples')
 for (i in 1:3) {
   print(i)
   workdir <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/'
@@ -57,20 +57,20 @@ for (i in 1:3) {
 }
 
 # 3: plot genotype phenotype plots for top 3 hits
-f <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis/GWAS/gtex_all.filter.name.top3.txt'
+f <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.top3.txt'
 df.pheno <- fread(f,stringsAsFactors = F,data.table = F)
 
 snp <- list(); rs <- list(); g.geno <- list(); phenoName <- list(); df.snp <- list(); pheno <- list(); df.geno <- list()
-phenoName <- list("Lymphocytes (residuals)",
-                       "Monocytes (residuals)",
-                       "Tfh cells (residuals)")
-tis <- list('Colon - Sigmoid','Heart - Atrial Appendage','Thyroid')
+tis <- list('Thyroid','Colon - Sigmoid','Esophagus - Muscularis')
+phenoName <- list("Tfh cells (trans resid)",
+                  "Lymphocytes (trans resid)",
+                  "Mast cells (trans resid)")
 pheno <- as.list(paste0('pheno',id,'.2'))
+snp <- list('10_22337752_A_G_b37','22_23961126_C_T_b37','17_77995143_A_G_b37')
+rs <- list('rs6482199','rs56234965','rs9989443')
 A1 <- list(); A2 <- list()
 for (i in 1:3) {
   print(i)
-  snp[[i]] <- ifelse(i==1,'22_23961126_C_T_b37',ifelse(i==2,'6_149410132_C_T_b37','10_22337752_A_G_b37'))
-  rs[[i]] <- ifelse(i==1,'rs56234965',ifelse(i==2,'rs9498210','rs6482199'))
   f <- paste0('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis/Genotype_Subset/gtex_all.filter.name.',snp[[i]],'.raw')
   df.snp[[i]] <- fread(f,data.table = F,stringsAsFactors = F)
   df.geno[[i]] <- merge(df.pheno[,c('IID',pheno[[i]])],df.snp[[i]][,c(2,grep(snp[[i]],colnames(df.snp[[i]])))],by='IID')
@@ -98,7 +98,7 @@ library(cowplot)
 # for running on cluster:
 if (cluster_run) {
   df.exp <- fread('/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct',data.table = F,stringsAsFactors = F)
-  GENE <- list('C22orf43','UST','COMMD3');
+  GENE <- list('COMMD3','C22orf43','CCDC40');
   EXPR.df <- df.exp[which(df.exp$Description %in% GENE),-1]
   rownames(EXPR.df) <- EXPR.df$Description; EXPR.df <- EXPR.df[,-1]
   EXPR.df <- as.data.frame(t(EXPR.df))
@@ -112,16 +112,16 @@ if (cluster_run) {
 
 #
 EXPR.df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis/expression_data.txt',data.table = F,stringsAsFactors = F)
-f <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis/GWAS/gtex_all.filter.name.top3.txt'
+f <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.top3.txt'
 df.pheno <- fread(f,stringsAsFactors = F,data.table = F)
 df.infil <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
 
-CELL <- list('Lymph_Sum','Monocytes','T cells follicular helper')
-tis <- list('Colon - Sigmoid','Heart - Atrial Appendage','Thyroid')
-GENE <- list('C22orf43','UST','COMMD3');
-phenoName <- list("Lymphocytes (transformed)",
-                  "Monocytes (transformed)",
-                  "Tfh cells (transformed)")
+CELL <- list('T cells follicular helper','Lymph_Sum','MastSum')
+tis <- list('Thyroid','Colon - Sigmoid','Esophagus - Muscularis')
+GENE <- list('COMMD3','C22orf43','CCDC40');
+phenoName <- list("Tfh cells (transformed)",
+                  "Lymphocytes (transformed)",
+                  "Mast cells (transformed)")
 pheno <- as.list(paste0('pheno',id,'.2'))
 
 g.expr1 <- list(); g.expr2 <- list(); res <- list()

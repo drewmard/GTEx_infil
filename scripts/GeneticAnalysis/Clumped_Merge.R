@@ -8,7 +8,7 @@ save_every_iteration <- FALSE # TRUE
 thres <- '5e-8'
 for (thres in c('1e-5','5e-8')) {
   FIRST <- TRUE
-  for (i in 1:223) {
+  for (i in 1:189) {
     print(i)
     f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.ALL_EBM.CLUMPED_',thres,'.txt.clumped')
     if (file.exists(f)) {

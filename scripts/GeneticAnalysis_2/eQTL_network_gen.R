@@ -10,8 +10,8 @@ eQTL2.save <- NA
 FIRST <- TRUE
 abs <- FALSE
 
-infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes2.txt',data.table=F,stringsAsFactors = F)
-infil_pheno <- subset(infil_pheno,!(cell %in% c('CD4.CD8','Myeloid.Lymph')))
+infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
+# infil_pheno <- subset(infil_pheno,!(cell %in% c('CD4.CD8','Myeloid.Lymph')))
 
 # infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
 # infil_pheno <- infil_pheno[1:223,]
@@ -70,5 +70,4 @@ if (abs) {
 }
 x <- do.call(rbind,lapply(strsplit(unique(eQTL2.save$gene_id),'\\.'),function(x) x[1]))
 fwrite(as.data.frame(x),f,sep='\t',quote=F,row.names = F,col.names = F)
-
 
