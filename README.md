@@ -102,33 +102,29 @@ significant_results.R
 Clumping.sh \
 Clumped_Merge.R
 
-#### QQ plots
-qqplots.R
-
 #### Genotype - phenotype plots
 extract_SNP.sh (extract SNP) \
-genotypebyphenotype_plots.R (create plots)
 
-#### Gene expression - phenotype plots
-expressionbyphenotype_plots.R
-
-
+#### figure panel
+figure_panel.R
 
 ## Downstream analysis of genetic results
 Directory: ./scripts/GeneticAnalysis_2/
 
+#### thyroiditis gwas
+GWAS_search.R
 
-#### eQTL/ieQTL overlap (Method 1):
-< insert script here >
-
-#### eQTL/ieQTL overlap (Method 2):
+#### ieQTL enrichment:
 eQTL_enrichment_method2.R
+eqtl_enrich_plots.R
 
 #### GeneMania:
 eQTL_network_gen.R (use eQTL_network_gen.R for *ieGene.txt output for input into GeneMania)
 
 #### Pleiotropic effects:
-< insert script here >
+pleiotropy.R
 
+#### venn diagrams
+venndiagram.R
 
 
