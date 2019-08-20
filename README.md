@@ -25,7 +25,7 @@ running_cibersort.R \
 cibersort_out.R
 
 #### xCell: 
-xCell_generation.R
+xCell_generation.R \
 xCell_process.R
 
 #### Heatmaps of immune content (Supp Fig. 1):

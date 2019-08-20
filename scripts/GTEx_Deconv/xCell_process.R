@@ -32,8 +32,10 @@ df.xcell$IID <- IID
 df.xcell <- merge(df.xcell,df.attr,by.x='IID',by.y='SUBJID')
 
 # merge related cell types into broader lineages
-s <- 'CD4Sum'
-df.xcell[,s] <- apply(df.xcell[,grepl('CD4',colnames(df.xcell))],1,sum)
+s <- 'CD4_memory'
+df.xcell[,s] <- apply(df.xcell[,c('CD4+ Tcm',
+                               'CD4+ Tem',
+                               'CD4+ memory T-cells')],1,sum)
 s <- 'MacrophageSum'
 df.xcell[,s] <- apply(df.xcell[,grepl('Macrophage',colnames(df.xcell))],1,sum)
 s <- 'CD8Sum'
@@ -51,6 +53,17 @@ df.xcell[,s] <- apply(df.xcell[,c('MacrophageSum','Neutrophils','DendriticSum','
 s <- 'Lymph_Sum'
 TcellSum <- colnames(df.xcell)[c(7:15,51,62:65)]
 df.xcell[,s] <- apply(df.xcell[,c('NK cells',TcellSum,'Bcellsum')],1,sum)
+#
+s <- 'CD4Sum'
+df.xcell[,s] <- apply(df.xcell[,c('CD4+ Tcm',
+                                  'CD4+ Tem',
+                                  'CD4+ memory T-cells',
+                                  'CD4+ naive T-cells',
+                                  'CD4+ T-cells',
+                                  'Tregs',
+                                  'Th1 cells',
+                                  'Th2 cells',
+                                  'Tgd cells')],1,sum)
 #
 s <- 'CD4.CD8'
 df.xcell[,'CD4.CD8'] <- (df.xcell[,'CD4Sum']+1e-10)/(df.xcell[,'CD8Sum']+1e-10)

@@ -23,14 +23,14 @@ df.attr <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotat
 
 # cell types data
 cellTypes.df <- data.frame( 
-  ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
+  ciber=c('T cells CD8','T cells CD4 naive','CD4_memory','Neutrophils','MacrophageSum',
           'Bcellsum','NK_Sum','DendriticSum','MastSum','Myeloid_Sum',
           'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
-          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
-  xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  xcell=c('CD8Sum','CD4+ naive T-cells','CD4_memory','Neutrophils','MacrophageSum',
           'Bcellsum','NK cells','DendriticSum','Mast cells','Myeloid_Sum',
           'Th_Sum','Tregs','Tgd cells',
-          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
+          'Monocytes','Eosinophils','Lymph_Sum'),
   stringsAsFactors = F)
 
 

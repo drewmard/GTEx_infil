@@ -23,7 +23,15 @@ for (absolute in c('F','T')) {
   
   # merge immune cell types into broader lineages
   s <- 'CD4_Tcells'
-  df.ciber.2[,s] <- apply(df.ciber.2[,grepl('CD4',colnames(df.ciber.2))],1,sum)
+  df.ciber.2[,s] <- apply(df.ciber.2[,c('T cells CD4 naive',
+                                        "T cells CD4 memory resting",
+                                        "T cells CD4 memory activated",
+                                        "T cells follicular helper",
+                                        "T cells regulatory (Tregs)",
+                                        "T cells gamma delta")],1,sum)
+  s <- 'CD4_memory'
+  df.ciber.2[,s] <- apply(df.ciber.2[,c("T cells CD4 memory resting",
+                                 "T cells CD4 memory activated")],1,sum)
   s <- 'MacrophageSum'
   df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Macrophage',colnames(df.ciber.2))],1,sum)
   s <- 'Bcellsum'

@@ -19,11 +19,11 @@ df.rel <- subset(df.rel,ID %in% genetic_data_fam[,2])
 tis.uniq <- data.frame(table(df.rel$SMTSD))
 df.results <- data.frame(tissue=c(),cell=c())
 cellTypes.df <- data.frame( 
-  ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
+  ciber=c('T cells CD8','T cells CD4 naive','CD4_memory','Neutrophils','MacrophageSum',
                  'Bcellsum','NK_Sum','DendriticSum','MastSum','Myeloid_Sum',
                  'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
                  'Monocytes','Eosinophils','Lymph_Sum'),
-  xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
+  xcell=c('CD8Sum','CD4+ naive T-cells','CD4_memory','Neutrophils','MacrophageSum',
                    'Bcellsum','NK cells','DendriticSum','Mast cells','Myeloid_Sum',
                    'Th_Sum','Tregs','Tgd cells',
                    'Monocytes','Eosinophils','Lymph_Sum'),
@@ -81,7 +81,7 @@ df.results$phenotype <- paste(df.results$tissue,df.results$cell,sep = '-')
 df.results <- subset(df.results,tissue != 'Cells - EBV-transformed lymphocytes')
 fwrite(df.results,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',sep='\t',quote=F,row.names = F,col.names = T)
 
-x <- rbind(data.frame(tissue=unique(subset(df.results,cell %in% c('CD4_Tcells','T cells CD8'))$tissue),cell='CD4.CD8'),
-                    data.frame(tissue=unique(subset(df.results,cell %in% c('Myeloid_Sum','Lymph_Sum'))$tissue),cell='Myeloid.Lymph'))
+x <- rbind(data.frame(tissue='Whole Blood',cell='CD4.CD8'),
+                    data.frame(tissue='Whole Blood',cell='Myeloid.Lymph'))
 fwrite(x,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_ratios.txt',sep='\t',quote=F,row.names = F,col.names = T)
 

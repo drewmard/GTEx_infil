@@ -25,14 +25,14 @@ tissue_file_name <- function(x.tis) {paste0('/athena/elementolab/scratch/anm2868
 colnames(df.xcell)[colnames(df.xcell)=='SAMP'] <- 'Input Sample'
 colnames(df.xcell)[colnames(df.xcell)=='IID'] <- 'ID'
 cellTypes.df <- data.frame( 
-  ciber=c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum',
+  ciber=c('T cells CD8','T cells CD4 naive','CD4_memory','Neutrophils','MacrophageSum',
           'Bcellsum','NK_Sum','DendriticSum','MastSum','Myeloid_Sum',
           'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
-          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
-  xcell=c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  xcell=c('CD8Sum','CD4+ naive T-cells','CD4_memory','Neutrophils','MacrophageSum',
           'Bcellsum','NK cells','DendriticSum','Mast cells','Myeloid_Sum',
           'Th_Sum','Tregs','Tgd cells',
-          'Monocytes','Eosinophils','Lymph_Sum','CD4.CD8','Myeloid.Lymph'),
+          'Monocytes','Eosinophils','Lymph_Sum'),
   stringsAsFactors = F)
 
 f <- '/athena/elementolab/scratch/anm2868/GTEx/GENO_PCA/gtex_all.filter.name.eigenvec'
