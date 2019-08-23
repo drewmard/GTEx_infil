@@ -38,7 +38,7 @@ corr_heatmaps.R
 xcell_cibersort_CaseExample.R
 
 #### Hierarchical clustering (Fig 1b, Supp Fig 4-5):
-< insert script here > (munna)
+clustering_heatmap.R
 
 #### Boxplots of immune content (Fig 1c, Supp Fig 6-9):
 infiltration_boxplots.R
