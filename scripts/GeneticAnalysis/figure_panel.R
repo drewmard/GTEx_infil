@@ -32,7 +32,6 @@ id[[3]] <- 81
 
 # 2: plot qqplots for top 3 hits
 df.qq <- list(); g.qq <- list()
-df.qq.full <- list();
 # ggplot_title <- list('Lymphocytes in sigmoid colon samples','Monocytes in heart (atrial appendage) samples','Tfh cells in thyroid samples')
 for (i in 1:3) {
   print(i)

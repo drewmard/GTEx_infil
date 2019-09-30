@@ -83,13 +83,18 @@ for (j in 1:3) {
     if (j == 2) {
       df.sub <- subset(df.abs,SMTSD==tis)
 
+      # df.attr.sub <- subset(df.attr,SMTSD==tis)
+      # df.attr.sub <- df.attr.sub[,c('SAMPID','SMATSSCR','SMCENTER')]
+      # paste.s <- function(x) {return(paste(x[1:2],collapse='-'))}
+      # df.attr.sub$ID <- sapply(strsplit(df.attr.sub$SAMPID,"-"),paste.s)
+      # df.attr.sub <- df.attr.sub[,-1]
+      # 
+      # df.sub <- merge(df.sub,df.attr.sub,by='ID')
       df.attr.sub <- subset(df.attr,SMTSD==tis)
       df.attr.sub <- df.attr.sub[,c('SAMPID','SMATSSCR','SMCENTER')]
-      paste.s <- function(x) {return(paste(x[1:2],collapse='-'))}
-      df.attr.sub$ID <- sapply(strsplit(df.attr.sub$SAMPID,"-"),paste.s)
-      df.attr.sub <- df.attr.sub[,-1]
       
-      df.sub <- merge(df.sub,df.attr.sub,by='ID')
+      df.sub <- merge(df.sub,df.attr.sub,by.x='Input Sample',by.y='SAMPID')
+      
       
       # Assign NAs a value so that model does not discard data
       df.sub$DTHHRDY[is.na(df.sub$DTHHRDY)] <- 5
@@ -125,13 +130,18 @@ for (j in 1:3) {
 
       cell.xcell <- cellTypes.df$xcell[cellTypes.df$ciber==cell]
 
+      # df.attr.sub <- subset(df.attr,SMTSD==tis)
+      # df.attr.sub <- df.attr.sub[,c('SAMPID','SMATSSCR','SMCENTER')]
+      # paste.s <- function(x) {return(paste(x[1:2],collapse='-'))}
+      # df.attr.sub$ID <- sapply(strsplit(df.attr.sub$SAMPID,"-"),paste.s)
+      # df.attr.sub <- df.attr.sub[,-1]
+      # 
+      # df.sub <- merge(df.sub,df.attr.sub,by.x='IID',by.y='ID')
+      
       df.attr.sub <- subset(df.attr,SMTSD==tis)
       df.attr.sub <- df.attr.sub[,c('SAMPID','SMATSSCR','SMCENTER')]
-      paste.s <- function(x) {return(paste(x[1:2],collapse='-'))}
-      df.attr.sub$ID <- sapply(strsplit(df.attr.sub$SAMPID,"-"),paste.s)
-      df.attr.sub <- df.attr.sub[,-1]
       
-      df.sub <- merge(df.sub,df.attr.sub,by.x='IID',by.y='ID')
+      df.sub <- merge(df.sub,df.attr.sub,by.x='SAMP',by.y='SAMPID')
       
       # Assign NAs a value so that model does not discard data
       df.sub$DTHHRDY[is.na(df.sub$DTHHRDY)] <- 5
@@ -310,8 +320,11 @@ subset(df.coef,tis=='Whole Blood')
 subset(df.coef,tis=='Thyroid')
 subset(df.coef,tis=='Breast - Mammary Tissue')
 subset(df.coef,tis %in% c('Nerve - Tibial','Artery - Tibial'))
-subset(df.coef,tis %in% c('Nerve - Tibial','Artery - Tibial'))
+nrow(subset(df.coef,tis %in% c('Nerve - Tibial','Artery - Tibial')))
+nrow(subset(df.coef,tis %in% c('Nerve - Tibial','Artery - Tibial') & p_age_brown.fdr < 0.1))
 subset(df.coef,tis %in% c('Artery - Aorta','Artery - Coronary'))
+nrow(subset(df.coef,tis %in% c('Artery - Aorta','Artery - Coronary')))
+nrow(subset(df.coef,tis %in% c('Artery - Aorta','Artery - Coronary') & p_age_brown.fdr < 0.1))
 
 
 # Save significant associations: 

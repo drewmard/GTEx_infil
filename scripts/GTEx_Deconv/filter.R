@@ -44,17 +44,12 @@ for (i in 1:nrow(tis.uniq)) {
   cellTypes2 <- as.matrix(df.xcell.sub[, cellTypes])
   rownames(cellTypes2) <- df.xcell.sub$IID
   cellTypeFreq2 <- apply(cellTypes2, 2, mean)
-  # cellTypeFreq2 <- apply(cellTypes2, 2, median)
-  
+
   cellTypes <- cellTypes.df$ciber
-  # cellTypes2 <- as.matrix(ciberSigSig[, cellTypes])
-  # rownames(cellTypes2) <- ciberSigSig$ID
   cellTypes2 <- as.matrix(df.sub[, cellTypes])
   rownames(cellTypes2) <- df.sub$ID
   cellTypeFreq <- apply(cellTypes2, 2, mean)
   
-  # condition2 <- cellTypes[as.numeric(which(cellTypeFreq > 0.05))]
-  # print(cellTypeFreq2)
   condition2 <- cellTypes[as.numeric(which(cellTypeFreq > 0.05 & cellTypeFreq2 > 1e-3))]
   
   # cond 3: are there enough samples total?
@@ -67,21 +62,25 @@ for (i in 1:nrow(tis.uniq)) {
       df.abs.sub <- subset(df.abs,SMTSD==TISSUE)
       df.xcell.sub <- subset(df.xcell,SMTSD==TISSUE)
       cor.res <- cor.test(df.abs.sub[,cell],df.xcell.sub[,cellTypes.df$xcell[cellTypes.df$ciber==cell]])
-      condition4 <- !(cor.res$estimate < 0) # & cor.res$p.value < 0.05)
+      condition4 <- !(cor.res$estimate < 0)
+      
       if (condition4 & !is.na(condition4)) {
+        
         # save infiltration phenotype
         df.results <- rbind(df.results,data.frame(tissue=TISSUE,cell=cell))
       }
     }
   }
 }
+
+# save results
 df.results$tissue <- as.character(df.results$tissue)
 df.results$cell <- as.character(df.results$cell)
 df.results$phenotype <- paste(df.results$tissue,df.results$cell,sep = '-')
 df.results <- subset(df.results,tissue != 'Cells - EBV-transformed lymphocytes')
 fwrite(df.results,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',sep='\t',quote=F,row.names = F,col.names = T)
 
-x <- rbind(data.frame(tissue='Whole Blood',cell='CD4.CD8'),
-                    data.frame(tissue='Whole Blood',cell='Myeloid.Lymph'))
-fwrite(x,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_ratios.txt',sep='\t',quote=F,row.names = F,col.names = T)
-
+# x <- rbind(data.frame(tissue='Whole Blood',cell='CD4.CD8'),
+#                     data.frame(tissue='Whole Blood',cell='Myeloid.Lymph'))
+# fwrite(x,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_ratios.txt',sep='\t',quote=F,row.names = F,col.names = T)
+# 

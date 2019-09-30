@@ -11,15 +11,29 @@ df.ciber.rel <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltra
 df.ciber.abs <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
 
 # initialize
-dataf <- data.frame(ID=unique(df.ciber.abs$ID))
-s <- data.frame(table(df.ciber.rel$SMTSD))
+cellTypes.df <- data.frame( 
+  ciber=c('T cells CD8','T cells CD4 naive','CD4_memory','Neutrophils','MacrophageSum',
+          'Bcellsum','NK_Sum','DendriticSum','MastSum','Myeloid_Sum',
+          'T cells follicular helper','T cells regulatory (Tregs)','T cells gamma delta',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  xcell=c('CD8Sum','CD4+ naive T-cells','CD4_memory','Neutrophils','MacrophageSum',
+          'Bcellsum','NK cells','DendriticSum','Mast cells','Myeloid_Sum',
+          'Th_Sum','Tregs','Tgd cells',
+          'Monocytes','Eosinophils','Lymph_Sum'),
+  stringsAsFactors = F)
+
+# infiltration phenotypes
+infil_pheno <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_phenotypes.txt',data.table = F,stringsAsFactors = F)
+infil_pheno <- infil_pheno[order(infil_pheno$tissue),]
+# infil_pheno$phenotype <- paste(infil_pheno$tissue,infil_pheno$cell,sep = '-')
 
 # merge into large dataframe, where each row is new individual and each column is infiltration phenotype
-# 212 phenotypes: 53 cell types in 4 tissues
-for (i in 1:length(s[,1])) {
-  tis <- s[i,1]
-  df.sub <- subset(df.ciber.rel,SMTSD %in% tis)[,c('ID','T cells CD8','CD4_Tcells','MacrophageSum','Neutrophils')]
-  colnames(df.sub)[-1] <- paste(tis,c('CD8','CD4','Macrophage','Neutrophil'))
+dataf <- data.frame(ID=unique(df.ciber.abs$ID))
+for (i in 1:nrow(infil_pheno)) {
+  # tis <- s[i,1]
+  tis <- infil_pheno$tissue[i]
+  df.sub <- subset(df.ciber.rel,SMTSD %in% tis)[,c('ID',infil_pheno$cell[i])]
+  colnames(df.sub)[-1] <- paste(tis,infil_pheno$cell[i])
   dataf <- merge(dataf,df.sub,by='ID',all=T)
 }
 
@@ -56,10 +70,11 @@ cor.mat.cb_rel <- cor.mat
 #########################
 
 dataf <- data.frame(ID=unique(df.ciber.abs$ID))
-for (i in 1:length(s[,1])) {
-  tis <- s[i,1]
-  df.sub <- subset(df.ciber.abs,SMTSD %in% tis)[,c('ID','T cells CD8','CD4_Tcells','MacrophageSum','Neutrophils')]
-  colnames(df.sub)[-1] <- paste(tis,c('CD8','CD4','Macrophage','Neutrophil'))
+for (i in 1:nrow(infil_pheno)) {
+  # tis <- s[i,1]
+  tis <- infil_pheno$tissue[i]
+  df.sub <- subset(df.ciber.abs,SMTSD %in% tis)[,c('ID',infil_pheno$cell[i])]
+  colnames(df.sub)[-1] <- paste(tis,infil_pheno$cell[i])
   dataf <- merge(dataf,df.sub,by='ID',all=T)
 }
 # pairwise correlation
@@ -82,7 +97,7 @@ g<-ggplot(cor.melt,aes(Var1,Var2,fill=value)) +
         plot.title=element_text(hjust=0.5)) + 
   coord_fixed() +
   labs(title='CIBERSORT - Absolute')
-
+g
 cor.mat.cb_abs <- cor.mat
 
 # TO SAVE PLOTS:

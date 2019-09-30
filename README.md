@@ -28,11 +28,8 @@ cibersort_out.R
 xCell_generation.R \
 xCell_process.R
 
-#### Heatmaps of immune content (Supp Fig. 1):
-heatmaps.R
-
 #### Pairwise correlations of infiltration phenotypes (Supp Fig. 2):
-corr_heatmaps.R
+corr_heatmaps.R # note: need to edit
 
 #### Case examples of differences between deconvolution algorithms (Supp Fig. 3):
 xcell_cibersort_CaseExample.R
@@ -41,12 +38,13 @@ xcell_cibersort_CaseExample.R
 clustering_heatmap.R
 
 #### Boxplots of immune content (Fig 1c, Supp Fig 6-9):
-infiltration_boxplots.R
+infiltration_boxplots.R \
+celltype_boxplots.R \
 
 #### t-SNE of immune content (Supp Fig 10):
 < insert script here > (do we want this?)
 
-#### Filtering of infiltration phenotypes (212):
+#### Filtering of infiltration phenotypes (190):
 filter.R
 
 #### Infiltration signatures in bulk gene expression values
@@ -71,6 +69,10 @@ Directory: ./scripts/AgeSex/
 
 #### Statistical analysis, Table 1a,b, and Fig 2a,b:
 AgeSex_Analysis.R
+############################ what to do about Tables????
+
+#### Create age/sex plots of most significant associations:
+AgeSex_Plots2.R
 
 
 
@@ -107,6 +109,7 @@ extract_SNP.sh (extract SNP) \
 
 #### figure panel
 figure_panel.R
+separate_qq.R
 
 ## Downstream analysis of genetic results
 Directory: ./scripts/GeneticAnalysis_2/

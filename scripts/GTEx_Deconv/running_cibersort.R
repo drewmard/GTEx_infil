@@ -17,13 +17,10 @@ mixture.file <- '/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analys
 args = commandArgs(trailingOnly=TRUE)
 absolute=args[1]
 absolute='abs'
-# i=args[2]
-# print(paste('Running...',absolute,i))
 print(paste('Running...',absolute))
 source(CIBERSORT_script)
 
 # Run CIBERSORT...
-# mixture.file<-paste0("/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_v7_genexpr_",i,".txt")
 if (absolute=='abs') {
   results <- CIBERSORT(sig.matrix.file,mixture.file, perm=1000, QN=FALSE, absolute=TRUE, abs_method='sig.score')
 } else if (absolute=='rel') {

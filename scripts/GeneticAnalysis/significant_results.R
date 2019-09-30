@@ -49,7 +49,7 @@ library(data.table)
 f <- '/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig2.txt'
 df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
 df.sub.save$phenotype <- paste(df.sub.save$tissue,df.sub.save$cell,sep = '-')
-df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:20,]
+df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:5,]
 
 x <- df.sub.save
 paste0(length(unique(paste(x$tissue,x$cell,sep = '-'))),' phenotypes in ',length(unique(x$tissue)), ' tissues.')

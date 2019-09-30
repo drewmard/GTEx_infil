@@ -22,13 +22,6 @@ for (absolute in c('F','T')) {
   df.ciber.2 <- merge(df.ciber.2, df.cov,by.x = "ID", by.y = 'SUBJID')
   
   # merge immune cell types into broader lineages
-  s <- 'CD4_Tcells'
-  df.ciber.2[,s] <- apply(df.ciber.2[,c('T cells CD4 naive',
-                                        "T cells CD4 memory resting",
-                                        "T cells CD4 memory activated",
-                                        "T cells follicular helper",
-                                        "T cells regulatory (Tregs)",
-                                        "T cells gamma delta")],1,sum)
   s <- 'CD4_memory'
   df.ciber.2[,s] <- apply(df.ciber.2[,c("T cells CD4 memory resting",
                                  "T cells CD4 memory activated")],1,sum)
@@ -42,27 +35,32 @@ for (absolute in c('F','T')) {
   df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Dendritic',colnames(df.ciber.2))],1,sum)
   s <- 'MastSum'
   df.ciber.2[,s] <- apply(df.ciber.2[,grepl('Mast cells',colnames(df.ciber.2))],1,sum)
-  # s <- 'TcellSum'
-  # df.ciber.2[,s] <- apply(df.ciber.2[,grepl('T cells',colnames(df.ciber.2))],1,sum)
   s <- 'Myeloid_Sum'
   df.ciber.2[,s] <- apply(df.ciber.2[,c('MacrophageSum','Neutrophils','DendriticSum','MastSum','Monocytes','Eosinophils')],1,sum)
   #
   s <- 'Lymph_Sum'
   TcellSum <- colnames(df.ciber.2)[grepl('T cells',colnames(df.ciber.2))]
   df.ciber.2[,s] <- apply(df.ciber.2[,c('NK_Sum',TcellSum,'Bcellsum')],1,sum)
-  #
+  
+  # building CD4:CD8 T cell ratio - transformed into normal dist
   s <- 'CD4.CD8'
-  df.ciber.2[,'CD4.CD8'] <- (df.ciber.2[,'CD4_Tcells']+1e-10)/(df.ciber.2[,'T cells CD8']+1e-10)
-  df.ciber.2$CD4.CD8[which(df.ciber.2[,'CD4_Tcells']==0 | df.ciber.2[,'T cells CD8']==0)] <- NA
+  CD4_estimate <- apply(df.ciber.2[,c('T cells CD4 naive',
+                           "T cells CD4 memory resting",
+                           "T cells CD4 memory activated",
+                           "T cells follicular helper",
+                           "T cells regulatory (Tregs)",
+                           "T cells gamma delta")],1,sum)
+  df.ciber.2[,'CD4.CD8'] <- (CD4_estimate+1e-10)/(df.ciber.2[,'T cells CD8']+1e-10)
+  df.ciber.2$CD4.CD8[which(df.ciber.2[,'T cells CD8']==0)] <- NA
   source('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/bin/rntransform.R')
   for (tis in unique(df.ciber.2$SMTSD)) {
     i <- which(df.ciber.2$SMTSD==tis)
     df.ciber.2$CD4.CD8[i] <- rntransform(df.ciber.2$CD4.CD8[i]) + 10 # +10 such that it passes filter thresholds
   }
-  #
+  # building Myeloid:Lymphoid cell ratio - transformed into normal dist
   s <- 'Myeloid.Lymph'
   df.ciber.2[,'Myeloid.Lymph'] <- (df.ciber.2[,'Myeloid_Sum']+1e-10)/(df.ciber.2[,'Lymph_Sum']+1e-10)
-  df.ciber.2$Myeloid.Lymph[which(df.ciber.2[,'Myeloid_Sum']==0 | df.ciber.2[,'Lymph_Sum']==0)] <- NA
+  df.ciber.2$Myeloid.Lymph[which(df.ciber.2[,'Lymph_Sum']==0)] <- NA
   source('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/bin/rntransform.R')
   for (tis in unique(df.ciber.2$SMTSD)) {
     i <- which(df.ciber.2$SMTSD==tis)
