@@ -114,7 +114,7 @@ separate_qq.R
 ## Downstream analysis of genetic results
 Directory: ./scripts/GeneticAnalysis_2/
 
-#### thyroiditis gwas
+#### Analysis of related genetic variants also associated with thyroiditis using GeneHancer regions & phenoscanner
 GWAS_search.R
 
 #### ieQTL enrichment:
