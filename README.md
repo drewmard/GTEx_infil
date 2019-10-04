@@ -95,7 +95,7 @@ GWAS_preprocess.R
 
 #### Run GWAS
 GWAS_local.sh (or GWAS.sh in parallel cloud computing environment) \
-Merge_Chr_GWAS_wrapper.sh (to merge different chromsomes together)
+Merge_Chr_GWAS_wrapper.sh (to merge different chromosomes together)
 
 #### Combine related p-values using Empirical Brown's method, and identify significant results
 Empirical_Brown_pval_wrapper.sh \
@@ -107,8 +107,8 @@ significant_results.R
 #### Script to extract a SNP for genotype - phenotype plots
 extract_SNP.sh (extract SNP) \
 
-#### Figure panel: genotype-phenotype plots
-figure_panel.R
+#### Figure panel: qqplots, genotype-phenotype plots & expression-phenotype plots
+figure_panel.R \
 separate_qq.R
 
 ## Downstream analysis of genetic results
