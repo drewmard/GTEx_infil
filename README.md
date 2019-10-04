@@ -88,7 +88,7 @@ Directory: ./scripts/GeneticAnalysis/
 
 
 #### Generate PCs:
-./GTEx_Genetic_PCA/PCA_calc_all.sh \
+./GTEx_Genetic_PCA/PCA_calc_all.sh
 
 #### Prepare data for external GWAS software:
 GWAS_preprocess.R
