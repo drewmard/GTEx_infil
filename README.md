@@ -118,7 +118,7 @@ Directory: ./scripts/GeneticAnalysis_2/
 GWAS_search.R
 
 #### ieQTL enrichment:
-eQTL_enrichment_method2.R
+eQTL_enrichment_method2.R \
 eqtl_enrich_plots.R
 
 #### GeneMania:
