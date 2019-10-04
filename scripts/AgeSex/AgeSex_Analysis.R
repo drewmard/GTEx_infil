@@ -241,9 +241,10 @@ for (i in 1:nrow(df.coef)) {
   # print('Running sped up pre-calculated covariance matrix method...')
   age.p_values <- df.coef[i,c('p_age_cib.rel','p_age_cib.abs','p_age_xcell')]
   ind.min_p <- which.min(age.p_values)
-  beta_col <- c('beta_age_cib.rel','beta_age_cib.abs','beta_age_xcell')[ind.min_p]
-  beta <- df.coef[i,beta_col]
-  beta_direc = NA; if (beta > 0) {beta_direc <- '+'} else {beta_direc <- '-'}
+  # beta_col <- c('beta_age_cib.rel','beta_age_cib.abs','beta_age_xcell')[ind.min_p]
+  # beta <- df.coef[i,beta_col]
+  # beta_direc = NA; if (beta > 0) {beta_direc <- '+'} else {beta_direc <- '-'}
+  beta_direc <- sign(df.coef$beta_age_cib.abs[i]); if (beta_direc > 0) {beta_direc <- '+'} else {beta_direc <- '-'}
   if (abs_only) {
     df.coef$p_age_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno[-1,],p_values = age.p_values[,-1],extra_info = F,covar_matrix = cov.matrix[,-1])
   } else {
@@ -255,9 +256,10 @@ for (i in 1:nrow(df.coef)) {
   ind.min_p <- which.min(sex.p_values)
   beta_direc = NA; 
   if (length(ind.min_p) > 0) {
-    beta_col <- c('beta_sex_cib.rel','beta_sex_cib.abs','beta_sex_xcell')[ind.min_p]
-    beta <- df.coef[i,beta_col]
-    if (beta > 0) {beta_direc <- '+'} else {beta_direc <- '-'} 
+    beta_direc <- sign(df.coef$beta_sex_cib.abs[i]); if (beta_direc > 0) {beta_direc <- '+'} else {beta_direc <- '-'}
+    # beta_col <- c('beta_sex_cib.rel','beta_sex_cib.abs','beta_sex_xcell')[ind.min_p]
+    # beta <- df.coef[i,beta_col]
+    # if (beta > 0) {beta_direc <- '+'} else {beta_direc <- '-'} 
   }
   if (abs_only) {
     df.coef$p_sex_brown[i] <- empiricalBrownsMethod2(data_matrix = pheno[-1,],p_values = sex.p_values[,-1],extra_info = F,covar_matrix = cov.matrix[,-1])
@@ -275,9 +277,6 @@ df.coef$p_age_brown.fdr <- NA
 df.coef$p_sex_brown.fdr <- NA
 df.coef$p_age_brown.fdr <- p.adjust(df.coef$p_age_brown,method='fdr')
 df.coef$p_sex_brown.fdr <- p.adjust(df.coef$p_sex_brown,method='fdr')
-# df.coef$pheno[df.coef$pheno=='CD4Sum'] <- 'CD4+ T cells'
-# df.coef$pheno[df.coef$pheno=='CD8Sum'] <- 'CD8+ T cells'
-# df.coef$pheno[df.coef$pheno=='MacrophageSum'] <- 'Macrophages'
 
 if (pre_menopause) {
   print(1)
@@ -347,90 +346,4 @@ library('stargazer')
 stargazer(df.coef.sex,type='html',summary=F,rownames = F,column.sep.width = "15pt",
           out="/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/Sex_Assoc_Table.doc")
 
-
-# Breast vs Cd8 t cell infiltration plot
-# library(ggplot2)
-# workdir <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/'
-# df.abs <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt'),data.table = F,stringsAsFactors = F)
-# df.sub <- subset(df.abs,SMTSD=='Breast - Mammary Tissue')
-# g <- ggplot(df.sub,aes(x=as.factor(SEX),y=Lymph_Sum,fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
-#   geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
-#   labs(x='Sex',y='Lymphocytes (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
-# png('~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/AgeSex/Lymphocyte_Sex_Breast.png')
-# print(g)
-# dev.off()
-
-# library(ggplot2)
-# workdir <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/'
-# df.abs <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt'),data.table = F,stringsAsFactors = F)
-# df.rel <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt'),data.table = F,stringsAsFactors = F)
-# df.xcell <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/XCell.all_tissues.txt'),data.table = F,stringsAsFactors = F)
-# 
-# tissue <- list('Breast - Mammary Tissue','Thyroid')
-# g.plots <- list(); df.mg.melt <- list()
-# nplot <- 2
-# for (i in 1:nplot) {
-#   tis <- tissue[[i]]
-#   df.mg <- merge(
-#     merge(
-#       subset(df.abs,SMTSD==tis)[,c('ID','SEX','Lymph_Sum')],
-#       subset(df.rel,SMTSD==tis)[,c('ID','Lymph_Sum')],by='ID'),
-#     subset(df.xcell,SMTSD==tis)[,c('IID','Lymph_Sum')],
-#     by.x='ID',by.y='IID')
-#   colnames(df.mg)[3:5] <- c('CIB-Abs','CIB-Rel','xCell')
-#   for (j in 3:5) df.mg[,j] <- rntransform(df.mg[,j])
-#   df.mg.melt[[i]] <- (melt(df.mg[,-1],id='SEX'))
-#   g.plots[[i]] <- ggplot(df.mg.melt[[i]],aes(x=as.factor(SEX),y=value,fill=as.factor(variable))) + geom_boxplot(outlier.shape=NA) +
-#     #geom_jitter(width=0.1) + 
-#     theme_bw() + theme(plot.title = element_text(hjust=0.5)) +#+ theme(legend.position='none',panel.grid = element_blank()) +
-#     labs(x='Sex',y='Lymphocytes (transformed scores)',title = tis,fill='Method') + scale_x_discrete(labels=c('Male','Female')); #g.plots[[i]]
-#   if (i!=nplot) {g.plots[[i]] <- g.plots[[i]] + theme(legend.position='none')}
-# }
-# library(cowplot)
-# plot_grid(g.plots[[1]],g.plots[[2]],ncol=2,rel_widths = c(0.5,0.6))
-
-# df.mg <- merge(
-#   merge(
-#     subset(df.abs,SMTSD=='Thyroid')[,c('ID','SEX','Lymph_Sum')],
-#     subset(df.rel,SMTSD=='Thyroid')[,c('ID','Lymph_Sum')],by='ID'),
-#   subset(df.xcell,SMTSD=='Thyroid')[,c('IID','Lymph_Sum')],
-#   by.x='ID',by.y='IID')
-# colnames(df.mg)[3:5] <- c('CIB-Abs','CIB-Rel','xCell')
-# for (i in 3:5) df.mg[,i] <- rntransform(df.mg[,i])
-# df.mg.melt <- (melt(df.mg[,-1],id='SEX'))
-# g1 <- ggplot(df.mg.melt,aes(x=as.factor(SEX),y=value,fill=as.factor(variable))) + geom_boxplot(outlier.shape=NA) +
-#   #geom_jitter(width=0.1) + 
-#   theme_bw() +#+ theme(legend.position='none',panel.grid = element_blank()) +
-#   labs(x='Sex',y='Lymphocytes (transformed scores)') + scale_x_discrete(labels=c('Male','Female')); g1
-# }
-
-# df.sub <- subset(df.abs,SMTSD=='Thyroid')
-# g2 <- ggplot(df.sub,aes(x=as.factor(SEX),y=rntransform(Lymph_Sum),fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
-#   geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
-#   labs(x='Sex',y='Lymphocytes (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
-# png('~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/AgeSex/Lymphocyte_Sex_Breast.png')
-# print(g2)
-# dev.off()
-
-# library(ggplot2)
-# df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-# df.sub <- subset(df.abs,SMTSD=='Breast - Mammary Tissue')
-# g <- ggplot(df.sub,aes(x=as.factor(SEX),y=`T cells CD8`,fill=as.factor(SEX))) + geom_boxplot(outlier.shape=NA) +
-#   geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
-#   labs(x='Sex',y='CD8+ T cells score (CIBERSORT - Absolute)') + scale_x_discrete(labels=c('Male','Female'))
-# png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD8_Sex_Breast.png')
-# print(g)
-# dev.off()
-
-
-# Artery vs Cd4 t cell infiltration plot
-# library(ggplot2)
-# df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-# df.sub <- subset(df.abs,SMTSD=='Artery - Tibial')
-# g <- ggplot(df.sub,aes(x=as.factor(SEX),y=CD4_Tcells,fill=as.factor(AGE))) + geom_boxplot(outlier.shape=NA) +
-#   geom_jitter(width=0.1) + theme_bw() + theme(legend.position='none',panel.grid = element_blank()) +
-#   labs(x='Age',y='CD4+ T cells score (CIBERSORT - Absolute)') 
-# png('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/AgeSex/CD4_Age_ArteryTibial.png')
-# print(g)
-# dev.off()
-
+# done

@@ -25,3 +25,8 @@ for (j in 1:3) {
   f.save <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.',j,'.qassoc')
   fwrite(df.save,f.save,col.names = T,row.names = F,na='NA',quote=F,sep='\t')
 }
+
+# done
+
+
+

@@ -101,3 +101,4 @@ fam[is.na(fam)] <- -9
 dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis',showWarnings = F)
 fwrite(fam,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt',sep = '\t',col.names = T,row.names = F,quote=F)
 
+# done

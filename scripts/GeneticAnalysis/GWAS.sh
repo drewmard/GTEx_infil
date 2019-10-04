@@ -3,7 +3,7 @@
 #SBATCH -n 1
 #SBATCH --tasks-per-node=1
 #SBATCH --mem=32G
-#SBATCH --array=14-17:1
+#SBATCH --array=1-22:1
 
 # Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
 # Script to run GWAS for identifying iQTLs
@@ -18,3 +18,5 @@ outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysi
 mkdir -p $outdir
 
 plink --bfile $geno --pheno $pheno --all-pheno --assoc --out $outdir/GTEx.chr$i --allow-no-sex --maf 0.05 --chr $i
+
+# done

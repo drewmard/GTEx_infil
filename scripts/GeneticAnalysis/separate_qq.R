@@ -1,3 +1,8 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+
+# Script for generating qq plots for cib-rel, cib-abs, and xcell p-values.
+# these are not the EBM p-val qqplots!
+
 library(data.table)
 library(ggplot2)
 library(cowplot)

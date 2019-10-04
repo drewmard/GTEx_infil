@@ -24,13 +24,14 @@ for (i in 1:nplot) {
     geom_jitter(width=0.1) +
     scale_y_continuous(labels=function(x) sprintf("%.2f", x)) +
     theme_bw() + theme(plot.title = element_text(hjust=0.5)) + theme(legend.position='none',panel.grid = element_blank()) +
-    labs(x='Sex',y='Lymphocytes (transformed scores)',title = tis) + scale_x_discrete(labels=c('Male','Female')); #g.plots[[i]]
+    # labs(x='Sex',y='Lymphocytes (transformed scores)',title = tis) + scale_x_discrete(labels=c('Male','Female')); #g.plots[[i]]
+    labs(x='Sex',y='Lymphocytes score',title = tis) + scale_x_discrete(labels=c('Male','Female')); #g.plots[[i]]
   if (i!=nplot) {g.plots[[i]] <- g.plots[[i]] + theme(legend.position='none')}
 }
 library(cowplot)
 plot_grid(g.plots[[1]],g.plots[[2]],ncol=2,rel_widths = c(0.5,0.5))
 scale <- 3
-tiff("~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/AgeSex/Breast.png",width=800*scale,height=600*scale,res=100*scale,units="px")
+tiff("~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/AgeSex/BreastThyroid.png",width=800*scale,height=600*scale,res=100*scale,units="px")
 plot_grid(g.plots[[1]],g.plots[[2]],ncol=2,rel_widths = c(0.5,0.5))
 dev.off()
 

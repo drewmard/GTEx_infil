@@ -1,3 +1,7 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+
+# Script for generating figure panel of significant results
+
 library(data.table)
 library(ggplot2)
 library(GenABEL)
@@ -45,6 +49,7 @@ for (i in 1:3) {
   
   df.qq[[i]] <- data.frame(exp=exp.x,obs=pvalues)
   
+  # to test dimensions using much smaller amount of data
   # df.qq.full[[i]] <- data.frame(exp=exp.x,obs=pvalues)
   # df.qq[[i]] <- df.qq.full[[i]][sample(1:nrow(df.qq.full[[i]]),10000),]
   
@@ -126,10 +131,8 @@ pheno <- as.list(paste0('pheno',id,'.2'))
 g.expr1 <- list(); g.expr2 <- list(); res <- list()
 for (i in 1:3) {
   print(i)
-  
-  # df.pheno.sub <- subset(df.pheno,df.pheno[,pheno[[i]]]!=-9)[,c('IID',pheno[[i]])]
-  
-  # if want to use original infiltration data:
+
+  # use original immune deconvolution data:
   X <- subset(df.infil,SMTSD==tis[[i]])
   df.pheno.sub <- X[,c('ID',CELL[[i]])]; colnames(df.pheno.sub) <- c('IID',pheno[[i]])
   

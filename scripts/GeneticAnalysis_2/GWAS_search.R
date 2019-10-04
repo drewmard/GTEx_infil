@@ -49,12 +49,4 @@ res <- phenoscanner(regionquery = region,pval=0.05,r2=0.8,catalogue = 'GWAS',bui
 res.sub <- res$results
 res.sub[order(as.numeric(res.sub$p),decreasing = F),c('trait','p','n')]
 
-# drich1 things
-# region <- c(
-#   'chr22:23974508-23974567',
-#   'chr22:23962783-23964556',
-#   'chr22:24248789-24258315',
-#   'chr22:24235033-24239719',
-#   'chr22:23411579-23415290'
-# )
-# region <- 'chr22:23950639-23974508'
+# done

@@ -11,11 +11,6 @@ FIRST <- TRUE
 abs <- FALSE
 
 infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
-# infil_pheno <- subset(infil_pheno,!(cell %in% c('CD4.CD8','Myeloid.Lymph')))
-
-# infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
-# infil_pheno <- infil_pheno[1:223,]
-# infil_pheno <- subset(infil_pheno,!((tissue=='Heart - Atrial Appendage' & cell=='NK_Sum') | (tissue=='Colon - Transverse' & cell=='NK_Sum') | (tissue=='Cells - EBV-transformed lymphocytes')))
 
 for (i in 1:nrow(infil_pheno)) {
   

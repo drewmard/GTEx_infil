@@ -8,7 +8,6 @@ library(limma)
 library(data.table)
 
 # all analyses: p < 5e-8
-# f <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig2.txt'
 f <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GeneticAnalysis2/GWAS_iQTL.txt'
 df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
 df.sub.save$Pval_Brown_sig <- as.numeric(df.sub.save$Pval_Brown < 5e-8)

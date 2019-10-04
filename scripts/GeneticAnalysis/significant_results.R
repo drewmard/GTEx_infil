@@ -43,6 +43,13 @@ fwrite(df.sub.save,f,col.names = T,row.names = F,sep='\t',quote = F)
 f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig2.txt')
 fwrite(df.sub2.save,f,col.names = T,row.names = F,sep='\t',quote = F)
 
+df.sub.save$phenotype <- paste(df.sub.save$tissue,df.sub.save$cell,sep = '-')
+# x <- aggregate(df.sub.save$Pval_Brown,list(df.sub.save$phenotype),min)
+x <- as.data.frame(setDT(df.sub.save)[, .SD[which.max(Pval_Brown)], by = .(phenotype)])
+f <- paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.sig_iQTL.aggre.txt')
+fwrite(df.sub2.save,f,col.names = T,row.names = F,sep='\t',quote = F)
+
+
 #########
 # analyze in R
 library(data.table)
@@ -70,3 +77,4 @@ df.sub.save <- fread(f,data.table = F,stringsAsFactors = F)
 df.sub.save$phenotype <- paste(df.sub.save$tissue,df.sub.save$cell,sep = '-')
 df.sub.save[order(df.sub.save$Pval_Brown,decreasing = F),][1:20,]
 
+# done

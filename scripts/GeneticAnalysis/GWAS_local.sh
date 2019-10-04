@@ -12,7 +12,6 @@ do
 
 geno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name
 pheno=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt
-# pheno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name.tmp.txt
 outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS
 
 mkdir -p $outdir
@@ -20,3 +19,5 @@ mkdir -p $outdir
 plink --bfile $geno --pheno $pheno --all-pheno --assoc --out $outdir/GTEx.chr$i --allow-no-sex --maf 0.05 --chr $i
 
 done
+
+# done

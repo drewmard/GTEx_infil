@@ -2,7 +2,6 @@
 
 # Script for combining related p-values using empirical brown's method
 
-
 # Packages
 library(data.table)
 library(EmpiricalBrownsMethod)
@@ -18,9 +17,6 @@ if (1==1) {
   
   # Read in infiltration data
   infil_pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_phenotypes.txt',data.table=F,stringsAsFactors = F)
-  # df.rel <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-  # df.abs <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt',data.table = F,stringsAsFactors = F)
-  # df.xcell <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/infiltration_profiles/XCell.all_tissues.txt',data.table = F,stringsAsFactors = F)
   df.pheno <- fread('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt',data.table=F,header=T,stringsAsFactors = F)
   
   # initialize
@@ -28,10 +24,7 @@ if (1==1) {
   cell <- infil_pheno$cell[i]
   df.pheno <- df.pheno[,paste0('pheno',i,'.',1:3)]
   df.pheno[df.pheno==-9] <- NA
-  # cellTypes <- c('T cells CD8','CD4_Tcells','Neutrophils','MacrophageSum')
-  # ind <- which(cellTypes %in% cell)
-  # cell2 <- c('CD8Sum','CD4Sum','Neutrophils','MacrophageSum')[ind]
-  
+
   # cibersort rel
   print('CIBERSORT (relative)')
   df1 <- fread(paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/GTEx.pheno',i,'.1.qassoc'),data.table=F,stringsAsFactors = F)

@@ -137,8 +137,6 @@ sum(p.adjust(param.df2$p,'fdr')<0.1)
 sum(p.adjust(param.df2$p,'fdr')<0.1)/nrow(param.df2)
 x <- sum(param.df2$eQTL_obs_ct,na.rm = T); n <- sum(param.df2$N,na.rm = T); p <- sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T)
 x;n;n*p;x/n;p;binom.test(x,n,p,'greater')$p.value
-binom.test(sum(param.df2$eQTL_obs_ct,na.rm = T),sum(param.df2$N,na.rm = T),sum(param.df2$N*param.df2$mean.p,na.rm = T)/sum(param.df2$N,na.rm=T),'greater')$p.value
-binom.test(round(mean(param.df2$eQTL_obs_ct,na.rm = T)),round(mean(param.df2$N,na.rm = T)),mean(param.df2$mean.p,na.rm = T),'greater')$p.value
 
 # eqtl enriched 2 sided pvalues better than eqtl depleted
 param.df2$eQTL.enriched <- as.numeric(param.df2$eQTL_obs_ct/param.df2$N > param.df2$mean.p)

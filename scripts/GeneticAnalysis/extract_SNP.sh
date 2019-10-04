@@ -1,3 +1,6 @@
+# Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
+# script for extracting SNPs from gtex data
+
 #!/bin/bash -l
 #SBATCH -J snp
 
