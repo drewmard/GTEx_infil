@@ -105,7 +105,7 @@ Empirical_Brown_pval_wrapper.sh \
 significant_results.R
 
 #### Script to extract a SNP for genotype - phenotype plots
-extract_SNP.sh (extract SNP) \
+extract_SNP.sh
 
 #### Figure panel: qqplots, genotype-phenotype plots & expression-phenotype plots
 figure_panel.R \
