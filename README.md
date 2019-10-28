@@ -43,10 +43,10 @@ clustering_heatmap.R
 infiltration_boxplots.R \
 celltype_boxplots.R
 
-#### t-SNE of immune content (Supp Fig 8):
+#### t-SNE of immune content:
 immune_content_clusters_tsne.R
 
-#### Filtering of infiltration phenotypes (190):
+#### Filtering of infiltration phenotypes (to 189):
 filter.R
 
 #### Infiltration signatures in bulk gene expression values
@@ -73,13 +73,13 @@ Directory: ./scripts/AgeSex/
 #### Statistical analysis:
 AgeSex_Analysis.R
 
-#### Create age/sex plots of most significant associations (Fig 3b-e)
+#### Create age/sex plots of most significant associations 
 AgeSex_Plots2.R
 
-#### Heatmap summary of age/sex association results (Fig 3f-g)
+#### Heatmap summary of age/sex association results 
 age_sex_heatmap.R
 
-#### Breast t-sne, males vs females (Supplementary Fig 11)
+#### Breast t-sne, males vs females 
 breast_content_clusters_tsne.R
 
 
@@ -131,7 +131,7 @@ eQTL_network_gen.R (use eQTL_network_gen.R for *ieGene.txt output for input into
 #### Pleiotropic effects:
 pleiotropy.R
 
-#### Venn diagrams (Fig 3a, Fig 4a-b)
+#### Venn diagrams
 venndiagram.R
 
 
