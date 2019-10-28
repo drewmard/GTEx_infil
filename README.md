@@ -60,7 +60,8 @@ Directory: ./scripts/HotCold_Cluster/
 
 
 #### Algorithm:
-< munna's script here >
+ConsensusClusterPlus_mod.r \
+Final-GTExHotColdAnalysis.r
 
 #### Widespread vs tissue-specific extreme inflammation patterns
 hot_tissueSpecific.R
