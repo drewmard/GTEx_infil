@@ -30,16 +30,16 @@ cibersort_out.R
 xCell_generation.R \
 xCell_process.R
 
-#### Pairwise correlations of infiltration phenotypes (Supp Fig. 3):
+#### Pairwise correlations of infiltration phenotypes:
 corr_heatmaps.R
 
-#### Case examples of differences between deconvolution algorithms (Supp Fig. 1):
+#### Case examples of differences between deconvolution algorithms:
 xcell_cibersort_CaseExample.R
 
-#### Hierarchical clustering (Fig 2a, Supp Fig 2):
+#### Hierarchical clustering:
 clustering_heatmap.R
 
-#### Boxplots of immune content (Fig 2b, Supp Fig 4-7):
+#### Boxplots of immune content:
 infiltration_boxplots.R \
 celltype_boxplots.R
 
@@ -110,6 +110,10 @@ extract_SNP.sh
 #### Figure panel: qqplots, genotype-phenotype plots & expression-phenotype plots
 figure_panel.R \
 separate_qq.R
+
+#### GWAS enrichment p-values
+GWAS_enrichment.R
+
 
 ## Downstream analysis of genetic results
 Directory: ./scripts/GeneticAnalysis_2/
