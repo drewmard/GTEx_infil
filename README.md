@@ -18,7 +18,7 @@ The required data for analysis is described in the following file:
 
 The data files can then be downloaded by copying and pasting the wget commands into Terminal. Since genotype data is not public, we have simulated random genotypes using Plink which can be used to demo	the scripts.
 
-The analysis was performed on a linux system. Plots were created on a macOS Catalina system. The underlying raw data for the plots that DO NOT contain genetic information can be found in the following directory:
+The analysis was performed on a linux system. Plots were created on a macOS Catalina system. The underlying raw data for the plots that do not contain genetic information can be found in the following directory:
 
 ```
 /Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/plot_data
