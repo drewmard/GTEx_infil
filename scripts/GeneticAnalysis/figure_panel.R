@@ -102,7 +102,7 @@ library(cowplot)
 # for running on cluster:
 if (cluster_run) {
   df.exp <- fread('/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct',data.table = F,stringsAsFactors = F)
-  GENE <- list('COMMD3','C22orf43','CCDC40');
+  GENE <- list('COMMD3','C22orf43','CCDC40','DNAJC1');
   EXPR.df <- df.exp[which(df.exp$Description %in% GENE),-1]
   rownames(EXPR.df) <- EXPR.df$Description; EXPR.df <- EXPR.df[,-1]
   EXPR.df <- as.data.frame(t(EXPR.df))
