@@ -1,0 +1,23 @@
+# GTEx covariate information
+wget https://storage.googleapis.com/gtex_analysis_v7/annotations/GTEx_v7_Annotations_SampleAttributesDS.txt
+wget https://storage.googleapis.com/gtex_analysis_v7/annotations/GTEx_v7_Annotations_SubjectPhenotypesDS.txt
+
+# GTEx expression information
+wget https://storage.googleapis.com/gtex_analysis_v7/rna_seq_data/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct.gz
+
+# GTEx eQTL information
+wget https://storage.googleapis.com/gtex_analysis_v7/single_tissue_eqtl_data/GTEx_Analysis_v7_eQTL.tar.gz
+
+# GTEx SNP information (eg converting to rsid)
+wget https://storage.googleapis.com/gtex_analysis_v7/reference/GTEx_Analysis_2016-01-15_v7_WholeGenomeSeq_635Ind_PASS_AB02_GQ20_HETX_MISS15_PLINKQC.lookup_table.txt.gz
+
+# LD haplotype information for eQTL enrichment analysis
+wget https://pubs.broadinstitute.org/mammals/haploreg/data/LD_EUR.tsv.gz
+
+# T cell reads used for simulating synthetic mixes
+# first download supplementary table
+wget https://drive.google.com/uc?export=download&id=1y_D3kyB-Ojn-qFQFByfQ2pQJaV3K1h5s
+# then download fastq files from EMBL-EBI
+
+# GTEx genotype information on dbGAP
+# however: simulated data available in ./simdata

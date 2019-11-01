@@ -1,0 +1,31 @@
+Tissue	Score	Score2
+Artery - Tibial	0.8586	0
+Artery - Coronary	1.933	1
+Heart - Atrial Appendage	0.80345	0
+Adipose - Visceral (Omentum)	2.825	2
+Ovary	0.79775	0
+Uterus	1.4625	1
+Vagina	1.8925	1
+Breast - Mammary Tissue	2.17775	2
+Skin - Not Sun Exposed (Suprapubic)	1.446	1
+Minor Salivary Gland	1.889	1
+Adrenal Gland	0.916175	0
+Thyroid	2.15525	2
+Lung	6.1005	6
+Spleen	11.1025	11
+Pancreas	0.41835	0
+Stomach	1.32175	1
+Colon - Sigmoid	1.1265	1
+Small Intestine - Terminal Ileum	4.0165	4
+Colon - Transverse	2.04025	2
+Prostate	1.84275	1
+Testis	2.053	2
+Nerve - Tibial	2.0505	2
+Skin - Sun Exposed (Lower leg)	1.47	1
+Heart - Left Ventricle	0.39545	0
+Whole Blood	3.866	3
+Artery - Aorta	1.5595	1
+Pituitary	1.3005	1
+Liver	0.77375	0
+Brain	0.5758	0
+Esophagus	1.09925	1

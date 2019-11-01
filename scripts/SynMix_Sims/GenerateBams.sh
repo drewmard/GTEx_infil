@@ -2,8 +2,6 @@
 
 # Written by Manik Uppal (2018-2019). Contact: mdu2002@med.cornell.edu
 
-#***Do we need to be concerned with library size?
-
 
 #this function is to calculate the proper factor to subsample each bam file; it will take 3 arguments - 1) the normal tissue library size, 2) sample (normal or immune to keep it general) library size, 3) sample percentage as specified in the input arguments
 #--> General Formula: DesiredImm% x NormLibSize = ImmLibSize x NecImm%
