@@ -1,0 +1,190 @@
+tissue	cell	i	eQTL_obs_ct	N	mean.p	p	p2	Analysis	eqtl.enriched	sig
+Adipose - Subcutaneous	CD4_Tcells	1	1	34	0.132352941176471	0.991989394143072	0.0788269390649557	Adipose - Subcutaneous: CD4_Tcells	0	0
+Adipose - Subcutaneous	MacrophageSum	2	7	137	0.117080291970803	0.997444444192898	0.0157264737523322	Adipose - Subcutaneous: MacrophageSum	0	0
+Adipose - Subcutaneous	MastSum	3	1	36	0.243055555555556	0.999955710149897	0.000774885318808541	Adipose - Subcutaneous: MastSum	0	0
+Adipose - Subcutaneous	Myeloid_Sum	4	3	67	0.0864179104477612	0.936409108336605	0.28080158577785	Adipose - Subcutaneous: Myeloid_Sum	0	0
+Adipose - Subcutaneous	Monocytes	5	1	50	0.0288	0.768029004341612	1	Adipose - Subcutaneous: Monocytes	0	0
+Adipose - Subcutaneous	Lymph_Sum	6	3	110	0.039	0.807100826449381	0.803051355767724	Adipose - Subcutaneous: Lymph_Sum	0	0
+Adipose - Visceral (Omentum)	T cells CD8	7	4	41	0.0346341463414634	0.0527811011482961	0.052781101148296	Adipose - Visceral (Omentum): T cells CD8	1	0
+Adipose - Visceral (Omentum)	CD4_Tcells	8	2	39	0.091025641025641	0.881369322765218	0.578019539085697	Adipose - Visceral (Omentum): CD4_Tcells	0	0
+Adipose - Visceral (Omentum)	MacrophageSum	9	4	45	0.0286666666666667	0.039654035208206	0.0396540352082062	Adipose - Visceral (Omentum): MacrophageSum	1	0
+Adipose - Visceral (Omentum)	Bcellsum	10	10	89	0.0523595505617978	0.0180550610617778	0.0263972402280539	Adipose - Visceral (Omentum): Bcellsum	1	0
+Adipose - Visceral (Omentum)	MastSum	11	1	23	0.0865217391304348	0.87524470803156	0.716838929114855	Adipose - Visceral (Omentum): MastSum	0	0
+Adipose - Visceral (Omentum)	Myeloid_Sum	12	0	6	0.01	1	1	Adipose - Visceral (Omentum): Myeloid_Sum	0	0
+Adipose - Visceral (Omentum)	Monocytes	13	1	53	0.0407547169811321	0.889776897561922	0.725831051133651	Adipose - Visceral (Omentum): Monocytes	0	0
+Adipose - Visceral (Omentum)	Lymph_Sum	14	3	106	0.0355660377358491	0.731464455405358	1	Adipose - Visceral (Omentum): Lymph_Sum	0	0
+Adrenal Gland	T cells CD8	15	3	53	0.019811320754717	0.0878746144738107	0.0878746144738109	Adrenal Gland: T cells CD8	1	0
+Adrenal Gland	MacrophageSum	16	3	39	0.0243589743589744	0.0690572635915475	0.0690572635915478	Adrenal Gland: MacrophageSum	1	0
+Adrenal Gland	MastSum	17	0	47	0.0197872340425532	1	1	Adrenal Gland: MastSum	0	0
+Adrenal Gland	Myeloid_Sum	18	0	47	0.01	1	1	Adrenal Gland: Myeloid_Sum	0	0
+Adrenal Gland	Monocytes	19	0	67	0.0555223880597015	1	0.0535902636622753	Adrenal Gland: Monocytes	0	0
+Adrenal Gland	Lymph_Sum	20	0	24	0.0075	1	1	Adrenal Gland: Lymph_Sum	0	0
+Artery - Aorta	T cells CD8	21	8	100	0.0056	1.13872974723602e-07	1.13872974723602e-07	Artery - Aorta: T cells CD8	1	1
+Artery - Aorta	CD4_Tcells	22	0	68	0.0242647058823529	1	0.41667466194509	Artery - Aorta: CD4_Tcells	0	0
+Artery - Aorta	MacrophageSum	23	7	58	0.165	0.863629583710479	0.478627625432475	Artery - Aorta: MacrophageSum	0	0
+Artery - Aorta	Bcellsum	24	0	104	0.01125	1	0.635166254489105	Artery - Aorta: Bcellsum	0	0
+Artery - Aorta	MastSum	25	1	18	0.03	0.422048737456959	0.422048737456959	Artery - Aorta: MastSum	1	0
+Artery - Aorta	Myeloid_Sum	26	1	115	0.0460869565217391	0.995599413821028	0.06899587227774	Artery - Aorta: Myeloid_Sum	0	0
+Artery - Aorta	Monocytes	27	2	108	0.186111111111111	0.999999994364887	1.52723596252713e-07	Artery - Aorta: Monocytes	0	0
+Artery - Aorta	Lymph_Sum	28	0	120	0.0478333333333333	1	0.00464293217976805	Artery - Aorta: Lymph_Sum	0	0
+Artery - Coronary	T cells CD8	29	0	32	0.0009375	1	1	Artery - Coronary: T cells CD8	0	0
+Artery - Coronary	CD4_Tcells	30	0	83	0.00385542168674699	1	1	Artery - Coronary: CD4_Tcells	0	0
+Artery - Coronary	MacrophageSum	31	2	137	0.0108759124087591	0.439721328759594	0.663262026968837	Artery - Coronary: MacrophageSum	1	0
+Artery - Coronary	Bcellsum	32	0	59	0.00644067796610169	1	1	Artery - Coronary: Bcellsum	0	0
+Artery - Coronary	MastSum	33	0	61	0.0240983606557377	1	0.407852632601055	Artery - Coronary: MastSum	0	0
+Artery - Coronary	Myeloid_Sum	34	0	20	0.039	1	1	Artery - Coronary: Myeloid_Sum	0	0
+Artery - Coronary	Monocytes	35	1	118	0.0715254237288136	0.999842651748762	0.00343819347389236	Artery - Coronary: Monocytes	0	0
+Artery - Coronary	Lymph_Sum	36	0	109	0.00825688073394495	1	1	Artery - Coronary: Lymph_Sum	0	0
+Artery - Tibial	CD4_Tcells	37	5	17	0.0476470588235294	0.00093760637701373	0.00093760637701373	Artery - Tibial: CD4_Tcells	1	0
+Artery - Tibial	MacrophageSum	38	0	76	0.144473684210526	1	1.10233936966163e-05	Artery - Tibial: MacrophageSum	0	0
+Artery - Tibial	MastSum	39	2	40	0.06125	0.71193693249205	1	Artery - Tibial: MastSum	0	0
+Artery - Tibial	Myeloid_Sum	40	5	58	0.0410344827586207	0.0891428620625345	0.0891428620625345	Artery - Tibial: Myeloid_Sum	1	0
+Artery - Tibial	Monocytes	41	3	41	0.219268292682927	0.996978963488017	0.0221904006156569	Artery - Tibial: Monocytes	0	0
+Artery - Tibial	Lymph_Sum	42	4	92	0.0189130434782609	0.097398958017947	0.0973989580179475	Artery - Tibial: Lymph_Sum	1	0
+Breast - Mammary Tissue	T cells CD8	43	1	46	0.126521739130435	0.998015748882297	0.0254997640951458	Breast - Mammary Tissue: T cells CD8	0	0
+Breast - Mammary Tissue	CD4_Tcells	44	0	5	0.02	1	1	Breast - Mammary Tissue: CD4_Tcells	0	0
+Breast - Mammary Tissue	MacrophageSum	45	0	62	0.0430645161290323	1	0.11561854840629	Breast - Mammary Tissue: MacrophageSum	0	0
+Breast - Mammary Tissue	Bcellsum	46	8	31	0.00451612903225806	1.24446006133471e-12	1.2444600613347e-12	Breast - Mammary Tissue: Bcellsum	1	1
+Breast - Mammary Tissue	MastSum	47	0	55	0.0374545454545455	1	0.272984050388687	Breast - Mammary Tissue: MastSum	0	0
+Breast - Mammary Tissue	Myeloid_Sum	48	1	38	0.00947368421052631	0.303519936739911	0.303519936739911	Breast - Mammary Tissue: Myeloid_Sum	1	0
+Breast - Mammary Tissue	Monocytes	49	2	77	0.0215584415584416	0.496500351403137	0.68321852193517	Breast - Mammary Tissue: Monocytes	1	0
+Breast - Mammary Tissue	Lymph_Sum	50	5	21	0.0409523809523809	0.00135076473431391	0.00135076473431391	Breast - Mammary Tissue: Lymph_Sum	1	0
+Colon - Sigmoid	CD4_Tcells	51	0	35	0.056	1	0.263363701486702	Colon - Sigmoid: CD4_Tcells	0	0
+Colon - Sigmoid	MacrophageSum	52	0	69	0.00594202898550725	1	1	Colon - Sigmoid: MacrophageSum	0	0
+Colon - Sigmoid	MastSum	53	0	59	0.0484745762711864	1	0.118911211133939	Colon - Sigmoid: MastSum	0	0
+Colon - Sigmoid	Myeloid_Sum	54	0	15	0.056	1	1	Colon - Sigmoid: Myeloid_Sum	0	0
+Colon - Sigmoid	Monocytes	55	5	81	0.0102469135802469	0.00151793739543744	0.00151793739543744	Colon - Sigmoid: Monocytes	1	0
+Colon - Sigmoid	Lymph_Sum	56	43	178	0.0423033707865169	1.11354747915575e-20	1.11354747915579e-20	Colon - Sigmoid: Lymph_Sum	1	1
+Colon - Transverse	T cells CD8	57	1	131	0.0450381679389313	0.997611265737023	0.032728012427975	Colon - Transverse: T cells CD8	0	0
+Colon - Transverse	CD4_Tcells	58	1	17	0.00411764705882353	0.0677409147755545	0.0677409147755545	Colon - Transverse: CD4_Tcells	1	0
+Colon - Transverse	MacrophageSum	59	0	71	0.0357746478873239	1	0.185836662741533	Colon - Transverse: MacrophageSum	0	0
+Colon - Transverse	Bcellsum	60	0	15	0.00866666666666667	1	1	Colon - Transverse: Bcellsum	0	0
+Colon - Transverse	MastSum	61	0	43	0.0430232558139535	1	0.263537126000728	Colon - Transverse: MastSum	0	0
+Colon - Transverse	Myeloid_Sum	62	0	73	0.0163013698630137	1	0.635568627148962	Colon - Transverse: Myeloid_Sum	0	0
+Colon - Transverse	Monocytes	63	0	155	0.10941935483871	1	3.60320456419213e-08	Colon - Transverse: Monocytes	0	0
+Colon - Transverse	Lymph_Sum	64	1	50	0.0864	0.98909050757466	0.126052927946888	Colon - Transverse: Lymph_Sum	0	0
+Esophagus - Gastroesophageal Junction	MacrophageSum	65	0	19	0.29	1	0.00192095970245932	Esophagus - Gastroesophageal Junction: MacrophageSum	0	0
+Esophagus - Gastroesophageal Junction	MastSum	66	0	56	0.0216071428571429	1	0.636072051840843	Esophagus - Gastroesophageal Junction: MastSum	0	0
+Esophagus - Gastroesophageal Junction	Myeloid_Sum	67	2	95	0.0254736842105263	0.699824758504137	1	Esophagus - Gastroesophageal Junction: Myeloid_Sum	0	0
+Esophagus - Gastroesophageal Junction	Monocytes	68	1	199	0.0309547738693467	0.998083692347695	0.0237063772327233	Esophagus - Gastroesophageal Junction: Monocytes	0	0
+Esophagus - Mucosa	T cells CD8	69	0	29	0.0779310344827586	1	0.166139985026047	Esophagus - Mucosa: T cells CD8	0	0
+Esophagus - Mucosa	CD4_Tcells	70	3	47	0.0906382978723404	0.811157669612763	0.797589527720261	Esophagus - Mucosa: CD4_Tcells	0	0
+Esophagus - Mucosa	MacrophageSum	71	0	131	0.0410687022900763	1	0.00710079402909412	Esophagus - Mucosa: MacrophageSum	0	0
+Esophagus - Mucosa	Bcellsum	72	2	98	0.0154081632653061	0.446836041682272	0.665164631440023	Esophagus - Mucosa: Bcellsum	1	0
+Esophagus - Mucosa	DendriticSum	73	4	126	0.0824603174603175	0.993902313176204	0.0344071656505033	Esophagus - Mucosa: DendriticSum	0	0
+Esophagus - Mucosa	MastSum	74	11	86	0.0436046511627907	0.00129267536052281	0.00129267536052281	Esophagus - Mucosa: MastSum	1	0
+Esophagus - Mucosa	Myeloid_Sum	75	0	23	0.0434782608695652	1	0.623914503284397	Esophagus - Mucosa: Myeloid_Sum	0	0
+Esophagus - Mucosa	T cells follicular helper	76	3	52	0.0282692307692308	0.181737369632348	0.181737369632348	Esophagus - Mucosa: T cells follicular helper	1	0
+Esophagus - Mucosa	Monocytes	77	114	217	0.130829493087558	1.0742385336058e-43	1.07423853360611e-43	Esophagus - Mucosa: Monocytes	1	1
+Esophagus - Mucosa	Lymph_Sum	78	2	137	0.0606569343065693	0.99813702651296	0.0183453279974817	Esophagus - Mucosa: Lymph_Sum	0	0
+Esophagus - Muscularis	T cells CD8	79	28	99	0.0156565656565657	3.45406441040787e-27	3.45406441040809e-27	Esophagus - Muscularis: T cells CD8	1	1
+Esophagus - Muscularis	MacrophageSum	80	8	67	0.158208955223881	0.851594400493684	0.502378254543693	Esophagus - Muscularis: MacrophageSum	0	0
+Esophagus - Muscularis	MastSum	81	10	87	0.307816091954023	0.999994180975318	3.60084942222252e-05	Esophagus - Muscularis: MastSum	0	0
+Esophagus - Muscularis	Myeloid_Sum	82	4	74	0.0105405405405405	0.00791116221453469	0.0079111622145346	Esophagus - Muscularis: Myeloid_Sum	1	0
+Esophagus - Muscularis	Monocytes	83	4	78	0.0415384615384615	0.407484143888877	0.567565704781121	Esophagus - Muscularis: Monocytes	1	0
+Esophagus - Muscularis	Lymph_Sum	84	12	60	0.036	1.32048690433237e-06	1.32048690433237e-06	Esophagus - Muscularis: Lymph_Sum	1	1
+Heart - Atrial Appendage	T cells CD8	85	0	82	0.095609756097561	1	0.0004848159981092	Heart - Atrial Appendage: T cells CD8	0	0
+Heart - Atrial Appendage	CD4_Tcells	86	0	31	0.06	1	0.259399356619008	Heart - Atrial Appendage: CD4_Tcells	0	0
+Heart - Atrial Appendage	MacrophageSum	87	2	17	0.192352941176471	0.866354147259941	0.756831100919907	Heart - Atrial Appendage: MacrophageSum	0	0
+Heart - Atrial Appendage	Bcellsum	88	0	32	0.0371875	1	0.632429811262003	Heart - Atrial Appendage: Bcellsum	0	0
+Heart - Atrial Appendage	MastSum	89	3	65	0.0529230769230769	0.675338492077507	1	Heart - Atrial Appendage: MastSum	0	0
+Heart - Atrial Appendage	Myeloid_Sum	90	3	96	0.123541666666667	0.999665853392143	0.0028557525758942	Heart - Atrial Appendage: Myeloid_Sum	0	0
+Heart - Atrial Appendage	Monocytes	91	0	64	0.03203125	1	0.273598278903607	Heart - Atrial Appendage: Monocytes	0	0
+Heart - Atrial Appendage	Lymph_Sum	92	3	44	0.0465909090909091	0.337130790504253	0.459673845153593	Heart - Atrial Appendage: Lymph_Sum	1	0
+Lung	T cells CD8	93	9	128	0.04375	0.109534500996971	0.131882025496728	Lung: T cells CD8	1	0
+Lung	CD4_Tcells	94	8	75	0.064	0.106295245711177	0.149251059323228	Lung: CD4_Tcells	1	0
+Lung	Neutrophils	95	0	57	0.0810526315789474	1	0.0136276427768862	Lung: Neutrophils	0	0
+Lung	MacrophageSum	96	1	9	0.09	0.572070199870211	0.572070199870211	Lung: MacrophageSum	1	0
+Lung	Bcellsum	97	101	111	0.0596396396396396	5.98189436582507e-111	5.98189436582473e-111	Lung: Bcellsum	1	1
+Lung	NK_Sum	98	2	54	0.055	0.804738052126808	0.769520647528382	Lung: NK_Sum	0	0
+Lung	MastSum	99	1	37	0.0997297297297297	0.979497934385471	0.174797640817855	Lung: MastSum	0	0
+Lung	Myeloid_Sum	100	0	20	0.0875	1	0.251874446677	Lung: Myeloid_Sum	0	0
+Lung	Monocytes	101	2	14	0.0492857142857143	0.14948257263005	0.149482572630051	Lung: Monocytes	1	0
+Lung	Lymph_Sum	102	1	71	0.0274647887323944	0.861554537048712	1	Lung: Lymph_Sum	0	0
+Nerve - Tibial	T cells CD8	103	2	63	0.0480952380952381	0.812548970350044	0.770476570850726	Nerve - Tibial: T cells CD8	0	0
+Nerve - Tibial	CD4_Tcells	104	25	154	0.0472727272727273	7.50820992624431e-08	7.50820992624437e-08	Nerve - Tibial: CD4_Tcells	1	1
+Nerve - Tibial	MacrophageSum	105	0	35	0.09	1	0.0708563753976013	Nerve - Tibial: MacrophageSum	0	0
+Nerve - Tibial	MastSum	106	5	206	0.112961165048544	0.999999575047524	4.32454977731376e-06	Nerve - Tibial: MastSum	0	0
+Nerve - Tibial	Myeloid_Sum	107	2	13	0.133076923076923	0.532021554454579	0.688245401649392	Nerve - Tibial: Myeloid_Sum	1	0
+Nerve - Tibial	Monocytes	108	2	22	0.120909090909091	0.763625139264783	1	Nerve - Tibial: Monocytes	0	0
+Nerve - Tibial	Lymph_Sum	109	4	115	0.0539130434782609	0.872826139630637	0.532328930195529	Nerve - Tibial: Lymph_Sum	0	0
+Ovary	T cells CD8	110	0	80	0.00375	1	1	Ovary: T cells CD8	0	0
+Ovary	MacrophageSum	111	0	12	0.0025	1	1	Ovary: MacrophageSum	0	0
+Ovary	Bcellsum	112	0	21	0.0166666666666667	1	1	Ovary: Bcellsum	0	0
+Ovary	Myeloid_Sum	113	0	32	0.02125	1	1	Ovary: Myeloid_Sum	0	0
+Ovary	Monocytes	114	0	57	0.00771929824561403	1	1	Ovary: Monocytes	0	0
+Ovary	Lymph_Sum	115	0	12	0.00583333333333333	1	1	Ovary: Lymph_Sum	0	0
+Pituitary	T cells CD8	116	0	24	0.00666666666666667	1	1	Pituitary: T cells CD8	0	0
+Pituitary	MacrophageSum	117	0	60	0.00466666666666667	1	1	Pituitary: MacrophageSum	0	0
+Pituitary	Myeloid_Sum	118	0	26	0.114230769230769	1	0.0661220494144835	Pituitary: Myeloid_Sum	0	0
+Pituitary	Monocytes	119	0	85	0.0370588235294118	1	0.0789055445928852	Pituitary: Monocytes	0	0
+Prostate	T cells CD8	120	6	231	0.0189177489177489	0.274015869586821	0.460026608902323	Prostate: T cells CD8	1	0
+Prostate	CD4_Tcells	121	3	16	0.000625	1.35888114740082e-07	1.35888114740082e-07	Prostate: CD4_Tcells	1	1
+Prostate	MacrophageSum	122	1	46	0.0791304347826087	0.977451715352434	0.265064417725706	Prostate: MacrophageSum	0	0
+Prostate	Bcellsum	123	0	173	0.0334682080924855	1	0.00496719567660706	Prostate: Bcellsum	0	0
+Prostate	MastSum	124	0	145	0.000827586206896552	1	1	Prostate: MastSum	0	0
+Prostate	Myeloid_Sum	125	0	72	0.000972222222222222	1	1	Prostate: Myeloid_Sum	0	0
+Prostate	Monocytes	126	0	120	0.00883333333333333	1	0.631224762799495	Prostate: Monocytes	0	0
+Prostate	Lymph_Sum	127	1	117	0.0111111111111111	0.729443997805279	1	Prostate: Lymph_Sum	0	0
+Skin - Not Sun Exposed (Suprapubic)	MacrophageSum	128	3	36	0.0819444444444444	0.574787039075058	1	Skin - Not Sun Exposed (Suprapubic): MacrophageSum	1	0
+Skin - Not Sun Exposed (Suprapubic)	DendriticSum	129	6	40	0.1545	0.598354778177418	1	Skin - Not Sun Exposed (Suprapubic): DendriticSum	0	0
+Skin - Not Sun Exposed (Suprapubic)	MastSum	130	8	57	0.0614035087719298	0.0225902881147732	0.0225902881147731	Skin - Not Sun Exposed (Suprapubic): MastSum	1	0
+Skin - Not Sun Exposed (Suprapubic)	Myeloid_Sum	131	0	49	0.387142857142857	1	5.32893612529269e-11	Skin - Not Sun Exposed (Suprapubic): Myeloid_Sum	0	0
+Skin - Sun Exposed (Lower leg)	MacrophageSum	132	6	46	0.116739130434783	0.452568530075239	0.816899129766703	Skin - Sun Exposed (Lower leg): MacrophageSum	1	0
+Skin - Sun Exposed (Lower leg)	DendriticSum	133	1	56	0.256785714285714	0.999999939411983	1.8278598508986e-06	Skin - Sun Exposed (Lower leg): DendriticSum	0	0
+Skin - Sun Exposed (Lower leg)	MastSum	134	2	64	0.13859375	0.999194100718971	0.00986547618131622	Skin - Sun Exposed (Lower leg): MastSum	0	0
+Skin - Sun Exposed (Lower leg)	Myeloid_Sum	135	2	32	0.141875	0.952977022097805	0.307298426802203	Skin - Sun Exposed (Lower leg): Myeloid_Sum	0	0
+Skin - Sun Exposed (Lower leg)	T cells follicular helper	136	25	118	0.110423728813559	0.00102610272898407	0.00166392310497326	Skin - Sun Exposed (Lower leg): T cells follicular helper	1	0
+Skin - Sun Exposed (Lower leg)	Lymph_Sum	137	3	29	0.116896551724138	0.675063418838784	1	Skin - Sun Exposed (Lower leg): Lymph_Sum	0	0
+Small Intestine - Terminal Ileum	T cells CD8	138	0	7	0	1	1	Small Intestine - Terminal Ileum: T cells CD8	0	0
+Small Intestine - Terminal Ileum	CD4_Tcells	139	0	29	0.0175862068965517	1	1	Small Intestine - Terminal Ileum: CD4_Tcells	0	0
+Small Intestine - Terminal Ileum	MacrophageSum	140	0	17	0.00588235294117647	1	1	Small Intestine - Terminal Ileum: MacrophageSum	0	0
+Small Intestine - Terminal Ileum	Bcellsum	141	12	43	0.103720930232558	0.00108786507248248	0.00108786507248247	Small Intestine - Terminal Ileum: Bcellsum	1	0
+Small Intestine - Terminal Ileum	MastSum	142	0	121	0.550743801652893	1	8.94918337202135e-43	Small Intestine - Terminal Ileum: MastSum	0	0
+Small Intestine - Terminal Ileum	Myeloid_Sum	143	0	321	0.0160436137071651	1	0.0119124469862773	Small Intestine - Terminal Ileum: Myeloid_Sum	0	0
+Small Intestine - Terminal Ileum	Lymph_Sum	144	0	96	0.0722916666666667	1	0.00124370292381325	Small Intestine - Terminal Ileum: Lymph_Sum	0	0
+Spleen	T cells CD8	145	2	36	0.0197222222222222	0.158258775193141	0.15825877519314	Spleen: T cells CD8	1	0
+Spleen	CD4_Tcells	146	0	21	0.0204761904761905	1	1	Spleen: CD4_Tcells	0	0
+Spleen	Neutrophils	147	29	88	0.126704545454545	6.79201484240962e-07	6.79201484240905e-07	Spleen: Neutrophils	1	1
+Spleen	MacrophageSum	148	1	56	0.00321428571428571	0.164971904264977	0.164971904264977	Spleen: MacrophageSum	1	0
+Spleen	Bcellsum	149	1	77	0.0775324675324675	0.997999060804673	0.0301659271515917	Spleen: Bcellsum	0	0
+Spleen	NK_Sum	150	1	59	0.0128813559322034	0.534636920069992	0.534636920069992	Spleen: NK_Sum	1	0
+Spleen	Myeloid_Sum	151	3	25	0.026	0.0263764809478614	0.0263764809478614	Spleen: Myeloid_Sum	1	0
+Spleen	Monocytes	152	0	116	0.0326724137931034	1	0.035327758963172	Spleen: Monocytes	0	0
+Spleen	Lymph_Sum	153	12	42	0.00428571428571429	3.76992498366205e-19	3.7699249836621e-19	Spleen: Lymph_Sum	1	1
+Stomach	T cells CD8	154	1	45	0.00844444444444445	0.317241135006304	0.317241135006304	Stomach: T cells CD8	1	0
+Stomach	CD4_Tcells	155	0	6	0.035	1	1	Stomach: CD4_Tcells	0	0
+Stomach	MacrophageSum	156	2	39	0.0733333333333333	0.790419128382463	1	Stomach: MacrophageSum	0	0
+Stomach	Bcellsum	157	0	6	0.0283333333333333	1	1	Stomach: Bcellsum	0	0
+Stomach	Myeloid_Sum	158	0	28	0.0275	1	1	Stomach: Myeloid_Sum	0	0
+Stomach	Monocytes	159	3	63	0.0580952380952381	0.716280360870002	1	Stomach: Monocytes	0	0
+Stomach	Lymph_Sum	160	0	32	0.0115625	1	1	Stomach: Lymph_Sum	0	0
+Thyroid	T cells CD8	161	2	28	0.172142857142857	0.965590408976827	0.211690696996994	Thyroid: T cells CD8	0	0
+Thyroid	CD4_Tcells	162	9	65	0.264615384615385	0.995355923093671	0.0234277998008493	Thyroid: CD4_Tcells	0	0
+Thyroid	MacrophageSum	163	1	15	0.131333333333333	0.878996662301637	0.709577493147194	Thyroid: MacrophageSum	0	0
+Thyroid	Bcellsum	164	24	70	0.0908571428571429	5.36815576859676e-09	5.36815576859682e-09	Thyroid: Bcellsum	1	1
+Thyroid	Myeloid_Sum	165	0	14	0.118571428571429	1	0.396883550907383	Thyroid: Myeloid_Sum	0	0
+Thyroid	T cells follicular helper	166	0	89	0.151123595505618	1	7.8673055176612e-07	Thyroid: T cells follicular helper	0	0
+Thyroid	Monocytes	167	12	55	0.182545454545455	0.295772321481259	0.485442868819302	Thyroid: Monocytes	1	0
+Thyroid	Lymph_Sum	168	39	95	0.139157894736842	8.22463681430273e-11	8.22463681430256e-11	Thyroid: Lymph_Sum	1	1
+Uterus	T cells CD8	169	0	113	0.00212389380530973	1	1	Uterus: T cells CD8	0	0
+Uterus	CD4_Tcells	170	0	12	0.00833333333333333	1	1	Uterus: CD4_Tcells	0	0
+Uterus	MacrophageSum	171	0	17	0.00176470588235294	1	1	Uterus: MacrophageSum	0	0
+Uterus	Bcellsum	172	0	116	0	1	1	Uterus: Bcellsum	0	0
+Uterus	MastSum	173	0	77	0.00168831168831169	1	1	Uterus: MastSum	0	0
+Uterus	Myeloid_Sum	174	0	29	0.00586206896551724	1	1	Uterus: Myeloid_Sum	0	0
+Uterus	Monocytes	175	0	15	0.006	1	1	Uterus: Monocytes	0	0
+Uterus	Lymph_Sum	176	12	23	0.0221739130434783	1.52186520898579e-14	1.52186520898582e-14	Uterus: Lymph_Sum	1	1
+Vagina	T cells CD8	177	0	28	0.193571428571429	1	0.00347715043242449	Vagina: T cells CD8	0	0
+Vagina	CD4_Tcells	178	0	32	0.0096875	1	1	Vagina: CD4_Tcells	0	0
+Vagina	MacrophageSum	179	0	7	0	1	1	Vagina: MacrophageSum	0	0
+Vagina	Bcellsum	180	0	61	0.00180327868852459	1	1	Vagina: Bcellsum	0	0
+Vagina	MastSum	181	0	63	0.00444444444444444	1	1	Vagina: MastSum	0	0
+Vagina	Myeloid_Sum	182	0	46	0	1	1	Vagina: Myeloid_Sum	0	0
+Vagina	Monocytes	183	0	45	0.00244444444444444	1	1	Vagina: Monocytes	0	0
+Vagina	Lymph_Sum	184	14	80	0.00475	3.34874412400788e-18	3.34874412400788e-18	Vagina: Lymph_Sum	1	1
+Whole Blood	T cells CD8	185	12	26	0.0184615384615385	1.19028988043796e-14	1.19028988043799e-14	Whole Blood: T cells CD8	1	1
+Whole Blood	Neutrophils	186	0	20	0	1	1	Whole Blood: Neutrophils	0	0
+Whole Blood	NK_Sum	187	1	15	0.0393333333333333	0.452239354843707	0.452239354843707	Whole Blood: NK_Sum	1	0
+Whole Blood	Myeloid_Sum	188	0	14	0.0407142857142857	1	1	Whole Blood: Myeloid_Sum	0	0
+Whole Blood	Lymph_Sum	189	4	118	0.015	0.102466457048148	0.102466457048148	Whole Blood: Lymph_Sum	1	0

@@ -1,0 +1,2899 @@
+AGE	SMTSD	variable	value
+50-59	Nerve - Tibial	T cells CD8	0.0466994495263737
+60-69	Nerve - Tibial	T cells CD8	0.0106554777356211
+60-69	Nerve - Tibial	T cells CD8	0.339822963772244
+60-69	Nerve - Tibial	T cells CD8	0.139489347452678
+60-69	Nerve - Tibial	T cells CD8	0.278532433284156
+50-59	Nerve - Tibial	T cells CD8	0.166163583026483
+50-59	Nerve - Tibial	T cells CD8	0.118567953507485
+40-49	Nerve - Tibial	T cells CD8	0.310280359529826
+60-69	Nerve - Tibial	T cells CD8	0.103227053957212
+50-59	Nerve - Tibial	T cells CD8	0.0840263981390535
+60-69	Nerve - Tibial	T cells CD8	0.0344425131127804
+60-69	Nerve - Tibial	T cells CD8	0.129126985933504
+30-39	Nerve - Tibial	T cells CD8	0.0406044156563834
+60-69	Nerve - Tibial	T cells CD8	0.0301362076964214
+60-69	Nerve - Tibial	T cells CD8	0.180591885961348
+60-69	Nerve - Tibial	T cells CD8	0.163920020062594
+50-59	Nerve - Tibial	T cells CD8	0.0222043713524398
+30-39	Nerve - Tibial	T cells CD8	0.0575446964737198
+20-29	Nerve - Tibial	T cells CD8	0.0881371406720175
+50-59	Nerve - Tibial	T cells CD8	0.0645268477228524
+40-49	Nerve - Tibial	T cells CD8	0.0779590727436992
+60-69	Nerve - Tibial	T cells CD8	0.0890406238893625
+60-69	Nerve - Tibial	T cells CD8	0.666741079282097
+30-39	Nerve - Tibial	T cells CD8	0
+30-39	Nerve - Tibial	T cells CD8	0.0363958481474199
+20-29	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.176787925297537
+20-29	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.0814522202954749
+50-59	Nerve - Tibial	T cells CD8	0.276558133468242
+40-49	Nerve - Tibial	T cells CD8	0.0458736035252984
+60-69	Nerve - Tibial	T cells CD8	0.122775464563733
+40-49	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.180419480443416
+30-39	Nerve - Tibial	T cells CD8	0.060986705717759
+50-59	Nerve - Tibial	T cells CD8	0.0843756396839873
+60-69	Nerve - Tibial	T cells CD8	0.0481378110912555
+20-29	Nerve - Tibial	T cells CD8	0.0473555745585384
+60-69	Nerve - Tibial	T cells CD8	0.156137302022806
+40-49	Nerve - Tibial	T cells CD8	0.0624438004694447
+60-69	Nerve - Tibial	T cells CD8	0.0538666219689515
+60-69	Nerve - Tibial	T cells CD8	0.0230010326381317
+20-29	Nerve - Tibial	T cells CD8	0.0951418923099824
+30-39	Nerve - Tibial	T cells CD8	0.057927870830377
+60-69	Nerve - Tibial	T cells CD8	0.273278386602686
+70-79	Nerve - Tibial	T cells CD8	0.0447742126818162
+50-59	Nerve - Tibial	T cells CD8	0.14918171883278
+40-49	Nerve - Tibial	T cells CD8	0.0320253132999209
+50-59	Nerve - Tibial	T cells CD8	0.13064943850301
+60-69	Nerve - Tibial	T cells CD8	0.0347381279939439
+40-49	Nerve - Tibial	T cells CD8	0.217982717170063
+60-69	Nerve - Tibial	T cells CD8	0.097091031687296
+50-59	Nerve - Tibial	T cells CD8	0.115022967361911
+60-69	Nerve - Tibial	T cells CD8	0.407840046943757
+50-59	Nerve - Tibial	T cells CD8	0.172294181784961
+30-39	Nerve - Tibial	T cells CD8	0.153680597789879
+50-59	Nerve - Tibial	T cells CD8	0.128668247856162
+60-69	Nerve - Tibial	T cells CD8	0.00381052848910867
+50-59	Nerve - Tibial	T cells CD8	0.0768273007365992
+50-59	Nerve - Tibial	T cells CD8	0.110650695252341
+50-59	Nerve - Tibial	T cells CD8	0.310097400044583
+60-69	Nerve - Tibial	T cells CD8	0.265814834431201
+60-69	Nerve - Tibial	T cells CD8	0.257242456906323
+60-69	Nerve - Tibial	T cells CD8	0.0564764025414234
+40-49	Nerve - Tibial	T cells CD8	0.0109053977471965
+20-29	Nerve - Tibial	T cells CD8	0
+30-39	Nerve - Tibial	T cells CD8	0.131075999911332
+30-39	Nerve - Tibial	T cells CD8	0.194480124736993
+50-59	Nerve - Tibial	T cells CD8	0.207935600528527
+50-59	Nerve - Tibial	T cells CD8	0.0586439674969484
+60-69	Nerve - Tibial	T cells CD8	0.0770897728208346
+60-69	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.309755549697018
+50-59	Nerve - Tibial	T cells CD8	0.216682651823165
+60-69	Nerve - Tibial	T cells CD8	0.188405089420554
+50-59	Nerve - Tibial	T cells CD8	0.0770805566030348
+50-59	Nerve - Tibial	T cells CD8	0.109139401969539
+60-69	Nerve - Tibial	T cells CD8	0.111371869563257
+50-59	Nerve - Tibial	T cells CD8	0.260868413886139
+50-59	Nerve - Tibial	T cells CD8	0.0535513956562025
+40-49	Nerve - Tibial	T cells CD8	0.103881093318193
+60-69	Nerve - Tibial	T cells CD8	0.27210972367958
+70-79	Nerve - Tibial	T cells CD8	0.0766064412577193
+40-49	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.291085838745066
+50-59	Nerve - Tibial	T cells CD8	0.0324964145040951
+70-79	Nerve - Tibial	T cells CD8	0.0380636266631965
+60-69	Nerve - Tibial	T cells CD8	0.0998396804225661
+60-69	Nerve - Tibial	T cells CD8	0.371754317758553
+50-59	Nerve - Tibial	T cells CD8	0.0697577032092685
+60-69	Nerve - Tibial	T cells CD8	0.20696486450852
+60-69	Nerve - Tibial	T cells CD8	0.0244094194960204
+50-59	Nerve - Tibial	T cells CD8	0.310262895240659
+60-69	Nerve - Tibial	T cells CD8	0.13197155630071
+50-59	Nerve - Tibial	T cells CD8	0.0696321716711938
+50-59	Nerve - Tibial	T cells CD8	0.113005438254266
+60-69	Nerve - Tibial	T cells CD8	0.165515276956987
+60-69	Nerve - Tibial	T cells CD8	0.098035325678475
+60-69	Nerve - Tibial	T cells CD8	0.128219287566003
+50-59	Nerve - Tibial	T cells CD8	0.131550517640001
+50-59	Nerve - Tibial	T cells CD8	0.0522424464978176
+50-59	Nerve - Tibial	T cells CD8	0.246954730627454
+50-59	Nerve - Tibial	T cells CD8	0.0704378812886737
+60-69	Nerve - Tibial	T cells CD8	0.28243574360793
+60-69	Nerve - Tibial	T cells CD8	0.0763759095653934
+50-59	Nerve - Tibial	T cells CD8	0.229345358261163
+60-69	Nerve - Tibial	T cells CD8	0.0627217051377662
+40-49	Nerve - Tibial	T cells CD8	0.0638481022182123
+60-69	Nerve - Tibial	T cells CD8	0.0578339558263156
+50-59	Nerve - Tibial	T cells CD8	0.174251414853285
+60-69	Nerve - Tibial	T cells CD8	0.15430032323552
+60-69	Nerve - Tibial	T cells CD8	0.0959129919523123
+40-49	Nerve - Tibial	T cells CD8	0.332247562296692
+50-59	Nerve - Tibial	T cells CD8	0.0106593815802216
+20-29	Nerve - Tibial	T cells CD8	0.123267339959022
+50-59	Nerve - Tibial	T cells CD8	0.182112274339692
+60-69	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.538250164330496
+50-59	Nerve - Tibial	T cells CD8	0.106742799898122
+60-69	Nerve - Tibial	T cells CD8	0.121740600766496
+60-69	Nerve - Tibial	T cells CD8	0.226400017500575
+50-59	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.265093644734727
+20-29	Nerve - Tibial	T cells CD8	0.0471349445469887
+50-59	Nerve - Tibial	T cells CD8	0.080329644832675
+40-49	Nerve - Tibial	T cells CD8	0.0914523775175261
+50-59	Nerve - Tibial	T cells CD8	0.138055061038909
+50-59	Nerve - Tibial	T cells CD8	0.0562945536063633
+40-49	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.171240041836713
+60-69	Nerve - Tibial	T cells CD8	0.121278879771973
+50-59	Nerve - Tibial	T cells CD8	0.02767130491428
+30-39	Nerve - Tibial	T cells CD8	0.177747067660353
+60-69	Nerve - Tibial	T cells CD8	0.145739626849397
+60-69	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.377348548276575
+60-69	Nerve - Tibial	T cells CD8	0.140462277037424
+50-59	Nerve - Tibial	T cells CD8	0.0451700282203466
+30-39	Nerve - Tibial	T cells CD8	0.144369587449614
+40-49	Nerve - Tibial	T cells CD8	0.0630491906136454
+60-69	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.107902294269424
+60-69	Nerve - Tibial	T cells CD8	0.196863630482598
+50-59	Nerve - Tibial	T cells CD8	0.147883010457753
+50-59	Nerve - Tibial	T cells CD8	0.0975392555135444
+50-59	Nerve - Tibial	T cells CD8	0.164760849110359
+40-49	Nerve - Tibial	T cells CD8	0.0384649599285531
+60-69	Nerve - Tibial	T cells CD8	0.199920562380352
+60-69	Nerve - Tibial	T cells CD8	0.366522434318569
+50-59	Nerve - Tibial	T cells CD8	0.0414201271490765
+40-49	Nerve - Tibial	T cells CD8	0.0601976772008597
+30-39	Nerve - Tibial	T cells CD8	0
+70-79	Nerve - Tibial	T cells CD8	0
+40-49	Nerve - Tibial	T cells CD8	0.0870825089038186
+30-39	Nerve - Tibial	T cells CD8	0
+70-79	Nerve - Tibial	T cells CD8	0.0332352584983449
+60-69	Nerve - Tibial	T cells CD8	0.0662664002280673
+50-59	Nerve - Tibial	T cells CD8	0.0622465078590942
+60-69	Nerve - Tibial	T cells CD8	0.0130275847115526
+60-69	Nerve - Tibial	T cells CD8	0.209982460830312
+50-59	Nerve - Tibial	T cells CD8	0.0581740482820075
+60-69	Nerve - Tibial	T cells CD8	0.0712951257338759
+60-69	Nerve - Tibial	T cells CD8	0.168869742364159
+60-69	Nerve - Tibial	T cells CD8	0.159529302758232
+60-69	Nerve - Tibial	T cells CD8	0.0497916146400797
+60-69	Nerve - Tibial	T cells CD8	0.104084362545493
+50-59	Nerve - Tibial	T cells CD8	0.0906407113707089
+60-69	Nerve - Tibial	T cells CD8	0.0613780860659202
+50-59	Nerve - Tibial	T cells CD8	0
+20-29	Nerve - Tibial	T cells CD8	0.0143662993545853
+40-49	Nerve - Tibial	T cells CD8	0
+30-39	Nerve - Tibial	T cells CD8	0.271903861008589
+60-69	Nerve - Tibial	T cells CD8	0.149340259791142
+40-49	Nerve - Tibial	T cells CD8	0.145200981405343
+60-69	Nerve - Tibial	T cells CD8	0.101701962127684
+20-29	Nerve - Tibial	T cells CD8	0.0725354743933963
+50-59	Nerve - Tibial	T cells CD8	0
+30-39	Nerve - Tibial	T cells CD8	0.0978875435828343
+60-69	Nerve - Tibial	T cells CD8	0.164770421044325
+60-69	Nerve - Tibial	T cells CD8	0.246739023597454
+40-49	Nerve - Tibial	T cells CD8	0.0350232374372581
+50-59	Nerve - Tibial	T cells CD8	0.258702729776124
+70-79	Nerve - Tibial	T cells CD8	0.240535893324729
+60-69	Nerve - Tibial	T cells CD8	0.202889487363153
+30-39	Nerve - Tibial	T cells CD8	0.212998797135786
+40-49	Nerve - Tibial	T cells CD8	0.109902822221287
+20-29	Nerve - Tibial	T cells CD8	0.0360265077695188
+40-49	Nerve - Tibial	T cells CD8	0.200341870164341
+70-79	Nerve - Tibial	T cells CD8	0.15491231969901
+70-79	Nerve - Tibial	T cells CD8	0.131475006952821
+50-59	Nerve - Tibial	T cells CD8	0.10752151957959
+40-49	Nerve - Tibial	T cells CD8	0.115041920864771
+50-59	Nerve - Tibial	T cells CD8	0.10675519762408
+70-79	Nerve - Tibial	T cells CD8	0.0565537570579318
+30-39	Nerve - Tibial	T cells CD8	0.321929191886697
+50-59	Nerve - Tibial	T cells CD8	0.0561220286868985
+50-59	Nerve - Tibial	T cells CD8	0.0650352834374616
+50-59	Nerve - Tibial	T cells CD8	0.187592536499671
+50-59	Nerve - Tibial	T cells CD8	0.0196956040052245
+60-69	Nerve - Tibial	T cells CD8	0.17802256368533
+40-49	Nerve - Tibial	T cells CD8	0.196376633031744
+20-29	Nerve - Tibial	T cells CD8	0.0894261989399128
+70-79	Nerve - Tibial	T cells CD8	0.479550521392786
+50-59	Nerve - Tibial	T cells CD8	0.127985704390131
+60-69	Nerve - Tibial	T cells CD8	0.211883819685253
+60-69	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.299785072659266
+70-79	Nerve - Tibial	T cells CD8	0.302249575384785
+30-39	Nerve - Tibial	T cells CD8	0.141167008087789
+60-69	Nerve - Tibial	T cells CD8	0
+40-49	Nerve - Tibial	T cells CD8	0.167982099932435
+30-39	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.107887829445939
+30-39	Nerve - Tibial	T cells CD8	0.0829926045139008
+60-69	Nerve - Tibial	T cells CD8	0.0991699486669392
+60-69	Nerve - Tibial	T cells CD8	0.162626451303178
+60-69	Nerve - Tibial	T cells CD8	0.187536582101988
+60-69	Nerve - Tibial	T cells CD8	0.349648528849369
+50-59	Nerve - Tibial	T cells CD8	0.226437938015154
+60-69	Nerve - Tibial	T cells CD8	0.0230115632525857
+60-69	Nerve - Tibial	T cells CD8	0.101228775621231
+50-59	Nerve - Tibial	T cells CD8	0.112885190045024
+50-59	Nerve - Tibial	T cells CD8	0.0678491804675067
+50-59	Nerve - Tibial	T cells CD8	0.0941564211497899
+50-59	Nerve - Tibial	T cells CD8	0.223559719434469
+60-69	Nerve - Tibial	T cells CD8	0.166900672927106
+60-69	Nerve - Tibial	T cells CD8	0.11080708392505
+50-59	Nerve - Tibial	T cells CD8	0.141746360466606
+40-49	Nerve - Tibial	T cells CD8	0.0536529576361576
+40-49	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.0329890132747383
+70-79	Nerve - Tibial	T cells CD8	0.0613668645313018
+50-59	Nerve - Tibial	T cells CD8	0.026312106308181
+40-49	Nerve - Tibial	T cells CD8	0.126688254348337
+50-59	Nerve - Tibial	T cells CD8	0.013531188703057
+60-69	Nerve - Tibial	T cells CD8	0.150927862221451
+60-69	Nerve - Tibial	T cells CD8	0.180906622320798
+40-49	Nerve - Tibial	T cells CD8	0.0728478937439303
+40-49	Nerve - Tibial	T cells CD8	0.079144800117052
+50-59	Nerve - Tibial	T cells CD8	0.0993987030648252
+60-69	Nerve - Tibial	T cells CD8	0.255405038176054
+50-59	Nerve - Tibial	T cells CD8	0.0989491639247602
+70-79	Nerve - Tibial	T cells CD8	0.292368660368435
+60-69	Nerve - Tibial	T cells CD8	0.14798244758163
+40-49	Nerve - Tibial	T cells CD8	0.0754641088596791
+60-69	Nerve - Tibial	T cells CD8	0.135121694552253
+40-49	Nerve - Tibial	T cells CD8	0.0756907478555197
+20-29	Nerve - Tibial	T cells CD8	0.020492781215452
+60-69	Nerve - Tibial	T cells CD8	0.0900066955103075
+50-59	Nerve - Tibial	T cells CD8	0.0835635729279401
+60-69	Nerve - Tibial	T cells CD8	0.392535492141037
+40-49	Nerve - Tibial	T cells CD8	0.0534674629514466
+50-59	Nerve - Tibial	T cells CD8	0.0903772204525648
+50-59	Nerve - Tibial	T cells CD8	0.140603778526767
+60-69	Nerve - Tibial	T cells CD8	0.063546733831886
+40-49	Nerve - Tibial	T cells CD8	0
+30-39	Nerve - Tibial	T cells CD8	0.0263093266163049
+60-69	Nerve - Tibial	T cells CD8	0.00202054857674136
+60-69	Nerve - Tibial	T cells CD8	0.110040315543759
+50-59	Nerve - Tibial	T cells CD8	0.016010607773244
+40-49	Nerve - Tibial	T cells CD8	0.121662034657048
+50-59	Nerve - Tibial	T cells CD8	0.204756366527192
+30-39	Nerve - Tibial	T cells CD8	0.118293164497681
+20-29	Nerve - Tibial	T cells CD8	0.0366192580724388
+60-69	Nerve - Tibial	T cells CD8	0.275385171622491
+50-59	Nerve - Tibial	T cells CD8	0.218352930974753
+40-49	Nerve - Tibial	T cells CD8	0
+20-29	Nerve - Tibial	T cells CD8	0.0551871332955636
+20-29	Nerve - Tibial	T cells CD8	0.0710720277693546
+40-49	Nerve - Tibial	T cells CD8	0
+40-49	Nerve - Tibial	T cells CD8	0.331020263579829
+40-49	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.138407365641395
+30-39	Nerve - Tibial	T cells CD8	0.18887032081645
+50-59	Nerve - Tibial	T cells CD8	0.106827237825826
+30-39	Nerve - Tibial	T cells CD8	0.198559523646981
+20-29	Nerve - Tibial	T cells CD8	0.130636917707936
+50-59	Nerve - Tibial	T cells CD8	0.321532463360723
+20-29	Nerve - Tibial	T cells CD8	0.0363226102341603
+60-69	Nerve - Tibial	T cells CD8	0.0636990123971949
+30-39	Nerve - Tibial	T cells CD8	0.0540428093961171
+60-69	Nerve - Tibial	T cells CD8	0.113546788236577
+50-59	Nerve - Tibial	T cells CD8	0.178532189416855
+40-49	Nerve - Tibial	T cells CD8	0.147604222099291
+20-29	Nerve - Tibial	T cells CD8	0.112149093951021
+40-49	Nerve - Tibial	T cells CD8	0.417149611983596
+60-69	Nerve - Tibial	T cells CD8	0.0849269353100612
+50-59	Nerve - Tibial	T cells CD8	0.108329061426955
+60-69	Nerve - Tibial	T cells CD8	0.0827395731869133
+50-59	Nerve - Tibial	T cells CD8	0.0851530343595433
+50-59	Nerve - Tibial	T cells CD8	0.0216730147859209
+60-69	Nerve - Tibial	T cells CD8	0.16796631464994
+50-59	Nerve - Tibial	T cells CD8	0.0266106313992242
+30-39	Nerve - Tibial	T cells CD8	0.0747994626795191
+60-69	Nerve - Tibial	T cells CD8	0.053911045776817
+50-59	Nerve - Tibial	T cells CD8	0.124492581000045
+60-69	Nerve - Tibial	T cells CD8	0.686392683400733
+50-59	Nerve - Tibial	T cells CD8	0
+20-29	Nerve - Tibial	T cells CD8	0.0302201898371907
+40-49	Nerve - Tibial	T cells CD8	0.0358335389245624
+60-69	Nerve - Tibial	T cells CD8	0.208718645500742
+20-29	Nerve - Tibial	T cells CD8	0.14973870885355
+50-59	Nerve - Tibial	T cells CD8	0.172311576166063
+50-59	Nerve - Tibial	T cells CD8	0.21392444749361
+40-49	Nerve - Tibial	T cells CD8	0.163010462570419
+40-49	Nerve - Tibial	T cells CD8	0.0693287263715742
+30-39	Nerve - Tibial	T cells CD8	0.0143338450189501
+40-49	Nerve - Tibial	T cells CD8	0.25577502144643
+40-49	Nerve - Tibial	T cells CD8	0.0230537838896646
+60-69	Nerve - Tibial	T cells CD8	0.0420498954207565
+30-39	Nerve - Tibial	T cells CD8	0.0581901660280343
+60-69	Nerve - Tibial	T cells CD8	0.106013771736325
+30-39	Nerve - Tibial	T cells CD8	0.148290853992459
+50-59	Nerve - Tibial	T cells CD8	0.133966102555768
+50-59	Nerve - Tibial	T cells CD8	0.0555818266599473
+60-69	Nerve - Tibial	T cells CD8	0.0628030459221165
+60-69	Nerve - Tibial	T cells CD8	0.0977136500417793
+50-59	Nerve - Tibial	T cells CD8	0.0824953869194058
+50-59	Nerve - Tibial	T cells CD8	0.133361245542413
+40-49	Nerve - Tibial	T cells CD8	0.0991890134277241
+40-49	Nerve - Tibial	T cells CD8	0.035871585715828
+20-29	Nerve - Tibial	T cells CD8	0
+20-29	Nerve - Tibial	T cells CD8	0.0457081724373925
+40-49	Nerve - Tibial	T cells CD8	0.0747706633816907
+50-59	Nerve - Tibial	T cells CD8	0.0314511655086994
+20-29	Nerve - Tibial	T cells CD8	0.0387440405891657
+50-59	Nerve - Tibial	T cells CD8	0.128302325806005
+50-59	Nerve - Tibial	T cells CD8	0.2660353376182
+20-29	Nerve - Tibial	T cells CD8	0.0628264388590742
+50-59	Nerve - Tibial	T cells CD8	0.0708037946792098
+50-59	Nerve - Tibial	T cells CD8	0.0928600912441094
+60-69	Nerve - Tibial	T cells CD8	0.159219658978364
+50-59	Nerve - Tibial	T cells CD8	0.218964483629967
+40-49	Nerve - Tibial	T cells CD8	0.133066007303918
+40-49	Nerve - Tibial	T cells CD8	0.211676594872299
+50-59	Nerve - Tibial	T cells CD8	0.136752139719667
+40-49	Nerve - Tibial	T cells CD8	0.224487181794876
+60-69	Nerve - Tibial	T cells CD8	0.164266628333013
+60-69	Nerve - Tibial	T cells CD8	0.155578356442098
+50-59	Nerve - Tibial	T cells CD8	0.121141003049343
+40-49	Nerve - Tibial	T cells CD8	0.044281367631507
+70-79	Nerve - Tibial	T cells CD8	0.245013365542612
+40-49	Nerve - Tibial	T cells CD8	0.226146618817824
+50-59	Nerve - Tibial	T cells CD8	0.177444096596734
+60-69	Nerve - Tibial	T cells CD8	0.0636145085981753
+40-49	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.09256960297448
+60-69	Nerve - Tibial	T cells CD8	0.0665638985570196
+60-69	Nerve - Tibial	T cells CD8	0.0862288521472055
+40-49	Nerve - Tibial	T cells CD8	0.158662935543856
+60-69	Nerve - Tibial	T cells CD8	0.137695627478255
+20-29	Nerve - Tibial	T cells CD8	0.217315156045428
+50-59	Nerve - Tibial	T cells CD8	0.104113736539121
+50-59	Nerve - Tibial	T cells CD8	0.0757976223716618
+50-59	Nerve - Tibial	T cells CD8	0.0847334059041237
+50-59	Nerve - Tibial	T cells CD8	0.197968881180143
+60-69	Nerve - Tibial	T cells CD8	0.138233808051877
+50-59	Nerve - Tibial	T cells CD8	0.203094661140215
+50-59	Nerve - Tibial	T cells CD8	0.0678348686322313
+50-59	Nerve - Tibial	T cells CD8	0.0956216532029061
+50-59	Nerve - Tibial	T cells CD8	0.136185722368536
+40-49	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.177530725190395
+60-69	Nerve - Tibial	T cells CD8	0.0475901685634663
+60-69	Nerve - Tibial	T cells CD8	0.121221411067229
+40-49	Nerve - Tibial	T cells CD8	0.113079266325925
+60-69	Nerve - Tibial	T cells CD8	0.277306750078022
+50-59	Nerve - Tibial	T cells CD8	0.0537002908896735
+30-39	Nerve - Tibial	T cells CD8	0.0543963724014495
+40-49	Nerve - Tibial	T cells CD8	0
+40-49	Nerve - Tibial	T cells CD8	0.108025290018825
+50-59	Nerve - Tibial	T cells CD8	0.231198075578437
+40-49	Nerve - Tibial	T cells CD8	0.0872230754724938
+60-69	Nerve - Tibial	T cells CD8	0.343560521374622
+50-59	Nerve - Tibial	T cells CD8	0.0891751475121383
+40-49	Nerve - Tibial	T cells CD8	0.266186154766848
+20-29	Nerve - Tibial	T cells CD8	0.0266056986703733
+40-49	Nerve - Tibial	T cells CD8	0.392907491160766
+50-59	Nerve - Tibial	T cells CD8	0.34739138458421
+40-49	Nerve - Tibial	T cells CD8	0.189289396958043
+20-29	Nerve - Tibial	T cells CD8	0.000329437504177109
+40-49	Nerve - Tibial	T cells CD8	0.0660309134894726
+70-79	Nerve - Tibial	T cells CD8	0.196416361000044
+40-49	Nerve - Tibial	T cells CD8	0.225252855446277
+60-69	Nerve - Tibial	T cells CD8	0.0982563113944818
+60-69	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	T cells CD8	0.0961799802492527
+60-69	Nerve - Tibial	T cells CD8	0.123564925001009
+50-59	Nerve - Tibial	T cells CD8	0.0569149503856601
+40-49	Nerve - Tibial	T cells CD8	0.114038193058831
+60-69	Nerve - Tibial	T cells CD8	0.0425128815502218
+50-59	Nerve - Tibial	T cells CD8	0.00147241894797326
+20-29	Nerve - Tibial	T cells CD8	0
+60-69	Nerve - Tibial	T cells CD8	0.0319514967850411
+60-69	Nerve - Tibial	T cells CD8	0.135216674093593
+30-39	Nerve - Tibial	T cells CD8	0
+40-49	Nerve - Tibial	T cells CD8	0.0999219009185057
+20-29	Nerve - Tibial	T cells CD8	0.0470821163392618
+20-29	Nerve - Tibial	T cells CD8	0.0313062271573842
+50-59	Nerve - Tibial	T cells CD8	0.0374137585950231
+50-59	Nerve - Tibial	T cells CD8	0.211025354200099
+60-69	Nerve - Tibial	T cells CD8	0.504001555112333
+20-29	Nerve - Tibial	T cells CD8	0.0283644095753017
+40-49	Nerve - Tibial	T cells CD8	0.0144256811653682
+50-59	Nerve - Tibial	T cells CD8	0.0684048938708716
+30-39	Nerve - Tibial	T cells CD8	0.0235701264261323
+60-69	Nerve - Tibial	T cells CD8	0.188577424274203
+50-59	Nerve - Tibial	T cells CD8	0.0907815393660589
+50-59	Nerve - Tibial	T cells CD8	0.0158038991144212
+60-69	Nerve - Tibial	T cells CD8	0.0770226284646353
+30-39	Nerve - Tibial	T cells CD8	0.188277016633333
+50-59	Nerve - Tibial	T cells CD8	0.12678971777445
+60-69	Nerve - Tibial	T cells CD8	0.125853886008161
+20-29	Nerve - Tibial	T cells CD8	0
+50-59	Nerve - Tibial	CD4_memory	0.126197941100563
+60-69	Nerve - Tibial	CD4_memory	0.25315630513104
+60-69	Nerve - Tibial	CD4_memory	0.263073938850859
+60-69	Nerve - Tibial	CD4_memory	0.249172639911532
+60-69	Nerve - Tibial	CD4_memory	0.48098853179045
+50-59	Nerve - Tibial	CD4_memory	0.1672729221611
+50-59	Nerve - Tibial	CD4_memory	0.190162166280884
+40-49	Nerve - Tibial	CD4_memory	0.480315226185157
+60-69	Nerve - Tibial	CD4_memory	0.111633129304237
+50-59	Nerve - Tibial	CD4_memory	0.386303006824148
+60-69	Nerve - Tibial	CD4_memory	0.206865192275748
+60-69	Nerve - Tibial	CD4_memory	0.368598720677191
+30-39	Nerve - Tibial	CD4_memory	0.17490675755137
+60-69	Nerve - Tibial	CD4_memory	0.260694215378923
+60-69	Nerve - Tibial	CD4_memory	0.111045035071675
+60-69	Nerve - Tibial	CD4_memory	0.325606189671289
+50-59	Nerve - Tibial	CD4_memory	0.163820869261776
+30-39	Nerve - Tibial	CD4_memory	0.187814620031248
+20-29	Nerve - Tibial	CD4_memory	0.390205119862272
+50-59	Nerve - Tibial	CD4_memory	0.206973214884316
+40-49	Nerve - Tibial	CD4_memory	0.555919951492929
+60-69	Nerve - Tibial	CD4_memory	0.231945011636369
+60-69	Nerve - Tibial	CD4_memory	0.658593292459779
+30-39	Nerve - Tibial	CD4_memory	0.370164034493369
+30-39	Nerve - Tibial	CD4_memory	0.369667406586691
+20-29	Nerve - Tibial	CD4_memory	0.0658437013126313
+50-59	Nerve - Tibial	CD4_memory	0.144329148527657
+20-29	Nerve - Tibial	CD4_memory	0.104562782101614
+60-69	Nerve - Tibial	CD4_memory	0.23039518687035
+50-59	Nerve - Tibial	CD4_memory	0.503724966919951
+40-49	Nerve - Tibial	CD4_memory	0.212389561508219
+60-69	Nerve - Tibial	CD4_memory	0.481278731167026
+40-49	Nerve - Tibial	CD4_memory	0.537590084273396
+60-69	Nerve - Tibial	CD4_memory	0.550424057553489
+30-39	Nerve - Tibial	CD4_memory	0.403513778879514
+50-59	Nerve - Tibial	CD4_memory	0.322167934445907
+60-69	Nerve - Tibial	CD4_memory	0.257710874816956
+20-29	Nerve - Tibial	CD4_memory	0.370257397162503
+60-69	Nerve - Tibial	CD4_memory	0.652547598966156
+40-49	Nerve - Tibial	CD4_memory	0.221285299944623
+60-69	Nerve - Tibial	CD4_memory	0.194957318200685
+60-69	Nerve - Tibial	CD4_memory	0.233634778064465
+20-29	Nerve - Tibial	CD4_memory	0.440979177294326
+30-39	Nerve - Tibial	CD4_memory	0.304670887159808
+60-69	Nerve - Tibial	CD4_memory	0.508425226315299
+70-79	Nerve - Tibial	CD4_memory	0.249108287900307
+50-59	Nerve - Tibial	CD4_memory	0.175142657117244
+40-49	Nerve - Tibial	CD4_memory	0.129662748750727
+50-59	Nerve - Tibial	CD4_memory	0.175926854768377
+60-69	Nerve - Tibial	CD4_memory	0.254011051563172
+40-49	Nerve - Tibial	CD4_memory	0.425314120336528
+60-69	Nerve - Tibial	CD4_memory	0.421401431689908
+50-59	Nerve - Tibial	CD4_memory	0.246629489690129
+60-69	Nerve - Tibial	CD4_memory	0.203581125635692
+50-59	Nerve - Tibial	CD4_memory	0.337464298632049
+30-39	Nerve - Tibial	CD4_memory	0.489023566671178
+50-59	Nerve - Tibial	CD4_memory	0.449054584421884
+60-69	Nerve - Tibial	CD4_memory	0.372039084953123
+50-59	Nerve - Tibial	CD4_memory	0.23536685604
+50-59	Nerve - Tibial	CD4_memory	0.274943512498355
+50-59	Nerve - Tibial	CD4_memory	0.372577913687835
+60-69	Nerve - Tibial	CD4_memory	0.428706404526442
+60-69	Nerve - Tibial	CD4_memory	0.389090086595841
+60-69	Nerve - Tibial	CD4_memory	0.153323068080585
+40-49	Nerve - Tibial	CD4_memory	0.176784312402497
+20-29	Nerve - Tibial	CD4_memory	0.667041979237008
+30-39	Nerve - Tibial	CD4_memory	0.307732001968393
+30-39	Nerve - Tibial	CD4_memory	0.196345904132127
+50-59	Nerve - Tibial	CD4_memory	0.760656656279692
+50-59	Nerve - Tibial	CD4_memory	0.149848816081196
+60-69	Nerve - Tibial	CD4_memory	0.207194532190793
+60-69	Nerve - Tibial	CD4_memory	0.497603698429499
+60-69	Nerve - Tibial	CD4_memory	0.315944648636767
+50-59	Nerve - Tibial	CD4_memory	0.184930790856054
+60-69	Nerve - Tibial	CD4_memory	0.459995183484539
+50-59	Nerve - Tibial	CD4_memory	0.308943566322365
+50-59	Nerve - Tibial	CD4_memory	0.301656055712979
+60-69	Nerve - Tibial	CD4_memory	0.119173514659542
+50-59	Nerve - Tibial	CD4_memory	0.578669010970878
+50-59	Nerve - Tibial	CD4_memory	0.232990389587916
+40-49	Nerve - Tibial	CD4_memory	0.477725315892869
+60-69	Nerve - Tibial	CD4_memory	0.324168512240026
+70-79	Nerve - Tibial	CD4_memory	0.193848450964938
+40-49	Nerve - Tibial	CD4_memory	0.488801245788607
+60-69	Nerve - Tibial	CD4_memory	0.325806991811472
+50-59	Nerve - Tibial	CD4_memory	0.269152107662131
+70-79	Nerve - Tibial	CD4_memory	0.185842328616249
+60-69	Nerve - Tibial	CD4_memory	0.373988187514002
+60-69	Nerve - Tibial	CD4_memory	0.192228608355392
+50-59	Nerve - Tibial	CD4_memory	0.286626956651004
+60-69	Nerve - Tibial	CD4_memory	0.320867604704405
+60-69	Nerve - Tibial	CD4_memory	0.320197673485458
+50-59	Nerve - Tibial	CD4_memory	0.237323370332274
+60-69	Nerve - Tibial	CD4_memory	0.16542853971936
+50-59	Nerve - Tibial	CD4_memory	0.222898958695811
+50-59	Nerve - Tibial	CD4_memory	0.28692203398995
+60-69	Nerve - Tibial	CD4_memory	0.211733474840005
+60-69	Nerve - Tibial	CD4_memory	0.257714143478256
+60-69	Nerve - Tibial	CD4_memory	0.0832594150831072
+50-59	Nerve - Tibial	CD4_memory	0.312650714059802
+50-59	Nerve - Tibial	CD4_memory	0.539792905464523
+50-59	Nerve - Tibial	CD4_memory	0.601178755154376
+50-59	Nerve - Tibial	CD4_memory	0.508859240823349
+60-69	Nerve - Tibial	CD4_memory	0.237863082156011
+60-69	Nerve - Tibial	CD4_memory	0.249682744280374
+50-59	Nerve - Tibial	CD4_memory	0.349632530558047
+60-69	Nerve - Tibial	CD4_memory	0.334068736053432
+40-49	Nerve - Tibial	CD4_memory	0.193770140177365
+60-69	Nerve - Tibial	CD4_memory	0.343568421152404
+50-59	Nerve - Tibial	CD4_memory	0.299574359842428
+60-69	Nerve - Tibial	CD4_memory	0.106450850033724
+60-69	Nerve - Tibial	CD4_memory	0.232717784826491
+40-49	Nerve - Tibial	CD4_memory	0.408021665541151
+50-59	Nerve - Tibial	CD4_memory	0.391326950976637
+20-29	Nerve - Tibial	CD4_memory	0.193779187383144
+50-59	Nerve - Tibial	CD4_memory	0.243159348527196
+60-69	Nerve - Tibial	CD4_memory	0.427369499169723
+50-59	Nerve - Tibial	CD4_memory	0.484425551607424
+50-59	Nerve - Tibial	CD4_memory	0.533568217126758
+60-69	Nerve - Tibial	CD4_memory	0.387859535100935
+60-69	Nerve - Tibial	CD4_memory	0.119995719930082
+50-59	Nerve - Tibial	CD4_memory	0.148111158839131
+50-59	Nerve - Tibial	CD4_memory	0.276277337782068
+20-29	Nerve - Tibial	CD4_memory	0.144833044517926
+50-59	Nerve - Tibial	CD4_memory	0.290015136707987
+40-49	Nerve - Tibial	CD4_memory	0.142138434820442
+50-59	Nerve - Tibial	CD4_memory	0.235218637748725
+50-59	Nerve - Tibial	CD4_memory	0.154444365806307
+40-49	Nerve - Tibial	CD4_memory	0.199105034525454
+50-59	Nerve - Tibial	CD4_memory	0.314505257056913
+60-69	Nerve - Tibial	CD4_memory	0.185682905924446
+50-59	Nerve - Tibial	CD4_memory	0.228280892686441
+30-39	Nerve - Tibial	CD4_memory	0.364517885375193
+60-69	Nerve - Tibial	CD4_memory	0.245402020793698
+60-69	Nerve - Tibial	CD4_memory	0.32615056164345
+60-69	Nerve - Tibial	CD4_memory	0.32083478015621
+60-69	Nerve - Tibial	CD4_memory	0.369735615861941
+50-59	Nerve - Tibial	CD4_memory	0.213548796320976
+30-39	Nerve - Tibial	CD4_memory	0.351078202071443
+40-49	Nerve - Tibial	CD4_memory	0.335355464203854
+60-69	Nerve - Tibial	CD4_memory	0.676991964483113
+50-59	Nerve - Tibial	CD4_memory	0.325789283424484
+60-69	Nerve - Tibial	CD4_memory	0.481049494104212
+50-59	Nerve - Tibial	CD4_memory	0.240522671392789
+50-59	Nerve - Tibial	CD4_memory	0.4433206395028
+50-59	Nerve - Tibial	CD4_memory	0.224252043742942
+40-49	Nerve - Tibial	CD4_memory	0.437864377827492
+60-69	Nerve - Tibial	CD4_memory	0.26257255155991
+60-69	Nerve - Tibial	CD4_memory	0.645847874176836
+50-59	Nerve - Tibial	CD4_memory	0.145080637982073
+40-49	Nerve - Tibial	CD4_memory	0.241280343388807
+30-39	Nerve - Tibial	CD4_memory	0.225355139325343
+70-79	Nerve - Tibial	CD4_memory	0.893226448857842
+40-49	Nerve - Tibial	CD4_memory	0.131830605008968
+30-39	Nerve - Tibial	CD4_memory	0.472161022748149
+70-79	Nerve - Tibial	CD4_memory	0.503957043161006
+60-69	Nerve - Tibial	CD4_memory	0.133210786316431
+50-59	Nerve - Tibial	CD4_memory	0.1458717630239
+60-69	Nerve - Tibial	CD4_memory	0.28050279948714
+60-69	Nerve - Tibial	CD4_memory	0.708544223329961
+50-59	Nerve - Tibial	CD4_memory	0.217931826253846
+60-69	Nerve - Tibial	CD4_memory	0.256073166701258
+60-69	Nerve - Tibial	CD4_memory	0.308543868387332
+60-69	Nerve - Tibial	CD4_memory	0.108498105410258
+60-69	Nerve - Tibial	CD4_memory	0.203080978077627
+60-69	Nerve - Tibial	CD4_memory	0.204145380145231
+50-59	Nerve - Tibial	CD4_memory	0.402015287248842
+60-69	Nerve - Tibial	CD4_memory	0.449749881929862
+50-59	Nerve - Tibial	CD4_memory	0.139171535937713
+20-29	Nerve - Tibial	CD4_memory	0.474138200360307
+40-49	Nerve - Tibial	CD4_memory	0.356946503986454
+30-39	Nerve - Tibial	CD4_memory	0.426927882658466
+60-69	Nerve - Tibial	CD4_memory	0.250764897491399
+40-49	Nerve - Tibial	CD4_memory	0.267613788511825
+60-69	Nerve - Tibial	CD4_memory	0.371871533501889
+20-29	Nerve - Tibial	CD4_memory	0.34900519513573
+50-59	Nerve - Tibial	CD4_memory	0.563438288182224
+30-39	Nerve - Tibial	CD4_memory	0.222936072379798
+60-69	Nerve - Tibial	CD4_memory	0.302462544858203
+60-69	Nerve - Tibial	CD4_memory	0.400306082616342
+40-49	Nerve - Tibial	CD4_memory	0.180664867745886
+50-59	Nerve - Tibial	CD4_memory	0.36883178696627
+70-79	Nerve - Tibial	CD4_memory	0.114815062846063
+60-69	Nerve - Tibial	CD4_memory	0.307488121070837
+30-39	Nerve - Tibial	CD4_memory	0.420200912522333
+40-49	Nerve - Tibial	CD4_memory	0.4791333727574
+20-29	Nerve - Tibial	CD4_memory	0.256584377536605
+40-49	Nerve - Tibial	CD4_memory	0.438614484909935
+70-79	Nerve - Tibial	CD4_memory	0.376894912628767
+70-79	Nerve - Tibial	CD4_memory	0.240665992490004
+50-59	Nerve - Tibial	CD4_memory	0.142354894347201
+40-49	Nerve - Tibial	CD4_memory	0.118257698780581
+50-59	Nerve - Tibial	CD4_memory	0.174263193891884
+70-79	Nerve - Tibial	CD4_memory	0.524170589887625
+30-39	Nerve - Tibial	CD4_memory	0.456614560853193
+50-59	Nerve - Tibial	CD4_memory	0.339635983325726
+50-59	Nerve - Tibial	CD4_memory	0.357590996578363
+50-59	Nerve - Tibial	CD4_memory	0.429337335903901
+50-59	Nerve - Tibial	CD4_memory	0.154110576487884
+60-69	Nerve - Tibial	CD4_memory	0.27339158619081
+40-49	Nerve - Tibial	CD4_memory	0.288785993592094
+20-29	Nerve - Tibial	CD4_memory	0.206065714372047
+70-79	Nerve - Tibial	CD4_memory	0.244197336892568
+50-59	Nerve - Tibial	CD4_memory	0.504019504065203
+60-69	Nerve - Tibial	CD4_memory	0.483167372129038
+60-69	Nerve - Tibial	CD4_memory	0.614393068185345
+50-59	Nerve - Tibial	CD4_memory	0.750981795194962
+70-79	Nerve - Tibial	CD4_memory	0.168306625098204
+30-39	Nerve - Tibial	CD4_memory	0.229850219543692
+60-69	Nerve - Tibial	CD4_memory	0.178741065868001
+40-49	Nerve - Tibial	CD4_memory	0.226174224246666
+30-39	Nerve - Tibial	CD4_memory	0.336634879181954
+50-59	Nerve - Tibial	CD4_memory	0.475771784835557
+30-39	Nerve - Tibial	CD4_memory	0.151411610333848
+60-69	Nerve - Tibial	CD4_memory	0.16414203154112
+60-69	Nerve - Tibial	CD4_memory	0.369843916175059
+60-69	Nerve - Tibial	CD4_memory	0.372606298731536
+60-69	Nerve - Tibial	CD4_memory	0.379884473464916
+50-59	Nerve - Tibial	CD4_memory	0.422636937916468
+60-69	Nerve - Tibial	CD4_memory	0.302101992092028
+60-69	Nerve - Tibial	CD4_memory	0.186591269593827
+50-59	Nerve - Tibial	CD4_memory	0.415053178711056
+50-59	Nerve - Tibial	CD4_memory	0.302990593817298
+50-59	Nerve - Tibial	CD4_memory	0.180798843387276
+50-59	Nerve - Tibial	CD4_memory	0.337212592042204
+60-69	Nerve - Tibial	CD4_memory	0.523067206923792
+60-69	Nerve - Tibial	CD4_memory	0.452482947083948
+50-59	Nerve - Tibial	CD4_memory	0.306847073090003
+40-49	Nerve - Tibial	CD4_memory	0.374795509070719
+40-49	Nerve - Tibial	CD4_memory	0.247448854921224
+60-69	Nerve - Tibial	CD4_memory	0.282029883635624
+70-79	Nerve - Tibial	CD4_memory	0.470256572824963
+50-59	Nerve - Tibial	CD4_memory	0.500824301232967
+40-49	Nerve - Tibial	CD4_memory	0.380957920949035
+50-59	Nerve - Tibial	CD4_memory	0.258130101873956
+60-69	Nerve - Tibial	CD4_memory	0.696527578004949
+60-69	Nerve - Tibial	CD4_memory	0.52690189661976
+40-49	Nerve - Tibial	CD4_memory	0.173337079936746
+40-49	Nerve - Tibial	CD4_memory	0.349782434915369
+50-59	Nerve - Tibial	CD4_memory	0.540684014279188
+60-69	Nerve - Tibial	CD4_memory	0.229811349526487
+50-59	Nerve - Tibial	CD4_memory	0.555637284741132
+70-79	Nerve - Tibial	CD4_memory	0.203179513121074
+60-69	Nerve - Tibial	CD4_memory	0.353651327192641
+40-49	Nerve - Tibial	CD4_memory	0.227416686220201
+60-69	Nerve - Tibial	CD4_memory	0.0932309307812863
+40-49	Nerve - Tibial	CD4_memory	0.125080278071144
+20-29	Nerve - Tibial	CD4_memory	0.190308629585485
+60-69	Nerve - Tibial	CD4_memory	0.265945762840604
+50-59	Nerve - Tibial	CD4_memory	0.179328066560226
+60-69	Nerve - Tibial	CD4_memory	0.555866965006678
+40-49	Nerve - Tibial	CD4_memory	0.172360127663774
+50-59	Nerve - Tibial	CD4_memory	0.194415125583231
+50-59	Nerve - Tibial	CD4_memory	0.220570014959515
+60-69	Nerve - Tibial	CD4_memory	0.279929297886529
+40-49	Nerve - Tibial	CD4_memory	0.616384938791416
+30-39	Nerve - Tibial	CD4_memory	0.223301175562928
+60-69	Nerve - Tibial	CD4_memory	0.130527035770718
+60-69	Nerve - Tibial	CD4_memory	0.348306200612609
+50-59	Nerve - Tibial	CD4_memory	0.286742654255635
+40-49	Nerve - Tibial	CD4_memory	0.23734310911914
+50-59	Nerve - Tibial	CD4_memory	0.409136884718971
+30-39	Nerve - Tibial	CD4_memory	0.168771190328801
+20-29	Nerve - Tibial	CD4_memory	0.419677326694823
+60-69	Nerve - Tibial	CD4_memory	0.0315693990433901
+50-59	Nerve - Tibial	CD4_memory	0.124604715149857
+40-49	Nerve - Tibial	CD4_memory	0.587750626799967
+20-29	Nerve - Tibial	CD4_memory	0.314115303003348
+20-29	Nerve - Tibial	CD4_memory	0.420341734894555
+40-49	Nerve - Tibial	CD4_memory	0.250408560891209
+40-49	Nerve - Tibial	CD4_memory	0.206031069001998
+40-49	Nerve - Tibial	CD4_memory	0.557032456582569
+50-59	Nerve - Tibial	CD4_memory	0.328917673550246
+30-39	Nerve - Tibial	CD4_memory	0.191968211095919
+50-59	Nerve - Tibial	CD4_memory	0.283234585898163
+30-39	Nerve - Tibial	CD4_memory	0.623671028097577
+20-29	Nerve - Tibial	CD4_memory	0.0252939002677571
+50-59	Nerve - Tibial	CD4_memory	0.257420767896546
+20-29	Nerve - Tibial	CD4_memory	0.185643690469789
+60-69	Nerve - Tibial	CD4_memory	0.227663572166349
+30-39	Nerve - Tibial	CD4_memory	0.321671732388438
+60-69	Nerve - Tibial	CD4_memory	0.371005007657872
+50-59	Nerve - Tibial	CD4_memory	0.274036462509335
+40-49	Nerve - Tibial	CD4_memory	0.426220739578701
+20-29	Nerve - Tibial	CD4_memory	0.438945092332301
+40-49	Nerve - Tibial	CD4_memory	0.134766377301886
+60-69	Nerve - Tibial	CD4_memory	0.289381295055681
+50-59	Nerve - Tibial	CD4_memory	0.361685159206802
+60-69	Nerve - Tibial	CD4_memory	0.179142400035357
+50-59	Nerve - Tibial	CD4_memory	0.290974187453914
+50-59	Nerve - Tibial	CD4_memory	0.335079627598995
+60-69	Nerve - Tibial	CD4_memory	0.410205478129517
+50-59	Nerve - Tibial	CD4_memory	0.339650240054065
+30-39	Nerve - Tibial	CD4_memory	0.388156094245767
+60-69	Nerve - Tibial	CD4_memory	0.373134564578342
+50-59	Nerve - Tibial	CD4_memory	0.393138340136854
+60-69	Nerve - Tibial	CD4_memory	0.620263313585434
+50-59	Nerve - Tibial	CD4_memory	0.423541248565256
+20-29	Nerve - Tibial	CD4_memory	0.401463365409521
+40-49	Nerve - Tibial	CD4_memory	0.178670770536912
+60-69	Nerve - Tibial	CD4_memory	0.431623434416743
+20-29	Nerve - Tibial	CD4_memory	0.284812278781893
+50-59	Nerve - Tibial	CD4_memory	0.475799969121827
+50-59	Nerve - Tibial	CD4_memory	0.374277435023189
+40-49	Nerve - Tibial	CD4_memory	0.333557076961754
+40-49	Nerve - Tibial	CD4_memory	0.467627519271071
+30-39	Nerve - Tibial	CD4_memory	0.18655039168301
+40-49	Nerve - Tibial	CD4_memory	0.338518389441058
+40-49	Nerve - Tibial	CD4_memory	0.345938829007983
+60-69	Nerve - Tibial	CD4_memory	0.206784800968876
+30-39	Nerve - Tibial	CD4_memory	0.222930519563896
+60-69	Nerve - Tibial	CD4_memory	0.29151162813799
+30-39	Nerve - Tibial	CD4_memory	0.197999518477352
+50-59	Nerve - Tibial	CD4_memory	0.227502208279332
+50-59	Nerve - Tibial	CD4_memory	0.170032430771603
+60-69	Nerve - Tibial	CD4_memory	0.157219241418825
+60-69	Nerve - Tibial	CD4_memory	0.502778636220163
+50-59	Nerve - Tibial	CD4_memory	0.209896820782147
+50-59	Nerve - Tibial	CD4_memory	0.60575143749858
+40-49	Nerve - Tibial	CD4_memory	0.393901935351986
+40-49	Nerve - Tibial	CD4_memory	0.284274227216784
+20-29	Nerve - Tibial	CD4_memory	0.490544150103069
+20-29	Nerve - Tibial	CD4_memory	0.265360110058432
+40-49	Nerve - Tibial	CD4_memory	0.158142214057642
+50-59	Nerve - Tibial	CD4_memory	0.226703542370171
+20-29	Nerve - Tibial	CD4_memory	0.251198865375093
+50-59	Nerve - Tibial	CD4_memory	0.31918024140615
+50-59	Nerve - Tibial	CD4_memory	0.415308373503095
+20-29	Nerve - Tibial	CD4_memory	0.162523066906105
+50-59	Nerve - Tibial	CD4_memory	0.456666119484929
+50-59	Nerve - Tibial	CD4_memory	0.335943472445312
+60-69	Nerve - Tibial	CD4_memory	0.457153666095081
+50-59	Nerve - Tibial	CD4_memory	0.186654323936549
+40-49	Nerve - Tibial	CD4_memory	0.702555870466382
+40-49	Nerve - Tibial	CD4_memory	0.556268471618349
+50-59	Nerve - Tibial	CD4_memory	0.119908402888626
+40-49	Nerve - Tibial	CD4_memory	0.281669132862942
+60-69	Nerve - Tibial	CD4_memory	0.308693529626937
+60-69	Nerve - Tibial	CD4_memory	0.238146098066388
+50-59	Nerve - Tibial	CD4_memory	0.304125932613783
+40-49	Nerve - Tibial	CD4_memory	0.275122221873811
+70-79	Nerve - Tibial	CD4_memory	0.415350348257011
+40-49	Nerve - Tibial	CD4_memory	0.14363385037698
+50-59	Nerve - Tibial	CD4_memory	0.256607656223126
+60-69	Nerve - Tibial	CD4_memory	0.248990493438912
+40-49	Nerve - Tibial	CD4_memory	0.266534680571784
+50-59	Nerve - Tibial	CD4_memory	0.240938947823709
+60-69	Nerve - Tibial	CD4_memory	0.233779543360053
+60-69	Nerve - Tibial	CD4_memory	0.48512228335573
+40-49	Nerve - Tibial	CD4_memory	0.480493776204787
+60-69	Nerve - Tibial	CD4_memory	0.40386763900794
+20-29	Nerve - Tibial	CD4_memory	0.225776006760193
+50-59	Nerve - Tibial	CD4_memory	0.279076424977169
+50-59	Nerve - Tibial	CD4_memory	0.265519256607511
+50-59	Nerve - Tibial	CD4_memory	0.307035081576547
+50-59	Nerve - Tibial	CD4_memory	0.674089094449555
+60-69	Nerve - Tibial	CD4_memory	0.29134509367054
+50-59	Nerve - Tibial	CD4_memory	0.304747328540459
+50-59	Nerve - Tibial	CD4_memory	0.241415584733209
+50-59	Nerve - Tibial	CD4_memory	0.252007631073233
+50-59	Nerve - Tibial	CD4_memory	0.237913946030837
+40-49	Nerve - Tibial	CD4_memory	0.302093603922283
+60-69	Nerve - Tibial	CD4_memory	0.277732138470354
+60-69	Nerve - Tibial	CD4_memory	0.341936693521971
+60-69	Nerve - Tibial	CD4_memory	0.255462008144267
+40-49	Nerve - Tibial	CD4_memory	0.380678401114904
+60-69	Nerve - Tibial	CD4_memory	0.672195669781341
+50-59	Nerve - Tibial	CD4_memory	0.243103166359775
+30-39	Nerve - Tibial	CD4_memory	0.0763159346424633
+40-49	Nerve - Tibial	CD4_memory	0.556909463848262
+40-49	Nerve - Tibial	CD4_memory	0.147113862177834
+50-59	Nerve - Tibial	CD4_memory	0.471546003399974
+40-49	Nerve - Tibial	CD4_memory	0.20736631738197
+60-69	Nerve - Tibial	CD4_memory	0.495022541395956
+50-59	Nerve - Tibial	CD4_memory	0.238153399194538
+40-49	Nerve - Tibial	CD4_memory	0.322405186908825
+20-29	Nerve - Tibial	CD4_memory	0.259149841298451
+40-49	Nerve - Tibial	CD4_memory	0.596133059553724
+50-59	Nerve - Tibial	CD4_memory	0.404001741659976
+40-49	Nerve - Tibial	CD4_memory	0.376028250566828
+20-29	Nerve - Tibial	CD4_memory	0.196745460291222
+40-49	Nerve - Tibial	CD4_memory	0.212277406844182
+70-79	Nerve - Tibial	CD4_memory	0.385093039649802
+40-49	Nerve - Tibial	CD4_memory	0.359100254577365
+60-69	Nerve - Tibial	CD4_memory	0.337618363501087
+60-69	Nerve - Tibial	CD4_memory	0.439871711663164
+50-59	Nerve - Tibial	CD4_memory	0.194558712854527
+60-69	Nerve - Tibial	CD4_memory	0.319419926468076
+50-59	Nerve - Tibial	CD4_memory	0.315726160135685
+40-49	Nerve - Tibial	CD4_memory	0.199588918379284
+60-69	Nerve - Tibial	CD4_memory	0.213768749730981
+50-59	Nerve - Tibial	CD4_memory	0.254196553152251
+20-29	Nerve - Tibial	CD4_memory	0.205377410358366
+60-69	Nerve - Tibial	CD4_memory	0.308947914688214
+60-69	Nerve - Tibial	CD4_memory	0.247626830746071
+30-39	Nerve - Tibial	CD4_memory	0.256331708912085
+40-49	Nerve - Tibial	CD4_memory	0.531677036455976
+20-29	Nerve - Tibial	CD4_memory	0.21824806989859
+20-29	Nerve - Tibial	CD4_memory	0.330265216708117
+50-59	Nerve - Tibial	CD4_memory	0.231967553333125
+50-59	Nerve - Tibial	CD4_memory	0.134387194627546
+60-69	Nerve - Tibial	CD4_memory	0.438108733118431
+20-29	Nerve - Tibial	CD4_memory	0.257832202928458
+40-49	Nerve - Tibial	CD4_memory	0.263758578346038
+50-59	Nerve - Tibial	CD4_memory	0.274775146403474
+30-39	Nerve - Tibial	CD4_memory	0.387743005570591
+60-69	Nerve - Tibial	CD4_memory	0.224217312482521
+50-59	Nerve - Tibial	CD4_memory	0.32092667870592
+50-59	Nerve - Tibial	CD4_memory	0.331703232784874
+60-69	Nerve - Tibial	CD4_memory	0.133817209316314
+30-39	Nerve - Tibial	CD4_memory	0.338386233410084
+50-59	Nerve - Tibial	CD4_memory	0.198057805491443
+60-69	Nerve - Tibial	CD4_memory	0.0407101514048309
+20-29	Nerve - Tibial	CD4_memory	0.417347850436056
+50-59	Nerve - Tibial	MacrophageSum	0.81648294061214
+60-69	Nerve - Tibial	MacrophageSum	0.8705854578167
+60-69	Nerve - Tibial	MacrophageSum	0.720084902778852
+60-69	Nerve - Tibial	MacrophageSum	0.723764056679517
+60-69	Nerve - Tibial	MacrophageSum	1.32999649977059
+50-59	Nerve - Tibial	MacrophageSum	0.505432252829615
+50-59	Nerve - Tibial	MacrophageSum	1.1166869864831
+40-49	Nerve - Tibial	MacrophageSum	0.808812686175434
+60-69	Nerve - Tibial	MacrophageSum	0.664153032649581
+50-59	Nerve - Tibial	MacrophageSum	0.900480216293984
+60-69	Nerve - Tibial	MacrophageSum	0.608653547171495
+60-69	Nerve - Tibial	MacrophageSum	1.35517454593572
+30-39	Nerve - Tibial	MacrophageSum	0.724380878543456
+60-69	Nerve - Tibial	MacrophageSum	0.629001823158975
+60-69	Nerve - Tibial	MacrophageSum	0.939558926417326
+60-69	Nerve - Tibial	MacrophageSum	0.7763805819087
+50-59	Nerve - Tibial	MacrophageSum	0.617839054564324
+30-39	Nerve - Tibial	MacrophageSum	0.488890354289327
+20-29	Nerve - Tibial	MacrophageSum	0.846557391385279
+50-59	Nerve - Tibial	MacrophageSum	0.805928071696269
+40-49	Nerve - Tibial	MacrophageSum	0.523296095310246
+60-69	Nerve - Tibial	MacrophageSum	0.748515669554439
+60-69	Nerve - Tibial	MacrophageSum	0.915881848466857
+30-39	Nerve - Tibial	MacrophageSum	0.508438116938128
+30-39	Nerve - Tibial	MacrophageSum	0.528776793536929
+20-29	Nerve - Tibial	MacrophageSum	0.572067805689666
+50-59	Nerve - Tibial	MacrophageSum	0.814576159081612
+20-29	Nerve - Tibial	MacrophageSum	0.457783390493645
+60-69	Nerve - Tibial	MacrophageSum	0.957099470324893
+50-59	Nerve - Tibial	MacrophageSum	0.683970758433334
+40-49	Nerve - Tibial	MacrophageSum	0.747525281165508
+60-69	Nerve - Tibial	MacrophageSum	0.778606375989704
+40-49	Nerve - Tibial	MacrophageSum	0.299435528143539
+60-69	Nerve - Tibial	MacrophageSum	1.37335064082479
+30-39	Nerve - Tibial	MacrophageSum	0.805819262381579
+50-59	Nerve - Tibial	MacrophageSum	0.794639612195571
+60-69	Nerve - Tibial	MacrophageSum	0.659142035849099
+20-29	Nerve - Tibial	MacrophageSum	0.536514940991135
+60-69	Nerve - Tibial	MacrophageSum	1.21078692941191
+40-49	Nerve - Tibial	MacrophageSum	0.335403902759499
+60-69	Nerve - Tibial	MacrophageSum	0.760846078089049
+60-69	Nerve - Tibial	MacrophageSum	0.677427804874185
+20-29	Nerve - Tibial	MacrophageSum	1.08560693493205
+30-39	Nerve - Tibial	MacrophageSum	0.917389546616142
+60-69	Nerve - Tibial	MacrophageSum	1.49182146241362
+70-79	Nerve - Tibial	MacrophageSum	0.638331425086854
+50-59	Nerve - Tibial	MacrophageSum	0.856277508205461
+40-49	Nerve - Tibial	MacrophageSum	0.48372265609473
+50-59	Nerve - Tibial	MacrophageSum	0.752112054818109
+60-69	Nerve - Tibial	MacrophageSum	0.513647913001758
+40-49	Nerve - Tibial	MacrophageSum	1.31821875519431
+60-69	Nerve - Tibial	MacrophageSum	0.743218440847523
+50-59	Nerve - Tibial	MacrophageSum	0.936151146106535
+60-69	Nerve - Tibial	MacrophageSum	2.57872983729974
+50-59	Nerve - Tibial	MacrophageSum	0.81178822738038
+30-39	Nerve - Tibial	MacrophageSum	0.934024487721366
+50-59	Nerve - Tibial	MacrophageSum	1.61720557532955
+60-69	Nerve - Tibial	MacrophageSum	0.58554086903848
+50-59	Nerve - Tibial	MacrophageSum	0.650298522884358
+50-59	Nerve - Tibial	MacrophageSum	0.88879899307249
+50-59	Nerve - Tibial	MacrophageSum	1.01024898203029
+60-69	Nerve - Tibial	MacrophageSum	0.905846874175059
+60-69	Nerve - Tibial	MacrophageSum	1.12178949430134
+60-69	Nerve - Tibial	MacrophageSum	0.964773693736716
+40-49	Nerve - Tibial	MacrophageSum	0.38116064152138
+20-29	Nerve - Tibial	MacrophageSum	0.927982272766722
+30-39	Nerve - Tibial	MacrophageSum	0.966373265929859
+30-39	Nerve - Tibial	MacrophageSum	0.764363991553885
+50-59	Nerve - Tibial	MacrophageSum	0.739857305747225
+50-59	Nerve - Tibial	MacrophageSum	0.52918179350214
+60-69	Nerve - Tibial	MacrophageSum	1.00135249980958
+60-69	Nerve - Tibial	MacrophageSum	0.899682645243954
+60-69	Nerve - Tibial	MacrophageSum	1.67978986707506
+50-59	Nerve - Tibial	MacrophageSum	1.24725207361559
+60-69	Nerve - Tibial	MacrophageSum	0.59547751748414
+50-59	Nerve - Tibial	MacrophageSum	1.08950786654153
+50-59	Nerve - Tibial	MacrophageSum	0.868814258061246
+60-69	Nerve - Tibial	MacrophageSum	0.933394400175076
+50-59	Nerve - Tibial	MacrophageSum	1.42395702504185
+50-59	Nerve - Tibial	MacrophageSum	0.932667565157407
+40-49	Nerve - Tibial	MacrophageSum	0.489667836384396
+60-69	Nerve - Tibial	MacrophageSum	1.15315898471821
+70-79	Nerve - Tibial	MacrophageSum	0.693877186235131
+40-49	Nerve - Tibial	MacrophageSum	0.768748947174967
+60-69	Nerve - Tibial	MacrophageSum	1.31707806940261
+50-59	Nerve - Tibial	MacrophageSum	1.29897492218199
+70-79	Nerve - Tibial	MacrophageSum	0.506266435968292
+60-69	Nerve - Tibial	MacrophageSum	0.818492313663739
+60-69	Nerve - Tibial	MacrophageSum	1.30893171125056
+50-59	Nerve - Tibial	MacrophageSum	1.20631725471441
+60-69	Nerve - Tibial	MacrophageSum	0.897044448709999
+60-69	Nerve - Tibial	MacrophageSum	1.02924235288005
+50-59	Nerve - Tibial	MacrophageSum	1.04917009358551
+60-69	Nerve - Tibial	MacrophageSum	1.03092271383157
+50-59	Nerve - Tibial	MacrophageSum	1.14355849021145
+50-59	Nerve - Tibial	MacrophageSum	0.873078809354999
+60-69	Nerve - Tibial	MacrophageSum	1.05777394394345
+60-69	Nerve - Tibial	MacrophageSum	0.726635901845132
+60-69	Nerve - Tibial	MacrophageSum	0.665760510116161
+50-59	Nerve - Tibial	MacrophageSum	0.736249572286608
+50-59	Nerve - Tibial	MacrophageSum	1.04188501514988
+50-59	Nerve - Tibial	MacrophageSum	1.23145086262076
+50-59	Nerve - Tibial	MacrophageSum	0.78246634809323
+60-69	Nerve - Tibial	MacrophageSum	0.940905662823928
+60-69	Nerve - Tibial	MacrophageSum	0.80882285822518
+50-59	Nerve - Tibial	MacrophageSum	1.04417244199248
+60-69	Nerve - Tibial	MacrophageSum	0.508689726062856
+40-49	Nerve - Tibial	MacrophageSum	0.678323930895683
+60-69	Nerve - Tibial	MacrophageSum	0.802116923220634
+50-59	Nerve - Tibial	MacrophageSum	1.08207677429412
+60-69	Nerve - Tibial	MacrophageSum	0.760761067257518
+60-69	Nerve - Tibial	MacrophageSum	0.86348226028161
+40-49	Nerve - Tibial	MacrophageSum	1.1244362618895
+50-59	Nerve - Tibial	MacrophageSum	0.728346804395545
+20-29	Nerve - Tibial	MacrophageSum	0.925226434398635
+50-59	Nerve - Tibial	MacrophageSum	0.974430609943273
+60-69	Nerve - Tibial	MacrophageSum	0.515475354132412
+50-59	Nerve - Tibial	MacrophageSum	0.91290093569376
+50-59	Nerve - Tibial	MacrophageSum	0.800394580341724
+60-69	Nerve - Tibial	MacrophageSum	0.817208687754983
+60-69	Nerve - Tibial	MacrophageSum	1.04401051586731
+50-59	Nerve - Tibial	MacrophageSum	0.552647293018113
+50-59	Nerve - Tibial	MacrophageSum	1.04631825189036
+20-29	Nerve - Tibial	MacrophageSum	1.19700983339045
+50-59	Nerve - Tibial	MacrophageSum	1.08814144252284
+40-49	Nerve - Tibial	MacrophageSum	0.662588019691969
+50-59	Nerve - Tibial	MacrophageSum	0.720437880029833
+50-59	Nerve - Tibial	MacrophageSum	0.880704906080634
+40-49	Nerve - Tibial	MacrophageSum	0.553921861590835
+50-59	Nerve - Tibial	MacrophageSum	0.840082071902991
+60-69	Nerve - Tibial	MacrophageSum	0.766088669745654
+50-59	Nerve - Tibial	MacrophageSum	0.813013003703675
+30-39	Nerve - Tibial	MacrophageSum	0.954743748734884
+60-69	Nerve - Tibial	MacrophageSum	0.827382730442867
+60-69	Nerve - Tibial	MacrophageSum	0.515359426166888
+60-69	Nerve - Tibial	MacrophageSum	1.04945001929078
+60-69	Nerve - Tibial	MacrophageSum	0.95693074963205
+50-59	Nerve - Tibial	MacrophageSum	0.546812755032533
+30-39	Nerve - Tibial	MacrophageSum	0.897244056672916
+40-49	Nerve - Tibial	MacrophageSum	0.929009903328626
+60-69	Nerve - Tibial	MacrophageSum	0.926404550879564
+50-59	Nerve - Tibial	MacrophageSum	0.858308820308676
+60-69	Nerve - Tibial	MacrophageSum	0.968202513780031
+50-59	Nerve - Tibial	MacrophageSum	0.817673599280837
+50-59	Nerve - Tibial	MacrophageSum	0.886018958118717
+50-59	Nerve - Tibial	MacrophageSum	0.414719678274801
+40-49	Nerve - Tibial	MacrophageSum	0.974083308915953
+60-69	Nerve - Tibial	MacrophageSum	0.605549769804672
+60-69	Nerve - Tibial	MacrophageSum	1.31008331071642
+50-59	Nerve - Tibial	MacrophageSum	0.449346645993516
+40-49	Nerve - Tibial	MacrophageSum	0.927363763859334
+30-39	Nerve - Tibial	MacrophageSum	0.751519549165936
+70-79	Nerve - Tibial	MacrophageSum	0.829158105282831
+40-49	Nerve - Tibial	MacrophageSum	0.839282728032657
+30-39	Nerve - Tibial	MacrophageSum	0.562979519150067
+70-79	Nerve - Tibial	MacrophageSum	0.826374364357898
+60-69	Nerve - Tibial	MacrophageSum	0.482653265204618
+50-59	Nerve - Tibial	MacrophageSum	0.96074317075977
+60-69	Nerve - Tibial	MacrophageSum	0.56093373387401
+60-69	Nerve - Tibial	MacrophageSum	1.00077093071465
+50-59	Nerve - Tibial	MacrophageSum	0.694435569076871
+60-69	Nerve - Tibial	MacrophageSum	0.537846654358589
+60-69	Nerve - Tibial	MacrophageSum	0.936737552275679
+60-69	Nerve - Tibial	MacrophageSum	0.678947366803314
+60-69	Nerve - Tibial	MacrophageSum	0.58346463722437
+60-69	Nerve - Tibial	MacrophageSum	0.996163603299858
+50-59	Nerve - Tibial	MacrophageSum	1.02508797602109
+60-69	Nerve - Tibial	MacrophageSum	1.0226123438542
+50-59	Nerve - Tibial	MacrophageSum	0.401062014193506
+20-29	Nerve - Tibial	MacrophageSum	0.754067703411089
+40-49	Nerve - Tibial	MacrophageSum	0.540312127820695
+30-39	Nerve - Tibial	MacrophageSum	1.12864556197901
+60-69	Nerve - Tibial	MacrophageSum	1.05495041226651
+40-49	Nerve - Tibial	MacrophageSum	0.752577226464541
+60-69	Nerve - Tibial	MacrophageSum	1.17556754812275
+20-29	Nerve - Tibial	MacrophageSum	0.446416325451682
+50-59	Nerve - Tibial	MacrophageSum	0.486344004005876
+30-39	Nerve - Tibial	MacrophageSum	0.805864590326783
+60-69	Nerve - Tibial	MacrophageSum	0.833289750301063
+60-69	Nerve - Tibial	MacrophageSum	1.1369014770379
+40-49	Nerve - Tibial	MacrophageSum	0.596984331604228
+50-59	Nerve - Tibial	MacrophageSum	1.80099199177618
+70-79	Nerve - Tibial	MacrophageSum	1.07739174936758
+60-69	Nerve - Tibial	MacrophageSum	0.581299423798227
+30-39	Nerve - Tibial	MacrophageSum	0.951049893494128
+40-49	Nerve - Tibial	MacrophageSum	0.672526106841224
+20-29	Nerve - Tibial	MacrophageSum	0.65295879273764
+40-49	Nerve - Tibial	MacrophageSum	1.27900888101791
+70-79	Nerve - Tibial	MacrophageSum	0.976279300166215
+70-79	Nerve - Tibial	MacrophageSum	0.830950047221051
+50-59	Nerve - Tibial	MacrophageSum	1.088674480077
+40-49	Nerve - Tibial	MacrophageSum	0.864913143757265
+50-59	Nerve - Tibial	MacrophageSum	0.66074335013109
+70-79	Nerve - Tibial	MacrophageSum	0.865389127733109
+30-39	Nerve - Tibial	MacrophageSum	0.834652480960201
+50-59	Nerve - Tibial	MacrophageSum	0.961379378179129
+50-59	Nerve - Tibial	MacrophageSum	1.1843783432827
+50-59	Nerve - Tibial	MacrophageSum	1.23461878684148
+50-59	Nerve - Tibial	MacrophageSum	0.618878465765901
+60-69	Nerve - Tibial	MacrophageSum	0.955715618466646
+40-49	Nerve - Tibial	MacrophageSum	1.05602497895402
+20-29	Nerve - Tibial	MacrophageSum	0.776272043166043
+70-79	Nerve - Tibial	MacrophageSum	0.902085108635734
+50-59	Nerve - Tibial	MacrophageSum	0.647867636124224
+60-69	Nerve - Tibial	MacrophageSum	1.3327375630746
+60-69	Nerve - Tibial	MacrophageSum	0.951096542430113
+50-59	Nerve - Tibial	MacrophageSum	0.826293488554286
+70-79	Nerve - Tibial	MacrophageSum	0.571856682078682
+30-39	Nerve - Tibial	MacrophageSum	0.586136136392083
+60-69	Nerve - Tibial	MacrophageSum	0.378351225875457
+40-49	Nerve - Tibial	MacrophageSum	0.816320094178287
+30-39	Nerve - Tibial	MacrophageSum	0.561909486036171
+50-59	Nerve - Tibial	MacrophageSum	0.895413184607768
+30-39	Nerve - Tibial	MacrophageSum	0.497726206480071
+60-69	Nerve - Tibial	MacrophageSum	1.12804074551618
+60-69	Nerve - Tibial	MacrophageSum	0.74659049595095
+60-69	Nerve - Tibial	MacrophageSum	0.719278454227422
+60-69	Nerve - Tibial	MacrophageSum	1.32800570847708
+50-59	Nerve - Tibial	MacrophageSum	1.0388494374539
+60-69	Nerve - Tibial	MacrophageSum	0.887477978324453
+60-69	Nerve - Tibial	MacrophageSum	0.665900508443035
+50-59	Nerve - Tibial	MacrophageSum	1.11201882023144
+50-59	Nerve - Tibial	MacrophageSum	0.839697769751527
+50-59	Nerve - Tibial	MacrophageSum	0.715133367237505
+50-59	Nerve - Tibial	MacrophageSum	1.51515355324488
+60-69	Nerve - Tibial	MacrophageSum	1.0371919861017
+60-69	Nerve - Tibial	MacrophageSum	0.811497092366741
+50-59	Nerve - Tibial	MacrophageSum	0.638111795747572
+40-49	Nerve - Tibial	MacrophageSum	1.14741165623862
+40-49	Nerve - Tibial	MacrophageSum	0.616246485456716
+60-69	Nerve - Tibial	MacrophageSum	0.431884430157863
+70-79	Nerve - Tibial	MacrophageSum	0.890394298873714
+50-59	Nerve - Tibial	MacrophageSum	0.513673957317246
+40-49	Nerve - Tibial	MacrophageSum	0.87300125751471
+50-59	Nerve - Tibial	MacrophageSum	0.490840915646036
+60-69	Nerve - Tibial	MacrophageSum	1.0322337229938
+60-69	Nerve - Tibial	MacrophageSum	1.00643183854999
+40-49	Nerve - Tibial	MacrophageSum	0.735345255013587
+40-49	Nerve - Tibial	MacrophageSum	0.346565810816951
+50-59	Nerve - Tibial	MacrophageSum	0.941360408780462
+60-69	Nerve - Tibial	MacrophageSum	0.868386124534783
+50-59	Nerve - Tibial	MacrophageSum	0.718339246265469
+70-79	Nerve - Tibial	MacrophageSum	1.28406668719209
+60-69	Nerve - Tibial	MacrophageSum	1.11264732324792
+40-49	Nerve - Tibial	MacrophageSum	0.621765808758529
+60-69	Nerve - Tibial	MacrophageSum	0.710573612241914
+40-49	Nerve - Tibial	MacrophageSum	0.778284853565352
+20-29	Nerve - Tibial	MacrophageSum	0.868640886158065
+60-69	Nerve - Tibial	MacrophageSum	1.06801056418364
+50-59	Nerve - Tibial	MacrophageSum	0.593765262409169
+60-69	Nerve - Tibial	MacrophageSum	1.1239019142587
+40-49	Nerve - Tibial	MacrophageSum	0.87842711544852
+50-59	Nerve - Tibial	MacrophageSum	0.826805748446679
+50-59	Nerve - Tibial	MacrophageSum	0.805841281104652
+60-69	Nerve - Tibial	MacrophageSum	0.474750363191145
+40-49	Nerve - Tibial	MacrophageSum	0.879838592520529
+30-39	Nerve - Tibial	MacrophageSum	0.650797700635247
+60-69	Nerve - Tibial	MacrophageSum	0.890323220270682
+60-69	Nerve - Tibial	MacrophageSum	0.867617925931663
+50-59	Nerve - Tibial	MacrophageSum	0.934316099581628
+40-49	Nerve - Tibial	MacrophageSum	0.749746124493285
+50-59	Nerve - Tibial	MacrophageSum	1.31265377067511
+30-39	Nerve - Tibial	MacrophageSum	0.807604995726283
+20-29	Nerve - Tibial	MacrophageSum	1.22769670802591
+60-69	Nerve - Tibial	MacrophageSum	0.841975202491652
+50-59	Nerve - Tibial	MacrophageSum	1.44439231539777
+40-49	Nerve - Tibial	MacrophageSum	0.574195610837032
+20-29	Nerve - Tibial	MacrophageSum	0.923586158545081
+20-29	Nerve - Tibial	MacrophageSum	0.847589004616805
+40-49	Nerve - Tibial	MacrophageSum	0.461864365816946
+40-49	Nerve - Tibial	MacrophageSum	1.26623694746869
+40-49	Nerve - Tibial	MacrophageSum	0.969072902220199
+50-59	Nerve - Tibial	MacrophageSum	1.36482243051539
+30-39	Nerve - Tibial	MacrophageSum	1.81730416312599
+50-59	Nerve - Tibial	MacrophageSum	1.00743520356554
+30-39	Nerve - Tibial	MacrophageSum	0.77873879926272
+20-29	Nerve - Tibial	MacrophageSum	0.720244024842147
+50-59	Nerve - Tibial	MacrophageSum	1.0143933915253
+20-29	Nerve - Tibial	MacrophageSum	0.834159783826003
+60-69	Nerve - Tibial	MacrophageSum	0.922381199063415
+30-39	Nerve - Tibial	MacrophageSum	0.960634036307265
+60-69	Nerve - Tibial	MacrophageSum	1.44789341479229
+50-59	Nerve - Tibial	MacrophageSum	1.40563941323276
+40-49	Nerve - Tibial	MacrophageSum	0.616234015214167
+20-29	Nerve - Tibial	MacrophageSum	0.733364274120829
+40-49	Nerve - Tibial	MacrophageSum	0.735540007097605
+60-69	Nerve - Tibial	MacrophageSum	0.498319990502477
+50-59	Nerve - Tibial	MacrophageSum	1.09404040408049
+60-69	Nerve - Tibial	MacrophageSum	0.854681216066878
+50-59	Nerve - Tibial	MacrophageSum	1.17413041083467
+50-59	Nerve - Tibial	MacrophageSum	0.930207267554204
+60-69	Nerve - Tibial	MacrophageSum	0.775188352611618
+50-59	Nerve - Tibial	MacrophageSum	0.733345477445009
+30-39	Nerve - Tibial	MacrophageSum	1.42346481841715
+60-69	Nerve - Tibial	MacrophageSum	1.21717186762746
+50-59	Nerve - Tibial	MacrophageSum	0.662012689297063
+60-69	Nerve - Tibial	MacrophageSum	1.20957920454993
+50-59	Nerve - Tibial	MacrophageSum	0.708435780381385
+20-29	Nerve - Tibial	MacrophageSum	0.543918736436296
+40-49	Nerve - Tibial	MacrophageSum	0.903476394787343
+60-69	Nerve - Tibial	MacrophageSum	1.82799685191095
+20-29	Nerve - Tibial	MacrophageSum	0.756602060249753
+50-59	Nerve - Tibial	MacrophageSum	1.07163280072131
+50-59	Nerve - Tibial	MacrophageSum	0.836396088370385
+40-49	Nerve - Tibial	MacrophageSum	0.790062732862481
+40-49	Nerve - Tibial	MacrophageSum	0.78997292667477
+30-39	Nerve - Tibial	MacrophageSum	0.519361753666959
+40-49	Nerve - Tibial	MacrophageSum	1.48367941639771
+40-49	Nerve - Tibial	MacrophageSum	0.710424934397729
+60-69	Nerve - Tibial	MacrophageSum	0.44378261477948
+30-39	Nerve - Tibial	MacrophageSum	0.651924696694455
+60-69	Nerve - Tibial	MacrophageSum	0.643236700347269
+30-39	Nerve - Tibial	MacrophageSum	1.06781378625464
+50-59	Nerve - Tibial	MacrophageSum	0.739157555377398
+50-59	Nerve - Tibial	MacrophageSum	0.844229440208303
+60-69	Nerve - Tibial	MacrophageSum	0.79343999008599
+60-69	Nerve - Tibial	MacrophageSum	1.27117365970762
+50-59	Nerve - Tibial	MacrophageSum	0.969004033464502
+50-59	Nerve - Tibial	MacrophageSum	0.878572686533739
+40-49	Nerve - Tibial	MacrophageSum	0.939103528729908
+40-49	Nerve - Tibial	MacrophageSum	0.52617078353015
+20-29	Nerve - Tibial	MacrophageSum	0.588888617613703
+20-29	Nerve - Tibial	MacrophageSum	0.752407181974734
+40-49	Nerve - Tibial	MacrophageSum	0.799468548744637
+50-59	Nerve - Tibial	MacrophageSum	0.624382335844165
+20-29	Nerve - Tibial	MacrophageSum	0.567533808367316
+50-59	Nerve - Tibial	MacrophageSum	0.994589490516593
+50-59	Nerve - Tibial	MacrophageSum	1.27617437758995
+20-29	Nerve - Tibial	MacrophageSum	0.656607786939588
+50-59	Nerve - Tibial	MacrophageSum	1.04484826888708
+50-59	Nerve - Tibial	MacrophageSum	0.858938209395809
+60-69	Nerve - Tibial	MacrophageSum	0.904812272794572
+50-59	Nerve - Tibial	MacrophageSum	0.747301906486138
+40-49	Nerve - Tibial	MacrophageSum	0.913819841965302
+40-49	Nerve - Tibial	MacrophageSum	1.21907369006651
+50-59	Nerve - Tibial	MacrophageSum	0.731628181650219
+40-49	Nerve - Tibial	MacrophageSum	0.875785984638538
+60-69	Nerve - Tibial	MacrophageSum	0.847463642013988
+60-69	Nerve - Tibial	MacrophageSum	1.09649456561109
+50-59	Nerve - Tibial	MacrophageSum	0.823066092306162
+40-49	Nerve - Tibial	MacrophageSum	0.691036870077401
+70-79	Nerve - Tibial	MacrophageSum	0.982442843531697
+40-49	Nerve - Tibial	MacrophageSum	0.76337814125492
+50-59	Nerve - Tibial	MacrophageSum	0.711059786738958
+60-69	Nerve - Tibial	MacrophageSum	0.732495830893844
+40-49	Nerve - Tibial	MacrophageSum	0.765559804055046
+50-59	Nerve - Tibial	MacrophageSum	0.67309504469242
+60-69	Nerve - Tibial	MacrophageSum	0.588838796860503
+60-69	Nerve - Tibial	MacrophageSum	0.855491353356076
+40-49	Nerve - Tibial	MacrophageSum	1.2350245661442
+60-69	Nerve - Tibial	MacrophageSum	1.15159170708505
+20-29	Nerve - Tibial	MacrophageSum	0.880220068064068
+50-59	Nerve - Tibial	MacrophageSum	0.751020892874767
+50-59	Nerve - Tibial	MacrophageSum	1.08160047847417
+50-59	Nerve - Tibial	MacrophageSum	0.778750709422215
+50-59	Nerve - Tibial	MacrophageSum	0.638685908671034
+60-69	Nerve - Tibial	MacrophageSum	0.862051623773323
+50-59	Nerve - Tibial	MacrophageSum	0.670952968813072
+50-59	Nerve - Tibial	MacrophageSum	0.728759691670536
+50-59	Nerve - Tibial	MacrophageSum	1.01812951419227
+50-59	Nerve - Tibial	MacrophageSum	0.722368896002389
+40-49	Nerve - Tibial	MacrophageSum	0.595420691833809
+60-69	Nerve - Tibial	MacrophageSum	0.767695517890307
+60-69	Nerve - Tibial	MacrophageSum	0.755951788861274
+60-69	Nerve - Tibial	MacrophageSum	0.79820266025984
+40-49	Nerve - Tibial	MacrophageSum	0.976841697795303
+60-69	Nerve - Tibial	MacrophageSum	1.19853047479614
+50-59	Nerve - Tibial	MacrophageSum	0.626205838495124
+30-39	Nerve - Tibial	MacrophageSum	0.55542297364208
+40-49	Nerve - Tibial	MacrophageSum	0.58230233221555
+40-49	Nerve - Tibial	MacrophageSum	0.658285309284938
+50-59	Nerve - Tibial	MacrophageSum	1.4425653383707
+40-49	Nerve - Tibial	MacrophageSum	0.651612447838144
+60-69	Nerve - Tibial	MacrophageSum	1.17809732930632
+50-59	Nerve - Tibial	MacrophageSum	0.778805139904456
+40-49	Nerve - Tibial	MacrophageSum	0.821940936980769
+20-29	Nerve - Tibial	MacrophageSum	0.647118980536009
+40-49	Nerve - Tibial	MacrophageSum	0.851023702782194
+50-59	Nerve - Tibial	MacrophageSum	1.3046361229291
+40-49	Nerve - Tibial	MacrophageSum	0.982006580273757
+20-29	Nerve - Tibial	MacrophageSum	0.346461434867394
+40-49	Nerve - Tibial	MacrophageSum	0.808850107657097
+70-79	Nerve - Tibial	MacrophageSum	1.36722171654362
+40-49	Nerve - Tibial	MacrophageSum	0.876730332232054
+60-69	Nerve - Tibial	MacrophageSum	0.826099009963797
+60-69	Nerve - Tibial	MacrophageSum	0.765149031383888
+50-59	Nerve - Tibial	MacrophageSum	0.752402351843334
+60-69	Nerve - Tibial	MacrophageSum	0.747231696974672
+50-59	Nerve - Tibial	MacrophageSum	0.831054530872048
+40-49	Nerve - Tibial	MacrophageSum	0.846127056872592
+60-69	Nerve - Tibial	MacrophageSum	0.497064991830384
+50-59	Nerve - Tibial	MacrophageSum	0.682445080327196
+20-29	Nerve - Tibial	MacrophageSum	0.567691066948469
+60-69	Nerve - Tibial	MacrophageSum	0.524942374041091
+60-69	Nerve - Tibial	MacrophageSum	0.89840295680816
+30-39	Nerve - Tibial	MacrophageSum	0.616473521402527
+40-49	Nerve - Tibial	MacrophageSum	0.920710017514592
+20-29	Nerve - Tibial	MacrophageSum	0.612980797117991
+20-29	Nerve - Tibial	MacrophageSum	0.610769299459229
+50-59	Nerve - Tibial	MacrophageSum	0.474321668882081
+50-59	Nerve - Tibial	MacrophageSum	1.09635635781853
+60-69	Nerve - Tibial	MacrophageSum	1.16283368280082
+20-29	Nerve - Tibial	MacrophageSum	0.732120082244039
+40-49	Nerve - Tibial	MacrophageSum	0.763753530239421
+50-59	Nerve - Tibial	MacrophageSum	0.577473640456037
+30-39	Nerve - Tibial	MacrophageSum	0.410149229848007
+60-69	Nerve - Tibial	MacrophageSum	1.18684912278128
+50-59	Nerve - Tibial	MacrophageSum	0.802455779407137
+50-59	Nerve - Tibial	MacrophageSum	0.665680610380281
+60-69	Nerve - Tibial	MacrophageSum	0.75982492207921
+30-39	Nerve - Tibial	MacrophageSum	1.38923597364383
+50-59	Nerve - Tibial	MacrophageSum	0.628381336846462
+60-69	Nerve - Tibial	MacrophageSum	0.683053859469687
+20-29	Nerve - Tibial	MacrophageSum	0.927030365455924
+50-59	Nerve - Tibial	MastSum	0.225193279547049
+60-69	Nerve - Tibial	MastSum	0.245078984354801
+60-69	Nerve - Tibial	MastSum	0.292280869072411
+60-69	Nerve - Tibial	MastSum	0.112934758515681
+60-69	Nerve - Tibial	MastSum	0.880949797747654
+50-59	Nerve - Tibial	MastSum	0.207059110560767
+50-59	Nerve - Tibial	MastSum	0.197255229975323
+40-49	Nerve - Tibial	MastSum	0.786318003159123
+60-69	Nerve - Tibial	MastSum	0.0927535589634538
+50-59	Nerve - Tibial	MastSum	0.466994740115088
+60-69	Nerve - Tibial	MastSum	0.256102775281022
+60-69	Nerve - Tibial	MastSum	0.197497474490479
+30-39	Nerve - Tibial	MastSum	0.199608013525904
+60-69	Nerve - Tibial	MastSum	0.302462415696975
+60-69	Nerve - Tibial	MastSum	0.698966427041113
+60-69	Nerve - Tibial	MastSum	0.214602526851523
+50-59	Nerve - Tibial	MastSum	0.336293383914048
+30-39	Nerve - Tibial	MastSum	0.0996928135749822
+20-29	Nerve - Tibial	MastSum	0.37932613940211
+50-59	Nerve - Tibial	MastSum	0.319978407366425
+40-49	Nerve - Tibial	MastSum	0.900770366455355
+60-69	Nerve - Tibial	MastSum	0.537879927845653
+60-69	Nerve - Tibial	MastSum	0.294276647177598
+30-39	Nerve - Tibial	MastSum	0.0995938893001946
+30-39	Nerve - Tibial	MastSum	0.307251182067875
+20-29	Nerve - Tibial	MastSum	0.0887460429839179
+50-59	Nerve - Tibial	MastSum	0.931673572482274
+20-29	Nerve - Tibial	MastSum	0.140403698645111
+60-69	Nerve - Tibial	MastSum	0.358228111902194
+50-59	Nerve - Tibial	MastSum	0.330166384542566
+40-49	Nerve - Tibial	MastSum	0.225798505324046
+60-69	Nerve - Tibial	MastSum	0.166973040608304
+40-49	Nerve - Tibial	MastSum	0.362444719758355
+60-69	Nerve - Tibial	MastSum	0.137083136039114
+30-39	Nerve - Tibial	MastSum	0.222329063748935
+50-59	Nerve - Tibial	MastSum	0.206530342789945
+60-69	Nerve - Tibial	MastSum	0.126482861502353
+20-29	Nerve - Tibial	MastSum	0.534923413065112
+60-69	Nerve - Tibial	MastSum	0.189109416269695
+40-49	Nerve - Tibial	MastSum	0.180299652848124
+60-69	Nerve - Tibial	MastSum	0.137263934310147
+60-69	Nerve - Tibial	MastSum	0.381311835464538
+20-29	Nerve - Tibial	MastSum	0.240549218217414
+30-39	Nerve - Tibial	MastSum	0.22395383195721
+60-69	Nerve - Tibial	MastSum	0.593917306818751
+70-79	Nerve - Tibial	MastSum	0.314172137288438
+50-59	Nerve - Tibial	MastSum	0.324684747988675
+40-49	Nerve - Tibial	MastSum	0.258934097490274
+50-59	Nerve - Tibial	MastSum	0.193720931438896
+60-69	Nerve - Tibial	MastSum	0.161761345371603
+40-49	Nerve - Tibial	MastSum	0.417816538899925
+60-69	Nerve - Tibial	MastSum	0.231299716378126
+50-59	Nerve - Tibial	MastSum	0.169985020052103
+60-69	Nerve - Tibial	MastSum	0.200240206243105
+50-59	Nerve - Tibial	MastSum	0.392797306739176
+30-39	Nerve - Tibial	MastSum	0.307519619144609
+50-59	Nerve - Tibial	MastSum	0.38245249297771
+60-69	Nerve - Tibial	MastSum	0.145100861562917
+50-59	Nerve - Tibial	MastSum	0.314288394837734
+50-59	Nerve - Tibial	MastSum	0.250223123904708
+50-59	Nerve - Tibial	MastSum	0.543453169281866
+60-69	Nerve - Tibial	MastSum	0.468177927089559
+60-69	Nerve - Tibial	MastSum	0.692271040442497
+60-69	Nerve - Tibial	MastSum	0.197132341220372
+40-49	Nerve - Tibial	MastSum	0.104497814125343
+20-29	Nerve - Tibial	MastSum	0.307720406472164
+30-39	Nerve - Tibial	MastSum	0.35542672718876
+30-39	Nerve - Tibial	MastSum	0.191063031088399
+50-59	Nerve - Tibial	MastSum	0.794755505565105
+50-59	Nerve - Tibial	MastSum	0.069112199897054
+60-69	Nerve - Tibial	MastSum	0.229775395333783
+60-69	Nerve - Tibial	MastSum	0.737188062318158
+60-69	Nerve - Tibial	MastSum	1.09282807256939
+50-59	Nerve - Tibial	MastSum	0.204748327871005
+60-69	Nerve - Tibial	MastSum	0.702803198661707
+50-59	Nerve - Tibial	MastSum	0.240577878252589
+50-59	Nerve - Tibial	MastSum	0.15269233598385
+60-69	Nerve - Tibial	MastSum	0.178392761667551
+50-59	Nerve - Tibial	MastSum	1.09943776073321
+50-59	Nerve - Tibial	MastSum	0.402539050509131
+40-49	Nerve - Tibial	MastSum	0.178610341579909
+60-69	Nerve - Tibial	MastSum	0.280945362162625
+70-79	Nerve - Tibial	MastSum	0.098322199220296
+40-49	Nerve - Tibial	MastSum	0.717811254594504
+60-69	Nerve - Tibial	MastSum	0.355102053412571
+50-59	Nerve - Tibial	MastSum	0.525112744279038
+70-79	Nerve - Tibial	MastSum	0.118640746409952
+60-69	Nerve - Tibial	MastSum	0.382427461575008
+60-69	Nerve - Tibial	MastSum	0.399224593877924
+50-59	Nerve - Tibial	MastSum	0.506611948783217
+60-69	Nerve - Tibial	MastSum	0.780296597546863
+60-69	Nerve - Tibial	MastSum	0.26384760649138
+50-59	Nerve - Tibial	MastSum	0.27864398331984
+60-69	Nerve - Tibial	MastSum	0.288499408842107
+50-59	Nerve - Tibial	MastSum	0.415442174251604
+50-59	Nerve - Tibial	MastSum	0.517786975955081
+60-69	Nerve - Tibial	MastSum	0.146062490093032
+60-69	Nerve - Tibial	MastSum	0.386063822602218
+60-69	Nerve - Tibial	MastSum	0.203343264355267
+50-59	Nerve - Tibial	MastSum	0.248565685322039
+50-59	Nerve - Tibial	MastSum	0.362509470667883
+50-59	Nerve - Tibial	MastSum	0.745148572850242
+50-59	Nerve - Tibial	MastSum	0.449370729420851
+60-69	Nerve - Tibial	MastSum	0.513412267227159
+60-69	Nerve - Tibial	MastSum	0.126332888230882
+50-59	Nerve - Tibial	MastSum	0.468089162802507
+60-69	Nerve - Tibial	MastSum	0.184580082842589
+40-49	Nerve - Tibial	MastSum	0.0812019918321371
+60-69	Nerve - Tibial	MastSum	0.424120826794004
+50-59	Nerve - Tibial	MastSum	0.411732207698707
+60-69	Nerve - Tibial	MastSum	0.0286513913122897
+60-69	Nerve - Tibial	MastSum	0.254951555499369
+40-49	Nerve - Tibial	MastSum	0.437829666394199
+50-59	Nerve - Tibial	MastSum	0.15304726916031
+20-29	Nerve - Tibial	MastSum	0.277513119846114
+50-59	Nerve - Tibial	MastSum	0.847483184091168
+60-69	Nerve - Tibial	MastSum	0.31152333053493
+50-59	Nerve - Tibial	MastSum	0.531535735237578
+50-59	Nerve - Tibial	MastSum	0.310634059174661
+60-69	Nerve - Tibial	MastSum	0.377698665104726
+60-69	Nerve - Tibial	MastSum	0.319774826569725
+50-59	Nerve - Tibial	MastSum	0.217561232457253
+50-59	Nerve - Tibial	MastSum	0.498677376463781
+20-29	Nerve - Tibial	MastSum	0.213742080617961
+50-59	Nerve - Tibial	MastSum	0.226527197621973
+40-49	Nerve - Tibial	MastSum	0.182024116169891
+50-59	Nerve - Tibial	MastSum	0.366932822491092
+50-59	Nerve - Tibial	MastSum	0.16466372915967
+40-49	Nerve - Tibial	MastSum	0.145620412081023
+50-59	Nerve - Tibial	MastSum	0.459771760808858
+60-69	Nerve - Tibial	MastSum	0.232307441445589
+50-59	Nerve - Tibial	MastSum	0.363735705536405
+30-39	Nerve - Tibial	MastSum	0.332860950049492
+60-69	Nerve - Tibial	MastSum	0.412165070674553
+60-69	Nerve - Tibial	MastSum	0.157853608772325
+60-69	Nerve - Tibial	MastSum	0.126326997073191
+60-69	Nerve - Tibial	MastSum	0.499406875014605
+50-59	Nerve - Tibial	MastSum	0.161150301075614
+30-39	Nerve - Tibial	MastSum	0.228516861638376
+40-49	Nerve - Tibial	MastSum	0.236171618420725
+60-69	Nerve - Tibial	MastSum	0.317005636666744
+50-59	Nerve - Tibial	MastSum	0.116475773306278
+60-69	Nerve - Tibial	MastSum	0.109886361833429
+50-59	Nerve - Tibial	MastSum	0.427773917576368
+50-59	Nerve - Tibial	MastSum	0.225196617451136
+50-59	Nerve - Tibial	MastSum	0.2304100428127
+40-49	Nerve - Tibial	MastSum	0.172677871591689
+60-69	Nerve - Tibial	MastSum	0.096723924587989
+60-69	Nerve - Tibial	MastSum	0.147836428707313
+50-59	Nerve - Tibial	MastSum	0.244729991922923
+40-49	Nerve - Tibial	MastSum	0.177174433005258
+30-39	Nerve - Tibial	MastSum	0.0916736803239218
+70-79	Nerve - Tibial	MastSum	0.32916345567354
+40-49	Nerve - Tibial	MastSum	0.13611451151532
+30-39	Nerve - Tibial	MastSum	0.172729733254106
+70-79	Nerve - Tibial	MastSum	0.163988970635759
+60-69	Nerve - Tibial	MastSum	0.253884548627309
+50-59	Nerve - Tibial	MastSum	0.326346604862204
+60-69	Nerve - Tibial	MastSum	0.0521701959225428
+60-69	Nerve - Tibial	MastSum	0.243084509484374
+50-59	Nerve - Tibial	MastSum	0.0411567179585612
+60-69	Nerve - Tibial	MastSum	0.195835020808719
+60-69	Nerve - Tibial	MastSum	0.0879666189914662
+60-69	Nerve - Tibial	MastSum	0.248307713860308
+60-69	Nerve - Tibial	MastSum	0.236864887190212
+60-69	Nerve - Tibial	MastSum	0.229193882270491
+50-59	Nerve - Tibial	MastSum	0.478750801814248
+60-69	Nerve - Tibial	MastSum	0.343886901352376
+50-59	Nerve - Tibial	MastSum	0.0356502319764003
+20-29	Nerve - Tibial	MastSum	0.316868345132987
+40-49	Nerve - Tibial	MastSum	0.0854944299226222
+30-39	Nerve - Tibial	MastSum	0.38922178674941
+60-69	Nerve - Tibial	MastSum	0.0721854114161773
+40-49	Nerve - Tibial	MastSum	0.134461001584816
+60-69	Nerve - Tibial	MastSum	0.652550134250113
+20-29	Nerve - Tibial	MastSum	0.193596915096062
+50-59	Nerve - Tibial	MastSum	0.231888797044281
+30-39	Nerve - Tibial	MastSum	0.442623690781028
+60-69	Nerve - Tibial	MastSum	0.182593499514093
+60-69	Nerve - Tibial	MastSum	0.251881392880381
+40-49	Nerve - Tibial	MastSum	0.240271001513696
+50-59	Nerve - Tibial	MastSum	0.513671760099103
+70-79	Nerve - Tibial	MastSum	0.385954317248496
+60-69	Nerve - Tibial	MastSum	0.224518238463792
+30-39	Nerve - Tibial	MastSum	0.294828248944859
+40-49	Nerve - Tibial	MastSum	0.305595243148038
+20-29	Nerve - Tibial	MastSum	0.0400068480141431
+40-49	Nerve - Tibial	MastSum	0.334978077788314
+70-79	Nerve - Tibial	MastSum	0.0965978434789059
+70-79	Nerve - Tibial	MastSum	0.0480421781836912
+50-59	Nerve - Tibial	MastSum	0.510906596038462
+40-49	Nerve - Tibial	MastSum	0.0975194856796201
+50-59	Nerve - Tibial	MastSum	0.39512312309702
+70-79	Nerve - Tibial	MastSum	0.123139622645816
+30-39	Nerve - Tibial	MastSum	0.621999286878394
+50-59	Nerve - Tibial	MastSum	0.189666112650704
+50-59	Nerve - Tibial	MastSum	0.350377940050809
+50-59	Nerve - Tibial	MastSum	0.149580395937138
+50-59	Nerve - Tibial	MastSum	0.37449573418156
+60-69	Nerve - Tibial	MastSum	0.307179692302491
+40-49	Nerve - Tibial	MastSum	0.427922021297399
+20-29	Nerve - Tibial	MastSum	0.163906783835786
+70-79	Nerve - Tibial	MastSum	0.464584227438629
+50-59	Nerve - Tibial	MastSum	0.105418980794503
+60-69	Nerve - Tibial	MastSum	0.228084956363549
+60-69	Nerve - Tibial	MastSum	0.125955143202113
+50-59	Nerve - Tibial	MastSum	0.458969502956073
+70-79	Nerve - Tibial	MastSum	0.371194147453797
+30-39	Nerve - Tibial	MastSum	0.0610519401111742
+60-69	Nerve - Tibial	MastSum	0.167633777772504
+40-49	Nerve - Tibial	MastSum	0.304836427509047
+30-39	Nerve - Tibial	MastSum	0.573495319207261
+50-59	Nerve - Tibial	MastSum	0.465394265660355
+30-39	Nerve - Tibial	MastSum	0.305704109834262
+60-69	Nerve - Tibial	MastSum	0.33174006179105
+60-69	Nerve - Tibial	MastSum	0.380459067711814
+60-69	Nerve - Tibial	MastSum	0.558083037287818
+60-69	Nerve - Tibial	MastSum	0.518452067608929
+50-59	Nerve - Tibial	MastSum	0.19734480048137
+60-69	Nerve - Tibial	MastSum	0.357961232754889
+60-69	Nerve - Tibial	MastSum	0.305509128712524
+50-59	Nerve - Tibial	MastSum	0.316079058602026
+50-59	Nerve - Tibial	MastSum	0.34047318615192
+50-59	Nerve - Tibial	MastSum	0.767010327435725
+50-59	Nerve - Tibial	MastSum	0.647107961200697
+60-69	Nerve - Tibial	MastSum	0.305290309407342
+60-69	Nerve - Tibial	MastSum	0.196176610679249
+50-59	Nerve - Tibial	MastSum	0.449673893061496
+40-49	Nerve - Tibial	MastSum	0.28677500065273
+40-49	Nerve - Tibial	MastSum	0.140573491648424
+60-69	Nerve - Tibial	MastSum	0.18945107418557
+70-79	Nerve - Tibial	MastSum	0.177935378369792
+50-59	Nerve - Tibial	MastSum	0.190119602139624
+40-49	Nerve - Tibial	MastSum	0.25527138484128
+50-59	Nerve - Tibial	MastSum	0.0720882794519229
+60-69	Nerve - Tibial	MastSum	0.307267043877024
+60-69	Nerve - Tibial	MastSum	0.176811625484114
+40-49	Nerve - Tibial	MastSum	0.30511761436104
+40-49	Nerve - Tibial	MastSum	0.970161957942477
+50-59	Nerve - Tibial	MastSum	0.725997110986564
+60-69	Nerve - Tibial	MastSum	0.258653558719118
+50-59	Nerve - Tibial	MastSum	0.465206314791468
+70-79	Nerve - Tibial	MastSum	0.597050959303585
+60-69	Nerve - Tibial	MastSum	0.34074462670086
+40-49	Nerve - Tibial	MastSum	0.157081611567959
+60-69	Nerve - Tibial	MastSum	0.294869844898791
+40-49	Nerve - Tibial	MastSum	0.255562217970398
+20-29	Nerve - Tibial	MastSum	0.284785959851644
+60-69	Nerve - Tibial	MastSum	0.101009244580578
+50-59	Nerve - Tibial	MastSum	0.294966141366274
+60-69	Nerve - Tibial	MastSum	0.316010238791644
+40-49	Nerve - Tibial	MastSum	0.314549972719765
+50-59	Nerve - Tibial	MastSum	0.305671271525893
+50-59	Nerve - Tibial	MastSum	0.354050529988696
+60-69	Nerve - Tibial	MastSum	0.128057323832957
+40-49	Nerve - Tibial	MastSum	0.269698459987948
+30-39	Nerve - Tibial	MastSum	0.187845776286916
+60-69	Nerve - Tibial	MastSum	0.400148514390424
+60-69	Nerve - Tibial	MastSum	0.173563170627858
+50-59	Nerve - Tibial	MastSum	0.313526319289521
+40-49	Nerve - Tibial	MastSum	0.23813761187335
+50-59	Nerve - Tibial	MastSum	0.455043407272381
+30-39	Nerve - Tibial	MastSum	0.10173855376008
+20-29	Nerve - Tibial	MastSum	0.283132731115203
+60-69	Nerve - Tibial	MastSum	0.491019263476117
+50-59	Nerve - Tibial	MastSum	0.285482518528862
+40-49	Nerve - Tibial	MastSum	0.544169594810049
+20-29	Nerve - Tibial	MastSum	0.399811039525223
+20-29	Nerve - Tibial	MastSum	0.140609379846403
+40-49	Nerve - Tibial	MastSum	0.0707035850183906
+40-49	Nerve - Tibial	MastSum	0.590260642600714
+40-49	Nerve - Tibial	MastSum	0.453644141036616
+50-59	Nerve - Tibial	MastSum	0.10203032511324
+30-39	Nerve - Tibial	MastSum	0.522582563991539
+50-59	Nerve - Tibial	MastSum	0.19373999101848
+30-39	Nerve - Tibial	MastSum	0.344860487214559
+20-29	Nerve - Tibial	MastSum	0.279456400239347
+50-59	Nerve - Tibial	MastSum	0.273856903950624
+20-29	Nerve - Tibial	MastSum	0.385535672116585
+60-69	Nerve - Tibial	MastSum	0.405304137463478
+30-39	Nerve - Tibial	MastSum	0.543884956363571
+60-69	Nerve - Tibial	MastSum	0.531992201630572
+50-59	Nerve - Tibial	MastSum	0.301883024448888
+40-49	Nerve - Tibial	MastSum	0.125935015620611
+20-29	Nerve - Tibial	MastSum	0.735476756064857
+40-49	Nerve - Tibial	MastSum	0.0736787898707989
+60-69	Nerve - Tibial	MastSum	0.504560042227785
+50-59	Nerve - Tibial	MastSum	0.567146395903556
+60-69	Nerve - Tibial	MastSum	0.172390478237401
+50-59	Nerve - Tibial	MastSum	0.218065058106031
+50-59	Nerve - Tibial	MastSum	0.380506982400273
+60-69	Nerve - Tibial	MastSum	0.252280888150366
+50-59	Nerve - Tibial	MastSum	0.230266218385202
+30-39	Nerve - Tibial	MastSum	0.534363315123228
+60-69	Nerve - Tibial	MastSum	0.23060883281622
+50-59	Nerve - Tibial	MastSum	0.317470369077916
+60-69	Nerve - Tibial	MastSum	0.413786687590103
+50-59	Nerve - Tibial	MastSum	0.383614875904942
+20-29	Nerve - Tibial	MastSum	0.180926321173399
+40-49	Nerve - Tibial	MastSum	0.274056045485588
+60-69	Nerve - Tibial	MastSum	0.971294687247417
+20-29	Nerve - Tibial	MastSum	0.433014142900815
+50-59	Nerve - Tibial	MastSum	0.261412048864611
+50-59	Nerve - Tibial	MastSum	0.240841783906483
+40-49	Nerve - Tibial	MastSum	0.172289392503645
+40-49	Nerve - Tibial	MastSum	0.217474374453774
+30-39	Nerve - Tibial	MastSum	0.014254497435472
+40-49	Nerve - Tibial	MastSum	0.269583036928219
+40-49	Nerve - Tibial	MastSum	0.193713574813609
+60-69	Nerve - Tibial	MastSum	0.213257944274404
+30-39	Nerve - Tibial	MastSum	0.291794058877204
+60-69	Nerve - Tibial	MastSum	0.335578738844714
+30-39	Nerve - Tibial	MastSum	0.154756313742114
+50-59	Nerve - Tibial	MastSum	0.152526530473585
+50-59	Nerve - Tibial	MastSum	0.319058433258705
+60-69	Nerve - Tibial	MastSum	0.139095387975694
+60-69	Nerve - Tibial	MastSum	1.07613114179624
+50-59	Nerve - Tibial	MastSum	0.144615573194416
+50-59	Nerve - Tibial	MastSum	0.199972581625933
+40-49	Nerve - Tibial	MastSum	0.37135594665655
+40-49	Nerve - Tibial	MastSum	0.116039032002935
+20-29	Nerve - Tibial	MastSum	0.0849670478223122
+20-29	Nerve - Tibial	MastSum	0.0738518003603668
+40-49	Nerve - Tibial	MastSum	0.134247523715009
+50-59	Nerve - Tibial	MastSum	0.225126287471419
+20-29	Nerve - Tibial	MastSum	0.485461715394639
+50-59	Nerve - Tibial	MastSum	0.10954557183609
+50-59	Nerve - Tibial	MastSum	0.44923414660482
+20-29	Nerve - Tibial	MastSum	0.178400270189794
+50-59	Nerve - Tibial	MastSum	0.346171307058207
+50-59	Nerve - Tibial	MastSum	0.20710763954609
+60-69	Nerve - Tibial	MastSum	4.94685273098273e-05
+50-59	Nerve - Tibial	MastSum	0.310109255031717
+40-49	Nerve - Tibial	MastSum	0.487233006003084
+40-49	Nerve - Tibial	MastSum	0.366398543777248
+50-59	Nerve - Tibial	MastSum	0.221175935387635
+40-49	Nerve - Tibial	MastSum	0.119769654203259
+60-69	Nerve - Tibial	MastSum	0.279561354050404
+60-69	Nerve - Tibial	MastSum	0.062448409657954
+50-59	Nerve - Tibial	MastSum	0.486934749152118
+40-49	Nerve - Tibial	MastSum	0.373774724027891
+70-79	Nerve - Tibial	MastSum	1.27350682556563
+40-49	Nerve - Tibial	MastSum	0.444131155508703
+50-59	Nerve - Tibial	MastSum	0.341411158416769
+60-69	Nerve - Tibial	MastSum	0.400868338961283
+40-49	Nerve - Tibial	MastSum	0.3191474684439
+50-59	Nerve - Tibial	MastSum	0.347976477783227
+60-69	Nerve - Tibial	MastSum	0.125924097681634
+60-69	Nerve - Tibial	MastSum	0.277894437146184
+40-49	Nerve - Tibial	MastSum	0.28537479280084
+60-69	Nerve - Tibial	MastSum	0.332968759686353
+20-29	Nerve - Tibial	MastSum	0.33273945442775
+50-59	Nerve - Tibial	MastSum	0.185952550902129
+50-59	Nerve - Tibial	MastSum	0.27135387168766
+50-59	Nerve - Tibial	MastSum	0.29158704212345
+50-59	Nerve - Tibial	MastSum	0.249302469770055
+60-69	Nerve - Tibial	MastSum	0.343113143950162
+50-59	Nerve - Tibial	MastSum	0.260483445150376
+50-59	Nerve - Tibial	MastSum	0.187160205128911
+50-59	Nerve - Tibial	MastSum	0.171296246263619
+50-59	Nerve - Tibial	MastSum	0.196785275369044
+40-49	Nerve - Tibial	MastSum	0.211433710640161
+60-69	Nerve - Tibial	MastSum	0.236333034019176
+60-69	Nerve - Tibial	MastSum	0.263936115459256
+60-69	Nerve - Tibial	MastSum	0.245074214413094
+40-49	Nerve - Tibial	MastSum	0.752212792456792
+60-69	Nerve - Tibial	MastSum	0.686964748189681
+50-59	Nerve - Tibial	MastSum	0.505388863776428
+30-39	Nerve - Tibial	MastSum	0.176945668974681
+40-49	Nerve - Tibial	MastSum	0.0918946918167998
+40-49	Nerve - Tibial	MastSum	0.116228323303651
+50-59	Nerve - Tibial	MastSum	0.566956762250107
+40-49	Nerve - Tibial	MastSum	0.1731204015568
+60-69	Nerve - Tibial	MastSum	0.502980294712257
+50-59	Nerve - Tibial	MastSum	0.211673672396248
+40-49	Nerve - Tibial	MastSum	0.329927088337557
+20-29	Nerve - Tibial	MastSum	0.313206544469019
+40-49	Nerve - Tibial	MastSum	0.173665814022245
+50-59	Nerve - Tibial	MastSum	0.345585320825245
+40-49	Nerve - Tibial	MastSum	0.220008051196455
+20-29	Nerve - Tibial	MastSum	0.126359905106055
+40-49	Nerve - Tibial	MastSum	0.13846610795728
+70-79	Nerve - Tibial	MastSum	0.909872501866587
+40-49	Nerve - Tibial	MastSum	0.225663992999237
+60-69	Nerve - Tibial	MastSum	0.40581121797069
+60-69	Nerve - Tibial	MastSum	0.364871559210335
+50-59	Nerve - Tibial	MastSum	0.227348019691825
+60-69	Nerve - Tibial	MastSum	0.164555945064359
+50-59	Nerve - Tibial	MastSum	0.235405983677728
+40-49	Nerve - Tibial	MastSum	0.217670963043934
+60-69	Nerve - Tibial	MastSum	0.241447474901616
+50-59	Nerve - Tibial	MastSum	0.283148799731794
+20-29	Nerve - Tibial	MastSum	0.0949362550313472
+60-69	Nerve - Tibial	MastSum	0.215538036211827
+60-69	Nerve - Tibial	MastSum	0.0689314241503284
+30-39	Nerve - Tibial	MastSum	0.151393537666798
+40-49	Nerve - Tibial	MastSum	0.307895498294931
+20-29	Nerve - Tibial	MastSum	0.217604271992522
+20-29	Nerve - Tibial	MastSum	0.368566868785797
+50-59	Nerve - Tibial	MastSum	0.128549298154265
+50-59	Nerve - Tibial	MastSum	0.546576250893827
+60-69	Nerve - Tibial	MastSum	0.363105989104445
+20-29	Nerve - Tibial	MastSum	0.39602897142481
+40-49	Nerve - Tibial	MastSum	0.787984219643705
+50-59	Nerve - Tibial	MastSum	0.101392784146748
+30-39	Nerve - Tibial	MastSum	0.0343450455218349
+60-69	Nerve - Tibial	MastSum	0.144404219538037
+50-59	Nerve - Tibial	MastSum	0.46712113543209
+50-59	Nerve - Tibial	MastSum	0.247490020506776
+60-69	Nerve - Tibial	MastSum	0.178675991242908
+30-39	Nerve - Tibial	MastSum	0.481100463717029
+50-59	Nerve - Tibial	MastSum	0.34705127080138
+60-69	Nerve - Tibial	MastSum	0.271917011571255
+20-29	Nerve - Tibial	MastSum	0.1072512459948
+50-59	Nerve - Tibial	Monocytes	0.19184591696544
+60-69	Nerve - Tibial	Monocytes	0.357473653048095
+60-69	Nerve - Tibial	Monocytes	0.119843294894812
+60-69	Nerve - Tibial	Monocytes	0.134847818949454
+60-69	Nerve - Tibial	Monocytes	0.238617642647919
+50-59	Nerve - Tibial	Monocytes	0.0897088839763158
+50-59	Nerve - Tibial	Monocytes	0.214550704178792
+40-49	Nerve - Tibial	Monocytes	0.197059049641029
+60-69	Nerve - Tibial	Monocytes	0.171476533679278
+50-59	Nerve - Tibial	Monocytes	0.258033212566886
+60-69	Nerve - Tibial	Monocytes	0.149360404027717
+60-69	Nerve - Tibial	Monocytes	0.317046362210125
+30-39	Nerve - Tibial	Monocytes	0.194080104644332
+60-69	Nerve - Tibial	Monocytes	0.250038347872191
+60-69	Nerve - Tibial	Monocytes	0.157646308297487
+60-69	Nerve - Tibial	Monocytes	0.277577125429513
+50-59	Nerve - Tibial	Monocytes	0.188074493217399
+30-39	Nerve - Tibial	Monocytes	0.248876461628942
+20-29	Nerve - Tibial	Monocytes	0.127949139394591
+50-59	Nerve - Tibial	Monocytes	0.127270955129177
+40-49	Nerve - Tibial	Monocytes	0.291887514579058
+60-69	Nerve - Tibial	Monocytes	0.208499468726674
+60-69	Nerve - Tibial	Monocytes	0.311771082596678
+30-39	Nerve - Tibial	Monocytes	0.0991089405900887
+30-39	Nerve - Tibial	Monocytes	0.184623277790899
+20-29	Nerve - Tibial	Monocytes	0.43251736376833
+50-59	Nerve - Tibial	Monocytes	0.0875538972191158
+20-29	Nerve - Tibial	Monocytes	0.134783898229404
+60-69	Nerve - Tibial	Monocytes	0.13820572667133
+50-59	Nerve - Tibial	Monocytes	0.235128179963815
+40-49	Nerve - Tibial	Monocytes	0.15987949212013
+60-69	Nerve - Tibial	Monocytes	0.171383641452016
+40-49	Nerve - Tibial	Monocytes	0.144593630811606
+60-69	Nerve - Tibial	Monocytes	0.282909009754084
+30-39	Nerve - Tibial	Monocytes	0.189211628668549
+50-59	Nerve - Tibial	Monocytes	0.190840687994173
+60-69	Nerve - Tibial	Monocytes	0.26222309698878
+20-29	Nerve - Tibial	Monocytes	0.0823870572969885
+60-69	Nerve - Tibial	Monocytes	0.255162968708146
+40-49	Nerve - Tibial	Monocytes	0.117130421691895
+60-69	Nerve - Tibial	Monocytes	0.249505335077831
+60-69	Nerve - Tibial	Monocytes	0.200583752807077
+20-29	Nerve - Tibial	Monocytes	0.140334368094846
+30-39	Nerve - Tibial	Monocytes	0.19361501684943
+60-69	Nerve - Tibial	Monocytes	0.437665147646523
+70-79	Nerve - Tibial	Monocytes	0.182192788100087
+50-59	Nerve - Tibial	Monocytes	0.158439168584734
+40-49	Nerve - Tibial	Monocytes	0.112933671548425
+50-59	Nerve - Tibial	Monocytes	0.23746644943743
+60-69	Nerve - Tibial	Monocytes	0.111985859056002
+40-49	Nerve - Tibial	Monocytes	0.173739213871185
+60-69	Nerve - Tibial	Monocytes	0.163953866920299
+50-59	Nerve - Tibial	Monocytes	0.299981075580617
+60-69	Nerve - Tibial	Monocytes	0.0431865793899489
+50-59	Nerve - Tibial	Monocytes	0.240632568188598
+30-39	Nerve - Tibial	Monocytes	0.263095491463773
+50-59	Nerve - Tibial	Monocytes	0.885325870146056
+60-69	Nerve - Tibial	Monocytes	0.0909450598556235
+50-59	Nerve - Tibial	Monocytes	0.211683479523282
+50-59	Nerve - Tibial	Monocytes	0.238871468144892
+50-59	Nerve - Tibial	Monocytes	0.273451037751786
+60-69	Nerve - Tibial	Monocytes	0.174501403008154
+60-69	Nerve - Tibial	Monocytes	0.303173053789883
+60-69	Nerve - Tibial	Monocytes	0.245566797772451
+40-49	Nerve - Tibial	Monocytes	0.182211264183389
+20-29	Nerve - Tibial	Monocytes	0.230423030428941
+30-39	Nerve - Tibial	Monocytes	0.0874595138309576
+30-39	Nerve - Tibial	Monocytes	0.107394533116292
+50-59	Nerve - Tibial	Monocytes	0.191782272115918
+50-59	Nerve - Tibial	Monocytes	0.283101202181133
+60-69	Nerve - Tibial	Monocytes	0.0688650063716954
+60-69	Nerve - Tibial	Monocytes	0.180882609050419
+60-69	Nerve - Tibial	Monocytes	0.296162838592761
+50-59	Nerve - Tibial	Monocytes	0.344609107085371
+60-69	Nerve - Tibial	Monocytes	0.495686340597372
+50-59	Nerve - Tibial	Monocytes	0.35993823776397
+50-59	Nerve - Tibial	Monocytes	0.221173607758946
+60-69	Nerve - Tibial	Monocytes	0.20751771384916
+50-59	Nerve - Tibial	Monocytes	0.388826773282569
+50-59	Nerve - Tibial	Monocytes	0.161624686045085
+40-49	Nerve - Tibial	Monocytes	0.130082720184366
+60-69	Nerve - Tibial	Monocytes	0.0818688627712056
+70-79	Nerve - Tibial	Monocytes	0.0985176880376937
+40-49	Nerve - Tibial	Monocytes	0.176833398302085
+60-69	Nerve - Tibial	Monocytes	0.100619122567539
+50-59	Nerve - Tibial	Monocytes	0.279747729036744
+70-79	Nerve - Tibial	Monocytes	0.139799020931702
+60-69	Nerve - Tibial	Monocytes	0.568959403197386
+60-69	Nerve - Tibial	Monocytes	0.0448922036438675
+50-59	Nerve - Tibial	Monocytes	0.249246430266488
+60-69	Nerve - Tibial	Monocytes	0.310062856989748
+60-69	Nerve - Tibial	Monocytes	0.218464225877237
+50-59	Nerve - Tibial	Monocytes	0.288565162854364
+60-69	Nerve - Tibial	Monocytes	0.227616023996606
+50-59	Nerve - Tibial	Monocytes	0.152217858643322
+50-59	Nerve - Tibial	Monocytes	0.160298921781138
+60-69	Nerve - Tibial	Monocytes	0.24844021420081
+60-69	Nerve - Tibial	Monocytes	0.115354121240074
+60-69	Nerve - Tibial	Monocytes	0.174746338509201
+50-59	Nerve - Tibial	Monocytes	0.0393479005450485
+50-59	Nerve - Tibial	Monocytes	0.191562665730312
+50-59	Nerve - Tibial	Monocytes	0.141165479435689
+50-59	Nerve - Tibial	Monocytes	0.130475264220625
+60-69	Nerve - Tibial	Monocytes	0.122850190903558
+60-69	Nerve - Tibial	Monocytes	0.246936453216354
+50-59	Nerve - Tibial	Monocytes	0.297998088847968
+60-69	Nerve - Tibial	Monocytes	0.232512466338755
+40-49	Nerve - Tibial	Monocytes	0.357822208678872
+60-69	Nerve - Tibial	Monocytes	0.175221446381569
+50-59	Nerve - Tibial	Monocytes	0.116570222641988
+60-69	Nerve - Tibial	Monocytes	0.337823461009948
+60-69	Nerve - Tibial	Monocytes	0.275513830630312
+40-49	Nerve - Tibial	Monocytes	0.421590092757163
+50-59	Nerve - Tibial	Monocytes	0.0996996210511812
+20-29	Nerve - Tibial	Monocytes	0.202417897455245
+50-59	Nerve - Tibial	Monocytes	0.0596329834825683
+60-69	Nerve - Tibial	Monocytes	0.135110567495261
+50-59	Nerve - Tibial	Monocytes	0.192551353382283
+50-59	Nerve - Tibial	Monocytes	0.159853301396964
+60-69	Nerve - Tibial	Monocytes	0.126419937823316
+60-69	Nerve - Tibial	Monocytes	0.304074220896558
+50-59	Nerve - Tibial	Monocytes	0.215884253343904
+50-59	Nerve - Tibial	Monocytes	0.264553942173783
+20-29	Nerve - Tibial	Monocytes	0.290694135602154
+50-59	Nerve - Tibial	Monocytes	0.254557946003693
+40-49	Nerve - Tibial	Monocytes	0.124343754053901
+50-59	Nerve - Tibial	Monocytes	0.0937457456528276
+50-59	Nerve - Tibial	Monocytes	0.154082579245467
+40-49	Nerve - Tibial	Monocytes	0.0544201378962069
+50-59	Nerve - Tibial	Monocytes	0.275493998083957
+60-69	Nerve - Tibial	Monocytes	0.303210399866706
+50-59	Nerve - Tibial	Monocytes	0.220360812065863
+30-39	Nerve - Tibial	Monocytes	0.235836895711032
+60-69	Nerve - Tibial	Monocytes	0.158205587395141
+60-69	Nerve - Tibial	Monocytes	0.34791019830225
+60-69	Nerve - Tibial	Monocytes	0.147721734166504
+60-69	Nerve - Tibial	Monocytes	0.117015296887988
+50-59	Nerve - Tibial	Monocytes	0.2806752522326
+30-39	Nerve - Tibial	Monocytes	0.255265095150479
+40-49	Nerve - Tibial	Monocytes	0.232691591720833
+60-69	Nerve - Tibial	Monocytes	0.159593952621033
+50-59	Nerve - Tibial	Monocytes	0.130495553219119
+60-69	Nerve - Tibial	Monocytes	0.111286673352876
+50-59	Nerve - Tibial	Monocytes	0.250075181570564
+50-59	Nerve - Tibial	Monocytes	0.559126465960996
+50-59	Nerve - Tibial	Monocytes	0.327321571467317
+40-49	Nerve - Tibial	Monocytes	0.3357700227562
+60-69	Nerve - Tibial	Monocytes	0.13308110763182
+60-69	Nerve - Tibial	Monocytes	0.278424523597387
+50-59	Nerve - Tibial	Monocytes	0.227394747058176
+40-49	Nerve - Tibial	Monocytes	0.0230229523345927
+30-39	Nerve - Tibial	Monocytes	0.202778314763793
+70-79	Nerve - Tibial	Monocytes	0.290200886556197
+40-49	Nerve - Tibial	Monocytes	0.156097106105315
+30-39	Nerve - Tibial	Monocytes	0.105493778692198
+70-79	Nerve - Tibial	Monocytes	0.254891394897421
+60-69	Nerve - Tibial	Monocytes	0.104152743303646
+50-59	Nerve - Tibial	Monocytes	0.30144192955428
+60-69	Nerve - Tibial	Monocytes	0.219471526773168
+60-69	Nerve - Tibial	Monocytes	0.497133500045711
+50-59	Nerve - Tibial	Monocytes	0.268139771608654
+60-69	Nerve - Tibial	Monocytes	0.164433477460473
+60-69	Nerve - Tibial	Monocytes	0.18452194217603
+60-69	Nerve - Tibial	Monocytes	0.19776329869201
+60-69	Nerve - Tibial	Monocytes	0.291892357753789
+60-69	Nerve - Tibial	Monocytes	0.122489722420785
+50-59	Nerve - Tibial	Monocytes	0.114984973912338
+60-69	Nerve - Tibial	Monocytes	0.184850704312124
+50-59	Nerve - Tibial	Monocytes	0.104425172641907
+20-29	Nerve - Tibial	Monocytes	0.175423851337071
+40-49	Nerve - Tibial	Monocytes	0.123702699883636
+30-39	Nerve - Tibial	Monocytes	0.24281738710949
+60-69	Nerve - Tibial	Monocytes	0.0111468703230334
+40-49	Nerve - Tibial	Monocytes	0.190712884272996
+60-69	Nerve - Tibial	Monocytes	0.507769441922743
+20-29	Nerve - Tibial	Monocytes	0.101171769920091
+50-59	Nerve - Tibial	Monocytes	0.12104435820607
+30-39	Nerve - Tibial	Monocytes	0.0933051607531811
+60-69	Nerve - Tibial	Monocytes	0.30354791793204
+60-69	Nerve - Tibial	Monocytes	0.362823858443277
+40-49	Nerve - Tibial	Monocytes	0.216497983953763
+50-59	Nerve - Tibial	Monocytes	0.177709088979194
+70-79	Nerve - Tibial	Monocytes	0.204361946041824
+60-69	Nerve - Tibial	Monocytes	0.254553195960931
+30-39	Nerve - Tibial	Monocytes	0.269592082430872
+40-49	Nerve - Tibial	Monocytes	0.181510338182433
+20-29	Nerve - Tibial	Monocytes	0.346662114294952
+40-49	Nerve - Tibial	Monocytes	0.222312819244295
+70-79	Nerve - Tibial	Monocytes	0.121646722076894
+70-79	Nerve - Tibial	Monocytes	0.342367924533804
+50-59	Nerve - Tibial	Monocytes	0.243733989294692
+40-49	Nerve - Tibial	Monocytes	0.149645399695586
+50-59	Nerve - Tibial	Monocytes	0.0598767852193789
+70-79	Nerve - Tibial	Monocytes	0.160307514258317
+30-39	Nerve - Tibial	Monocytes	0.38877523885593
+50-59	Nerve - Tibial	Monocytes	0.297396932443654
+50-59	Nerve - Tibial	Monocytes	0.0704944968696312
+50-59	Nerve - Tibial	Monocytes	0.178971698406402
+50-59	Nerve - Tibial	Monocytes	0.193536067790096
+60-69	Nerve - Tibial	Monocytes	0.449386281232322
+40-49	Nerve - Tibial	Monocytes	0.245174248253381
+20-29	Nerve - Tibial	Monocytes	0.152612368677224
+70-79	Nerve - Tibial	Monocytes	0.193524561691104
+50-59	Nerve - Tibial	Monocytes	0.151489995640825
+60-69	Nerve - Tibial	Monocytes	0.27561610426277
+60-69	Nerve - Tibial	Monocytes	0.159255493606916
+50-59	Nerve - Tibial	Monocytes	0.178640901274561
+70-79	Nerve - Tibial	Monocytes	0.28613872346079
+30-39	Nerve - Tibial	Monocytes	0.324487476041374
+60-69	Nerve - Tibial	Monocytes	0.0345743801031299
+40-49	Nerve - Tibial	Monocytes	0.509442488761105
+30-39	Nerve - Tibial	Monocytes	0.129132010966697
+50-59	Nerve - Tibial	Monocytes	0.31297927416971
+30-39	Nerve - Tibial	Monocytes	0.191711305216451
+60-69	Nerve - Tibial	Monocytes	0.514791930904095
+60-69	Nerve - Tibial	Monocytes	0.420745722760848
+60-69	Nerve - Tibial	Monocytes	0.254161342591579
+60-69	Nerve - Tibial	Monocytes	0.17205743262383
+50-59	Nerve - Tibial	Monocytes	0.237485515213747
+60-69	Nerve - Tibial	Monocytes	0.291719851245854
+60-69	Nerve - Tibial	Monocytes	0.047583397396083
+50-59	Nerve - Tibial	Monocytes	0.0723240547873624
+50-59	Nerve - Tibial	Monocytes	0.715886890049259
+50-59	Nerve - Tibial	Monocytes	0.15139716134901
+50-59	Nerve - Tibial	Monocytes	0.208154761308383
+60-69	Nerve - Tibial	Monocytes	0.212352505650106
+60-69	Nerve - Tibial	Monocytes	0.0954665783455582
+50-59	Nerve - Tibial	Monocytes	0.275460281953064
+40-49	Nerve - Tibial	Monocytes	0.61496058116047
+40-49	Nerve - Tibial	Monocytes	0.111358965613193
+60-69	Nerve - Tibial	Monocytes	0.188998203420563
+70-79	Nerve - Tibial	Monocytes	0.162171600586266
+50-59	Nerve - Tibial	Monocytes	0.140511934925138
+40-49	Nerve - Tibial	Monocytes	0.228345930104563
+50-59	Nerve - Tibial	Monocytes	0.162606121628622
+60-69	Nerve - Tibial	Monocytes	0.235215653315028
+60-69	Nerve - Tibial	Monocytes	0.232137265150789
+40-49	Nerve - Tibial	Monocytes	0.232266348552732
+40-49	Nerve - Tibial	Monocytes	0.0670221776723688
+50-59	Nerve - Tibial	Monocytes	0.438921256505003
+60-69	Nerve - Tibial	Monocytes	0.201205349148489
+50-59	Nerve - Tibial	Monocytes	0.27948027426722
+70-79	Nerve - Tibial	Monocytes	0.270395455633899
+60-69	Nerve - Tibial	Monocytes	0.13221137249892
+40-49	Nerve - Tibial	Monocytes	0.265274412951212
+60-69	Nerve - Tibial	Monocytes	0.135054540950065
+40-49	Nerve - Tibial	Monocytes	0.0912835125132642
+20-29	Nerve - Tibial	Monocytes	0.194512697980306
+60-69	Nerve - Tibial	Monocytes	0.285890465226583
+50-59	Nerve - Tibial	Monocytes	0.172674769405357
+60-69	Nerve - Tibial	Monocytes	0.6444766230422
+40-49	Nerve - Tibial	Monocytes	0.351157458837798
+50-59	Nerve - Tibial	Monocytes	0.171886943114311
+50-59	Nerve - Tibial	Monocytes	0.206616975797546
+60-69	Nerve - Tibial	Monocytes	0.103114877054802
+40-49	Nerve - Tibial	Monocytes	0.177507184026113
+30-39	Nerve - Tibial	Monocytes	0.0893954598840457
+60-69	Nerve - Tibial	Monocytes	0.164744266008657
+60-69	Nerve - Tibial	Monocytes	0.237494085744187
+50-59	Nerve - Tibial	Monocytes	0.0911461790289376
+40-49	Nerve - Tibial	Monocytes	0.226826274846513
+50-59	Nerve - Tibial	Monocytes	0.258253674419009
+30-39	Nerve - Tibial	Monocytes	0.315264439831296
+20-29	Nerve - Tibial	Monocytes	0.33488021291699
+60-69	Nerve - Tibial	Monocytes	0.10772325232909
+50-59	Nerve - Tibial	Monocytes	0.262070505142575
+40-49	Nerve - Tibial	Monocytes	0.132421218265514
+20-29	Nerve - Tibial	Monocytes	0.200814469359334
+20-29	Nerve - Tibial	Monocytes	0.201525114965837
+40-49	Nerve - Tibial	Monocytes	0.0544204383076659
+40-49	Nerve - Tibial	Monocytes	0.42962933832957
+40-49	Nerve - Tibial	Monocytes	0.210104633139612
+50-59	Nerve - Tibial	Monocytes	0.375736454288643
+30-39	Nerve - Tibial	Monocytes	0.189252856304094
+50-59	Nerve - Tibial	Monocytes	0.577357642965361
+30-39	Nerve - Tibial	Monocytes	0.188364297444688
+20-29	Nerve - Tibial	Monocytes	0.110740737380913
+50-59	Nerve - Tibial	Monocytes	0.287055579356308
+20-29	Nerve - Tibial	Monocytes	0.0652265279574951
+60-69	Nerve - Tibial	Monocytes	0.233881903804362
+30-39	Nerve - Tibial	Monocytes	0.167531038597756
+60-69	Nerve - Tibial	Monocytes	0.212366611992422
+50-59	Nerve - Tibial	Monocytes	0.216348910244693
+40-49	Nerve - Tibial	Monocytes	0.137182229407441
+20-29	Nerve - Tibial	Monocytes	0.1481087498923
+40-49	Nerve - Tibial	Monocytes	0.44932656864771
+60-69	Nerve - Tibial	Monocytes	0.10518240085474
+50-59	Nerve - Tibial	Monocytes	0.137412346104833
+60-69	Nerve - Tibial	Monocytes	0.202677683328087
+50-59	Nerve - Tibial	Monocytes	0.473359541615179
+50-59	Nerve - Tibial	Monocytes	0.314839647478132
+60-69	Nerve - Tibial	Monocytes	0.137350813316962
+50-59	Nerve - Tibial	Monocytes	0.599840216050592
+30-39	Nerve - Tibial	Monocytes	0.1962591751202
+60-69	Nerve - Tibial	Monocytes	0.188764779381538
+50-59	Nerve - Tibial	Monocytes	0.247282259786869
+60-69	Nerve - Tibial	Monocytes	0.209410984547222
+50-59	Nerve - Tibial	Monocytes	0.691131910424568
+20-29	Nerve - Tibial	Monocytes	0.111225993892818
+40-49	Nerve - Tibial	Monocytes	0.298589575935212
+60-69	Nerve - Tibial	Monocytes	0.355730631148843
+20-29	Nerve - Tibial	Monocytes	0.166891715293234
+50-59	Nerve - Tibial	Monocytes	0.382061934371947
+50-59	Nerve - Tibial	Monocytes	0.122529014410079
+40-49	Nerve - Tibial	Monocytes	0.23564654963221
+40-49	Nerve - Tibial	Monocytes	0.108054467994863
+30-39	Nerve - Tibial	Monocytes	0.245430397011904
+40-49	Nerve - Tibial	Monocytes	0.127608582792276
+40-49	Nerve - Tibial	Monocytes	0.195250287679809
+60-69	Nerve - Tibial	Monocytes	0.158651553671176
+30-39	Nerve - Tibial	Monocytes	0.120762798956928
+60-69	Nerve - Tibial	Monocytes	0.249112331743581
+30-39	Nerve - Tibial	Monocytes	0.64047350681345
+50-59	Nerve - Tibial	Monocytes	0.35830321380468
+50-59	Nerve - Tibial	Monocytes	0.171172183699535
+60-69	Nerve - Tibial	Monocytes	0.187294640667159
+60-69	Nerve - Tibial	Monocytes	0.357360831402378
+50-59	Nerve - Tibial	Monocytes	0.401529351751252
+50-59	Nerve - Tibial	Monocytes	0.41150041977303
+40-49	Nerve - Tibial	Monocytes	0.0937155416254921
+40-49	Nerve - Tibial	Monocytes	0.217189856869089
+20-29	Nerve - Tibial	Monocytes	0.108989672945732
+20-29	Nerve - Tibial	Monocytes	0.415706743193394
+40-49	Nerve - Tibial	Monocytes	0.288598349325352
+50-59	Nerve - Tibial	Monocytes	0.142897599746476
+20-29	Nerve - Tibial	Monocytes	0.0973432375425388
+50-59	Nerve - Tibial	Monocytes	0.324245223602056
+50-59	Nerve - Tibial	Monocytes	0.133054438278854
+20-29	Nerve - Tibial	Monocytes	0.323906142522807
+50-59	Nerve - Tibial	Monocytes	0.533310462421946
+50-59	Nerve - Tibial	Monocytes	0.21840016242226
+60-69	Nerve - Tibial	Monocytes	0.196810743278119
+50-59	Nerve - Tibial	Monocytes	0.380396728295352
+40-49	Nerve - Tibial	Monocytes	0.202319478048826
+40-49	Nerve - Tibial	Monocytes	0.12374092787749
+50-59	Nerve - Tibial	Monocytes	0.324811735563163
+40-49	Nerve - Tibial	Monocytes	0.401386088602844
+60-69	Nerve - Tibial	Monocytes	0.204266574705932
+60-69	Nerve - Tibial	Monocytes	0.40113563848096
+50-59	Nerve - Tibial	Monocytes	0.153587346824139
+40-49	Nerve - Tibial	Monocytes	0.11014025196533
+70-79	Nerve - Tibial	Monocytes	0.178863354554662
+40-49	Nerve - Tibial	Monocytes	0.184604171344039
+50-59	Nerve - Tibial	Monocytes	0.157952713695964
+60-69	Nerve - Tibial	Monocytes	0.150405951803019
+40-49	Nerve - Tibial	Monocytes	0.122489885017188
+50-59	Nerve - Tibial	Monocytes	0.142661128377996
+60-69	Nerve - Tibial	Monocytes	0.0538890691334196
+60-69	Nerve - Tibial	Monocytes	0.0710218931351832
+40-49	Nerve - Tibial	Monocytes	0.200131564336615
+60-69	Nerve - Tibial	Monocytes	0.130303564115221
+20-29	Nerve - Tibial	Monocytes	0.20169562521785
+50-59	Nerve - Tibial	Monocytes	0.241562152482098
+50-59	Nerve - Tibial	Monocytes	0.161777052330402
+50-59	Nerve - Tibial	Monocytes	0.120426580918477
+50-59	Nerve - Tibial	Monocytes	0.136158791644603
+60-69	Nerve - Tibial	Monocytes	0.135142133166633
+50-59	Nerve - Tibial	Monocytes	0.295933789695637
+50-59	Nerve - Tibial	Monocytes	0.295762464211797
+50-59	Nerve - Tibial	Monocytes	0.452920313461603
+50-59	Nerve - Tibial	Monocytes	0.217797954148002
+40-49	Nerve - Tibial	Monocytes	0.139942124380929
+60-69	Nerve - Tibial	Monocytes	0.107347590285261
+60-69	Nerve - Tibial	Monocytes	0.324305911034035
+60-69	Nerve - Tibial	Monocytes	0.100317945693487
+40-49	Nerve - Tibial	Monocytes	0.193104115814309
+60-69	Nerve - Tibial	Monocytes	0.355278903539355
+50-59	Nerve - Tibial	Monocytes	0.227308124394298
+30-39	Nerve - Tibial	Monocytes	0.101199448250513
+40-49	Nerve - Tibial	Monocytes	0.141233661071856
+40-49	Nerve - Tibial	Monocytes	0.268633571026068
+50-59	Nerve - Tibial	Monocytes	0.614518255681684
+40-49	Nerve - Tibial	Monocytes	0.128026094775855
+60-69	Nerve - Tibial	Monocytes	0.186192663773423
+50-59	Nerve - Tibial	Monocytes	0.135227427778534
+40-49	Nerve - Tibial	Monocytes	0.122557935770289
+20-29	Nerve - Tibial	Monocytes	0.130258704193371
+40-49	Nerve - Tibial	Monocytes	0.126028956355771
+50-59	Nerve - Tibial	Monocytes	0.102640172453562
+40-49	Nerve - Tibial	Monocytes	0.247180010391498
+20-29	Nerve - Tibial	Monocytes	0.183792567735331
+40-49	Nerve - Tibial	Monocytes	0.104707491867587
+70-79	Nerve - Tibial	Monocytes	0.690093853498212
+40-49	Nerve - Tibial	Monocytes	0.304565188698471
+60-69	Nerve - Tibial	Monocytes	0.248903220918676
+60-69	Nerve - Tibial	Monocytes	0.260892886584099
+50-59	Nerve - Tibial	Monocytes	0.208536506686974
+60-69	Nerve - Tibial	Monocytes	0.172328370156546
+50-59	Nerve - Tibial	Monocytes	0.13381035984591
+40-49	Nerve - Tibial	Monocytes	0.135811613479225
+60-69	Nerve - Tibial	Monocytes	0.227648457472969
+50-59	Nerve - Tibial	Monocytes	0.169200382704708
+20-29	Nerve - Tibial	Monocytes	0.266938667201524
+60-69	Nerve - Tibial	Monocytes	0.133676880816836
+60-69	Nerve - Tibial	Monocytes	0.244004480001562
+30-39	Nerve - Tibial	Monocytes	0.149139434523341
+40-49	Nerve - Tibial	Monocytes	0.221020166886062
+20-29	Nerve - Tibial	Monocytes	0.160886038729727
+20-29	Nerve - Tibial	Monocytes	0.0855971371782265
+50-59	Nerve - Tibial	Monocytes	0.0235675182050056
+50-59	Nerve - Tibial	Monocytes	0.120281077363631
+60-69	Nerve - Tibial	Monocytes	0.204760276742495
+20-29	Nerve - Tibial	Monocytes	0.0689040877478883
+40-49	Nerve - Tibial	Monocytes	0.145578821505301
+50-59	Nerve - Tibial	Monocytes	0.187999885927176
+30-39	Nerve - Tibial	Monocytes	0.123356805146392
+60-69	Nerve - Tibial	Monocytes	0.139717598339144
+50-59	Nerve - Tibial	Monocytes	0.222744942116992
+50-59	Nerve - Tibial	Monocytes	0.210824679487275
+60-69	Nerve - Tibial	Monocytes	0.0894184813905569
+30-39	Nerve - Tibial	Monocytes	0.110215521479102
+50-59	Nerve - Tibial	Monocytes	0.101418268030758
+60-69	Nerve - Tibial	Monocytes	0.171807535866987
+20-29	Nerve - Tibial	Monocytes	0.119690712229817
+50-59	Nerve - Tibial	Myeloid_Sum	1.23863177536679
+60-69	Nerve - Tibial	Myeloid_Sum	1.4731380952196
+60-69	Nerve - Tibial	Myeloid_Sum	1.13365477683028
+60-69	Nerve - Tibial	Myeloid_Sum	0.971546634144652
+60-69	Nerve - Tibial	Myeloid_Sum	2.44956394016616
+50-59	Nerve - Tibial	Myeloid_Sum	0.802200247366698
+50-59	Nerve - Tibial	Myeloid_Sum	1.52849292063722
+40-49	Nerve - Tibial	Myeloid_Sum	1.81498120841517
+60-69	Nerve - Tibial	Myeloid_Sum	0.934363228337015
+50-59	Nerve - Tibial	Myeloid_Sum	1.62550816897596
+60-69	Nerve - Tibial	Myeloid_Sum	1.01411672648023
+60-69	Nerve - Tibial	Myeloid_Sum	1.86971838263632
+30-39	Nerve - Tibial	Myeloid_Sum	1.11806899671369
+60-69	Nerve - Tibial	Myeloid_Sum	1.18150258672814
+60-69	Nerve - Tibial	Myeloid_Sum	1.79617166175593
+60-69	Nerve - Tibial	Myeloid_Sum	1.26856023418974
+50-59	Nerve - Tibial	Myeloid_Sum	1.14220693169577
+30-39	Nerve - Tibial	Myeloid_Sum	0.837459629493251
+20-29	Nerve - Tibial	Myeloid_Sum	1.355530861016
+50-59	Nerve - Tibial	Myeloid_Sum	1.28657820070403
+40-49	Nerve - Tibial	Myeloid_Sum	1.71595397634466
+60-69	Nerve - Tibial	Myeloid_Sum	1.51634436596663
+60-69	Nerve - Tibial	Myeloid_Sum	1.52567666551958
+30-39	Nerve - Tibial	Myeloid_Sum	0.709813700362437
+30-39	Nerve - Tibial	Myeloid_Sum	1.02867837087545
+20-29	Nerve - Tibial	Myeloid_Sum	1.38584430380431
+50-59	Nerve - Tibial	Myeloid_Sum	1.833803628783
+20-29	Nerve - Tibial	Myeloid_Sum	0.732970987368161
+60-69	Nerve - Tibial	Myeloid_Sum	1.45353330889842
+50-59	Nerve - Tibial	Myeloid_Sum	1.24926532293972
+40-49	Nerve - Tibial	Myeloid_Sum	1.13320327860968
+60-69	Nerve - Tibial	Myeloid_Sum	1.11696305805002
+40-49	Nerve - Tibial	Myeloid_Sum	0.815227448257574
+60-69	Nerve - Tibial	Myeloid_Sum	1.79334278661798
+30-39	Nerve - Tibial	Myeloid_Sum	1.21735995479906
+50-59	Nerve - Tibial	Myeloid_Sum	1.19201064297969
+60-69	Nerve - Tibial	Myeloid_Sum	1.04792125160308
+20-29	Nerve - Tibial	Myeloid_Sum	1.1541096001991
+60-69	Nerve - Tibial	Myeloid_Sum	1.65941438543841
+40-49	Nerve - Tibial	Myeloid_Sum	0.632833977299518
+60-69	Nerve - Tibial	Myeloid_Sum	1.14761534747703
+60-69	Nerve - Tibial	Myeloid_Sum	1.27052835194731
+20-29	Nerve - Tibial	Myeloid_Sum	1.4675414890148
+30-39	Nerve - Tibial	Myeloid_Sum	1.33495839542278
+60-69	Nerve - Tibial	Myeloid_Sum	2.5234039168789
+70-79	Nerve - Tibial	Myeloid_Sum	1.13469635047538
+50-59	Nerve - Tibial	Myeloid_Sum	1.34594225434215
+40-49	Nerve - Tibial	Myeloid_Sum	0.855590425133429
+50-59	Nerve - Tibial	Myeloid_Sum	1.18329943569443
+60-69	Nerve - Tibial	Myeloid_Sum	0.787997467662843
+40-49	Nerve - Tibial	Myeloid_Sum	1.90977450796542
+60-69	Nerve - Tibial	Myeloid_Sum	1.13847202414595
+50-59	Nerve - Tibial	Myeloid_Sum	1.40611724173926
+60-69	Nerve - Tibial	Myeloid_Sum	2.82715470908836
+50-59	Nerve - Tibial	Myeloid_Sum	1.44521810230815
+30-39	Nerve - Tibial	Myeloid_Sum	1.50463959832975
+50-59	Nerve - Tibial	Myeloid_Sum	2.88498393845332
+60-69	Nerve - Tibial	Myeloid_Sum	0.821586790457021
+50-59	Nerve - Tibial	Myeloid_Sum	1.17627039724537
+50-59	Nerve - Tibial	Myeloid_Sum	1.38681060940663
+50-59	Nerve - Tibial	Myeloid_Sum	1.82715318906394
+60-69	Nerve - Tibial	Myeloid_Sum	1.54852620427277
+60-69	Nerve - Tibial	Myeloid_Sum	2.11723358853372
+60-69	Nerve - Tibial	Myeloid_Sum	1.40747283272954
+40-49	Nerve - Tibial	Myeloid_Sum	0.667869719830112
+20-29	Nerve - Tibial	Myeloid_Sum	1.46860026030717
+30-39	Nerve - Tibial	Myeloid_Sum	1.40925950694958
+30-39	Nerve - Tibial	Myeloid_Sum	1.06982032165438
+50-59	Nerve - Tibial	Myeloid_Sum	1.72639508342825
+50-59	Nerve - Tibial	Myeloid_Sum	0.881395195580327
+60-69	Nerve - Tibial	Myeloid_Sum	1.29999290151506
+60-69	Nerve - Tibial	Myeloid_Sum	1.81888406521032
+60-69	Nerve - Tibial	Myeloid_Sum	3.06878077823721
+50-59	Nerve - Tibial	Myeloid_Sum	1.80806428658888
+60-69	Nerve - Tibial	Myeloid_Sum	1.7986302667201
+50-59	Nerve - Tibial	Myeloid_Sum	1.69002398255809
+50-59	Nerve - Tibial	Myeloid_Sum	1.24268020180404
+60-69	Nerve - Tibial	Myeloid_Sum	1.31930487569179
+50-59	Nerve - Tibial	Myeloid_Sum	2.91222155905763
+50-59	Nerve - Tibial	Myeloid_Sum	1.49683130171162
+40-49	Nerve - Tibial	Myeloid_Sum	0.798360898148671
+60-69	Nerve - Tibial	Myeloid_Sum	1.52041835091585
+70-79	Nerve - Tibial	Myeloid_Sum	0.890717073493121
+40-49	Nerve - Tibial	Myeloid_Sum	1.66339360007156
+60-69	Nerve - Tibial	Myeloid_Sum	1.77279924538272
+50-59	Nerve - Tibial	Myeloid_Sum	2.10383539549777
+70-79	Nerve - Tibial	Myeloid_Sum	0.764706203309946
+60-69	Nerve - Tibial	Myeloid_Sum	1.76987917843613
+60-69	Nerve - Tibial	Myeloid_Sum	1.75329500691943
+50-59	Nerve - Tibial	Myeloid_Sum	1.96217563376411
+60-69	Nerve - Tibial	Myeloid_Sum	1.99228568402484
+60-69	Nerve - Tibial	Myeloid_Sum	1.51155418524867
+50-59	Nerve - Tibial	Myeloid_Sum	1.61637923975971
+60-69	Nerve - Tibial	Myeloid_Sum	1.54703814667028
+50-59	Nerve - Tibial	Myeloid_Sum	1.71121852310638
+50-59	Nerve - Tibial	Myeloid_Sum	1.55116470709122
+60-69	Nerve - Tibial	Myeloid_Sum	1.4522766482373
+60-69	Nerve - Tibial	Myeloid_Sum	1.22805384568742
+60-69	Nerve - Tibial	Myeloid_Sum	1.04385011298063
+50-59	Nerve - Tibial	Myeloid_Sum	1.0241631581537
+50-59	Nerve - Tibial	Myeloid_Sum	1.59595715154807
+50-59	Nerve - Tibial	Myeloid_Sum	2.11776491490669
+50-59	Nerve - Tibial	Myeloid_Sum	1.36578634581925
+60-69	Nerve - Tibial	Myeloid_Sum	1.57834755457936
+60-69	Nerve - Tibial	Myeloid_Sum	1.18209219967242
+50-59	Nerve - Tibial	Myeloid_Sum	1.81025969364296
+60-69	Nerve - Tibial	Myeloid_Sum	0.93050723507167
+40-49	Nerve - Tibial	Myeloid_Sum	1.14953015606641
+60-69	Nerve - Tibial	Myeloid_Sum	1.40383553026051
+50-59	Nerve - Tibial	Myeloid_Sum	1.61037920463481
+60-69	Nerve - Tibial	Myeloid_Sum	1.23627693600529
+60-69	Nerve - Tibial	Myeloid_Sum	1.39394764641129
+40-49	Nerve - Tibial	Myeloid_Sum	1.98385602104087
+50-59	Nerve - Tibial	Myeloid_Sum	0.989810496634614
+20-29	Nerve - Tibial	Myeloid_Sum	1.40515745169999
+50-59	Nerve - Tibial	Myeloid_Sum	1.88154677751701
+60-69	Nerve - Tibial	Myeloid_Sum	0.969549483922961
+50-59	Nerve - Tibial	Myeloid_Sum	1.63698802431362
+50-59	Nerve - Tibial	Myeloid_Sum	1.2752772704371
+60-69	Nerve - Tibial	Myeloid_Sum	1.32132729068302
+60-69	Nerve - Tibial	Myeloid_Sum	1.66785956333359
+50-59	Nerve - Tibial	Myeloid_Sum	0.98943835376464
+50-59	Nerve - Tibial	Myeloid_Sum	1.82543284808887
+20-29	Nerve - Tibial	Myeloid_Sum	1.70393771329254
+50-59	Nerve - Tibial	Myeloid_Sum	1.56922658614851
+40-49	Nerve - Tibial	Myeloid_Sum	0.968955889915761
+50-59	Nerve - Tibial	Myeloid_Sum	1.18495781998952
+50-59	Nerve - Tibial	Myeloid_Sum	1.20362131474851
+40-49	Nerve - Tibial	Myeloid_Sum	0.757430363235765
+50-59	Nerve - Tibial	Myeloid_Sum	1.57534783079581
+60-69	Nerve - Tibial	Myeloid_Sum	1.30255062374789
+50-59	Nerve - Tibial	Myeloid_Sum	1.39710952130594
+30-39	Nerve - Tibial	Myeloid_Sum	1.57691130989173
+60-69	Nerve - Tibial	Myeloid_Sum	1.40632486452885
+60-69	Nerve - Tibial	Myeloid_Sum	1.09751552691656
+60-69	Nerve - Tibial	Myeloid_Sum	1.33799024186046
+60-69	Nerve - Tibial	Myeloid_Sum	1.57601023057457
+50-59	Nerve - Tibial	Myeloid_Sum	0.989018248647079
+30-39	Nerve - Tibial	Myeloid_Sum	1.41828341515734
+40-49	Nerve - Tibial	Myeloid_Sum	1.39787311347018
+60-69	Nerve - Tibial	Myeloid_Sum	1.40300414016734
+50-59	Nerve - Tibial	Myeloid_Sum	1.10711128735534
+60-69	Nerve - Tibial	Myeloid_Sum	1.19455809231798
+50-59	Nerve - Tibial	Myeloid_Sum	1.49552269842777
+50-59	Nerve - Tibial	Myeloid_Sum	2.01430256503616
+50-59	Nerve - Tibial	Myeloid_Sum	0.98252680470425
+40-49	Nerve - Tibial	Myeloid_Sum	1.48253120326384
+60-69	Nerve - Tibial	Myeloid_Sum	0.835354802024481
+60-69	Nerve - Tibial	Myeloid_Sum	1.73634426302112
+50-59	Nerve - Tibial	Myeloid_Sum	0.927947326023047
+40-49	Nerve - Tibial	Myeloid_Sum	1.22104907450359
+30-39	Nerve - Tibial	Myeloid_Sum	1.05849516870188
+70-79	Nerve - Tibial	Myeloid_Sum	1.45354622941388
+40-49	Nerve - Tibial	Myeloid_Sum	1.13149434565329
+30-39	Nerve - Tibial	Myeloid_Sum	0.850174072165678
+70-79	Nerve - Tibial	Myeloid_Sum	1.2489744827119
+60-69	Nerve - Tibial	Myeloid_Sum	0.840690557135573
+50-59	Nerve - Tibial	Myeloid_Sum	1.58853170517625
+60-69	Nerve - Tibial	Myeloid_Sum	0.832575456569721
+60-69	Nerve - Tibial	Myeloid_Sum	1.74098894024473
+50-59	Nerve - Tibial	Myeloid_Sum	1.00373205864409
+60-69	Nerve - Tibial	Myeloid_Sum	0.898115152627781
+60-69	Nerve - Tibial	Myeloid_Sum	1.21354485285559
+60-69	Nerve - Tibial	Myeloid_Sum	1.12793438660593
+60-69	Nerve - Tibial	Myeloid_Sum	1.11398638381209
+60-69	Nerve - Tibial	Myeloid_Sum	1.34784720799113
+50-59	Nerve - Tibial	Myeloid_Sum	1.63186907303965
+60-69	Nerve - Tibial	Myeloid_Sum	1.5513499495187
+50-59	Nerve - Tibial	Myeloid_Sum	0.543303008012546
+20-29	Nerve - Tibial	Myeloid_Sum	1.2594103621415
+40-49	Nerve - Tibial	Myeloid_Sum	0.750667094859275
+30-39	Nerve - Tibial	Myeloid_Sum	1.76068473583791
+60-69	Nerve - Tibial	Myeloid_Sum	1.13828269400572
+40-49	Nerve - Tibial	Myeloid_Sum	1.07775111232235
+60-69	Nerve - Tibial	Myeloid_Sum	2.3358871242956
+20-29	Nerve - Tibial	Myeloid_Sum	0.741185010467835
+50-59	Nerve - Tibial	Myeloid_Sum	0.842783333363534
+30-39	Nerve - Tibial	Myeloid_Sum	1.34179344186099
+60-69	Nerve - Tibial	Myeloid_Sum	1.322306096906
+60-69	Nerve - Tibial	Myeloid_Sum	1.7808073260497
+40-49	Nerve - Tibial	Myeloid_Sum	1.05375331707169
+50-59	Nerve - Tibial	Myeloid_Sum	2.49237284085447
+70-79	Nerve - Tibial	Myeloid_Sum	1.6677080126579
+60-69	Nerve - Tibial	Myeloid_Sum	1.06037085822295
+30-39	Nerve - Tibial	Myeloid_Sum	1.51547022486986
+40-49	Nerve - Tibial	Myeloid_Sum	1.1596316881717
+20-29	Nerve - Tibial	Myeloid_Sum	1.03962775504673
+40-49	Nerve - Tibial	Myeloid_Sum	1.84485918924955
+70-79	Nerve - Tibial	Myeloid_Sum	1.19452386572201
+70-79	Nerve - Tibial	Myeloid_Sum	1.22136014993855
+50-59	Nerve - Tibial	Myeloid_Sum	1.84954547018928
+40-49	Nerve - Tibial	Myeloid_Sum	1.11207802913247
+50-59	Nerve - Tibial	Myeloid_Sum	1.12458676941045
+70-79	Nerve - Tibial	Myeloid_Sum	1.15033648246707
+30-39	Nerve - Tibial	Myeloid_Sum	1.84542700669452
+50-59	Nerve - Tibial	Myeloid_Sum	1.44844242327349
+50-59	Nerve - Tibial	Myeloid_Sum	1.60525078020314
+50-59	Nerve - Tibial	Myeloid_Sum	1.56317088118502
+50-59	Nerve - Tibial	Myeloid_Sum	1.18691026773756
+60-69	Nerve - Tibial	Myeloid_Sum	1.72068451980249
+40-49	Nerve - Tibial	Myeloid_Sum	1.73765134792061
+20-29	Nerve - Tibial	Myeloid_Sum	1.09279119567905
+70-79	Nerve - Tibial	Myeloid_Sum	1.56019389776547
+50-59	Nerve - Tibial	Myeloid_Sum	0.904776612559552
+60-69	Nerve - Tibial	Myeloid_Sum	1.83643862370092
+60-69	Nerve - Tibial	Myeloid_Sum	1.2397527295387
+50-59	Nerve - Tibial	Myeloid_Sum	1.47832329981632
+70-79	Nerve - Tibial	Myeloid_Sum	1.2311964666875
+30-39	Nerve - Tibial	Myeloid_Sum	0.971675552544631
+60-69	Nerve - Tibial	Myeloid_Sum	0.58055938375109
+40-49	Nerve - Tibial	Myeloid_Sum	1.63734085825267
+30-39	Nerve - Tibial	Myeloid_Sum	1.26453681621013
+50-59	Nerve - Tibial	Myeloid_Sum	1.67378672443783
+30-39	Nerve - Tibial	Myeloid_Sum	0.997554251245759
+60-69	Nerve - Tibial	Myeloid_Sum	1.97457273821132
+60-69	Nerve - Tibial	Myeloid_Sum	1.57964098863517
+60-69	Nerve - Tibial	Myeloid_Sum	1.53152283410682
+60-69	Nerve - Tibial	Myeloid_Sum	2.01851520870984
+50-59	Nerve - Tibial	Myeloid_Sum	1.47367975314902
+60-69	Nerve - Tibial	Myeloid_Sum	1.53791952819569
+60-69	Nerve - Tibial	Myeloid_Sum	1.01923135400435
+50-59	Nerve - Tibial	Myeloid_Sum	1.50435598551542
+50-59	Nerve - Tibial	Myeloid_Sum	1.89605784595271
+50-59	Nerve - Tibial	Myeloid_Sum	1.63354085602224
+50-59	Nerve - Tibial	Myeloid_Sum	2.37041627575396
+60-69	Nerve - Tibial	Myeloid_Sum	1.56535791872411
+60-69	Nerve - Tibial	Myeloid_Sum	1.1085013959187
+50-59	Nerve - Tibial	Myeloid_Sum	1.36324597076213
+40-49	Nerve - Tibial	Myeloid_Sum	2.04914723805182
+40-49	Nerve - Tibial	Myeloid_Sum	0.870693096451072
+60-69	Nerve - Tibial	Myeloid_Sum	0.810333707763996
+70-79	Nerve - Tibial	Myeloid_Sum	1.23050127782977
+50-59	Nerve - Tibial	Myeloid_Sum	0.844305494382008
+40-49	Nerve - Tibial	Myeloid_Sum	1.35661857246055
+50-59	Nerve - Tibial	Myeloid_Sum	0.725535316726581
+60-69	Nerve - Tibial	Myeloid_Sum	1.57471642018585
+60-69	Nerve - Tibial	Myeloid_Sum	1.43117293642379
+40-49	Nerve - Tibial	Myeloid_Sum	1.27950049358566
+40-49	Nerve - Tibial	Myeloid_Sum	1.40262190959149
+50-59	Nerve - Tibial	Myeloid_Sum	2.20069888812308
+60-69	Nerve - Tibial	Myeloid_Sum	1.32824503240239
+50-59	Nerve - Tibial	Myeloid_Sum	1.47915565449126
+70-79	Nerve - Tibial	Myeloid_Sum	2.15151310212958
+60-69	Nerve - Tibial	Myeloid_Sum	1.64383119305765
+40-49	Nerve - Tibial	Myeloid_Sum	1.0441218332777
+60-69	Nerve - Tibial	Myeloid_Sum	1.14049799809077
+40-49	Nerve - Tibial	Myeloid_Sum	1.12513058404901
+20-29	Nerve - Tibial	Myeloid_Sum	1.35541296819162
+60-69	Nerve - Tibial	Myeloid_Sum	1.4549102739908
+50-59	Nerve - Tibial	Myeloid_Sum	1.0614061731808
+60-69	Nerve - Tibial	Myeloid_Sum	2.10460943824827
+40-49	Nerve - Tibial	Myeloid_Sum	1.54413454700608
+50-59	Nerve - Tibial	Myeloid_Sum	1.30436396308688
+50-59	Nerve - Tibial	Myeloid_Sum	1.42442616722398
+60-69	Nerve - Tibial	Myeloid_Sum	0.74243088002638
+40-49	Nerve - Tibial	Myeloid_Sum	1.54464338613294
+30-39	Nerve - Tibial	Myeloid_Sum	0.937314070844247
+60-69	Nerve - Tibial	Myeloid_Sum	1.46352790789383
+60-69	Nerve - Tibial	Myeloid_Sum	1.31926642797297
+50-59	Nerve - Tibial	Myeloid_Sum	1.33947016689278
+40-49	Nerve - Tibial	Myeloid_Sum	1.21471001121315
+50-59	Nerve - Tibial	Myeloid_Sum	2.0259508523665
+30-39	Nerve - Tibial	Myeloid_Sum	1.22460798931766
+20-29	Nerve - Tibial	Myeloid_Sum	1.8457096520581
+60-69	Nerve - Tibial	Myeloid_Sum	1.52595041835088
+50-59	Nerve - Tibial	Myeloid_Sum	1.9919453390692
+40-49	Nerve - Tibial	Myeloid_Sum	1.25706150863661
+20-29	Nerve - Tibial	Myeloid_Sum	1.52421166742964
+20-29	Nerve - Tibial	Myeloid_Sum	1.18972349942905
+40-49	Nerve - Tibial	Myeloid_Sum	0.586988389143003
+40-49	Nerve - Tibial	Myeloid_Sum	2.28612692839898
+40-49	Nerve - Tibial	Myeloid_Sum	1.65288213590662
+50-59	Nerve - Tibial	Myeloid_Sum	1.84258920991727
+30-39	Nerve - Tibial	Myeloid_Sum	2.53239644837221
+50-59	Nerve - Tibial	Myeloid_Sum	1.77853283754938
+30-39	Nerve - Tibial	Myeloid_Sum	1.31956356125248
+20-29	Nerve - Tibial	Myeloid_Sum	1.12409622011457
+50-59	Nerve - Tibial	Myeloid_Sum	1.63435008967156
+20-29	Nerve - Tibial	Myeloid_Sum	1.30178547030862
+60-69	Nerve - Tibial	Myeloid_Sum	1.56156724033125
+30-39	Nerve - Tibial	Myeloid_Sum	1.67205003126859
+60-69	Nerve - Tibial	Myeloid_Sum	2.25073288066384
+50-59	Nerve - Tibial	Myeloid_Sum	1.92387134792634
+40-49	Nerve - Tibial	Myeloid_Sum	0.891453351617201
+20-29	Nerve - Tibial	Myeloid_Sum	1.61980817982086
+40-49	Nerve - Tibial	Myeloid_Sum	1.26611328488326
+60-69	Nerve - Tibial	Myeloid_Sum	1.108062433585
+50-59	Nerve - Tibial	Myeloid_Sum	1.79859914608888
+60-69	Nerve - Tibial	Myeloid_Sum	1.23783709158878
+50-59	Nerve - Tibial	Myeloid_Sum	1.8901214523065
+50-59	Nerve - Tibial	Myeloid_Sum	1.62555389743261
+60-69	Nerve - Tibial	Myeloid_Sum	1.16482005407895
+50-59	Nerve - Tibial	Myeloid_Sum	1.65947397700739
+30-39	Nerve - Tibial	Myeloid_Sum	2.16783763726615
+60-69	Nerve - Tibial	Myeloid_Sum	1.63654547982522
+50-59	Nerve - Tibial	Myeloid_Sum	1.22676531816185
+60-69	Nerve - Tibial	Myeloid_Sum	1.84131944029215
+50-59	Nerve - Tibial	Myeloid_Sum	1.85709658409651
+20-29	Nerve - Tibial	Myeloid_Sum	0.843792217703422
+40-49	Nerve - Tibial	Myeloid_Sum	1.48422006520715
+60-69	Nerve - Tibial	Myeloid_Sum	3.15502217030721
+20-29	Nerve - Tibial	Myeloid_Sum	1.3565079184438
+50-59	Nerve - Tibial	Myeloid_Sum	1.73904953156678
+50-59	Nerve - Tibial	Myeloid_Sum	1.19976688668695
+40-49	Nerve - Tibial	Myeloid_Sum	1.24254191631656
+40-49	Nerve - Tibial	Myeloid_Sum	1.1174278296768
+30-39	Nerve - Tibial	Myeloid_Sum	0.779046648114335
+40-49	Nerve - Tibial	Myeloid_Sum	1.89197769876144
+40-49	Nerve - Tibial	Myeloid_Sum	1.10084610260714
+60-69	Nerve - Tibial	Myeloid_Sum	0.836395867428443
+30-39	Nerve - Tibial	Myeloid_Sum	1.06448155452859
+60-69	Nerve - Tibial	Myeloid_Sum	1.2358044555314
+30-39	Nerve - Tibial	Myeloid_Sum	1.88046511143593
+50-59	Nerve - Tibial	Myeloid_Sum	1.3102239443073
+50-59	Nerve - Tibial	Myeloid_Sum	1.33446005716654
+60-69	Nerve - Tibial	Myeloid_Sum	1.11983001872884
+60-69	Nerve - Tibial	Myeloid_Sum	2.70466563290623
+50-59	Nerve - Tibial	Myeloid_Sum	1.51514895841017
+50-59	Nerve - Tibial	Myeloid_Sum	1.4900456879327
+40-49	Nerve - Tibial	Myeloid_Sum	1.42478015574881
+40-49	Nerve - Tibial	Myeloid_Sum	0.861830815494031
+20-29	Nerve - Tibial	Myeloid_Sum	0.789908818746618
+20-29	Nerve - Tibial	Myeloid_Sum	1.32338293513504
+40-49	Nerve - Tibial	Myeloid_Sum	1.24262338695197
+50-59	Nerve - Tibial	Myeloid_Sum	0.993441008449764
+20-29	Nerve - Tibial	Myeloid_Sum	1.15136274537935
+50-59	Nerve - Tibial	Myeloid_Sum	1.43557037535674
+50-59	Nerve - Tibial	Myeloid_Sum	1.87768118229204
+20-29	Nerve - Tibial	Myeloid_Sum	1.15920787705846
+50-59	Nerve - Tibial	Myeloid_Sum	1.94400927464375
+50-59	Nerve - Tibial	Myeloid_Sum	1.28808390585801
+60-69	Nerve - Tibial	Myeloid_Sum	1.11671929314295
+50-59	Nerve - Tibial	Myeloid_Sum	1.4557105828002
+40-49	Nerve - Tibial	Myeloid_Sum	1.60337232601721
+40-49	Nerve - Tibial	Myeloid_Sum	1.72363326359873
+50-59	Nerve - Tibial	Myeloid_Sum	1.27761585260102
+40-49	Nerve - Tibial	Myeloid_Sum	1.39694172744464
+60-69	Nerve - Tibial	Myeloid_Sum	1.33821729364934
+60-69	Nerve - Tibial	Myeloid_Sum	1.57162251703149
+50-59	Nerve - Tibial	Myeloid_Sum	1.46358818828242
+40-49	Nerve - Tibial	Myeloid_Sum	1.17495184607062
+70-79	Nerve - Tibial	Myeloid_Sum	2.44895743634518
+40-49	Nerve - Tibial	Myeloid_Sum	1.39211346810766
+50-59	Nerve - Tibial	Myeloid_Sum	1.21042365885169
+60-69	Nerve - Tibial	Myeloid_Sum	1.28377012165815
+40-49	Nerve - Tibial	Myeloid_Sum	1.20719715751613
+50-59	Nerve - Tibial	Myeloid_Sum	1.16534434150929
+60-69	Nerve - Tibial	Myeloid_Sum	0.774237639145929
+60-69	Nerve - Tibial	Myeloid_Sum	1.22290333815587
+40-49	Nerve - Tibial	Myeloid_Sum	1.72053092328165
+60-69	Nerve - Tibial	Myeloid_Sum	1.61994096309802
+20-29	Nerve - Tibial	Myeloid_Sum	1.46889871572596
+50-59	Nerve - Tibial	Myeloid_Sum	1.19901727731536
+50-59	Nerve - Tibial	Myeloid_Sum	1.51473140249223
+50-59	Nerve - Tibial	Myeloid_Sum	1.1911927297007
+50-59	Nerve - Tibial	Myeloid_Sum	1.03910930980987
+60-69	Nerve - Tibial	Myeloid_Sum	1.34030690089012
+50-59	Nerve - Tibial	Myeloid_Sum	1.22815400848466
+50-59	Nerve - Tibial	Myeloid_Sum	1.21168236101124
+50-59	Nerve - Tibial	Myeloid_Sum	1.6423460739175
+50-59	Nerve - Tibial	Myeloid_Sum	1.13695212551944
+40-49	Nerve - Tibial	Myeloid_Sum	0.951061673115386
+60-69	Nerve - Tibial	Myeloid_Sum	1.11750332732071
+60-69	Nerve - Tibial	Myeloid_Sum	1.35370715922171
+60-69	Nerve - Tibial	Myeloid_Sum	1.14359482036642
+40-49	Nerve - Tibial	Myeloid_Sum	1.9221586060664
+60-69	Nerve - Tibial	Myeloid_Sum	2.24077412652517
+50-59	Nerve - Tibial	Myeloid_Sum	1.35890282666585
+30-39	Nerve - Tibial	Myeloid_Sum	0.845894622572909
+40-49	Nerve - Tibial	Myeloid_Sum	0.835953755643011
+40-49	Nerve - Tibial	Myeloid_Sum	1.04319630659648
+50-59	Nerve - Tibial	Myeloid_Sum	2.64706626413295
+40-49	Nerve - Tibial	Myeloid_Sum	0.956500926014506
+60-69	Nerve - Tibial	Myeloid_Sum	1.867270287792
+50-59	Nerve - Tibial	Myeloid_Sum	1.13283546009179
+40-49	Nerve - Tibial	Myeloid_Sum	1.30816391610889
+20-29	Nerve - Tibial	Myeloid_Sum	1.11322646790097
+40-49	Nerve - Tibial	Myeloid_Sum	1.18902244583166
+50-59	Nerve - Tibial	Myeloid_Sum	1.75286161620791
+40-49	Nerve - Tibial	Myeloid_Sum	1.45289724900161
+20-29	Nerve - Tibial	Myeloid_Sum	0.819889805746661
+40-49	Nerve - Tibial	Myeloid_Sum	1.05202370748196
+70-79	Nerve - Tibial	Myeloid_Sum	3.01472818270305
+40-49	Nerve - Tibial	Myeloid_Sum	1.47953005474272
+60-69	Nerve - Tibial	Myeloid_Sum	1.48765643191018
+60-69	Nerve - Tibial	Myeloid_Sum	1.39091347717832
+50-59	Nerve - Tibial	Myeloid_Sum	1.19538453451815
+60-69	Nerve - Tibial	Myeloid_Sum	1.08688608201886
+50-59	Nerve - Tibial	Myeloid_Sum	1.21337418036773
+40-49	Nerve - Tibial	Myeloid_Sum	1.20011078878078
+60-69	Nerve - Tibial	Myeloid_Sum	0.966160924204969
+50-59	Nerve - Tibial	Myeloid_Sum	1.14696715105328
+20-29	Nerve - Tibial	Myeloid_Sum	0.92956598918134
+60-69	Nerve - Tibial	Myeloid_Sum	0.87521172941456
+60-69	Nerve - Tibial	Myeloid_Sum	1.21133886096005
+30-39	Nerve - Tibial	Myeloid_Sum	0.92671044948749
+40-49	Nerve - Tibial	Myeloid_Sum	1.46190563101218
+20-29	Nerve - Tibial	Myeloid_Sum	1.01959254546516
+20-29	Nerve - Tibial	Myeloid_Sum	1.06539862302019
+50-59	Nerve - Tibial	Myeloid_Sum	0.626438485241351
+50-59	Nerve - Tibial	Myeloid_Sum	1.77949074135657
+60-69	Nerve - Tibial	Myeloid_Sum	1.73069994864776
+20-29	Nerve - Tibial	Myeloid_Sum	1.21335434130906
+40-49	Nerve - Tibial	Myeloid_Sum	1.71290757155834
+50-59	Nerve - Tibial	Myeloid_Sum	0.866866310529961
+30-39	Nerve - Tibial	Myeloid_Sum	0.56931745962466
+60-69	Nerve - Tibial	Myeloid_Sum	1.48248309876386
+50-59	Nerve - Tibial	Myeloid_Sum	1.49232185695622
+50-59	Nerve - Tibial	Myeloid_Sum	1.12399531037433
+60-69	Nerve - Tibial	Myeloid_Sum	1.03158541741955
+30-39	Nerve - Tibial	Myeloid_Sum	2.00750593243689
+50-59	Nerve - Tibial	Myeloid_Sum	1.0768508756786
+60-69	Nerve - Tibial	Myeloid_Sum	1.12677840690793
+20-29	Nerve - Tibial	Myeloid_Sum	1.1587919277003
+50-59	Nerve - Tibial	Lymph_Sum	0.307868224633208
+60-69	Nerve - Tibial	Lymph_Sum	0.483361904780404
+60-69	Nerve - Tibial	Lymph_Sum	1.01484522316972
+60-69	Nerve - Tibial	Lymph_Sum	0.743953365855347
+60-69	Nerve - Tibial	Lymph_Sum	1.03943605983384
+50-59	Nerve - Tibial	Lymph_Sum	0.615299752633303
+50-59	Nerve - Tibial	Lymph_Sum	0.738507079362783
+40-49	Nerve - Tibial	Lymph_Sum	1.06251879158483
+60-69	Nerve - Tibial	Lymph_Sum	0.327136771662986
+50-59	Nerve - Tibial	Lymph_Sum	0.961491831024041
+60-69	Nerve - Tibial	Lymph_Sum	0.461883273519766
+60-69	Nerve - Tibial	Lymph_Sum	0.721781617363682
+30-39	Nerve - Tibial	Lymph_Sum	0.424431003286308
+60-69	Nerve - Tibial	Lymph_Sum	0.457997413271858
+60-69	Nerve - Tibial	Lymph_Sum	0.687328338244074
+60-69	Nerve - Tibial	Lymph_Sum	0.984439765810264
+50-59	Nerve - Tibial	Lymph_Sum	0.40229306830423
+30-39	Nerve - Tibial	Lymph_Sum	0.462540370506749
+20-29	Nerve - Tibial	Lymph_Sum	0.799969138984004
+50-59	Nerve - Tibial	Lymph_Sum	0.453921799295971
+40-49	Nerve - Tibial	Lymph_Sum	0.98904602365534
+60-69	Nerve - Tibial	Lymph_Sum	0.509655634033372
+60-69	Nerve - Tibial	Lymph_Sum	1.57432333448043
+30-39	Nerve - Tibial	Lymph_Sum	0.614686299637562
+30-39	Nerve - Tibial	Lymph_Sum	0.717321629124552
+20-29	Nerve - Tibial	Lymph_Sum	0.472655696195693
+50-59	Nerve - Tibial	Lymph_Sum	0.526696371216998
+20-29	Nerve - Tibial	Lymph_Sum	0.233429012631841
+60-69	Nerve - Tibial	Lymph_Sum	0.404466691101583
+50-59	Nerve - Tibial	Lymph_Sum	1.45673467706029
+40-49	Nerve - Tibial	Lymph_Sum	0.625796721390315
+60-69	Nerve - Tibial	Lymph_Sum	0.839536941949976
+40-49	Nerve - Tibial	Lymph_Sum	0.869772551742427
+60-69	Nerve - Tibial	Lymph_Sum	1.04315721338202
+30-39	Nerve - Tibial	Lymph_Sum	0.580640045200937
+50-59	Nerve - Tibial	Lymph_Sum	0.622489357020311
+60-69	Nerve - Tibial	Lymph_Sum	0.564078748396925
+20-29	Nerve - Tibial	Lymph_Sum	0.748390399800904
+60-69	Nerve - Tibial	Lymph_Sum	1.1510856145616
+40-49	Nerve - Tibial	Lymph_Sum	1.08216602270048
+60-69	Nerve - Tibial	Lymph_Sum	0.676384652522973
+60-69	Nerve - Tibial	Lymph_Sum	0.450471648052686
+20-29	Nerve - Tibial	Lymph_Sum	1.0179585109852
+30-39	Nerve - Tibial	Lymph_Sum	0.599541604577218
+60-69	Nerve - Tibial	Lymph_Sum	1.2070960831211
+70-79	Nerve - Tibial	Lymph_Sum	0.535303649524622
+50-59	Nerve - Tibial	Lymph_Sum	0.579557745657848
+40-49	Nerve - Tibial	Lymph_Sum	0.367409574866571
+50-59	Nerve - Tibial	Lymph_Sum	0.709700564305566
+60-69	Nerve - Tibial	Lymph_Sum	0.611502532337157
+40-49	Nerve - Tibial	Lymph_Sum	0.893725492034579
+60-69	Nerve - Tibial	Lymph_Sum	0.830027975854053
+50-59	Nerve - Tibial	Lymph_Sum	0.688882758260745
+60-69	Nerve - Tibial	Lymph_Sum	0.76584529091164
+50-59	Nerve - Tibial	Lymph_Sum	0.726281897691846
+30-39	Nerve - Tibial	Lymph_Sum	0.813360401670252
+50-59	Nerve - Tibial	Lymph_Sum	0.821516061546685
+60-69	Nerve - Tibial	Lymph_Sum	0.513413209542979
+50-59	Nerve - Tibial	Lymph_Sum	0.630729602754627
+50-59	Nerve - Tibial	Lymph_Sum	0.559689390593373
+50-59	Nerve - Tibial	Lymph_Sum	1.05484681093606
+60-69	Nerve - Tibial	Lymph_Sum	0.967973795727227
+60-69	Nerve - Tibial	Lymph_Sum	0.91426641146629
+60-69	Nerve - Tibial	Lymph_Sum	0.359527167270461
+40-49	Nerve - Tibial	Lymph_Sum	0.340630280169888
+20-29	Nerve - Tibial	Lymph_Sum	1.12789973969283
+30-39	Nerve - Tibial	Lymph_Sum	0.580240493050424
+30-39	Nerve - Tibial	Lymph_Sum	0.628679678345625
+50-59	Nerve - Tibial	Lymph_Sum	1.73310491657175
+50-59	Nerve - Tibial	Lymph_Sum	0.539104804419672
+60-69	Nerve - Tibial	Lymph_Sum	0.469507098484936
+60-69	Nerve - Tibial	Lymph_Sum	0.750115934789681
+60-69	Nerve - Tibial	Lymph_Sum	1.17821922176278
+50-59	Nerve - Tibial	Lymph_Sum	0.67693571341112
+60-69	Nerve - Tibial	Lymph_Sum	0.866369733279905
+50-59	Nerve - Tibial	Lymph_Sum	0.798476017441905
+50-59	Nerve - Tibial	Lymph_Sum	0.820819798195958
+60-69	Nerve - Tibial	Lymph_Sum	0.464695124308213
+50-59	Nerve - Tibial	Lymph_Sum	1.25677844094237
+50-59	Nerve - Tibial	Lymph_Sum	0.558168698288377
+40-49	Nerve - Tibial	Lymph_Sum	0.858139101851328
+60-69	Nerve - Tibial	Lymph_Sum	0.917581649084155
+70-79	Nerve - Tibial	Lymph_Sum	0.438782926506879
+40-49	Nerve - Tibial	Lymph_Sum	0.826606399928443
+60-69	Nerve - Tibial	Lymph_Sum	0.939200754617278
+50-59	Nerve - Tibial	Lymph_Sum	0.498664604502232
+70-79	Nerve - Tibial	Lymph_Sum	0.517793796690054
+60-69	Nerve - Tibial	Lymph_Sum	0.791120821563867
+60-69	Nerve - Tibial	Lymph_Sum	0.909204993080566
+50-59	Nerve - Tibial	Lymph_Sum	0.945824366235889
+60-69	Nerve - Tibial	Lymph_Sum	0.922214315975161
+60-69	Nerve - Tibial	Lymph_Sum	0.504445814751333
+50-59	Nerve - Tibial	Lymph_Sum	0.924120760240289
+60-69	Nerve - Tibial	Lymph_Sum	0.690461853329718
+50-59	Nerve - Tibial	Lymph_Sum	0.598281476893621
+50-59	Nerve - Tibial	Lymph_Sum	0.716835292908781
+60-69	Nerve - Tibial	Lymph_Sum	0.653723351762707
+60-69	Nerve - Tibial	Lymph_Sum	0.664946154312575
+60-69	Nerve - Tibial	Lymph_Sum	0.50914988701937
+50-59	Nerve - Tibial	Lymph_Sum	0.716336841846304
+50-59	Nerve - Tibial	Lymph_Sum	0.941042848451929
+50-59	Nerve - Tibial	Lymph_Sum	1.93573508509331
+50-59	Nerve - Tibial	Lymph_Sum	0.879713654180752
+60-69	Nerve - Tibial	Lymph_Sum	0.719152445420645
+60-69	Nerve - Tibial	Lymph_Sum	0.515907800327585
+50-59	Nerve - Tibial	Lymph_Sum	0.850240306357042
+60-69	Nerve - Tibial	Lymph_Sum	0.77249276492833
+40-49	Nerve - Tibial	Lymph_Sum	0.464969843933591
+60-69	Nerve - Tibial	Lymph_Sum	0.695164469739489
+50-59	Nerve - Tibial	Lymph_Sum	0.763120795365185
+60-69	Nerve - Tibial	Lymph_Sum	0.545723063994706
+60-69	Nerve - Tibial	Lymph_Sum	0.613052353588708
+40-49	Nerve - Tibial	Lymph_Sum	1.06114397895913
+50-59	Nerve - Tibial	Lymph_Sum	0.579689503365387
+20-29	Nerve - Tibial	Lymph_Sum	0.695842548300005
+50-59	Nerve - Tibial	Lymph_Sum	0.549953222482991
+60-69	Nerve - Tibial	Lymph_Sum	0.632950516077039
+50-59	Nerve - Tibial	Lymph_Sum	1.13001197568638
+50-59	Nerve - Tibial	Lymph_Sum	1.1457227295629
+60-69	Nerve - Tibial	Lymph_Sum	1.06167270931698
+60-69	Nerve - Tibial	Lymph_Sum	0.67214043666641
+50-59	Nerve - Tibial	Lymph_Sum	0.507061646235361
+50-59	Nerve - Tibial	Lymph_Sum	0.900567151911133
+20-29	Nerve - Tibial	Lymph_Sum	0.384062286707453
+50-59	Nerve - Tibial	Lymph_Sum	0.536773413851485
+40-49	Nerve - Tibial	Lymph_Sum	0.692044110084239
+50-59	Nerve - Tibial	Lymph_Sum	0.57854218001048
+50-59	Nerve - Tibial	Lymph_Sum	0.383378685251494
+40-49	Nerve - Tibial	Lymph_Sum	0.337569636764236
+50-59	Nerve - Tibial	Lymph_Sum	0.730652169204193
+60-69	Nerve - Tibial	Lymph_Sum	0.553449376252113
+50-59	Nerve - Tibial	Lymph_Sum	0.603390478694058
+30-39	Nerve - Tibial	Lymph_Sum	0.883588690108272
+60-69	Nerve - Tibial	Lymph_Sum	0.702175135471152
+60-69	Nerve - Tibial	Lymph_Sum	0.654484473083442
+60-69	Nerve - Tibial	Lymph_Sum	0.963009758139541
+60-69	Nerve - Tibial	Lymph_Sum	0.990489769425425
+50-59	Nerve - Tibial	Lymph_Sum	0.58798175135292
+30-39	Nerve - Tibial	Lymph_Sum	0.903716584842665
+40-49	Nerve - Tibial	Lymph_Sum	0.435126886529816
+60-69	Nerve - Tibial	Lymph_Sum	1.07799585983266
+50-59	Nerve - Tibial	Lymph_Sum	0.641388712644656
+60-69	Nerve - Tibial	Lymph_Sum	1.00544190768202
+50-59	Nerve - Tibial	Lymph_Sum	0.604477301572232
+50-59	Nerve - Tibial	Lymph_Sum	0.93819743496384
+50-59	Nerve - Tibial	Lymph_Sum	0.623473195295751
+40-49	Nerve - Tibial	Lymph_Sum	1.19846879673616
+60-69	Nerve - Tibial	Lymph_Sum	0.65414519797552
+60-69	Nerve - Tibial	Lymph_Sum	1.47215573697888
+50-59	Nerve - Tibial	Lymph_Sum	0.294052673976953
+40-49	Nerve - Tibial	Lymph_Sum	0.690950925496405
+30-39	Nerve - Tibial	Lymph_Sum	0.55600483129812
+70-79	Nerve - Tibial	Lymph_Sum	1.17195377058612
+40-49	Nerve - Tibial	Lymph_Sum	0.424005654346709
+30-39	Nerve - Tibial	Lymph_Sum	0.740325927834324
+70-79	Nerve - Tibial	Lymph_Sum	0.748525517288102
+60-69	Nerve - Tibial	Lymph_Sum	0.495809442864428
+50-59	Nerve - Tibial	Lymph_Sum	0.403468294823745
+60-69	Nerve - Tibial	Lymph_Sum	0.62792454343028
+60-69	Nerve - Tibial	Lymph_Sum	1.14001105975527
+50-59	Nerve - Tibial	Lymph_Sum	0.361767941355914
+60-69	Nerve - Tibial	Lymph_Sum	0.538884847372219
+60-69	Nerve - Tibial	Lymph_Sum	0.678955147144414
+60-69	Nerve - Tibial	Lymph_Sum	0.599565613394073
+60-69	Nerve - Tibial	Lymph_Sum	0.513513616187908
+60-69	Nerve - Tibial	Lymph_Sum	0.581152792008866
+50-59	Nerve - Tibial	Lymph_Sum	0.682630926960342
+60-69	Nerve - Tibial	Lymph_Sum	0.654150050481297
+50-59	Nerve - Tibial	Lymph_Sum	0.343746991987454
+20-29	Nerve - Tibial	Lymph_Sum	0.998589637858499
+40-49	Nerve - Tibial	Lymph_Sum	0.654832905140725
+30-39	Nerve - Tibial	Lymph_Sum	0.940315264162096
+60-69	Nerve - Tibial	Lymph_Sum	0.625217305994285
+40-49	Nerve - Tibial	Lymph_Sum	0.669748887677647
+60-69	Nerve - Tibial	Lymph_Sum	0.742112875704395
+20-29	Nerve - Tibial	Lymph_Sum	0.655314989532165
+50-59	Nerve - Tibial	Lymph_Sum	0.923216666636467
+30-39	Nerve - Tibial	Lymph_Sum	0.782206558139007
+60-69	Nerve - Tibial	Lymph_Sum	0.738693903094005
+60-69	Nerve - Tibial	Lymph_Sum	0.851692673950293
+40-49	Nerve - Tibial	Lymph_Sum	0.333746682928313
+50-59	Nerve - Tibial	Lymph_Sum	1.16262715914553
+70-79	Nerve - Tibial	Lymph_Sum	0.6607919873421
+60-69	Nerve - Tibial	Lymph_Sum	0.93512914177705
+30-39	Nerve - Tibial	Lymph_Sum	0.888529775130141
+40-49	Nerve - Tibial	Lymph_Sum	0.918368311828304
+20-29	Nerve - Tibial	Lymph_Sum	0.581872244953266
+40-49	Nerve - Tibial	Lymph_Sum	1.08514081075045
+70-79	Nerve - Tibial	Lymph_Sum	1.00897613427799
+70-79	Nerve - Tibial	Lymph_Sum	0.512139850061454
+50-59	Nerve - Tibial	Lymph_Sum	0.479454529810716
+40-49	Nerve - Tibial	Lymph_Sum	0.561921970867529
+50-59	Nerve - Tibial	Lymph_Sum	0.459913230589553
+70-79	Nerve - Tibial	Lymph_Sum	0.81316351753293
+30-39	Nerve - Tibial	Lymph_Sum	1.26157299330548
+50-59	Nerve - Tibial	Lymph_Sum	0.988557576726514
+50-59	Nerve - Tibial	Lymph_Sum	0.610749219796859
+50-59	Nerve - Tibial	Lymph_Sum	1.00932911881498
+50-59	Nerve - Tibial	Lymph_Sum	0.474589732262443
+60-69	Nerve - Tibial	Lymph_Sum	0.571315480197506
+40-49	Nerve - Tibial	Lymph_Sum	1.03584865207939
+20-29	Nerve - Tibial	Lymph_Sum	0.459208804320946
+70-79	Nerve - Tibial	Lymph_Sum	1.04880610223453
+50-59	Nerve - Tibial	Lymph_Sum	1.05472338744045
+60-69	Nerve - Tibial	Lymph_Sum	0.874561376299085
+60-69	Nerve - Tibial	Lymph_Sum	0.945747270461297
+50-59	Nerve - Tibial	Lymph_Sum	1.17717670018368
+70-79	Nerve - Tibial	Lymph_Sum	0.7763035333125
+30-39	Nerve - Tibial	Lymph_Sum	0.85082444745537
+60-69	Nerve - Tibial	Lymph_Sum	0.447440616248909
+40-49	Nerve - Tibial	Lymph_Sum	0.556659141747329
+30-39	Nerve - Tibial	Lymph_Sum	0.58596318378987
+50-59	Nerve - Tibial	Lymph_Sum	0.889213275562168
+30-39	Nerve - Tibial	Lymph_Sum	0.392945748754241
+60-69	Nerve - Tibial	Lymph_Sum	0.602427261788675
+60-69	Nerve - Tibial	Lymph_Sum	0.788359011364825
+60-69	Nerve - Tibial	Lymph_Sum	0.891977165893181
+60-69	Nerve - Tibial	Lymph_Sum	1.15248479129017
+50-59	Nerve - Tibial	Lymph_Sum	0.831820246850981
+60-69	Nerve - Tibial	Lymph_Sum	0.624580471804306
+60-69	Nerve - Tibial	Lymph_Sum	0.455268645995656
+50-59	Nerve - Tibial	Lymph_Sum	0.744144014484581
+50-59	Nerve - Tibial	Lymph_Sum	0.493442154047295
+50-59	Nerve - Tibial	Lymph_Sum	0.47695914397776
+50-59	Nerve - Tibial	Lymph_Sum	0.823583724246042
+60-69	Nerve - Tibial	Lymph_Sum	0.936142081275887
+60-69	Nerve - Tibial	Lymph_Sum	0.926998604081297
+50-59	Nerve - Tibial	Lymph_Sum	0.728254029237867
+40-49	Nerve - Tibial	Lymph_Sum	0.687352761948175
+40-49	Nerve - Tibial	Lymph_Sum	0.585306903548928
+60-69	Nerve - Tibial	Lymph_Sum	0.640666292236004
+70-79	Nerve - Tibial	Lymph_Sum	0.912998722170228
+50-59	Nerve - Tibial	Lymph_Sum	0.861694505617992
+40-49	Nerve - Tibial	Lymph_Sum	0.793381427539447
+50-59	Nerve - Tibial	Lymph_Sum	0.61096468327342
+60-69	Nerve - Tibial	Lymph_Sum	1.15528357981415
+60-69	Nerve - Tibial	Lymph_Sum	0.938827063576205
+40-49	Nerve - Tibial	Lymph_Sum	0.55449950641434
+40-49	Nerve - Tibial	Lymph_Sum	0.607878090408512
+50-59	Nerve - Tibial	Lymph_Sum	1.06730111187692
+60-69	Nerve - Tibial	Lymph_Sum	0.88875496759761
+50-59	Nerve - Tibial	Lymph_Sum	0.821344345508737
+70-79	Nerve - Tibial	Lymph_Sum	0.833486897870418
+60-69	Nerve - Tibial	Lymph_Sum	0.83566880694235
+40-49	Nerve - Tibial	Lymph_Sum	0.5598781667223
+60-69	Nerve - Tibial	Lymph_Sum	0.36400200190923
+40-49	Nerve - Tibial	Lymph_Sum	0.503869415950985
+20-29	Nerve - Tibial	Lymph_Sum	0.441087031808382
+60-69	Nerve - Tibial	Lymph_Sum	0.591089726009206
+50-59	Nerve - Tibial	Lymph_Sum	0.5160938268192
+60-69	Nerve - Tibial	Lymph_Sum	1.59239056175173
+40-49	Nerve - Tibial	Lymph_Sum	0.443365452993917
+50-59	Nerve - Tibial	Lymph_Sum	0.374136036913118
+50-59	Nerve - Tibial	Lymph_Sum	0.741073832776019
+60-69	Nerve - Tibial	Lymph_Sum	0.851569119973619
+40-49	Nerve - Tibial	Lymph_Sum	1.08635661386706
+30-39	Nerve - Tibial	Lymph_Sum	0.512185929155754
+60-69	Nerve - Tibial	Lymph_Sum	0.448472092106175
+60-69	Nerve - Tibial	Lymph_Sum	0.680733572027029
+50-59	Nerve - Tibial	Lymph_Sum	0.493529833107224
+40-49	Nerve - Tibial	Lymph_Sum	0.699789988786851
+50-59	Nerve - Tibial	Lymph_Sum	0.988049147633501
+30-39	Nerve - Tibial	Lymph_Sum	0.435892010682342
+20-29	Nerve - Tibial	Lymph_Sum	0.663790347941895
+60-69	Nerve - Tibial	Lymph_Sum	0.485549581649122
+50-59	Nerve - Tibial	Lymph_Sum	0.624054660930799
+40-49	Nerve - Tibial	Lymph_Sum	0.90293849136339
+20-29	Nerve - Tibial	Lymph_Sum	0.498788332570362
+20-29	Nerve - Tibial	Lymph_Sum	0.770276500570956
+40-49	Nerve - Tibial	Lymph_Sum	0.428011610856997
+40-49	Nerve - Tibial	Lymph_Sum	0.747873071601022
+40-49	Nerve - Tibial	Lymph_Sum	0.943617864093379
+50-59	Nerve - Tibial	Lymph_Sum	0.73091079008273
+30-39	Nerve - Tibial	Lymph_Sum	0.672603551627784
+50-59	Nerve - Tibial	Lymph_Sum	0.520967162450619
+30-39	Nerve - Tibial	Lymph_Sum	1.20893643874752
+20-29	Nerve - Tibial	Lymph_Sum	0.56290377988543
+50-59	Nerve - Tibial	Lymph_Sum	1.14264991032844
+20-29	Nerve - Tibial	Lymph_Sum	0.524214529691378
+60-69	Nerve - Tibial	Lymph_Sum	0.399932759668745
+30-39	Nerve - Tibial	Lymph_Sum	0.672449968731408
+60-69	Nerve - Tibial	Lymph_Sum	0.702267119336165
+50-59	Nerve - Tibial	Lymph_Sum	0.68462865207366
+40-49	Nerve - Tibial	Lymph_Sum	0.941546648382799
+20-29	Nerve - Tibial	Lymph_Sum	0.728691820179142
+40-49	Nerve - Tibial	Lymph_Sum	0.887386715116737
+60-69	Nerve - Tibial	Lymph_Sum	0.756937566414999
+50-59	Nerve - Tibial	Lymph_Sum	0.754900853911126
+60-69	Nerve - Tibial	Lymph_Sum	0.645662908411222
+50-59	Nerve - Tibial	Lymph_Sum	0.918378547693496
+50-59	Nerve - Tibial	Lymph_Sum	0.584946102567391
+60-69	Nerve - Tibial	Lymph_Sum	1.01717994592105
+50-59	Nerve - Tibial	Lymph_Sum	0.792026022992612
+30-39	Nerve - Tibial	Lymph_Sum	0.650662362733848
+60-69	Nerve - Tibial	Lymph_Sum	0.686954520174778
+50-59	Nerve - Tibial	Lymph_Sum	0.859234681838153
+60-69	Nerve - Tibial	Lymph_Sum	1.80818055970785
+50-59	Nerve - Tibial	Lymph_Sum	0.933903415903495
+20-29	Nerve - Tibial	Lymph_Sum	0.827707782296579
+40-49	Nerve - Tibial	Lymph_Sum	0.542279934792851
+60-69	Nerve - Tibial	Lymph_Sum	1.18747782969279
+20-29	Nerve - Tibial	Lymph_Sum	0.608992081556198
+50-59	Nerve - Tibial	Lymph_Sum	1.00095046843322
+50-59	Nerve - Tibial	Lymph_Sum	0.872233113313053
+40-49	Nerve - Tibial	Lymph_Sum	0.838458083683439
+40-49	Nerve - Tibial	Lymph_Sum	0.869072170323204
+30-39	Nerve - Tibial	Lymph_Sum	0.387953351885665
+40-49	Nerve - Tibial	Lymph_Sum	0.75602230123855
+40-49	Nerve - Tibial	Lymph_Sum	0.616153897392858
+60-69	Nerve - Tibial	Lymph_Sum	0.818604132571556
+30-39	Nerve - Tibial	Lymph_Sum	0.510018445471413
+60-69	Nerve - Tibial	Lymph_Sum	0.700195544468601
+30-39	Nerve - Tibial	Lymph_Sum	0.697534888564066
+50-59	Nerve - Tibial	Lymph_Sum	0.698776055692705
+50-59	Nerve - Tibial	Lymph_Sum	0.363039942833456
+60-69	Nerve - Tibial	Lymph_Sum	0.465169981271158
+60-69	Nerve - Tibial	Lymph_Sum	1.08383436709378
+50-59	Nerve - Tibial	Lymph_Sum	0.40485104158983
+50-59	Nerve - Tibial	Lymph_Sum	0.906954312067299
+40-49	Nerve - Tibial	Lymph_Sum	0.92971984425119
+40-49	Nerve - Tibial	Lymph_Sum	0.497169184505969
+20-29	Nerve - Tibial	Lymph_Sum	0.679591181253382
+20-29	Nerve - Tibial	Lymph_Sum	0.631117064864965
+40-49	Nerve - Tibial	Lymph_Sum	0.536376613048028
+50-59	Nerve - Tibial	Lymph_Sum	0.439558991550235
+20-29	Nerve - Tibial	Lymph_Sum	0.488137254620649
+50-59	Nerve - Tibial	Lymph_Sum	0.761429624643257
+50-59	Nerve - Tibial	Lymph_Sum	0.91731881770796
+20-29	Nerve - Tibial	Lymph_Sum	0.490292122941535
+50-59	Nerve - Tibial	Lymph_Sum	1.13249072535625
+50-59	Nerve - Tibial	Lymph_Sum	0.750916094141995
+60-69	Nerve - Tibial	Lymph_Sum	1.26878070685705
+50-59	Nerve - Tibial	Lymph_Sum	0.871789417199801
+40-49	Nerve - Tibial	Lymph_Sum	0.942627673982787
+40-49	Nerve - Tibial	Lymph_Sum	1.05886673640128
+50-59	Nerve - Tibial	Lymph_Sum	0.495884147398983
+40-49	Nerve - Tibial	Lymph_Sum	0.901558272555358
+60-69	Nerve - Tibial	Lymph_Sum	0.867282706350661
+60-69	Nerve - Tibial	Lymph_Sum	0.748877482968515
+50-59	Nerve - Tibial	Lymph_Sum	0.708411811717582
+40-49	Nerve - Tibial	Lymph_Sum	0.615548153929378
+70-79	Nerve - Tibial	Lymph_Sum	1.03754256365482
+40-49	Nerve - Tibial	Lymph_Sum	0.669886531892337
+50-59	Nerve - Tibial	Lymph_Sum	0.716576341148309
+60-69	Nerve - Tibial	Lymph_Sum	0.552229878341854
+40-49	Nerve - Tibial	Lymph_Sum	0.504802842483866
+50-59	Nerve - Tibial	Lymph_Sum	0.46215565849071
+60-69	Nerve - Tibial	Lymph_Sum	0.591762360854072
+60-69	Nerve - Tibial	Lymph_Sum	1.21809666184413
+40-49	Nerve - Tibial	Lymph_Sum	1.08746907671835
+60-69	Nerve - Tibial	Lymph_Sum	0.745559036901977
+20-29	Nerve - Tibial	Lymph_Sum	0.82410128427404
+50-59	Nerve - Tibial	Lymph_Sum	0.794982722684641
+50-59	Nerve - Tibial	Lymph_Sum	0.477768597507767
+50-59	Nerve - Tibial	Lymph_Sum	0.952307270299297
+50-59	Nerve - Tibial	Lymph_Sum	1.18189069019013
+60-69	Nerve - Tibial	Lymph_Sum	0.746693099109881
+50-59	Nerve - Tibial	Lymph_Sum	0.773345991515341
+50-59	Nerve - Tibial	Lymph_Sum	0.630317638988755
+50-59	Nerve - Tibial	Lymph_Sum	0.499653926082504
+50-59	Nerve - Tibial	Lymph_Sum	0.810047874480565
+40-49	Nerve - Tibial	Lymph_Sum	0.526438326884615
+60-69	Nerve - Tibial	Lymph_Sum	0.737496672679293
+60-69	Nerve - Tibial	Lymph_Sum	0.522792840778295
+60-69	Nerve - Tibial	Lymph_Sum	0.613405179633578
+40-49	Nerve - Tibial	Lymph_Sum	0.837841393933596
+60-69	Nerve - Tibial	Lymph_Sum	1.40572587347483
+50-59	Nerve - Tibial	Lymph_Sum	0.56959717333415
+30-39	Nerve - Tibial	Lymph_Sum	0.268605377427092
+40-49	Nerve - Tibial	Lymph_Sum	0.929546244356989
+40-49	Nerve - Tibial	Lymph_Sum	0.497803693403525
+50-59	Nerve - Tibial	Lymph_Sum	1.12293373586705
+40-49	Nerve - Tibial	Lymph_Sum	0.539499073985494
+60-69	Nerve - Tibial	Lymph_Sum	1.223229712208
+50-59	Nerve - Tibial	Lymph_Sum	0.633164539908213
+40-49	Nerve - Tibial	Lymph_Sum	1.20483608389111
+20-29	Nerve - Tibial	Lymph_Sum	0.498773532099035
+40-49	Nerve - Tibial	Lymph_Sum	1.49947755416834
+50-59	Nerve - Tibial	Lymph_Sum	1.01313838379209
+40-49	Nerve - Tibial	Lymph_Sum	0.789102750998389
+20-29	Nerve - Tibial	Lymph_Sum	0.479610194253338
+40-49	Nerve - Tibial	Lymph_Sum	0.630476292518035
+70-79	Nerve - Tibial	Lymph_Sum	0.951271817296947
+40-49	Nerve - Tibial	Lymph_Sum	0.911469945257279
+60-69	Nerve - Tibial	Lymph_Sum	0.691343568089822
+60-69	Nerve - Tibial	Lymph_Sum	0.705086522821678
+50-59	Nerve - Tibial	Lymph_Sum	0.54761546548185
+60-69	Nerve - Tibial	Lymph_Sum	0.84761391798114
+50-59	Nerve - Tibial	Lymph_Sum	0.619625819632273
+40-49	Nerve - Tibial	Lymph_Sum	0.561389211219225
+60-69	Nerve - Tibial	Lymph_Sum	0.45633907579503
+50-59	Nerve - Tibial	Lymph_Sum	0.525032848946717
+20-29	Nerve - Tibial	Lymph_Sum	0.39393401081866
+60-69	Nerve - Tibial	Lymph_Sum	0.53328827058544
+60-69	Nerve - Tibial	Lymph_Sum	0.651161139039951
+30-39	Nerve - Tibial	Lymph_Sum	0.448789550512511
+40-49	Nerve - Tibial	Lymph_Sum	0.998594368987822
+20-29	Nerve - Tibial	Lymph_Sum	0.587907454534838
+20-29	Nerve - Tibial	Lymph_Sum	0.448601376979809
+50-59	Nerve - Tibial	Lymph_Sum	0.405561514758649
+50-59	Nerve - Tibial	Lymph_Sum	0.471009258643436
+60-69	Nerve - Tibial	Lymph_Sum	1.17830005135224
+20-29	Nerve - Tibial	Lymph_Sum	0.487645658690943
+40-49	Nerve - Tibial	Lymph_Sum	0.52659242844166
+50-59	Nerve - Tibial	Lymph_Sum	0.48663368947004
+30-39	Nerve - Tibial	Lymph_Sum	0.67268254037534
+60-69	Nerve - Tibial	Lymph_Sum	0.59401690123615
+50-59	Nerve - Tibial	Lymph_Sum	0.673178143043779
+50-59	Nerve - Tibial	Lymph_Sum	0.599504689625667
+60-69	Nerve - Tibial	Lymph_Sum	0.460914582580454
+30-39	Nerve - Tibial	Lymph_Sum	0.665994067563103
+50-59	Nerve - Tibial	Lymph_Sum	0.5346491243214
+60-69	Nerve - Tibial	Lymph_Sum	0.465721593092072
+20-29	Nerve - Tibial	Lymph_Sum	0.7497080722997

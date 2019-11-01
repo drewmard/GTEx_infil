@@ -141,7 +141,7 @@ GWAS_enrichment.R
 
 
 #### Downstream analysis of genetic results
-All the following files are in the directory: ./scripts/GeneticAnalysis_2/
+All the following scripts are in the directory: ./scripts/GeneticAnalysis_2/
 
 #### Analysis of related genetic variants also associated with thyroiditis using GeneHancer regions & phenoscanner
 GWAS_search.R

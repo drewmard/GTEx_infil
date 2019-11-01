@@ -1,0 +1,190 @@
+Group.1	Group.2	Pval_Brown_sig	p_lrt_cibersort_rel_sig	p_lrt_cibersort_abs_sig	p_lrt_cibersort_xCell_sig
+Adipose - Visceral (Omentum)	Bcellsum	0	1	1	0
+Artery - Aorta	Bcellsum	0	1	1	0
+Artery - Coronary	Bcellsum	0	1	1	1
+Breast - Mammary Tissue	Bcellsum	0	1	1	1
+Colon - Transverse	Bcellsum	0	1	1	1
+Esophagus - Mucosa	Bcellsum	0	1	1	1
+Heart - Atrial Appendage	Bcellsum	0	1	1	0
+Lung	Bcellsum	0	1	1	1
+Ovary	Bcellsum	0	1	1	0
+Prostate	Bcellsum	1	1	1	1
+Small Intestine - Terminal Ileum	Bcellsum	0	1	1	1
+Spleen	Bcellsum	1	1	1	1
+Stomach	Bcellsum	0	1	1	0
+Thyroid	Bcellsum	0	1	1	1
+Uterus	Bcellsum	0	1	1	0
+Vagina	Bcellsum	0	1	1	0
+Adipose - Subcutaneous	CD4_Tcells	0	1	1	0
+Adipose - Visceral (Omentum)	CD4_Tcells	0	1	1	1
+Artery - Aorta	CD4_Tcells	0	1	1	0
+Artery - Coronary	CD4_Tcells	0	0	1	1
+Artery - Tibial	CD4_Tcells	0	1	1	0
+Breast - Mammary Tissue	CD4_Tcells	0	1	1	0
+Colon - Sigmoid	CD4_Tcells	0	1	1	0
+Colon - Transverse	CD4_Tcells	0	1	1	0
+Esophagus - Mucosa	CD4_Tcells	0	1	1	1
+Heart - Atrial Appendage	CD4_Tcells	0	1	1	0
+Lung	CD4_Tcells	0	1	1	1
+Nerve - Tibial	CD4_Tcells	1	1	1	0
+Prostate	CD4_Tcells	0	1	1	0
+Small Intestine - Terminal Ileum	CD4_Tcells	0	1	1	0
+Spleen	CD4_Tcells	0	1	1	0
+Stomach	CD4_Tcells	0	1	0	0
+Thyroid	CD4_Tcells	0	1	1	1
+Uterus	CD4_Tcells	0	1	1	0
+Vagina	CD4_Tcells	0	1	0	1
+Esophagus - Mucosa	DendriticSum	0	1	1	0
+Skin - Not Sun Exposed (Suprapubic)	DendriticSum	0	1	1	1
+Skin - Sun Exposed (Lower leg)	DendriticSum	0	1	1	0
+Adipose - Subcutaneous	Lymph_Sum	0	1	1	0
+Adipose - Visceral (Omentum)	Lymph_Sum	0	1	1	1
+Adrenal Gland	Lymph_Sum	0	1	0	0
+Artery - Aorta	Lymph_Sum	1	1	1	1
+Artery - Coronary	Lymph_Sum	0	1	1	1
+Artery - Tibial	Lymph_Sum	1	1	1	1
+Breast - Mammary Tissue	Lymph_Sum	1	1	1	0
+Colon - Sigmoid	Lymph_Sum	1	1	1	1
+Colon - Transverse	Lymph_Sum	0	1	1	1
+Esophagus - Mucosa	Lymph_Sum	0	1	1	1
+Esophagus - Muscularis	Lymph_Sum	0	1	1	0
+Heart - Atrial Appendage	Lymph_Sum	1	1	1	0
+Lung	Lymph_Sum	0	1	1	1
+Nerve - Tibial	Lymph_Sum	0	1	1	0
+Ovary	Lymph_Sum	0	0	1	0
+Prostate	Lymph_Sum	1	1	1	1
+Skin - Sun Exposed (Lower leg)	Lymph_Sum	0	1	1	0
+Small Intestine - Terminal Ileum	Lymph_Sum	1	1	1	1
+Spleen	Lymph_Sum	1	1	1	1
+Stomach	Lymph_Sum	0	0	1	1
+Thyroid	Lymph_Sum	0	1	1	1
+Uterus	Lymph_Sum	0	1	1	1
+Vagina	Lymph_Sum	0	1	1	0
+Whole Blood	Lymph_Sum	0	1	1	1
+Adipose - Subcutaneous	MacrophageSum	1	1	1	1
+Adipose - Visceral (Omentum)	MacrophageSum	0	1	1	1
+Adrenal Gland	MacrophageSum	0	1	1	1
+Artery - Aorta	MacrophageSum	0	1	1	1
+Artery - Coronary	MacrophageSum	1	0	1	1
+Artery - Tibial	MacrophageSum	0	1	1	1
+Breast - Mammary Tissue	MacrophageSum	1	1	1	1
+Colon - Sigmoid	MacrophageSum	0	1	1	1
+Colon - Transverse	MacrophageSum	0	1	1	1
+Esophagus - Gastroesophageal Junction	MacrophageSum	0	1	1	1
+Esophagus - Mucosa	MacrophageSum	0	1	1	1
+Esophagus - Muscularis	MacrophageSum	1	1	1	1
+Heart - Atrial Appendage	MacrophageSum	0	1	1	1
+Lung	MacrophageSum	0	1	1	1
+Nerve - Tibial	MacrophageSum	0	1	1	0
+Ovary	MacrophageSum	0	1	1	1
+Pituitary	MacrophageSum	0	1	1	1
+Prostate	MacrophageSum	0	1	1	1
+Skin - Not Sun Exposed (Suprapubic)	MacrophageSum	0	1	1	1
+Skin - Sun Exposed (Lower leg)	MacrophageSum	0	1	1	1
+Small Intestine - Terminal Ileum	MacrophageSum	0	0	1	0
+Spleen	MacrophageSum	0	1	1	1
+Stomach	MacrophageSum	0	1	1	0
+Thyroid	MacrophageSum	0	1	1	0
+Uterus	MacrophageSum	0	1	1	1
+Vagina	MacrophageSum	0	1	1	0
+Adipose - Subcutaneous	MastSum	1	1	1	1
+Adipose - Visceral (Omentum)	MastSum	0	1	1	0
+Adrenal Gland	MastSum	0	1	1	0
+Artery - Aorta	MastSum	0	1	1	0
+Artery - Coronary	MastSum	0	1	1	1
+Artery - Tibial	MastSum	0	1	1	0
+Breast - Mammary Tissue	MastSum	0	1	1	0
+Colon - Sigmoid	MastSum	1	1	1	1
+Colon - Transverse	MastSum	0	1	1	1
+Esophagus - Gastroesophageal Junction	MastSum	0	1	1	1
+Esophagus - Mucosa	MastSum	1	1	1	1
+Esophagus - Muscularis	MastSum	1	1	1	1
+Heart - Atrial Appendage	MastSum	0	1	1	0
+Lung	MastSum	0	1	1	0
+Nerve - Tibial	MastSum	0	1	1	1
+Prostate	MastSum	0	1	1	1
+Skin - Not Sun Exposed (Suprapubic)	MastSum	0	1	1	1
+Skin - Sun Exposed (Lower leg)	MastSum	0	1	1	1
+Small Intestine - Terminal Ileum	MastSum	0	1	1	1
+Uterus	MastSum	0	1	1	1
+Vagina	MastSum	0	1	1	0
+Adipose - Subcutaneous	Monocytes	0	1	1	1
+Adipose - Visceral (Omentum)	Monocytes	0	1	1	1
+Adrenal Gland	Monocytes	1	1	1	0
+Artery - Aorta	Monocytes	1	1	1	1
+Artery - Coronary	Monocytes	0	1	1	1
+Artery - Tibial	Monocytes	0	0	1	0
+Breast - Mammary Tissue	Monocytes	0	1	1	0
+Colon - Sigmoid	Monocytes	0	1	1	1
+Colon - Transverse	Monocytes	0	1	1	1
+Esophagus - Gastroesophageal Junction	Monocytes	0	1	1	1
+Esophagus - Mucosa	Monocytes	0	1	1	1
+Esophagus - Muscularis	Monocytes	0	1	1	1
+Heart - Atrial Appendage	Monocytes	1	1	1	1
+Lung	Monocytes	0	1	1	1
+Nerve - Tibial	Monocytes	0	1	1	1
+Ovary	Monocytes	0	1	1	0
+Pituitary	Monocytes	0	1	1	1
+Prostate	Monocytes	1	1	1	1
+Spleen	Monocytes	0	1	1	1
+Stomach	Monocytes	0	1	1	1
+Thyroid	Monocytes	0	1	1	0
+Uterus	Monocytes	0	1	1	1
+Vagina	Monocytes	0	1	1	1
+Adipose - Subcutaneous	Myeloid_Sum	0	1	1	1
+Adipose - Visceral (Omentum)	Myeloid_Sum	0	0	1	1
+Adrenal Gland	Myeloid_Sum	1	1	0	1
+Artery - Aorta	Myeloid_Sum	0	0	1	1
+Artery - Coronary	Myeloid_Sum	0	0	1	1
+Artery - Tibial	Myeloid_Sum	0	0	1	1
+Breast - Mammary Tissue	Myeloid_Sum	0	1	1	1
+Colon - Sigmoid	Myeloid_Sum	0	0	1	1
+Colon - Transverse	Myeloid_Sum	0	0	1	1
+Esophagus - Gastroesophageal Junction	Myeloid_Sum	0	1	1	1
+Esophagus - Mucosa	Myeloid_Sum	0	0	1	1
+Esophagus - Muscularis	Myeloid_Sum	1	1	1	1
+Heart - Atrial Appendage	Myeloid_Sum	1	1	1	1
+Lung	Myeloid_Sum	0	0	1	1
+Nerve - Tibial	Myeloid_Sum	0	0	1	1
+Ovary	Myeloid_Sum	0	1	1	1
+Pituitary	Myeloid_Sum	0	1	1	1
+Prostate	Myeloid_Sum	0	1	1	1
+Skin - Not Sun Exposed (Suprapubic)	Myeloid_Sum	0	1	1	1
+Skin - Sun Exposed (Lower leg)	Myeloid_Sum	0	1	1	1
+Small Intestine - Terminal Ileum	Myeloid_Sum	1	1	1	1
+Spleen	Myeloid_Sum	0	1	1	0
+Stomach	Myeloid_Sum	0	1	1	1
+Thyroid	Myeloid_Sum	0	0	1	1
+Uterus	Myeloid_Sum	0	0	1	0
+Vagina	Myeloid_Sum	0	1	1	1
+Whole Blood	Myeloid_Sum	0	1	1	0
+Lung	Neutrophils	0	1	1	1
+Spleen	Neutrophils	0	1	1	1
+Whole Blood	Neutrophils	0	1	0	0
+Lung	NK_Sum	0	1	1	1
+Spleen	NK_Sum	0	1	1	1
+Whole Blood	NK_Sum	0	1	1	1
+Adipose - Visceral (Omentum)	T cells CD8	0	1	1	1
+Adrenal Gland	T cells CD8	0	1	1	0
+Artery - Aorta	T cells CD8	1	1	1	1
+Artery - Coronary	T cells CD8	0	1	1	1
+Breast - Mammary Tissue	T cells CD8	0	1	1	0
+Colon - Transverse	T cells CD8	0	1	1	1
+Esophagus - Mucosa	T cells CD8	0	1	1	1
+Esophagus - Muscularis	T cells CD8	0	1	1	0
+Heart - Atrial Appendage	T cells CD8	0	1	1	0
+Lung	T cells CD8	0	1	1	1
+Nerve - Tibial	T cells CD8	0	1	1	0
+Ovary	T cells CD8	0	1	1	0
+Pituitary	T cells CD8	0	1	1	0
+Prostate	T cells CD8	0	1	1	1
+Small Intestine - Terminal Ileum	T cells CD8	0	0	1	1
+Spleen	T cells CD8	1	1	1	1
+Stomach	T cells CD8	0	1	1	1
+Thyroid	T cells CD8	0	1	1	1
+Uterus	T cells CD8	0	1	1	0
+Vagina	T cells CD8	0	1	1	1
+Whole Blood	T cells CD8	0	1	1	1
+Esophagus - Mucosa	T cells follicular helper	0	1	1	1
+Skin - Sun Exposed (Lower leg)	T cells follicular helper	0	1	1	1
+Thyroid	T cells follicular helper	1	1	1	0

@@ -1,0 +1,190 @@
+tis	cell	Age_Sig	Sex_Sig
+Adipose - Subcutaneous	CD4+ memory T cells	0	0
+Adipose - Subcutaneous	Macrophages	0	2
+Adipose - Subcutaneous	Mast cells	0	0
+Adipose - Subcutaneous	Myeloid cells	0	0
+Adipose - Subcutaneous	Monocytes	0	0
+Adipose - Subcutaneous	Lymphocytes	1	0
+Adipose - Visceral (Omentum)	CD8+ T cells	1	0
+Adipose - Visceral (Omentum)	CD4+ memory T cells	0	0
+Adipose - Visceral (Omentum)	Macrophages	0	0
+Adipose - Visceral (Omentum)	B cells	0	0
+Adipose - Visceral (Omentum)	Mast cells	0	0
+Adipose - Visceral (Omentum)	Myeloid cells	0	0
+Adipose - Visceral (Omentum)	Monocytes	0	0
+Adipose - Visceral (Omentum)	Lymphocytes	0	0
+Adrenal Gland	CD8+ T cells	0	0
+Adrenal Gland	Macrophages	0	0
+Adrenal Gland	Mast cells	2	0
+Adrenal Gland	Myeloid cells	0	0
+Adrenal Gland	Monocytes	0	0
+Adrenal Gland	Lymphocytes	0	1
+Artery - Aorta	CD8+ T cells	0	1
+Artery - Aorta	CD4+ memory T cells	1	0
+Artery - Aorta	Macrophages	0	0
+Artery - Aorta	B cells	2	0
+Artery - Aorta	Mast cells	0	0
+Artery - Aorta	Myeloid cells	0	0
+Artery - Aorta	Monocytes	0	0
+Artery - Aorta	Lymphocytes	1	0
+Artery - Coronary	CD8+ T cells	0	0
+Artery - Coronary	CD4+ memory T cells	0	0
+Artery - Coronary	Macrophages	0	0
+Artery - Coronary	B cells	0	1
+Artery - Coronary	Mast cells	0	0
+Artery - Coronary	Myeloid cells	0	0
+Artery - Coronary	Monocytes	0	0
+Artery - Coronary	Lymphocytes	0	0
+Artery - Tibial	CD4+ memory T cells	4	0
+Artery - Tibial	Macrophages	2	0
+Artery - Tibial	Mast cells	3	0
+Artery - Tibial	Myeloid cells	3	0
+Artery - Tibial	Monocytes	2	0
+Artery - Tibial	Lymphocytes	3	1
+Breast - Mammary Tissue	CD8+ T cells	0	4
+Breast - Mammary Tissue	CD4+ memory T cells	0	4
+Breast - Mammary Tissue	Macrophages	1	3
+Breast - Mammary Tissue	B cells	0	4
+Breast - Mammary Tissue	Mast cells	0	4
+Breast - Mammary Tissue	Myeloid cells	1	4
+Breast - Mammary Tissue	Monocytes	0	4
+Breast - Mammary Tissue	Lymphocytes	0	4
+Colon - Sigmoid	CD4+ memory T cells	0	0
+Colon - Sigmoid	Macrophages	0	0
+Colon - Sigmoid	Mast cells	0	0
+Colon - Sigmoid	Myeloid cells	0	0
+Colon - Sigmoid	Monocytes	2	0
+Colon - Sigmoid	Lymphocytes	0	0
+Colon - Transverse	CD8+ T cells	0	0
+Colon - Transverse	CD4+ memory T cells	0	0
+Colon - Transverse	Macrophages	0	0
+Colon - Transverse	B cells	0	0
+Colon - Transverse	Mast cells	0	0
+Colon - Transverse	Myeloid cells	0	0
+Colon - Transverse	Monocytes	0	0
+Colon - Transverse	Lymphocytes	0	0
+Esophagus - Gastroesophageal Junction	Macrophages	0	0
+Esophagus - Gastroesophageal Junction	Mast cells	0	1
+Esophagus - Gastroesophageal Junction	Myeloid cells	0	0
+Esophagus - Gastroesophageal Junction	Monocytes	0	0
+Esophagus - Mucosa	CD8+ T cells	0	0
+Esophagus - Mucosa	CD4+ memory T cells	0	0
+Esophagus - Mucosa	Macrophages	0	0
+Esophagus - Mucosa	B cells	0	2
+Esophagus - Mucosa	Dendritic cells	0	3
+Esophagus - Mucosa	Mast cells	0	1
+Esophagus - Mucosa	Myeloid cells	0	0
+Esophagus - Mucosa	Helper T cells	0	0
+Esophagus - Mucosa	Monocytes	0	0
+Esophagus - Mucosa	Lymphocytes	0	1
+Esophagus - Muscularis	CD8+ T cells	0	0
+Esophagus - Muscularis	Macrophages	0	1
+Esophagus - Muscularis	Mast cells	0	2
+Esophagus - Muscularis	Myeloid cells	0	0
+Esophagus - Muscularis	Monocytes	0	0
+Esophagus - Muscularis	Lymphocytes	0	1
+Heart - Atrial Appendage	CD8+ T cells	0	0
+Heart - Atrial Appendage	CD4+ memory T cells	0	0
+Heart - Atrial Appendage	Macrophages	0	0
+Heart - Atrial Appendage	B cells	0	0
+Heart - Atrial Appendage	Mast cells	0	0
+Heart - Atrial Appendage	Myeloid cells	0	0
+Heart - Atrial Appendage	Monocytes	0	0
+Heart - Atrial Appendage	Lymphocytes	0	0
+Lung	CD8+ T cells	0	0
+Lung	CD4+ memory T cells	0	0
+Lung	Neutrophils	0	0
+Lung	Macrophages	0	0
+Lung	B cells	0	0
+Lung	NK cells	0	0
+Lung	Mast cells	0	0
+Lung	Myeloid cells	0	0
+Lung	Monocytes	0	0
+Lung	Lymphocytes	0	0
+Nerve - Tibial	CD8+ T cells	3	0
+Nerve - Tibial	CD4+ memory T cells	2	0
+Nerve - Tibial	Macrophages	0	0
+Nerve - Tibial	Mast cells	0	0
+Nerve - Tibial	Myeloid cells	0	1
+Nerve - Tibial	Monocytes	0	0
+Nerve - Tibial	Lymphocytes	1	0
+Ovary	CD8+ T cells	0	0
+Ovary	Macrophages	0	0
+Ovary	B cells	0	0
+Ovary	Myeloid cells	0	0
+Ovary	Monocytes	0	0
+Ovary	Lymphocytes	0	0
+Pituitary	CD8+ T cells	0	1
+Pituitary	Macrophages	0	0
+Pituitary	Myeloid cells	0	0
+Pituitary	Monocytes	0	0
+Prostate	CD8+ T cells	0	0
+Prostate	CD4+ memory T cells	0	0
+Prostate	Macrophages	0	0
+Prostate	B cells	0	0
+Prostate	Mast cells	1	0
+Prostate	Myeloid cells	0	0
+Prostate	Monocytes	0	0
+Prostate	Lymphocytes	0	0
+Skin - Not Sun Exposed (Suprapubic)	Macrophages	0	0
+Skin - Not Sun Exposed (Suprapubic)	Dendritic cells	0	0
+Skin - Not Sun Exposed (Suprapubic)	Mast cells	0	0
+Skin - Not Sun Exposed (Suprapubic)	Myeloid cells	0	0
+Skin - Sun Exposed (Lower leg)	Macrophages	0	0
+Skin - Sun Exposed (Lower leg)	Dendritic cells	0	1
+Skin - Sun Exposed (Lower leg)	Mast cells	0	0
+Skin - Sun Exposed (Lower leg)	Myeloid cells	0	0
+Skin - Sun Exposed (Lower leg)	Helper T cells	0	0
+Skin - Sun Exposed (Lower leg)	Lymphocytes	0	0
+Small Intestine - Terminal Ileum	CD8+ T cells	1	0
+Small Intestine - Terminal Ileum	CD4+ memory T cells	0	0
+Small Intestine - Terminal Ileum	Macrophages	0	0
+Small Intestine - Terminal Ileum	B cells	0	0
+Small Intestine - Terminal Ileum	Mast cells	0	0
+Small Intestine - Terminal Ileum	Myeloid cells	0	0
+Small Intestine - Terminal Ileum	Lymphocytes	0	0
+Spleen	CD8+ T cells	0	0
+Spleen	CD4+ memory T cells	0	0
+Spleen	Neutrophils	0	0
+Spleen	Macrophages	0	0
+Spleen	B cells	0	0
+Spleen	NK cells	0	0
+Spleen	Myeloid cells	0	0
+Spleen	Monocytes	0	1
+Spleen	Lymphocytes	0	0
+Stomach	CD8+ T cells	0	0
+Stomach	CD4+ memory T cells	0	0
+Stomach	Macrophages	0	0
+Stomach	B cells	0	0
+Stomach	Myeloid cells	0	0
+Stomach	Monocytes	0	0
+Stomach	Lymphocytes	0	0
+Thyroid	CD8+ T cells	1	3
+Thyroid	CD4+ memory T cells	0	3
+Thyroid	Macrophages	0	1
+Thyroid	B cells	0	3
+Thyroid	Myeloid cells	0	1
+Thyroid	Helper T cells	0	0
+Thyroid	Monocytes	0	0
+Thyroid	Lymphocytes	0	3
+Uterus	CD8+ T cells	0	0
+Uterus	CD4+ memory T cells	0	0
+Uterus	Macrophages	0	0
+Uterus	B cells	0	0
+Uterus	Mast cells	3	0
+Uterus	Myeloid cells	0	0
+Uterus	Monocytes	0	0
+Uterus	Lymphocytes	0	0
+Vagina	CD8+ T cells	0	0
+Vagina	CD4+ memory T cells	0	0
+Vagina	Macrophages	0	0
+Vagina	B cells	0	0
+Vagina	Mast cells	0	0
+Vagina	Myeloid cells	0	0
+Vagina	Monocytes	0	0
+Vagina	Lymphocytes	0	0
+Whole Blood	CD8+ T cells	0	0
+Whole Blood	Neutrophils	0	0
+Whole Blood	NK cells	0	0
+Whole Blood	Myeloid cells	0	0
+Whole Blood	Lymphocytes	0	0

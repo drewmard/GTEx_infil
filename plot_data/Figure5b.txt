@@ -1,0 +1,51 @@
+Group.1	Group.2	Pval_Brown_sig	p_lrt_cibersort_rel_sig	p_lrt_cibersort_abs_sig	p_lrt_cibersort_xCell_sig
+Artery - Aorta	Bcellsum	0	1	0	0
+Artery - Coronary	Bcellsum	0	0	1	1
+Prostate	Bcellsum	1	0	0	0
+Spleen	Bcellsum	1	0	1	0
+Adipose - Visceral (Omentum)	CD4_Tcells	0	1	0	0
+Artery - Coronary	CD4_Tcells	0	0	0	1
+Colon - Transverse	CD4_Tcells	0	0	1	0
+Nerve - Tibial	CD4_Tcells	1	0	0	0
+Artery - Aorta	Lymph_Sum	1	0	0	0
+Artery - Tibial	Lymph_Sum	1	0	1	0
+Breast - Mammary Tissue	Lymph_Sum	1	0	1	0
+Colon - Sigmoid	Lymph_Sum	1	0	0	0
+Heart - Atrial Appendage	Lymph_Sum	1	0	0	0
+Lung	Lymph_Sum	0	0	0	1
+Prostate	Lymph_Sum	1	0	0	0
+Skin - Sun Exposed (Lower leg)	Lymph_Sum	0	1	0	0
+Small Intestine - Terminal Ileum	Lymph_Sum	1	1	0	0
+Spleen	Lymph_Sum	1	1	0	0
+Uterus	Lymph_Sum	0	1	0	0
+Adipose - Subcutaneous	MacrophageSum	1	0	1	0
+Artery - Coronary	MacrophageSum	1	0	0	1
+Breast - Mammary Tissue	MacrophageSum	1	0	0	0
+Esophagus - Muscularis	MacrophageSum	1	1	0	0
+Ovary	MacrophageSum	0	0	1	0
+Vagina	MacrophageSum	0	1	0	0
+Adipose - Subcutaneous	MastSum	1	0	0	1
+Colon - Sigmoid	MastSum	1	1	0	0
+Esophagus - Mucosa	MastSum	1	0	1	0
+Esophagus - Muscularis	MastSum	1	0	0	1
+Adrenal Gland	Monocytes	1	0	0	0
+Artery - Aorta	Monocytes	1	0	0	1
+Esophagus - Muscularis	Monocytes	0	0	1	0
+Heart - Atrial Appendage	Monocytes	1	0	0	0
+Prostate	Monocytes	1	0	0	0
+Stomach	Monocytes	0	0	0	1
+Adrenal Gland	Myeloid_Sum	1	0	0	0
+Esophagus - Muscularis	Myeloid_Sum	1	0	0	0
+Heart - Atrial Appendage	Myeloid_Sum	1	0	1	0
+Ovary	Myeloid_Sum	0	0	1	0
+Skin - Sun Exposed (Lower leg)	Myeloid_Sum	0	1	0	0
+Small Intestine - Terminal Ileum	Myeloid_Sum	1	1	0	0
+Spleen	Myeloid_Sum	0	1	0	0
+Lung	NK_Sum	0	0	0	1
+Artery - Aorta	T cells CD8	1	0	1	0
+Lung	T cells CD8	0	0	1	0
+Prostate	T cells CD8	0	0	1	1
+Spleen	T cells CD8	1	0	1	0
+Stomach	T cells CD8	0	1	0	0
+Thyroid	T cells CD8	0	1	0	0
+Thyroid	T cells follicular helper	1	0	1	0
