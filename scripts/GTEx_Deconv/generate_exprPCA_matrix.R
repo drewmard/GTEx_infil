@@ -28,6 +28,16 @@ for (tis in unique(df.tis$SMTSD)) {
   df.exp.sub <- as.data.frame(t(df.exp.sub))
 
   pca_results <- prcomp(df.exp.sub)
+  
+  eigs <- pca_results$sdev^2
+  perc.var.exp <- eigs[1:4]/sum(eigs)
+  perc.var.exp.df <- data.frame(Tissue=tis,PC=paste0('PC',1:4),Percent_Variance_Explained=perc.var.exp)
+  if (i==1) {
+    perc.var.exp.df.save <- perc.var.exp.df
+  } else {
+    perc.var.exp.df.save <- rbind(perc.var.exp.df.save, perc.var.exp.df)
+  }
+
   df.PEER <- as.data.frame(pca_results$x[,1:10])
   df.PEER$SAMP <- rownames(df.PEER)
   rownames(df.PEER) <- NULL
@@ -36,4 +46,6 @@ for (tis in unique(df.tis$SMTSD)) {
   # fwrite(df.PEER,paste0('/athena/elementolab/scratch/anm2868/GTEx/PCA/',tis2,'.PCA.txt'),quote = F,row.names = F,sep='\t',col.names = T)
   fwrite(df.PEER,paste0('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GTEx_Deconv/Expr_PCA/',tis2,'.PCA.txt'),quote = F,row.names = F,sep='\t',col.names = T)
 }
+
+fwrite(perc.var.exp.df.save,'/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GTEx_Deconv/Expr_PCA/perc.var.exp.df.save.txt',quote = F,row.names = F,sep='\t',col.names = T)
 
