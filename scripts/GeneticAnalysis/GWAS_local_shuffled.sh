@@ -11,8 +11,8 @@ for i in {1..22}
 do
 
 geno=/athena/elementolab/scratch/anm2868/GTEx/gtex_all.filter.name
-pheno=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.txt
-outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS
+pheno=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/gtex_all.filter.name.shuffled_data.txt
+outdir=/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GeneticAnalysis/GWAS/shuffled_data
 
 mkdir -p $outdir
 

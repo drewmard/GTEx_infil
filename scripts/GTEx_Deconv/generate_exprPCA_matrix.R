@@ -5,7 +5,7 @@ dir.create('/athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/output/GTEx_Deco
 
 print('Uploading expression file...')
 f <- '/athena/elementolab/scratch/anm2868/GTEx/EXPRESSION/GTEx_Analysis_2016-01-15_v7_RNASeQCv1.1.8_gene_tpm.gct'
-# df.exp <- fread(f,data.table = F,stringsAsFactors = F)
+df.exp <- fread(f,data.table = F,stringsAsFactors = F)
 df.tis <- fread('/athena/elementolab/scratch/anm2868/GTEx/COVAR/GTEx_v7_Annotations_SampleAttributesDS.txt',data.table = F)
 
 i=0
