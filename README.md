@@ -74,8 +74,8 @@ filter.R
 
 #### Infiltration signatures in bulk gene expression values
 generate_exprPCA_matrix.R \
-calculate_exprPCA_infil_cor.R
-
+calculate_exprPCA_infil_cor.R \
+generate_exprPCA_matrix.createTable2.R # for creating SuppTab3.txt
 
 
 ## Identification and characterization of extreme infiltrating immune cell patterns
@@ -105,6 +105,11 @@ age_sex_heatmap.R
 
 #### Breast t-sne, males vs females 
 breast_content_clusters_tsne.R
+
+#### myeloid:lymphoid & cd4:cd8 ratio analysis 
+blood_MyeloidLymphoid_analysis.R # statistical analysis \
+blood_MyeloidLymphoid_plots.R # accompanying figure of myeloid:lymphoid
+
 
 
 ## Association of genetic variants with infiltrating immune cells
@@ -137,6 +142,9 @@ separate_qq.R
 
 #### GWAS enrichment p-values
 GWAS_enrichment.R
+
+#### EBM shuffled analysis to assess p-value inflation (supplementary)
+iQTL_EBM_shuffle_analysis.R
 
 
 #### Downstream analysis of genetic results

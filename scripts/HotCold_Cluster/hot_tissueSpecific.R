@@ -9,7 +9,15 @@ library(pheatmap)
 library(matrixStats)
 library(cowplot)
 
+df <- fread('~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_phenotypes.txt',data.table = F,stringsAsFactors = F)
+i=3
+df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ExpandedHotCold.txt',data.table = F,stringsAsFactors = F); colnames(df)[which(colnames(df)=='ID')] <- 'IID'
+df.sub <- subset(df,CellType==CellType.unique[i]); unique(df.sub$Tissue)
+
 df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ConsensusHotColdAssignments.txt',data.table = F,stringsAsFactors = F)
+df.sub <- subset(df,CellType==CellType.unique[i]); unique(df.sub$Tissue)
+nrow(unique(df[,c('Tissue','CellType')]))
+
 df$IID <- as.character(lapply(strsplit(df$Sample,"\\."),function(x) paste(x[1:2],collapse = "-")))
 df$Top <- as.numeric(df$Infiltration=='Hot')
 df$Bottom <- as.numeric(df$Infiltration=='Cold')
@@ -50,7 +58,7 @@ as.numeric(lapply(dataf,function(x) {median(x$N)}))
 # create bar plots (supplement)
 g <- list();dataf <- list();val <- list();val2 <- list()
 for (i in 1:7) {
-  df.sub <- subset(df,CellType==CellType.unique[i])
+  df.sub <- subset(df,CellType==CellType.unique[i]); #unique(df.sub$Tissue)
   tab <- aggregate(df.sub$Top,by=list(df.sub$IID),sum)
   tab2 <- aggregate(df.sub$Top,by=list(df.sub$IID),length)
   colnames(tab) <- c('IID','Sum')
@@ -62,7 +70,7 @@ for (i in 1:7) {
   val2[[i]] <- median(dataf[[i]]$N)
   g[[i]] <- ggplot(dataf[[i]],aes(x=as.integer(Sum))) + 
     geom_bar(fill='orange3') +
-    labs(x='Number of "hot" tissue samples',y='Number of individuals',title=paste0(CellType.names[i],' (N=',length(unique(df.sub$Tissue)),'; n=',val2[[i]],')'))+ 
+    labs(x='Number of "hot" tissue samples',y='Number of individuals',title=paste0(CellType.unique[i],' (N=',length(unique(df.sub$Tissue)),'; n=',val2[[i]],')'))+ 
     theme_bw() +
     theme(plot.title=element_text(hjust=0.5)) +
     scale_x_continuous(breaks = function(x) unique(floor(pretty(seq(0, (max(x) + 1) * 1.1)))))
