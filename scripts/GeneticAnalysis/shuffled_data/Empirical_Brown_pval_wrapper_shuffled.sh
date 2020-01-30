@@ -2,7 +2,7 @@
 #SBATCH -J EBM
 #SBATCH -n 1
 #SBATCH --mem=8G
-#SBATCH --array=10-10:1
+#SBATCH --array=1-189:1
 
 # Written by Andrew Marderstein (2018-2019). Contact: anm2868@med.cornell.edu
 # Wrapper script for combining related p-values using empirical brown's method

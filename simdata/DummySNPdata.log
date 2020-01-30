@@ -1,0 +1,29 @@
+PLINK v1.90b4 64-bit (20 Mar 2017)
+Options in effect:
+  --make-bed
+  --out DummySNPdata
+  --simulate DummySNPdata.sim
+  --simulate-ncases 0
+  --simulate-ncontrols 450
+
+Hostname: cannes.pbtech
+Working directory: /athena/elementolab/scratch/anm2868/GTEx/GTEx_infil/simdata
+Start time: Thu Oct 31 21:50:44 2019
+
+Random number seed: 1572573044
+515703 MB RAM detected; reserving 257851 MB for main workspace.
+Allocated 193388 MB successfully, after larger attempt(s) failed.
+Writing --simulate dataset to DummySNPdata-temporary.bed +
+DummySNPdata-temporary.bim + DummySNPdata-temporary.fam ... done.
+Realized simulation parameters saved to DummySNPdata-temporary.simfreq.
+100100 variants loaded from .bim file.
+450 people (0 males, 450 females) loaded from .fam.
+450 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 450 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+100100 variants and 450 people pass filters and QC.
+Among remaining phenotypes, 0 are cases and 450 are controls.
+--make-bed to DummySNPdata.bed + DummySNPdata.bim + DummySNPdata.fam ... done.
+
+End time: Thu Oct 31 21:50:44 2019
