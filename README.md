@@ -24,6 +24,10 @@ The analysis was performed on a linux system. Plots were created on a macOS Cata
 /Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/plot_data
 ```
 
+If you can not find the code you are looking for or have any questions, please contact:
+
+Andrew Marderstein \
+anm2868@med.cornell.edu
 
 ## Robust estimation of immune cell types in bulk RNA-seq profiles
 Directory: ./scripts/SynMix_Sims/
