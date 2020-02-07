@@ -120,3 +120,19 @@ scale <- 3
 tiff("~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GTEx_Deconv/HeatMap.Cib-rel.png",width=900*scale,height=600*scale,res=100*scale,units="px")
 print(p.rel)
 dev.off()
+
+library(grid)
+p=p.abs
+my_gtable = p$gtable
+my_gtable$grobs[[3]]$gp=gpar(col="grey30",fontfamily='Helvetica',fontsize=7)
+my_gtable$grobs[[4]]$gp=gpar(col="grey30", fontfamily='Helvetica',fontsize=7)# assuming that the ylabels are in the fourth grob
+p$gtable <- my_gtable
+p
+scale <- 3
+tiff("~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/GTEx_Deconv/HeatMap.Cib-abs.2.png",width=900*scale,height=600*scale,res=100*scale,units="px")
+print(p)
+dev.off()
+
+
+
+

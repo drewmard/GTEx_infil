@@ -10,15 +10,15 @@ library(matrixStats)
 library(cowplot)
 
 df <- fread('~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_phenotypes.txt',data.table = F,stringsAsFactors = F)
-# df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ExpandedHotCold.txt',data.table = F,stringsAsFactors = F); colnames(df)[which(colnames(df)=='ID')] <- 'IID'
-# df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ConsensusHotColdAssignments.txt',data.table = F,stringsAsFactors = F)
-# df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/FullHotColdAssignments.txt',data.table = F,stringsAsFactors = F)
-df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/FullHotColdAssignments_Correct.txt',data.table = F,stringsAsFactors = F)
 
+i=3
+df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ConsensusQuintileAssignments-FullSecond.txt',data.table = F,stringsAsFactors = F); colnames(df)[which(colnames(df)=='ID')] <- 'IID'
 df$IID <- as.character(lapply(strsplit(df$Sample,"\\."),function(x) paste(x[1:2],collapse = "-")))
-df$Top <- as.numeric(df$Infiltration=='Hot')
-df$Bottom <- as.numeric(df$Infiltration=='Cold')
-df$Intermediate <- as.numeric(df$Infiltration=='Intermediate')
+# df$Top <- as.numeric(df$Quintile%in%c('Top','Second'))
+df$Top <- as.numeric(df$Quintile%in%c('Top'))
+# df$Top <- as.numeric(df$Infiltration=='Hot')
+# df$Bottom <- as.numeric(df$Infiltration=='Cold')
+# df$Intermediate <- as.numeric(df$Infiltration=='Intermediate')
 CellType.unique <- unique(df$CellType)
 CellType.names <- c("CD4 memory T cells",'Macrophages','Mast cells','Myeloid cells','Monocytes','Lymphocytes','CD8 T cells',
                     'B cells','Dendritic cells','Helper T cells','Neutrophils','NK cells')
@@ -71,13 +71,20 @@ for (i in 1:7) {
     theme_bw() +
     theme(plot.title=element_text(hjust=0.5)) +
     scale_x_continuous(breaks = function(x) unique(floor(pretty(seq(0, (max(x) + 1) * 1.1)))))
+  
 }
 
 plot_grid(g[[1]],g[[2]],g[[3]],g[[4]],
           g[[5]],g[[6]],g[[7]],nrow=2)
+as.numeric(val)
 mean(as.numeric(val))
 as.numeric(lapply(dataf,function(x) {median(x$N)}))
-as.numeric(val)
+getmode <- function(v) {
+  uniqv <- unique(v)
+  uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+lapply(dataf,function(x) getmode(x$Sum))
+
 
 # 3 #############
 
@@ -100,43 +107,31 @@ for (i in 1:7) {
   x <-3; p <- pheatmap(df.sub.5,cluster_cols = T,cluster_rows=T,show_colnames = F,
                        legend=F,treeheight_row = 50, treeheight_col = 0,border_color='black',
                        cellwidth = rel(1.2*x),cellheight=rel(4*x),filename=f)
-  library(grid)
-  my_gtable = p$gtable
-  my_gtable$grobs[[3]]$gp=gpar(col="grey30",fontfamily='Helvetica',fontsize=7)
-  p$gtable <- my_gtable
-  print(p)
-  
-}
 
-######################################################
-######################################################
-######################################################
+}
 
 library(ggplot2)
 library(data.table)
 library(pheatmap)
 library(matrixStats)
 library(cowplot)
+
 df <- fread('~/Documents/Research/GTEx/Infiltration/GTEx_infil/output/infiltration_phenotypes.txt',data.table = F,stringsAsFactors = F)
 
-df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/FullHotColdAssignments_Correct.txt',data.table = F,stringsAsFactors = F)
-# df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ExpandedHotCold.txt',data.table = F,stringsAsFactors = F); colnames(df)[which(colnames(df)=='ID')] <- 'IID'
-# df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ConsensusHotColdAssignments.txt',data.table = F,stringsAsFactors = F)
-
+i=3
+df <- fread('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ConsensusQuintileAssignments-FullSecond.txt',data.table = F,stringsAsFactors = F); colnames(df)[which(colnames(df)=='ID')] <- 'IID'
 df$IID <- as.character(lapply(strsplit(df$Sample,"\\."),function(x) paste(x[1:2],collapse = "-")))
-df$Top <- as.numeric(df$Infiltration=='Hot')
-df$Bottom <- as.numeric(df$Infiltration=='Cold')
-df$Intermediate <- as.numeric(df$Infiltration=='Intermediate')
+# df$Top <- as.numeric(df$Quintile%in%c('Top','Second'))
+df$Top <- as.numeric(df$Quintile%in%c('Top'))
 CellType.unique <- unique(df$CellType)
 CellType.names <- c("CD4 memory T cells",'Macrophages','Mast cells','Myeloid cells','Monocytes','Lymphocytes','CD8 T cells',
                     'B cells','Dendritic cells','Helper T cells','Neutrophils','NK cells')
-
 
 df.save.list <- list()
 # for (k in 1:7) {
 for (k in 1:7) {
   df.sub <- subset(df,CellType==CellType.unique[k])
-  # x <- aggregate(df.sub$IID,list(df.sub$IID),length)
+  x <- aggregate(df.sub$IID,list(df.sub$IID),length)
   # df.sub <- subset(df.sub,x >= 8)
   df.sub <- df.sub[,c('IID','Tissue','Top')]
   library(reshape2)
@@ -151,9 +146,6 @@ for (k in 1:7) {
     tis1 <- tis.type[i]
     for (j in (i+1):length(tis.type)) {
       tis2 <- tis.type[j]
-      # x <- subset(df.sub.4,!is.na(df.sub.4[,tis1]) & !is.na(`Artery - Coronary`))[,c('Breast - Mammary Tissue','Artery - Coronary')]
-      # y <- nrow(subset(x,x[,1]==1 & x[,2]==1))
-      # z <- nrow(subset(x,x[,1]==1 | x[,2]==1))
       x <- subset(df.sub.4,!is.na(df.sub.4[,tis1]) & !is.na(df.sub.4[,tis2]))[,c(tis1,tis2)]
       y <- nrow(subset(x,x[,tis1]==1 & x[,tis2]==1))
       z <- nrow(subset(x,x[,tis1]==1 | x[,tis2]==1))
@@ -176,6 +168,32 @@ subset(df.save, Pval.fdr < 0.05)
 df.save[order(df.save$Prop,decreasing = T),][1:10,]
 df.save[order(df.save$Pval,decreasing = F),][1:10,]
 
+fwrite(subset(df.save,Pval < 0.05/nrow(df.save))[,c('Tis1','Tis2','Cell','Pval')],'/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/ConsensusQuintileAssignments-FullSecond.Fisher.txt',sep = '\t',quote = F,na = 'NA',col.names = T,row.names = F)
 
-subset(df.save,Cell=='CD8Sum' & (Tis1=='Whole Blood' | Tis2=='Whole Blood'))
+
+
+# Testing something...
+# n <- 2:125
+# prop <- 1/n
+# Fake <- 1
+# df.save2 <- df.save
+# df.save2$Fake <- 0
+# df.save2 <- rbind(df.save2,data.frame(Tis1='Tis1',Tis2='Tis2',Prop=prop,N=n,Cell='Cell1',Pval=1,Fake=1))
+# 
+# subset(df.save,Cell=='MacrophageSum' & Tis1=='Adipose - Subcutaneous')
+# subset(df.save,Cell=='Mast cells' & Tis1=='Adipose - Subcutaneous')
+# 
+# df.save$WholeBlood<-0;df.save$WholeBlood[which(df.save$Tis1=='Whole Blood' | df.save$Tis2=='Whole Blood')] <- 1
+# g <- ggplot(df.save,aes(x=N,y=Prop)) + geom_point(aes(col=Cell)); g
+# g <- ggplot(df.save,aes(x=N,y=Prop)) + geom_point(aes(col=WholeBlood)); g
+# 
+# g <- ggplot(df.save2,aes(x=N,y=Prop)) + geom_point(aes(col=Fake)); g
+
+
+# 
+# g <- ggplot(df.save.list[[7]],aes(x=N,y=Prop)) + geom_point(); g
+# png('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/Hot_sharing.',CellType.unique[i],'.png')
+# print(g)
+# dev.off()
+
 

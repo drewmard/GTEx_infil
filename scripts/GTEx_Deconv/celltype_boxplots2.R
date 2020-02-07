@@ -5,7 +5,7 @@
 # load
 library(data.table)
 library(ggplot2)
-
+library('cowplot')
 # cell type of interest:
 cellTypes.df <- data.frame( 
   ciber=c('T cells CD8','T cells CD4 naive','CD4_memory','Neutrophils','MacrophageSum',

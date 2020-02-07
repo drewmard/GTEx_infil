@@ -68,7 +68,7 @@ xcell_cibersort_CaseExample.R
 clustering_heatmap.R
 
 #### Boxplots of immune content:
-celltype_boxplots.R
+celltype_boxplots2.R
 
 #### t-SNE of immune content:
 immune_content_clusters_tsne.R
