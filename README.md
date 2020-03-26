@@ -2,7 +2,7 @@
 
 ## Information about the repository
 
-This repository contains all computer code to support the findings in the manuscript "Age, Sex, and Genetics Influence the Abundance of Infiltrating Immune Cells in Human Tissues". This manuscript describes an extensive analysis of GTEx data. Many scripts were used to support the findings. All scripts are written in the R or Bash programming languages. 
+This repository contains all computer code to support the findings in the manuscript "Demographic and Genetic Factors Influence the Abundance of Infiltrating Immune Cells in Human Tissues". This manuscript describes an extensive analysis of GTEx data. Many scripts were used to support the findings. All scripts are written in the R or Bash programming languages. 
 
 Within the repository, analysis scripts are split by sections of the manuscript that contains the relevant results. Many of the scripts require certain dependencies and certain data files. The file spec-file.txt within the ./bin/ directory can be used for setting up the conda environment containing all required dependencies:
 
