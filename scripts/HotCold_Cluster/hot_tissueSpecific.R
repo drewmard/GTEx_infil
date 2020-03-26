@@ -95,6 +95,7 @@ for (i in 1:7) {
   df.sub.4 <- dcast(df.sub.3,IID~Tissue)
   rownames(df.sub.4) <- df.sub.4[,1]; df.sub.4 <- df.sub.4[,-1]
   df.sub.5 <- as.data.frame(t(df.sub.4))
+  if (i==2) {fwrite(df.sub.5,'/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/Macrophage.3b.sourcedata.txt',quote = F,na='NA',sep = '\t',row.names = T,col.names = T)}
   x <- apply(df.sub.5,2,sum); df.sub.5 <- df.sub.5[,-which(x==0)]
   f <- paste0('/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/GTEx_infil/output/HotCold_Cluster/TissueHotHeatMap.',CellType.unique[i],'.png')
   x <-3; p <- pheatmap(df.sub.5,cluster_cols = T,cluster_rows=T,show_colnames = F,

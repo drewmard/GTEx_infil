@@ -5,6 +5,7 @@
 # load & initialize
 library(ggplot2)
 library(GenABEL)
+library(data.table)
 workdir <- '/Users/andrewmarderstein/Documents/Research/GTEx/Infiltration/'
 df.abs <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-T.QN-F.perm-1000.txt'),data.table = F,stringsAsFactors = F)
 df.rel <- fread(paste0(workdir,'GTEx_infil/output/infiltration_profiles/GTEx_v7_genexpr_ALL.CIBERSORT.ABS-F.QN-F.perm-1000.txt'),data.table = F,stringsAsFactors = F)
